@@ -3,6 +3,7 @@ import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import CookieBanner from "../components/CookieBanner";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -33,10 +34,11 @@ export default function RootLayout({
       lang="fr"
       className={`${playfair.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#F5F3EF] text-[#020628]">
+      <body className="min-h-full bg-white text-[#020628]">
         <Nav />
         <main className="flex-1 pt-[96px]">{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

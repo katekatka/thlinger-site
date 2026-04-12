@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HeroSection from "@/components/HeroSection";
+import HeroSectionEn from "@/components/HeroSectionEn";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 import { AnimatedLine } from "@/components/AnimatedLine";
 
@@ -7,91 +7,91 @@ import { AnimatedLine } from "@/components/AnimatedLine";
 
 const services = [
   {
-    title: "Droit des Sociétés",
+    title: "Corporate Law",
     description:
-      "Structurer, gouverner et protéger votre entreprise de la création à la transmission.",
-    href: "/competences/droit-des-societes",
+      "Structuring, governing and protecting your company from creation to transfer.",
+    href: "/en/competences/droit-des-societes",
   },
   {
-    title: "Droit Commercial",
+    title: "Commercial Law",
     description:
-      "Sécuriser vos contrats, vos partenariats et vos relations commerciales.",
-    href: "/competences/droit-commercial",
+      "Securing your contracts, partnerships and commercial relationships.",
+    href: "/en/competences/droit-commercial",
   },
   {
-    title: "Droit du Travail",
+    title: "Employment Law",
     description:
-      "Recruter, gérer et restructurer votre équipe sur des bases juridiques solides.",
-    href: "/competences/droit-du-travail",
+      "Hiring, managing and restructuring your team on solid legal foundations.",
+    href: "/en/competences/droit-du-travail",
   },
   {
-    title: "Conseil Transfrontalier",
+    title: "Cross-border Advisory",
     description:
-      "Pour les entreprises des deux côtés du Rhin : un avocat qui connaît les réalités françaises de l'intérieur.",
-    href: "/competences/conseil-transfrontalier",
+      "For companies on both sides of the Rhine: a lawyer who understands French realities from the inside.",
+    href: "/en/competences/conseil-transfrontalier",
   },
   {
-    title: "Droit Immobilier",
+    title: "Real Estate Law",
     description:
-      "Clarifier et encadrer vos opérations immobilières, pour avancer sans incertitude.",
-    href: "/competences/droit-immobilier",
+      "Clarifying and structuring your real estate operations, so you can move forward without uncertainty.",
+    href: "/en/competences/droit-immobilier",
   },
   {
-    title: "Droit Fiscal",
+    title: "Tax Law",
     description:
-      "Transformer la fiscalité en levier d'optimisation, au service de votre croissance.",
-    href: "/competences/droit-fiscal",
+      "Turning taxation into a lever for optimization, in service of your growth.",
+    href: "/en/competences/droit-fiscal",
   },
 ];
 
 const steps = [
   {
-    title: "Compréhension du contexte",
+    title: "Understanding your context",
     description:
-      "Je commence par vos enjeux, pas par le Code civil. Ce que vous construisez, ce qui vous préoccupe, ce qui bloque.",
+      "I start with your issues, not with the Civil Code. What you are building, what concerns you, what is blocking you.",
   },
   {
-    title: "Identification des risques",
+    title: "Identifying risks",
     description:
-      "Ce qui menace votre activité, dit explicitement. Pas d'euphémismes, pas de zones grises confortables.",
+      "What threatens your activity, stated explicitly. No euphemisms, no comfortable grey areas.",
   },
   {
-    title: "Structuration des options",
+    title: "Structuring options",
     description:
-      "Des choix clairs, avec leurs implications réelles. Chaque option présentée en termes de conséquences business.",
+      "Clear choices, with their real implications. Each option presented in terms of business consequences.",
   },
   {
-    title: "Décision conjointe",
+    title: "Joint decision",
     description:
-      "Je ne décide pas à votre place. Je vous rends la certitude de décider en toute connaissance de cause.",
+      "I do not decide in your place. I give you the certainty to decide with full knowledge of the facts.",
   },
 ];
 
 const trustBlocks = [
   {
-    title: "Un accès direct.",
-    text: "Quand vous appelez, c'est moi qui réponds. Pas un collaborateur différent à chaque fois. La personne qui comprend votre entreprise aujourd'hui est celle qui vous conseille demain.",
+    title: "Direct access.",
+    text: "When you call, I answer. Not a different associate each time. The person who understands your business today is the one advising you tomorrow.",
   },
   {
-    title: "Le langage des affaires.",
-    text: "Je parle P&L, croissance, timing et pression concurrentielle, pas uniquement articles de loi. Le conseil est formulé en résultats business, pas en abstractions juridiques.",
+    title: "The language of business.",
+    text: "I speak P&L, growth, timing and competitive pressure, not only legal articles. Advice is expressed in business outcomes, not legal abstractions.",
   },
   {
-    title: "La dimension humaine.",
-    text: "Les situations juridiques complexes portent un poids émotionnel réel. Je comprends cette dimension et je conseille avec précision et empathie.",
+    title: "The human dimension.",
+    text: "Complex legal situations carry real emotional weight. I understand this dimension and advise with precision and empathy.",
   },
 ];
 
-// ─── Shared components ───────────────────────────────────────────────────────
+// ─── Shared components ────────────────────────────────────────────────────────
 
-function ContacterButton() {
+function ContactButton() {
   return (
     <a
       href="#contact"
       className="group inline-flex items-center gap-3 rounded-full border-2 border-[#D4AF37] bg-[#07137B] px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-[#020628] hover:gap-5"
       style={{ color: "#ffffff" }}
     >
-      Contacter
+      Contact
       <svg
         width="16"
         height="10"
@@ -112,30 +112,29 @@ function ContacterButton() {
   );
 }
 
-// ─── Page ───────────────────────────────────────────────────────────────────────
+// ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function HomePage() {
+export default function HomePageEN() {
   return (
     <>
       {/* 1. HERO */}
-      <HeroSection />
+      <HeroSectionEn />
 
       <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
 
-      {/* 2. PROBLÈME */}
+      {/* 2. PROBLEM */}
       <section id="probleme" className="bg-[#07137B] py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl">
               <h2 className="mb-8 font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
-                Le juridique ne devrait pas ajouter&nbsp;à la confusion.
+                Legal should not add to confusion.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/65 md:text-[1.0625rem]">
-                Un avocat qui vous répond directement quand vous appelez.
-                Quelqu&apos;un qui vous connaît vraiment, sans vous réduire à un
-                numéro de dossier. Un interlocuteur impliqué dans la durée, qui
-                comprend votre entreprise et vos priorités, pour que vous
-                puissiez avancer avec certitude.
+                A lawyer who answers you directly when you call.
+                Someone who truly knows you, without reducing you to a case number.
+                A single point of contact, involved over time, who understands your
+                business and your priorities, so that you can move forward with certainty.
               </p>
             </div>
           </AnimatedSection>
@@ -144,21 +143,20 @@ export default function HomePage() {
 
       <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
 
-      {/* 3. COMPÉTENCES */}
+      {/* 3. EXPERTISE */}
       <section id="competences" className="bg-white py-24 md:py-32 scroll-mt-24">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
               <h2 className="max-w-xl font-serif text-[2rem] font-normal leading-tight text-[#07137B] md:text-[2.75rem]">
-                Droit des affaires. Une approche pluridisciplinaire.
+                Business Law. A multidisciplinary approach.
               </h2>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-[#07137B]/55 md:text-right">
-                Les disciplines clés du droit des affaires.
+                The key disciplines of business law.
               </p>
             </div>
           </AnimatedSection>
 
-          {/* Cards grid */}
           <AnimatedSection stagger className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {services.map((svc) => (
               <AnimatedItem key={svc.title}>
@@ -166,8 +164,6 @@ export default function HomePage() {
                   href={svc.href}
                   className="group flex h-full flex-col justify-between rounded-[2.5rem] border-2 border-[#D4AF37] bg-[#07137B] p-12 transition-all duration-300 hover:bg-[#020628]"
                 >
-
-                  {/* Text */}
                   <div className="flex-1">
                     <h3 className="mb-3 font-serif text-xl font-normal text-white">
                       {svc.title}
@@ -176,17 +172,9 @@ export default function HomePage() {
                       {svc.description}
                     </p>
                   </div>
-
-                  {/* Arrow */}
                   <div className="mt-8 flex items-center gap-2 font-serif text-[0.75rem] uppercase tracking-[0.16em] text-white/50 transition-all duration-300 group-hover:gap-4 group-hover:text-white">
-                    En savoir plus
-                    <svg
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      aria-hidden="true"
-                    >
+                    Learn more
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true">
                       <path
                         d="M1 4H13M13 4L10 1M13 4L10 7"
                         stroke="currentColor"
@@ -205,12 +193,12 @@ export default function HomePage() {
 
       <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
 
-      {/* 4. DÉMARCHE — navy */}
+      {/* 4. HOW I WORK */}
       <section id="demarche" className="bg-[#07137B] py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
-              Comment je travaille
+              How I work
             </h2>
           </AnimatedSection>
 
@@ -238,12 +226,12 @@ export default function HomePage() {
 
       <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
 
-      {/* 5. POURQUOI */}
+      {/* 5. WHY TRUST */}
       <section id="pourquoi" className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[2rem] font-normal leading-tight text-[#07137B] md:text-[2.75rem]">
-              Pourquoi les dirigeants me font confiance.
+              Why business leaders trust me.
             </h2>
           </AnimatedSection>
 
@@ -263,12 +251,8 @@ export default function HomePage() {
             ))}
           </AnimatedSection>
 
-          {/* CTA */}
-          <AnimatedSection
-            className="mt-16 pt-12"
-            delay={0.1}
-          >
-            <ContacterButton />
+          <AnimatedSection className="mt-16 pt-12" delay={0.1}>
+            <ContactButton />
           </AnimatedSection>
         </div>
       </section>
@@ -281,35 +265,27 @@ export default function HomePage() {
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
               <h2 className="max-w-md font-serif text-[2rem] font-normal leading-tight text-[#07137B] md:text-[2.75rem]">
-                Contacter Me. Christian Thalinger
+                Contact Christian Thalinger
               </h2>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-[#07137B]/55">
-                Comprendre vos enjeux sans engagement de votre part. Réponse sous 24h du lundi au vendredi, 9h – 18h.
+                Understanding your issues with no commitment on your part.
+                Response within 24 hours, Monday to Friday, 9am&nbsp;&ndash;&nbsp;6pm.
               </p>
             </div>
           </AnimatedSection>
 
           <div className="grid gap-12 md:grid-cols-2">
-            {/* Contact details */}
             <AnimatedSection delay={0.05}>
               <div className="space-y-8">
-                <ContactItem
-                  label="Téléphone"
-                  href="tel:+33637331926"
-                  value="+33 6 37 33 19 26"
-                />
-                <ContactItem
-                  label="Email"
-                  href="mailto:cthalinger@outlook.fr?subject=Prise%20de%20contact"
-                  value="cthalinger@outlook.fr"
-                />
+                <ContactItem label="Phone" href="tel:+33637331926" value="+33 6 37 33 19 26" />
+                <ContactItem label="Email" href="mailto:cthalinger@outlook.fr?subject=Contact" value="cthalinger@outlook.fr" />
                 <ContactItem
                   label="LinkedIn"
                   href="https://www.linkedin.com/in/christian-thalinger-565446216/"
                   value="linkedin.com/in/christian-thalinger"
                 />
                 <ContactItem
-                  label="Adresse"
+                  label="Address"
                   href="https://maps.google.com/maps?q=20+Rue+du+Foss%C3%A9+des+Tanneurs+67000+Strasbourg"
                   value={"20 rue du Fossé des Tanneurs\n67000 Strasbourg"}
                   multiline
@@ -317,7 +293,6 @@ export default function HomePage() {
               </div>
             </AnimatedSection>
 
-            {/* Map */}
             <AnimatedSection delay={0.15}>
               <div className="h-full min-h-[340px] overflow-hidden rounded-2xl border border-[#07137B]/10">
                 <iframe
@@ -328,19 +303,15 @@ export default function HomePage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Cabinet Christian Thalinger — Strasbourg"
+                  title="Christian Thalinger Law Office — Strasbourg"
                 />
               </div>
             </AnimatedSection>
           </div>
 
-          {/* Closing quote */}
-          <AnimatedSection
-            className="mt-20 pt-12 text-center"
-            delay={0.1}
-          >
+          <AnimatedSection className="mt-20 pt-12 text-center" delay={0.1}>
             <blockquote className="mx-auto max-w-[560px] font-sans text-base leading-relaxed text-[#07137B]/60 md:text-[1.0625rem]">
-              «&thinsp;Un dossier compris est déjà sécurisé.&thinsp;»
+              &ldquo;A case that is understood is already secured.&rdquo;
             </blockquote>
           </AnimatedSection>
         </div>
@@ -349,7 +320,7 @@ export default function HomePage() {
   );
 }
 
-// ─── ContactItem ────────────────────────────────────────────────────────────────
+// ─── ContactItem ──────────────────────────────────────────────────────────────
 
 function ContactItem({
   label,
