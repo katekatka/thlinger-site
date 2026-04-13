@@ -52,11 +52,11 @@ export default function Footer() {
                   alt="Christian Thalinger logo"
                   width={42}
                   height={42}
-                  className="object-contain brightness-0 invert"
+                  className="object-contain transition-[filter] duration-200 [filter:brightness(0)_saturate(100%)_invert(73%)_sepia(56%)_saturate(500%)_hue-rotate(5deg)_brightness(95%)] group-hover:[filter:brightness(0)_invert(1)]"
                 />
                 <span
                   style={{ fontFamily: "var(--font-playfair)" }}
-                  className="text-[1.05rem] font-normal text-white transition-colors duration-200 group-hover:text-white/70"
+                  className="text-[1.05rem] font-normal text-gold transition-colors duration-200 group-hover:text-white"
                 >
                   Christian Thalinger
                 </span>
@@ -73,7 +73,7 @@ export default function Footer() {
 
               {/* Compétences */}
               <div className="space-y-4">
-                <p className="text-sm uppercase tracking-[0.15em] text-white/50">
+                <p className="text-sm uppercase tracking-[0.15em] text-gold">
                   {isEN ? "Expertise" : "Compétences"}
                 </p>
                 <div className="space-y-3 text-sm">
@@ -87,7 +87,7 @@ export default function Footer() {
 
               {/* Contact */}
               <div className="space-y-4">
-                <p className="text-sm uppercase tracking-[0.15em] text-white/50">
+                <p className="text-sm uppercase tracking-[0.15em] text-gold">
                   Contact
                 </p>
                 <div className="space-y-3 text-sm">
