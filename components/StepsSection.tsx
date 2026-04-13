@@ -59,7 +59,7 @@ export function StepsSection({ steps }: { steps: Step[] }) {
           <AnimatedItem key={step.title}>
             <div
               ref={refs[i]}
-              className="group relative rounded-[2.5rem] bg-white px-6 py-8 md:px-12 md:py-10 flex gap-6 md:gap-10 items-start transition-shadow duration-300 hover:shadow-[0_12px_40px_rgba(7,19,123,0.10)]"
+              className="group relative rounded-[2.5rem] border-2 border-gold bg-white px-6 py-8 md:px-12 md:py-10 flex gap-6 md:gap-10 items-start transition-shadow duration-300 hover:shadow-[0_12px_40px_rgba(7,19,123,0.10)]"
               onMouseEnter={() => isDesktop && setHoveredIndex(i)}
               onMouseLeave={() => isDesktop && setHoveredIndex(null)}
             >

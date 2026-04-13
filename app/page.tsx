@@ -165,7 +165,7 @@ export default function HomePage() {
               <AnimatedItem key={svc.title}>
                 <Link
                   href={svc.href}
-                  className="group relative flex h-full flex-col justify-between rounded-[2.5rem] bg-navy p-12 transition-all duration-300 hover:bg-dark hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(7,19,123,0.22)]"
+                  className="group relative flex h-full flex-col justify-between rounded-[2.5rem] border-2 border-gold bg-navy p-12 transition-all duration-300 hover:bg-dark hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(7,19,123,0.22)]"
                 >
                   {/* Text */}
                   <div className="flex-1">
