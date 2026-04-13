@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description: "Politique de confidentialité et protection des données personnelles du cabinet Thalinger Avocat.",
 };
 
-const h2 = "mb-4 font-serif text-[1.125rem] font-normal text-[#07137B]";
-const p  = "font-sans text-[0.9375rem] leading-[1.85] text-[#07137B]/65";
+const h2 = "mb-4 font-serif text-[1.125rem] font-normal text-navy";
+const p  = "font-sans text-[0.9375rem] leading-[1.85] text-navy/65";
 const li = "flex gap-2";
-const bullet = "mt-[0.35em] shrink-0 text-[#D4AF37]";
+const bullet = "mt-[0.35em] shrink-0 text-gold";
 
 export default function PolitiqueConfidentialitePage() {
   return (
@@ -18,10 +18,10 @@ export default function PolitiqueConfidentialitePage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-[#07137B]/45">
+            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Données personnelles
             </p>
-            <h1 className="mb-4 font-serif text-[2.5rem] font-normal leading-tight text-[#07137B] md:text-[3.75rem]">
+            <h1 className="mb-4 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
               Politique de Confidentialité
             </h1>
             <p className={`${p} mt-2`}>Dernière mise à jour : 15 avril 2026</p>
@@ -29,7 +29,7 @@ export default function PolitiqueConfidentialitePage() {
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* CONTENT */}
       <section className="bg-white py-20 md:py-28">
@@ -44,7 +44,7 @@ export default function PolitiqueConfidentialitePage() {
                 La présente politique de confidentialité vous informe de la manière dont
                 vos données sont collectées, utilisées et protégées lors de votre visite
                 sur le site{" "}
-                <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                   http://www.thalinger-avocat.fr/
                 </a>
                 , conformément au Règlement Général sur la Protection des Données
@@ -59,9 +59,9 @@ export default function PolitiqueConfidentialitePage() {
                 <p className={p}>
                   Christian THALINGER – Avocat au Barreau de Strasbourg<br />
                   20 rue du Fossé des Tanneurs, 67000 Strasbourg<br />
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-[#07137B]">cthalinger@outlook.fr</a>
+                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">cthalinger@outlook.fr</a>
                   {" "}–{" "}
-                  <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-[#07137B]">+33 6 37 33 19 26</a>
+                  <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-navy">+33 6 37 33 19 26</a>
                 </p>
               </div>
 
@@ -184,7 +184,7 @@ export default function PolitiqueConfidentialitePage() {
                 </ul>
                 <p className={p}>
                   Pour exercer ces droits, adressez votre demande à :{" "}
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">
                     cthalinger@outlook.fr
                   </a>{" "}
                   ou par courrier à 20 rue du Fossé des Tanneurs, 67000 Strasbourg, en
@@ -201,7 +201,7 @@ export default function PolitiqueConfidentialitePage() {
                     href="https://www.cnil.fr"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:text-[#07137B]"
+                    className="underline underline-offset-2 hover:text-navy"
                   >
                     www.cnil.fr
                   </a>.
@@ -213,7 +213,7 @@ export default function PolitiqueConfidentialitePage() {
                 <h2 className={h2}>8 – Cookies</h2>
                 <p className={p}>
                   Le site{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>{" "}
                   utilise les cookies suivants :
@@ -221,13 +221,13 @@ export default function PolitiqueConfidentialitePage() {
 
                 {/* Table */}
                 <div className="overflow-x-auto">
-                  <table className="w-full border-collapse font-sans text-[0.875rem] text-[#07137B]/65">
+                  <table className="w-full border-collapse font-sans text-[0.875rem] text-navy/65">
                     <thead>
-                      <tr className="border-b-2 border-[#D4AF37]">
-                        <th className="py-3 pr-6 text-left font-normal text-[#07137B]">Cookie</th>
-                        <th className="py-3 pr-6 text-left font-normal text-[#07137B]">Finalité</th>
-                        <th className="py-3 pr-6 text-left font-normal text-[#07137B]">Durée</th>
-                        <th className="py-3 text-left font-normal text-[#07137B]">Consentement requis</th>
+                      <tr className="border-b-2 border-gold">
+                        <th className="py-3 pr-6 text-left font-normal text-navy">Cookie</th>
+                        <th className="py-3 pr-6 text-left font-normal text-navy">Finalité</th>
+                        <th className="py-3 pr-6 text-left font-normal text-navy">Durée</th>
+                        <th className="py-3 text-left font-normal text-navy">Consentement requis</th>
                       </tr>
                     </thead>
                     <tbody>

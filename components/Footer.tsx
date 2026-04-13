@@ -7,21 +7,21 @@ import { usePathname } from "next/navigation";
 import { REOPEN_BANNER_EVENT } from "./CookieBanner";
 
 const skillLinksFR = [
-  { label: "Droit des Sociétés", href: "/competences/droit-des-societes" },
-  { label: "Droit Commercial", href: "/competences/droit-commercial" },
-  { label: "Droit du Travail", href: "/competences/droit-du-travail" },
-  { label: "Conseil Transfrontalier", href: "/competences/conseil-transfrontalier" },
-  { label: "Droit Immobilier", href: "/competences/droit-immobilier" },
-  { label: "Droit Fiscal", href: "/competences/droit-fiscal" },
+  { label: "Droit des Sociétés",     href: "/competences/droit-des-societes" },
+  { label: "Droit Commercial",       href: "/competences/droit-commercial" },
+  { label: "Droit du Travail",       href: "/competences/droit-du-travail" },
+  { label: "Conseil Transfrontalier",href: "/competences/conseil-transfrontalier" },
+  { label: "Droit Immobilier",       href: "/competences/droit-immobilier" },
+  { label: "Droit Fiscal",           href: "/competences/droit-fiscal" },
 ];
 
 const skillLinksEN = [
-  { label: "Corporate Law", href: "/en/competences/droit-des-societes" },
-  { label: "Commercial Law", href: "/en/competences/droit-commercial" },
-  { label: "Employment Law", href: "/en/competences/droit-du-travail" },
+  { label: "Corporate Law",         href: "/en/competences/droit-des-societes" },
+  { label: "Commercial Law",        href: "/en/competences/droit-commercial" },
+  { label: "Employment Law",        href: "/en/competences/droit-du-travail" },
   { label: "Cross-border Advisory", href: "/en/competences/conseil-transfrontalier" },
-  { label: "Real Estate Law", href: "/en/competences/droit-immobilier" },
-  { label: "Tax Law", href: "/en/competences/droit-fiscal" },
+  { label: "Real Estate Law",       href: "/en/competences/droit-immobilier" },
+  { label: "Tax Law",               href: "/en/competences/droit-fiscal" },
 ];
 
 const linkClass = "block text-white/50 transition-colors duration-200 hover:text-white active:text-white";
@@ -33,12 +33,13 @@ export default function Footer() {
 
   return (
     <>
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
       <motion.footer
         initial={{ y: 24, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-        className="bg-[#020628] text-white"
+        className="bg-dark text-white"
       >
         <div className="mx-auto max-w-[1200px] px-6 py-16">
           <div className="flex flex-col gap-12 md:flex-row md:justify-between">
@@ -53,7 +54,10 @@ export default function Footer() {
                   height={42}
                   className="object-contain brightness-0 invert"
                 />
-                <span className="text-base font-normal text-white transition-colors duration-200 group-hover:text-white/70">
+                <span
+                  style={{ fontFamily: "var(--font-playfair)" }}
+                  className="text-[1.05rem] font-normal text-white transition-colors duration-200 group-hover:text-white/70"
+                >
                   Christian Thalinger
                 </span>
               </Link>
@@ -110,7 +114,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+        <div className="bg-gold" style={{ height: "2px" }} />
         <div className="mx-auto flex flex-col gap-2 px-6 py-5 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
           <span>© 2026 Christian Thalinger — {isEN ? "Attorney at the Strasbourg Bar" : "Avocat au Barreau de Strasbourg"}</span>
           <div className="flex flex-wrap items-center gap-4">

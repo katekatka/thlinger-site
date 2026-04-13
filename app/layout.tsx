@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
@@ -34,7 +35,20 @@ export default function RootLayout({
       lang="fr"
       className={`${playfair.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-white text-[#020628]">
+      <body className="min-h-full bg-white text-dark">
+        {/* Consent Mode v2 default-denied stub — must run before any GA script */}
+        <Script id="gtag-consent-init" strategy="beforeInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            analytics_storage: 'denied',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            wait_for_update: 500
+          });
+          window.__consentInit = true;
+        `}</Script>
         <Nav />
         <main className="flex-1 pt-[96px]">{children}</main>
         <Footer />

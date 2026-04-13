@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   description: "Mentions légales du site de Me Christian Thalinger, avocat au Barreau de Strasbourg.",
 };
 
-const h2 = "mb-4 font-serif text-[1.125rem] font-normal text-[#07137B]";
-const p  = "font-sans text-[0.9375rem] leading-[1.85] text-[#07137B]/65";
+const h2 = "mb-4 font-serif text-[1.125rem] font-normal text-navy";
+const p  = "font-sans text-[0.9375rem] leading-[1.85] text-navy/65";
 
 export default function MentionsLegalesPage() {
   return (
@@ -16,17 +16,17 @@ export default function MentionsLegalesPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-[#07137B]/45">
+            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Informations légales
             </p>
-            <h1 className="font-serif text-[2.5rem] font-normal leading-tight text-[#07137B] md:text-[3.75rem]">
+            <h1 className="font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
               Mentions Légales
             </h1>
           </AnimatedSection>
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* CONTENT */}
       <section className="bg-white py-20 md:py-28">
@@ -41,38 +41,38 @@ export default function MentionsLegalesPage() {
                   En vertu de l&apos;article 6 de la loi n° 2004-575 du 21 juin 2004 pour la
                   confiance dans l&apos;économie numérique, il est précisé aux utilisateurs du
                   site internet{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>{" "}
                   l&apos;identité des différents intervenants dans le cadre de sa réalisation
                   et de son suivi :
                 </p>
                 <p className={p}>
-                  <strong className="text-[#07137B]">Propriétaire du site :</strong> Christian THALINGER –
+                  <strong className="text-navy">Propriétaire du site :</strong> Christian THALINGER –
                   Contact :{" "}
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-[#07137B]">cthalinger@outlook.fr</a>
+                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">cthalinger@outlook.fr</a>
                   {" "}
-                  <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-[#07137B]">+33 6 37 33 19 26</a>
+                  <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-navy">+33 6 37 33 19 26</a>
                   {" "}– Adresse : 20 rue du Fossé des Tanneurs, 67000 Strasbourg.
                 </p>
                 <p className={p}>
-                  <strong className="text-[#07137B]">Identification de l&apos;entreprise :</strong> EI Christian THALINGER –
+                  <strong className="text-navy">Identification de l&apos;entreprise :</strong> EI Christian THALINGER –
                   SIREN : 909 547 721 – RCS ou RM : Strasbourg –
                   Adresse postale : 20 rue du Fossé des Tanneurs, 67000 Strasbourg.
                 </p>
                 <p className={p}>
-                  <strong className="text-[#07137B]">Barreau d&apos;inscription :</strong> Barreau de Strasbourg –
+                  <strong className="text-navy">Barreau d&apos;inscription :</strong> Barreau de Strasbourg –
                   Ordre des avocats : Barreau de Strasbourg, 3 Rue du Général Frère, 67000 Strasbourg.
                 </p>
                 <p className={p}>
-                  <strong className="text-[#07137B]">Directeur de la publication :</strong> Christian THALINGER –
+                  <strong className="text-navy">Directeur de la publication :</strong> Christian THALINGER –
                   Contact :{" "}
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-[#07137B]">cthalinger@outlook.fr</a>.
+                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">cthalinger@outlook.fr</a>.
                 </p>
                 <p className={p}>
-                  <strong className="text-[#07137B]">Hébergeur :</strong> OVH SAS – 2 rue Kellermann,
+                  <strong className="text-navy">Hébergeur :</strong> OVH SAS – 2 rue Kellermann,
                   59100 Roubaix, France. – Téléphone :{" "}
-                  <a href="tel:+33972101007" className="underline underline-offset-2 hover:text-[#07137B]">+33 9 72 10 10 07</a>.
+                  <a href="tel:+33972101007" className="underline underline-offset-2 hover:text-navy">+33 9 72 10 10 07</a>.
                 </p>
               </div>
 
@@ -104,20 +104,20 @@ export default function MentionsLegalesPage() {
                 <p className={p}>
                   Christian THALINGER ne pourra être tenu pour responsable des dommages directs
                   et indirects causés au matériel de l&apos;utilisateur, lors de l&apos;accès au site{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>.
                 </p>
                 <p className={p}>
                   Christian THALINGER décline toute responsabilité quant à l&apos;utilisation qui
                   pourrait être faite des informations et contenus présents sur{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>.
                 </p>
                 <p className={p}>
                   Christian THALINGER s&apos;engage à sécuriser au mieux le site{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>
                   , cependant sa responsabilité ne pourra être mise en cause si des données
@@ -144,7 +144,7 @@ export default function MentionsLegalesPage() {
                 <p className={p}>
                   Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée,
                   l&apos;utilisateur du site{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>{" "}
                   dispose d&apos;un droit d&apos;accès, de modification et de suppression des
@@ -153,7 +153,7 @@ export default function MentionsLegalesPage() {
                 <p className={p}>
                   Pour plus d&apos;informations sur la façon dont nous traitons vos données (type
                   de données, finalité, destinataire…), lisez notre{" "}
-                  <a href="/politique-de-confidentialite" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="/politique-de-confidentialite" className="underline underline-offset-2 hover:text-navy">
                     Politique de Confidentialité
                   </a>
                   .
@@ -165,19 +165,19 @@ export default function MentionsLegalesPage() {
                 <h2 className={h2}>5 – Liens hypertextes et cookies.</h2>
                 <p className={p}>
                   Le site{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>{" "}
                   contient des liens hypertextes vers d&apos;autres sites et dégage toute
                   responsabilité à propos de ces liens externes ou des liens créés par d&apos;autres
                   sites vers{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>.
                 </p>
                 <p className={p}>
                   La navigation sur le site{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>{" "}
                   est susceptible de provoquer l&apos;installation de cookie(s) sur l&apos;ordinateur
@@ -199,7 +199,7 @@ export default function MentionsLegalesPage() {
                 <p className={p}>
                   Pour plus d&apos;informations sur la façon dont nous faisons usage des cookies,
                   lisez notre{" "}
-                  <a href="/politique-de-confidentialite" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="/politique-de-confidentialite" className="underline underline-offset-2 hover:text-navy">
                     Politique de Confidentialité
                   </a>
                   .
@@ -211,7 +211,7 @@ export default function MentionsLegalesPage() {
                 <h2 className={h2}>6 – Droit applicable et attribution de juridiction.</h2>
                 <p className={p}>
                   Tout litige en relation avec l&apos;utilisation du site{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>{" "}
                   est soumis au droit français. En dehors des cas où la loi ne le permet pas,

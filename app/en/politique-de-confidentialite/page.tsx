@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description: "Privacy policy and personal data protection for the Thalinger Avocat law firm.",
 };
 
-const h2 = "mb-4 font-serif text-[1.125rem] font-normal text-[#07137B]";
-const p  = "font-sans text-[0.9375rem] leading-[1.85] text-[#07137B]/65";
+const h2 = "mb-4 font-serif text-[1.125rem] font-normal text-navy";
+const p  = "font-sans text-[0.9375rem] leading-[1.85] text-navy/65";
 const li = "flex gap-2";
-const bullet = "mt-[0.35em] shrink-0 text-[#D4AF37]";
+const bullet = "mt-[0.35em] shrink-0 text-gold";
 
 export default function PrivacyPolicyPage() {
   return (
@@ -18,10 +18,10 @@ export default function PrivacyPolicyPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-[#07137B]/45">
+            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Personal data
             </p>
-            <h1 className="mb-4 font-serif text-[2.5rem] font-normal leading-tight text-[#07137B] md:text-[3.75rem]">
+            <h1 className="mb-4 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
               Privacy Policy
             </h1>
             <p className={`${p} mt-2`}>Last updated: 15 April 2026</p>
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* CONTENT */}
       <section className="bg-white py-20 md:py-28">
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
                 places great importance on the protection of your personal data. This
                 privacy policy informs you of how your data is collected, used and
                 protected when you visit the website{" "}
-                <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                   http://www.thalinger-avocat.fr/
                 </a>
                 , in accordance with the General Data Protection Regulation
@@ -58,9 +58,9 @@ export default function PrivacyPolicyPage() {
                 <p className={p}>
                   Christian THALINGER – Attorney at the Strasbourg Bar<br />
                   20 rue du Fossé des Tanneurs, 67000 Strasbourg<br />
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-[#07137B]">cthalinger@outlook.fr</a>
+                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">cthalinger@outlook.fr</a>
                   {" "}–{" "}
-                  <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-[#07137B]">+33 6 37 33 19 26</a>
+                  <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-navy">+33 6 37 33 19 26</a>
                 </p>
               </div>
 
@@ -181,7 +181,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
                 <p className={p}>
                   To exercise these rights, send your request to:{" "}
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">
                     cthalinger@outlook.fr
                   </a>{" "}
                   or by post to 20 rue du Fossé des Tanneurs, 67000 Strasbourg, enclosing
@@ -197,7 +197,7 @@ export default function PrivacyPolicyPage() {
                     href="https://www.cnil.fr"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:text-[#07137B]"
+                    className="underline underline-offset-2 hover:text-navy"
                   >
                     www.cnil.fr
                   </a>.
@@ -209,24 +209,24 @@ export default function PrivacyPolicyPage() {
                 <h2 className={h2}>8 – Cookies</h2>
                 <p className={p}>
                   The website{" "}
-                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-[#07137B]">
+                  <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
                     http://www.thalinger-avocat.fr/
                   </a>{" "}
                   uses the following cookies:
                 </p>
 
                 <div className="overflow-x-auto">
-                  <table className="w-full border-collapse font-sans text-[0.875rem] text-[#07137B]/65">
+                  <table className="w-full border-collapse font-sans text-[0.875rem] text-navy/65">
                     <thead>
-                      <tr className="border-b-2 border-[#D4AF37]">
-                        <th className="py-3 pr-6 text-left font-normal text-[#07137B]">Cookie</th>
-                        <th className="py-3 pr-6 text-left font-normal text-[#07137B]">Purpose</th>
-                        <th className="py-3 pr-6 text-left font-normal text-[#07137B]">Duration</th>
-                        <th className="py-3 text-left font-normal text-[#07137B]">Consent required</th>
+                      <tr className="border-b-2 border-gold">
+                        <th className="py-3 pr-6 text-left font-normal text-navy">Cookie</th>
+                        <th className="py-3 pr-6 text-left font-normal text-navy">Purpose</th>
+                        <th className="py-3 pr-6 text-left font-normal text-navy">Duration</th>
+                        <th className="py-3 text-left font-normal text-navy">Consent required</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="border-b border-[#07137B]/10">
+                      <tr className="border-b border-navy/10">
                         <td className="py-3 pr-6 font-mono text-[0.8125rem]">_ga</td>
                         <td className="py-3 pr-6">
                           Registers a unique identifier used to generate statistical data

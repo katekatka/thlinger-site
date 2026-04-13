@@ -88,7 +88,7 @@ function ContacterButton() {
   return (
     <a
       href="#contact"
-      className="group inline-flex items-center gap-3 rounded-full border-2 border-[#D4AF37] bg-[#07137B] px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-[#020628] hover:gap-5"
+      className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
       style={{ color: "#ffffff" }}
     >
       Contacter
@@ -120,10 +120,10 @@ export default function HomePage() {
       {/* 1. HERO */}
       <HeroSection />
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* 2. PROBLÈME */}
-      <section id="probleme" className="bg-[#07137B] py-24 md:py-32">
+      <section id="probleme" className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl">
@@ -142,17 +142,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* 3. COMPÉTENCES */}
       <section id="competences" className="bg-white py-24 md:py-32 scroll-mt-24">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-              <h2 className="max-w-xl font-serif text-[2rem] font-normal leading-tight text-[#07137B] md:text-[2.75rem]">
+              <h2 className="max-w-xl font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
                 Droit des affaires. Une approche pluridisciplinaire.
               </h2>
-              <p className="max-w-xs font-sans text-sm leading-relaxed text-[#07137B]/55 md:text-right">
+              <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65 md:text-right">
                 Les disciplines clés du droit des affaires.
               </p>
             </div>
@@ -164,7 +164,7 @@ export default function HomePage() {
               <AnimatedItem key={svc.title}>
                 <Link
                   href={svc.href}
-                  className="group flex h-full flex-col justify-between rounded-[2.5rem] border-2 border-[#D4AF37] bg-[#07137B] p-12 transition-all duration-300 hover:bg-[#020628]"
+                  className="group flex h-full flex-col justify-between rounded-[2.5rem] border-2 border-gold bg-navy p-12 transition-all duration-300 hover:bg-dark hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(7,19,123,0.22)]"
                 >
 
                   {/* Text */}
@@ -203,10 +203,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* 4. DÉMARCHE — navy */}
-      <section id="demarche" className="bg-[#07137B] py-24 md:py-32">
+      <section id="demarche" className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
@@ -217,15 +217,15 @@ export default function HomePage() {
           <AnimatedSection stagger className="flex flex-col gap-6">
             {steps.map((step, i) => (
               <AnimatedItem key={step.title}>
-                <div className="rounded-[2.5rem] border-2 border-[#D4AF37] bg-white px-12 py-10 flex gap-10 items-start">
-                  <span className="font-serif text-[4.125rem] font-normal leading-none text-[#07137B] shrink-0 w-16 text-center">
+                <div className="group rounded-[2.5rem] border-2 border-gold bg-white px-6 py-8 md:px-12 md:py-10 flex gap-6 md:gap-10 items-start transition-shadow duration-300 hover:shadow-[0_12px_40px_rgba(7,19,123,0.10)]">
+                  <span className="font-serif text-[4.125rem] font-normal leading-none text-navy shrink-0 w-16 text-center transition-all duration-300 group-hover:text-gold group-hover:-translate-y-1">
                     {i + 1}
                   </span>
                   <div className="pt-2">
-                    <h3 className="mb-4 font-serif text-lg font-normal text-[#07137B]">
+                    <h3 className="mb-4 font-serif text-lg font-normal text-navy">
                       {step.title}
                     </h3>
-                    <p className="font-sans text-sm leading-[1.9] text-[#07137B]/60">
+                    <p className="font-sans text-sm leading-[1.9] text-navy/65">
                       {step.description}
                     </p>
                   </div>
@@ -236,13 +236,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* 5. POURQUOI */}
       <section id="pourquoi" className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
-            <h2 className="font-serif text-[2rem] font-normal leading-tight text-[#07137B] md:text-[2.75rem]">
+            <h2 className="font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
               Pourquoi les dirigeants me font confiance.
             </h2>
           </AnimatedSection>
@@ -252,10 +252,10 @@ export default function HomePage() {
               <AnimatedItem key={block.title}>
                 <div>
                   <AnimatedLine className="mb-5 w-full" />
-                  <h3 className="mb-4 font-serif text-[1.1875rem] font-normal text-[#07137B]">
+                  <h3 className="mb-4 font-serif text-[1.1875rem] font-normal text-navy">
                     {block.title}
                   </h3>
-                  <p className="font-sans text-sm leading-[1.9] text-[#07137B]/60">
+                  <p className="font-sans text-sm leading-[1.9] text-navy/65">
                     {block.text}
                   </p>
                 </div>
@@ -273,17 +273,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* 6. CONTACT */}
       <section id="contact" className="bg-white py-24 md:py-32 scroll-mt-24">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-              <h2 className="max-w-md font-serif text-[2rem] font-normal leading-tight text-[#07137B] md:text-[2.75rem]">
+              <h2 className="max-w-md font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
                 Contacter Me. Christian Thalinger
               </h2>
-              <p className="max-w-xs font-sans text-sm leading-relaxed text-[#07137B]/55">
+              <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65">
                 Comprendre vos enjeux sans engagement de votre part. Réponse sous 24h du lundi au vendredi, 9h – 18h.
               </p>
             </div>
@@ -319,7 +319,7 @@ export default function HomePage() {
 
             {/* Map */}
             <AnimatedSection delay={0.15}>
-              <div className="h-full min-h-[340px] overflow-hidden rounded-2xl border border-[#07137B]/10">
+              <div className="h-full min-h-[340px] overflow-hidden rounded-2xl border border-navy/10">
                 <iframe
                   src="https://maps.google.com/maps?q=20+Rue+du+Foss%C3%A9+des+Tanneurs%2C+67000+Strasbourg%2C+France&output=embed&z=16"
                   width="100%"
@@ -339,7 +339,7 @@ export default function HomePage() {
             className="mt-20 pt-12 text-center"
             delay={0.1}
           >
-            <blockquote className="mx-auto max-w-[560px] font-sans text-base leading-relaxed text-[#07137B]/60 md:text-[1.0625rem]">
+            <blockquote className="mx-auto max-w-[560px] font-sans text-base leading-relaxed text-navy/65 md:text-[1.0625rem]">
               «&thinsp;Un dossier compris est déjà sécurisé.&thinsp;»
             </blockquote>
           </AnimatedSection>
@@ -364,12 +364,12 @@ function ContactItem({
 }) {
   return (
     <div className="flex flex-col gap-1">
-      <p className="font-serif text-[10px] uppercase tracking-[0.2em] text-[#07137B]/35">
+      <p className="font-serif text-[10px] uppercase tracking-[0.2em] text-navy-muted">
         {label}
       </p>
       <a
         href={href}
-        className="font-sans text-base text-[#07137B] transition-colors hover:text-[#D4AF37]"
+        className="font-sans text-base text-navy inline-block transition-all duration-200 hover:text-gold hover:translate-x-1"
         target={href.startsWith("http") ? "_blank" : undefined}
         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
       >

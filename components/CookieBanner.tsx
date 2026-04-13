@@ -8,6 +8,7 @@ import {
   storeConsent,
   clearConsent,
   loadGA,
+  initConsentMode,
 } from "@/lib/analytics";
 
 // Custom event name used by the footer "Gérer les cookies" button
@@ -18,8 +19,9 @@ export default function CookieBanner() {
   const pathname = usePathname();
   const isEN = pathname.startsWith("/en");
 
-  // On mount: check stored consent
+  // On mount: ensure consent defaults are set, then check stored consent
   useEffect(() => {
+    initConsentMode();
     const consent = getStoredConsent();
     if (consent === "granted") {
       loadGA();
@@ -57,18 +59,18 @@ export default function CookieBanner() {
       role="dialog"
       aria-modal="false"
       aria-label={isEN ? "Cookie consent" : "Consentement aux cookies"}
-      className="fixed bottom-0 inset-x-0 z-[200] border-t-2 border-[#D4AF37] bg-white shadow-xl"
+      className="fixed bottom-0 inset-x-0 z-[200] border-t-2 border-gold bg-white shadow-xl"
     >
       <div className="mx-auto flex max-w-[1200px] flex-col gap-6 px-6 py-6 md:flex-row md:items-center md:justify-between md:gap-10">
 
         {/* Text */}
         <div className="flex-1">
-          <p className="mb-1 font-serif text-[0.9375rem] font-normal text-[#07137B]">
+          <p className="mb-1 font-serif text-[0.9375rem] font-normal text-navy">
             {isEN
               ? "This site uses cookies for audience analytics (Google Analytics)."
               : "Ce site utilise des cookies pour mesurer l'audience (Google Analytics)."}
           </p>
-          <p className="font-sans text-[0.8125rem] leading-relaxed text-[#07137B]/60">
+          <p className="font-sans text-[0.8125rem] leading-relaxed text-navy/65">
             {isEN ? (
               <>
                 Analytics cookies are only activated with your consent.{" "}
@@ -76,7 +78,7 @@ export default function CookieBanner() {
                   href="/en/politique-de-confidentialite"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline underline-offset-2 hover:text-[#07137B]"
+                  className="underline underline-offset-2 hover:text-navy"
                 >
                   Privacy policy
                 </Link>
@@ -88,7 +90,7 @@ export default function CookieBanner() {
                   href="/politique-de-confidentialite"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline underline-offset-2 hover:text-[#07137B]"
+                  className="underline underline-offset-2 hover:text-navy"
                 >
                   Politique de confidentialité
                 </Link>
@@ -102,7 +104,7 @@ export default function CookieBanner() {
           {/* Refuse — outlined, equally prominent */}
           <button
             onClick={deny}
-            className="inline-flex items-center justify-center rounded-full border-2 border-[#07137B] bg-white px-6 py-3 font-serif text-[0.75rem] uppercase tracking-[0.14em] text-[#07137B] transition-all duration-200 hover:border-[#D4AF37] active:border-[#D4AF37]"
+            className="inline-flex items-center justify-center rounded-full border-2 border-navy bg-white px-6 py-3 font-serif text-[0.75rem] uppercase tracking-[0.14em] text-navy transition-all duration-200 hover:border-gold active:border-gold"
           >
             {isEN ? "Refuse" : "Refuser"}
           </button>
@@ -110,7 +112,7 @@ export default function CookieBanner() {
           {/* Accept — filled */}
           <button
             onClick={accept}
-            className="inline-flex items-center justify-center rounded-full border-2 border-[#D4AF37] bg-[#07137B] px-6 py-3 font-serif text-[0.75rem] uppercase tracking-[0.14em] text-white transition-all duration-200 hover:bg-[#020628]"
+            className="inline-flex items-center justify-center rounded-full border-2 border-gold bg-navy px-6 py-3 font-serif text-[0.75rem] uppercase tracking-[0.14em] text-white transition-all duration-200 hover:bg-dark"
           >
             {isEN ? "Accept" : "Accepter"}
           </button>

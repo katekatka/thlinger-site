@@ -27,13 +27,13 @@ export default function HonorairesPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-[#07137B]/45">
+            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Honoraires
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-[#07137B] md:text-[3.75rem]">
+            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
               La clarté commence<br className="hidden md:block" /> par le prix.
             </h1>
-            <p className="max-w-2xl font-sans text-base leading-[1.85] text-[#07137B]/65 md:text-[1.0625rem]">
+            <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Les honoraires sont librement fixés entre les parties en fonction de la complexité du dossier.
               Cette question est abordée dès le premier rendez-vous, en toute transparence.
             </p>
@@ -41,10 +41,10 @@ export default function HonorairesPage() {
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* 2. PRINCIPES — navy */}
-      <section className="bg-[#07137B] py-24 md:py-32">
+      <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
@@ -59,11 +59,11 @@ export default function HonorairesPage() {
           <AnimatedSection stagger className="grid gap-6 md:grid-cols-3">
             {principes.map((p) => (
               <AnimatedItem key={p.title}>
-                <div className="flex h-full flex-col rounded-[2.5rem] border-2 border-[#D4AF37] bg-white p-8 md:p-10">
-                  <h3 className="mb-4 font-serif text-lg font-normal text-[#07137B]">
+                <div className="flex h-full flex-col rounded-[2.5rem] border-2 border-gold bg-white p-8 md:p-10">
+                  <h3 className="mb-4 font-serif text-lg font-normal text-navy">
                     {p.title}
                   </h3>
-                  <p className="font-sans text-sm leading-[1.9] text-[#07137B]/60">
+                  <p className="font-sans text-sm leading-[1.9] text-navy/65">
                     {p.text}
                   </p>
                 </div>
@@ -73,17 +73,17 @@ export default function HonorairesPage() {
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* 3. CONVENTION */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl">
-              <h2 className="mb-8 font-serif text-[2rem] font-normal leading-tight text-[#07137B] md:text-[2.75rem]">
+              <h2 className="mb-8 font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
                 Convention d&apos;honoraires
               </h2>
-              <p className="font-sans text-base leading-[1.85] text-[#07137B]/65 md:text-[1.0625rem]">
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
                 Conformément aux règles de la profession, une convention d&apos;honoraires est
                 systématiquement établie avant toute intervention. Elle détaille le périmètre,
                 le mode de calcul et les conditions de facturation.
@@ -93,24 +93,24 @@ export default function HonorairesPage() {
         </div>
       </section>
 
-      <div className="bg-[#D4AF37]" style={{ height: "2px" }} />
+      <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* 4. PREMIER ÉCHANGE */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl">
-              <h2 className="mb-8 font-serif text-[2rem] font-normal leading-tight text-[#07137B] md:text-[2.75rem]">
+              <h2 className="mb-8 font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
                 Premier échange
               </h2>
-              <p className="mb-12 font-sans text-base leading-[1.85] text-[#07137B]/65 md:text-[1.0625rem]">
+              <p className="mb-12 font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
                 Le premier contact est sans engagement de votre part et a pour objectif de comprendre
                 votre situation et d&apos;évaluer si je peux vous aider efficacement. Les modalités
                 sont précisées lors de la prise de rendez-vous.
               </p>
               <a
                 href="/#contact"
-                className="group inline-flex items-center gap-3 rounded-full border-2 border-[#D4AF37] bg-[#07137B] px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-[#020628] hover:gap-5"
+                className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
                 style={{ color: "#ffffff" }}
               >
                 Parlons de votre situation

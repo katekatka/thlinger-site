@@ -5,6 +5,7 @@ declare global {
     dataLayer: unknown[];
     gtag: (...args: unknown[]) => void;
     __gaLoaded?: boolean;
+    __consentInit?: boolean;
   }
 }
 
@@ -33,25 +34,56 @@ export function clearConsent(): void {
   localStorage.removeItem(STORAGE_KEY);
 }
 
+// ─── Consent Mode v2 ─────────────────────────────────────────────────────────
+
+/**
+ * Initialises the gtag stub and sets Consent Mode v2 defaults to denied.
+ * Must be called once — before any GA script loads — so GA never fires
+ * cookies without explicit user consent.
+ */
+export function initConsentMode(): void {
+  if (typeof window === "undefined" || window.__consentInit) return;
+  window.__consentInit = true;
+
+  window.dataLayer = window.dataLayer || [];
+  if (!window.gtag) {
+    window.gtag = function gtag(...args: unknown[]) {
+      window.dataLayer.push(args);
+    };
+  }
+
+  window.gtag("consent", "default", {
+    analytics_storage: "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    wait_for_update: 500,
+  });
+}
+
 // ─── GA loader ────────────────────────────────────────────────────────────────
 
 /**
- * Dynamically injects the GA script and initialises gtag.
+ * Updates consent to granted and dynamically injects the GA4 script.
  * Safe to call multiple times — runs only once per page session.
  */
 export function loadGA(): void {
-  if (!GA_ID || typeof window === "undefined" || window.__gaLoaded) return;
+  if (!GA_ID || typeof window === "undefined") return;
+
+  // Ensure the stub + default-denied are set before we update consent
+  initConsentMode();
+
+  // Update consent state to granted
+  window.gtag("consent", "update", {
+    analytics_storage: "granted",
+  });
+
+  // Inject the GA4 script only once
+  if (window.__gaLoaded) return;
   window.__gaLoaded = true;
 
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
-  };
   window.gtag("js", new Date());
-  window.gtag("config", GA_ID, {
-    anonymize_ip: true,          // extra GDPR safeguard
-    cookie_flags: "SameSite=None;Secure",
-  });
+  window.gtag("config", GA_ID);
 
   const script = document.createElement("script");
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
