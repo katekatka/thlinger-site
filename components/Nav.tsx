@@ -148,7 +148,7 @@ export default function Nav() {
 
             {/* Contact CTA */}
             <a
-              href={isEN ? "/en#contact" : "#contact"}
+              href={isEN ? "/en#contact" : "/#contact"}
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97] hover:text-white"
               style={{ color: "#ffffff" }}
             >
@@ -240,7 +240,7 @@ export default function Nav() {
 
                 {/* Contact — same list style, gold */}
                 <a
-                  href={isEN ? "/en#contact" : "#contact"}
+                  href={isEN ? "/en#contact" : "/#contact"}
                   onClick={() => setOpen(false)}
                   style={{ fontFamily: "var(--font-playfair)" }}
                   className="flex min-h-[56px] items-center border-b-2 border-gold/40 text-[2rem] font-normal text-gold transition-colors duration-150 active:text-white"
