@@ -2,6 +2,8 @@ import Link from "next/link";
 import HeroSectionEn from "@/components/HeroSectionEn";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 import { AnimatedLine } from "@/components/AnimatedLine";
+import { AnimatedCardBorder } from "@/components/AnimatedCardBorder";
+import { StepsSection } from "@/components/StepsSection";
 
 // ─── Data ──────────────────────────────────────────────────────────────────────
 
@@ -162,8 +164,9 @@ export default function HomePageEN() {
               <AnimatedItem key={svc.title}>
                 <Link
                   href={svc.href}
-                  className="group flex h-full flex-col justify-between rounded-[2.5rem] border-2 border-gold bg-navy p-12 transition-all duration-300 hover:bg-dark hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(7,19,123,0.22)]"
+                  className="group relative flex h-full flex-col justify-between rounded-[2.5rem] bg-navy p-12 transition-all duration-300 hover:bg-dark hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(7,19,123,0.22)]"
                 >
+                  <AnimatedCardBorder />
                   <div className="flex-1">
                     <h3 className="mb-3 font-serif text-xl font-normal text-white">
                       {svc.title}
@@ -202,25 +205,7 @@ export default function HomePageEN() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="flex flex-col gap-6">
-            {steps.map((step, i) => (
-              <AnimatedItem key={step.title}>
-                <div className="group rounded-[2.5rem] border-2 border-gold bg-white px-6 py-8 md:px-12 md:py-10 flex gap-6 md:gap-10 items-start transition-shadow duration-300 hover:shadow-[0_12px_40px_rgba(7,19,123,0.10)]">
-                  <span className="font-serif text-[4.125rem] font-normal leading-none text-navy shrink-0 w-16 text-center transition-all duration-300 group-hover:text-gold group-hover:-translate-y-1">
-                    {i + 1}
-                  </span>
-                  <div className="pt-2">
-                    <h3 className="mb-4 font-serif text-lg font-normal text-navy">
-                      {step.title}
-                    </h3>
-                    <p className="font-sans text-sm leading-[1.9] text-navy/65">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-              </AnimatedItem>
-            ))}
-          </AnimatedSection>
+          <StepsSection steps={steps} />
         </div>
       </section>
 

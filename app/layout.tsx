@@ -21,8 +21,39 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://thalinger-avocat.fr"),
   title: "Christian Thalinger — Avocat d'affaires",
   description: "Site officiel du cabinet de Christian Thalinger, avocat d'affaires à Strasbourg.",
+  icons: {
+    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Christian Thalinger — Avocat d'affaires",
+    description: "Avocat d'affaires à Strasbourg. Conseil stratégique pour les entreprises en Alsace et au-delà.",
+    url: "https://thalinger-avocat.fr",
+    siteName: "Christian Thalinger",
+    images: [
+      {
+        url: "/images/portrait358x253.png",
+        width: 358,
+        height: 253,
+        alt: "Christian Thalinger, Avocat au Barreau de Strasbourg",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Christian Thalinger — Avocat d'affaires",
+    description: "Avocat d'affaires à Strasbourg. Conseil stratégique pour les entreprises en Alsace et au-delà.",
+    images: ["/images/portrait358x253.png"],
+  },
 };
 
 export default function RootLayout({
