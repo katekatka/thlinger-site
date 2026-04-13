@@ -203,7 +203,7 @@ export default function Nav() {
                     alt="Christian Thalinger logo"
                     width={42}
                     height={42}
-                    className="object-contain"
+                    className="object-contain brightness-0 invert"
                   />
                   <span
                     style={{ fontFamily: "var(--font-playfair)" }}
