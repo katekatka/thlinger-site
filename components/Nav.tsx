@@ -115,7 +115,7 @@ export default function Nav() {
                 href={link.href}
                 aria-current={linkIsActive(link.href) ? "page" : undefined}
                 style={{ fontFamily: "var(--font-playfair)" }}
-                className="relative pb-[3px] text-[0.875rem] font-normal text-navy/70 transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:text-dark hover:after:w-full"
+                className="relative pb-[3px] text-[0.875rem] font-normal text-navy/70 transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:text-dark hover:after:w-full"
               >
                 {link.label}
               </Link>
@@ -232,7 +232,7 @@ export default function Nav() {
                     onClick={() => setOpen(false)}
                     aria-current={linkIsActive(link.href) ? "page" : undefined}
                     style={{ fontFamily: "var(--font-playfair)" }}
-                    className="flex min-h-[56px] items-center border-b border-white/10 text-[2rem] font-normal text-parchment transition-colors duration-150 active:text-gold"
+                    className="flex min-h-[56px] items-center border-b-2 border-gold/40 text-[2rem] font-normal text-white transition-colors duration-150 active:text-gold"
                   >
                     {link.label}
                   </Link>
@@ -243,7 +243,7 @@ export default function Nav() {
                   href={isEN ? "/en#contact" : "#contact"}
                   onClick={() => setOpen(false)}
                   style={{ fontFamily: "var(--font-playfair)" }}
-                  className="flex min-h-[56px] items-center border-b border-white/10 text-[2rem] font-normal text-gold transition-colors duration-150 active:text-white"
+                  className="flex min-h-[56px] items-center border-b-2 border-gold/40 text-[2rem] font-normal text-gold transition-colors duration-150 active:text-white"
                 >
                   {isEN ? "Contact" : "Contacter"}
                 </a>

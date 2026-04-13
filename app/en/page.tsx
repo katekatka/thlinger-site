@@ -2,7 +2,6 @@ import Link from "next/link";
 import HeroSectionEn from "@/components/HeroSectionEn";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 import { AnimatedLine } from "@/components/AnimatedLine";
-import { AnimatedCardBorder } from "@/components/AnimatedCardBorder";
 import { StepsSection } from "@/components/StepsSection";
 
 // ─── Data ──────────────────────────────────────────────────────────────────────
@@ -166,7 +165,6 @@ export default function HomePageEN() {
                   href={svc.href}
                   className="group relative flex h-full flex-col justify-between rounded-[2.5rem] bg-navy p-12 transition-all duration-300 hover:bg-dark hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(7,19,123,0.22)]"
                 >
-                  <AnimatedCardBorder />
                   <div className="flex-1">
                     <h3 className="mb-3 font-serif text-xl font-normal text-white">
                       {svc.title}
