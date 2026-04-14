@@ -30,14 +30,6 @@ export const metadata: Metadata = {
     description: "Avocat d'affaires à Strasbourg. Conseil stratégique pour les entreprises en Alsace et au-delà.",
     url: "https://thalinger-avocat.fr",
     siteName: "Christian Thalinger",
-    images: [
-      {
-        url: "/images/portrait358x253.png",
-        width: 358,
-        height: 253,
-        alt: "Christian Thalinger, Avocat au Barreau de Strasbourg",
-      },
-    ],
     locale: "fr_FR",
     type: "website",
   },
@@ -45,7 +37,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Christian Thalinger — Avocat d'affaires",
     description: "Avocat d'affaires à Strasbourg. Conseil stratégique pour les entreprises en Alsace et au-delà.",
-    images: ["/images/portrait358x253.png"],
   },
 };
 
