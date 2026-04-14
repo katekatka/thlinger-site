@@ -24,13 +24,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://thalinger-avocat.fr"),
   title: "Christian Thalinger — Avocat d'affaires",
   description: "Site officiel du cabinet de Christian Thalinger, avocat d'affaires à Strasbourg.",
-  icons: {
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
-    icon: [
-      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
-    ],
-  },
   manifest: "/site.webmanifest",
   openGraph: {
     title: "Christian Thalinger — Avocat d'affaires",
@@ -57,6 +50,12 @@ export default function RootLayout({
       lang="fr"
       className={`${playfair.variable} ${poppins.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
       <body className="min-h-full bg-white text-dark">
         {/* Consent Mode v2 default-denied stub — must run before any GA script */}
         <Script id="gtag-consent-init" strategy="beforeInteractive">{`
