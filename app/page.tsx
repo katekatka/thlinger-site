@@ -321,7 +321,7 @@ export default function HomePage() {
             className="mt-20 pt-12 text-center"
             delay={0.1}
           >
-            <blockquote className="mx-auto max-w-[560px] font-serif italic text-base leading-relaxed text-navy/65 md:text-[1.0625rem]">
+            <blockquote className="mx-auto max-w-[560px] font-sans text-base leading-relaxed text-navy/65 md:text-[1.0625rem]">
               «&thinsp;Un dossier compris est déjà sécurisé.&thinsp;»
             </blockquote>
           </AnimatedSection>
