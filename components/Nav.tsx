@@ -130,13 +130,13 @@ export default function Nav() {
                     aria-label="Passer en français"
                     className="transition-colors hover:text-dark active:text-dark"
                   >FR</button>
-                  <span aria-hidden="true">|</span>
+                  <span aria-hidden="true" className="inline-block h-3 w-[2px] bg-gold mx-1" />
                   <span aria-label="English — current language" className="text-navy">EN</span>
                 </>
               ) : (
                 <>
                   <span aria-label="Français — langue actuelle" className="text-navy">FR</span>
-                  <span aria-hidden="true">|</span>
+                  <span aria-hidden="true" className="inline-block h-3 w-[2px] bg-gold mx-1" />
                   <button
                     onClick={() => handleLangSwitch()}
                     aria-label="Switch to English"
@@ -259,7 +259,7 @@ export default function Nav() {
                       style={{ fontFamily: "var(--font-poppins)" }}
                       className="flex min-h-[44px] min-w-[44px] items-center justify-center text-base tracking-[0.12em] text-white/50 transition-colors duration-150 hover:text-white active:text-white"
                     >FR</button>
-                    <span className="select-none px-1 text-white/30" aria-hidden="true">|</span>
+                    <span aria-hidden="true" className="inline-block h-4 w-[2px] bg-gold mx-1" />
                     <span
                       aria-label="English — current language"
                       style={{ fontFamily: "var(--font-poppins)" }}
@@ -273,7 +273,7 @@ export default function Nav() {
                       style={{ fontFamily: "var(--font-poppins)" }}
                       className="flex min-h-[44px] min-w-[44px] items-center justify-center text-base tracking-[0.12em] text-white"
                     >FR</span>
-                    <span className="select-none px-1 text-white/30" aria-hidden="true">|</span>
+                    <span aria-hidden="true" className="inline-block h-4 w-[2px] bg-gold mx-1" />
                     <button
                       onClick={() => handleLangSwitch(true)}
                       aria-label="Switch to English"

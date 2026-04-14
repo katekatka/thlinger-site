@@ -73,9 +73,9 @@ export function StepsSection({ steps }: { steps: Step[] }) {
                 }
                 transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                 style={{
-                  color: isDesktop && isHovered
-                    ? "var(--color-gold)"
-                    : "var(--color-navy)",
+                  color: isDesktop
+                    ? (isHovered ? "var(--color-gold)" : "var(--color-navy)")
+                    : "var(--color-gold)",
                   transition: "color 0.3s ease",
                 }}
                 className="font-serif text-[4.125rem] font-normal leading-none shrink-0 w-16 text-center"
