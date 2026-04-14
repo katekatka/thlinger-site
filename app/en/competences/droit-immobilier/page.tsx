@@ -4,12 +4,12 @@ import { AnimatedLine } from "@/components/AnimatedLine";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "COMMERCIAL LEASES",
-  "REAL ESTATE ACQUISITIONS AND DISPOSALS",
-  "REAL ESTATE HOLDING STRUCTURES (SCI)",
-  "CONSTRUCTION LAW",
-  "REAL ESTATE LITIGATION",
-  "COMMERCIAL CO-OWNERSHIP",
+  "Commercial leases",
+  "Real estate acquisitions and disposals",
+  "Real estate holding structures (SCI)",
+  "Construction law",
+  "Real estate litigation",
+  "Commercial co-ownership",
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

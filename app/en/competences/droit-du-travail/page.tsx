@@ -4,12 +4,12 @@ import { AnimatedLine } from "@/components/AnimatedLine";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "EMPLOYMENT CONTRACTS",
-  "DISMISSAL",
-  "COLLECTIVE BARGAINING",
-  "RESTRUCTURING",
-  "EMPLOYMENT LITIGATION",
-  "CROSS-BORDER EMPLOYMENT",
+  "Employment contracts",
+  "Dismissal",
+  "Collective bargaining",
+  "Restructuring",
+  "Employment litigation",
+  "Cross-border employment",
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

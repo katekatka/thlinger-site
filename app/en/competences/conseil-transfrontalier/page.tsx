@@ -4,9 +4,9 @@ import { AnimatedLine } from "@/components/AnimatedLine";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "CROSS-BORDER CONTRACTS",
-  "SUBSIDIARY CREATION",
-  "CROSS-JURISDICTION DISPUTES",
+  "Cross-border contracts",
+  "Subsidiary creation",
+  "Cross-jurisdiction disputes",
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

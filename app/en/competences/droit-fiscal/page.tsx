@@ -4,12 +4,12 @@ import { AnimatedLine } from "@/components/AnimatedLine";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "TAX STRUCTURING",
-  "DEFENSE IN TAX AUDITS",
-  "INTERNATIONAL TAXATION",
+  "Tax structuring",
+  "Defense in tax audits",
+  "International taxation",
   "VAT",
-  "REAL ESTATE TAXATION",
-  "EXECUTIVE COMPENSATION",
+  "Real estate taxation",
+  "Executive compensation",
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

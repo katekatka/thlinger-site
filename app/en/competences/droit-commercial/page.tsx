@@ -4,12 +4,12 @@ import { AnimatedLine } from "@/components/AnimatedLine";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "CONTRACT DRAFTING AND REVIEW",
-  "TERMS AND CONDITIONS AND WEBSITE TERMS OF USE",
-  "DISTRIBUTION AND INTELLECTUAL PROPERTY",
-  "DEBT RECOVERY",
-  "UNFAIR COMPETITION",
-  "COMMERCIAL DISPUTES",
+  "Contract drafting and review",
+  "Terms and conditions and website terms of use",
+  "Distribution and intellectual property",
+  "Debt recovery",
+  "Unfair competition",
+  "Commercial disputes",
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

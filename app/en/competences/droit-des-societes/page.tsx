@@ -4,12 +4,12 @@ import { AnimatedLine } from "@/components/AnimatedLine";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "COMPANY FORMATION",
-  "SHAREHOLDERS' AGREEMENTS",
-  "GOVERNANCE",
-  "MERGERS AND ACQUISITIONS",
-  "TRANSFORMATION",
-  "FAMILY BUSINESS TRANSFERS",
+  "Company formation",
+  "Shareholders' agreements",
+  "Governance",
+  "Mergers and acquisitions",
+  "Transformation",
+  "Family business transfers",
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
