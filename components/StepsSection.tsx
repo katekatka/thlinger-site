@@ -48,9 +48,9 @@ export function StepsSection({ steps }: { steps: Step[] }) {
         const visible     = ivs[i];
         const nextVisible = ivs[i + 1] ?? false;
 
-        // Mobile: scroll-based opacity
-        const mobileOpacity = nextVisible ? 0.1 : visible ? 1 : 0;
-        const mobileScale   = visible ? 1 : 0.6;
+        // Mobile: scroll-based color, always full opacity
+        const mobileScale = visible ? 1 : 0.6;
+        const mobileColor = visible && !nextVisible ? "var(--color-gold)" : "var(--color-navy)";
 
         // Desktop: always full opacity, gold on hover
         const isHovered = hoveredIndex === i;
@@ -65,17 +65,17 @@ export function StepsSection({ steps }: { steps: Step[] }) {
             >
               {/* Animated step number */}
               <motion.span
-                initial={{ opacity: 0, scale: 0.6 }}
+                initial={{ opacity: 1, scale: 0.6 }}
                 animate={
                   isDesktop
                     ? { opacity: 1, scale: 1 }
-                    : { opacity: mobileOpacity, scale: mobileScale }
+                    : { opacity: 1, scale: mobileScale }
                 }
                 transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                 style={{
                   color: isDesktop
                     ? (isHovered ? "var(--color-gold)" : "var(--color-navy)")
-                    : "var(--color-gold)",
+                    : mobileColor,
                   transition: "color 0.3s ease",
                 }}
                 className="font-serif text-[4.125rem] font-normal leading-none shrink-0 w-16 text-center"
