@@ -24,7 +24,7 @@ export default function DroitFiscalPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Droit Fiscal
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
               Sécuriser et structurer vos<br className="hidden md:block" /> décisions fiscales.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
@@ -43,7 +43,7 @@ export default function DroitFiscalPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
-              <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
+              <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
                 Optimiser dans les règles, anticiper le contrôle fiscal.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
@@ -68,7 +68,7 @@ export default function DroitFiscalPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
-            <h2 className="font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
               Interventions
             </h2>
           </AnimatedSection>
@@ -78,7 +78,7 @@ export default function DroitFiscalPage() {
               <AnimatedItem key={item}>
                 <div>
                   <AnimatedLine className="mb-5 w-full" />
-                  <p className="font-sans text-sm leading-[1.9] text-navy/65">{item}</p>
+                  <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">{item}</p>
                 </div>
               </AnimatedItem>
             ))}

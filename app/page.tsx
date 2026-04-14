@@ -128,7 +128,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl">
-              <h2 className="mb-8 font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
+              <h2 className="mb-8 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
                 Le juridique ne devrait pas ajouter&nbsp;à la confusion.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/65 md:text-[1.0625rem]">
@@ -150,7 +150,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-              <h2 className="max-w-xl font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+              <h2 className="max-w-xl font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
                 Droit des affaires. Une approche pluridisciplinaire.
               </h2>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65 md:text-right">
@@ -172,7 +172,7 @@ export default function HomePage() {
                     <h3 className="mb-3 font-serif text-xl font-normal text-white">
                       {svc.title}
                     </h3>
-                    <p className="font-sans text-sm leading-relaxed text-white/70">
+                    <p className="font-sans text-[0.9375rem] leading-relaxed text-white/70">
                       {svc.description}
                     </p>
                   </div>
@@ -209,7 +209,7 @@ export default function HomePage() {
       <section id="demarche" className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
-            <h2 className="font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
               Comment je travaille
             </h2>
           </AnimatedSection>
@@ -224,7 +224,7 @@ export default function HomePage() {
       <section id="pourquoi" className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
-            <h2 className="font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
               Pourquoi les dirigeants me font confiance.
             </h2>
           </AnimatedSection>
@@ -234,10 +234,10 @@ export default function HomePage() {
               <AnimatedItem key={block.title}>
                 <div>
                   <AnimatedLine className="mb-5 w-full" />
-                  <h3 className="mb-4 font-serif text-[1.1875rem] font-normal text-navy">
+                  <h3 className="mb-4 font-serif text-lg font-normal text-navy">
                     {block.title}
                   </h3>
-                  <p className="font-sans text-sm leading-[1.9] text-navy/65">
+                  <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
                     {block.text}
                   </p>
                 </div>
@@ -262,7 +262,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-              <h2 className="max-w-md font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+              <h2 className="max-w-md font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
                 Contacter Me. Christian Thalinger
               </h2>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65">
@@ -321,7 +321,7 @@ export default function HomePage() {
             className="mt-20 pt-12 text-center"
             delay={0.1}
           >
-            <blockquote className="mx-auto max-w-[560px] font-sans text-base leading-relaxed text-navy/65 md:text-[1.0625rem]">
+            <blockquote className="mx-auto max-w-[560px] font-serif italic text-base leading-relaxed text-navy/65 md:text-[1.0625rem]">
               «&thinsp;Un dossier compris est déjà sécurisé.&thinsp;»
             </blockquote>
           </AnimatedSection>
@@ -346,7 +346,7 @@ function ContactItem({
 }) {
   return (
     <div className="flex flex-col gap-1">
-      <p className="font-serif text-[10px] uppercase tracking-[0.2em] text-navy-muted">
+      <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-navy-muted">
         {label}
       </p>
       <a

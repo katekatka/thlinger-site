@@ -87,7 +87,7 @@ export function StepsSection({ steps }: { steps: Step[] }) {
                 <h3 className="mb-4 font-serif text-lg font-normal text-navy">
                   {step.title}
                 </h3>
-                <p className="font-sans text-sm leading-[1.9] text-navy/65">
+                <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
                   {step.description}
                 </p>
               </div>

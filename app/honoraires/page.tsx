@@ -30,7 +30,7 @@ export default function HonorairesPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Honoraires
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
               La clarté commence<br className="hidden md:block" /> par le prix.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
@@ -47,7 +47,7 @@ export default function HonorairesPage() {
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
-            <h2 className="font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
               Un cadre clair avant chaque mission.
             </h2>
             <p className="mt-6 max-w-2xl font-sans text-base leading-[1.85] text-white/60 md:text-[1.0625rem]">
@@ -63,7 +63,7 @@ export default function HonorairesPage() {
                   <h3 className="mb-4 font-serif text-lg font-normal text-navy">
                     {p.title}
                   </h3>
-                  <p className="font-sans text-sm leading-[1.9] text-navy/65">
+                  <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
                     {p.text}
                   </p>
                 </div>
@@ -80,7 +80,7 @@ export default function HonorairesPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl">
-              <h2 className="mb-8 font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+              <h2 className="mb-8 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
                 Convention d&apos;honoraires
               </h2>
               <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
@@ -100,7 +100,7 @@ export default function HonorairesPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl">
-              <h2 className="mb-8 font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+              <h2 className="mb-8 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
                 Premier échange
               </h2>
               <p className="mb-12 font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
