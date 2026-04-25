@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
@@ -262,9 +263,18 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-              <h2 className="max-w-md font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-                Contacter Me. Christian Thalinger
-              </h2>
+              <div className="flex items-center gap-5">
+                <Image
+                  src="/images/portrait02.png"
+                  alt="Christian Thalinger, Avocat au Barreau de Strasbourg"
+                  width={100}
+                  height={100}
+                  className="object-contain shrink-0"
+                />
+                <h2 className="max-w-md font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
+                  Contacter Me. Christian Thalinger
+                </h2>
+              </div>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65">
                 Comprendre vos enjeux sans engagement de votre part. Réponse sous 24h du lundi au vendredi, 9h – 18h.
               </p>

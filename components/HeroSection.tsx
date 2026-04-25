@@ -102,7 +102,7 @@ export default function HeroSection() {
       >
         <motion.div variants={itemVariants} className="mb-10">
           <Image
-            src="/images/portrait1.png"
+            src="/images/portrait000.png"
             alt="Christian Thalinger, Avocat au Barreau de Strasbourg"
             width={300}
             height={300}

@@ -90,6 +90,15 @@ export default function Footer() {
                 <p className="text-sm uppercase tracking-[0.15em] text-gold">
                   Contact
                 </p>
+                <div className="mb-5">
+                  <Image
+                    src="/images/portrait03.png"
+                    alt={isEN ? "Christian Thalinger, Attorney" : "Christian Thalinger, Avocat"}
+                    width={72}
+                    height={72}
+                    className="object-contain"
+                  />
+                </div>
                 <div className="space-y-3 text-sm">
                   <Link href="tel:+33637331926" className={linkClass}>
                     +33 6 37 33 19 26

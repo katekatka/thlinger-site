@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import HeroSectionEn from "@/components/HeroSectionEn";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
@@ -247,9 +248,18 @@ export default function HomePageEN() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-              <h2 className="max-w-md font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
-                Contact Christian Thalinger
-              </h2>
+              <div className="flex items-center gap-5">
+                <Image
+                  src="/images/portrait02.png"
+                  alt="Christian Thalinger, Attorney at the Strasbourg Bar"
+                  width={100}
+                  height={100}
+                  className="object-contain shrink-0"
+                />
+                <h2 className="max-w-md font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+                  Contact Christian Thalinger
+                </h2>
+              </div>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65">
                 Understanding your issues with no commitment on your part.
                 Response within 24 hours, Monday to Friday, 9am&nbsp;&ndash;&nbsp;6pm.
