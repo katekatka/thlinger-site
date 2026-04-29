@@ -103,8 +103,8 @@ export default function Footer() {
                   <Link href="tel:+33637331926" className={linkClass}>
                     +33 6 37 33 19 26
                   </Link>
-                  <Link href="mailto:cthalinger@outlook.fr" className={linkClass}>
-                    cthalinger@outlook.fr
+                  <Link href="mailto:christian@thalinger-avocat.fr" className={linkClass}>
+                    christian@thalinger-avocat.fr
                   </Link>
                   <Link
                     href="https://maps.google.com/maps?q=20+Rue+du+Foss%C3%A9+des+Tanneurs+67000+Strasbourg"

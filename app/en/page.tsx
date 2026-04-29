@@ -271,7 +271,7 @@ export default function HomePageEN() {
             <AnimatedSection delay={0.05}>
               <div className="space-y-8">
                 <ContactItem label="Phone" href="tel:+33637331926" value="+33 6 37 33 19 26" />
-                <ContactItem label="Email" href="mailto:cthalinger@outlook.fr?subject=Contact" value="cthalinger@outlook.fr" />
+                <ContactItem label="Email" href="mailto:christian@thalinger-avocat.fr?subject=Contact" value="christian@thalinger-avocat.fr" />
                 <ContactItem
                   label="LinkedIn"
                   href="https://www.linkedin.com/in/christian-thalinger-565446216/"

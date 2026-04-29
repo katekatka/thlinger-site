@@ -58,7 +58,7 @@ export default function PrivacyPolicyPage() {
                 <p className={p}>
                   Christian THALINGER – Attorney at the Strasbourg Bar<br />
                   20 rue du Fossé des Tanneurs, 67000 Strasbourg<br />
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">cthalinger@outlook.fr</a>
+                  <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">christian@thalinger-avocat.fr</a>
                   {" "}–{" "}
                   <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-navy">+33 6 37 33 19 26</a>
                 </p>
@@ -181,8 +181,8 @@ export default function PrivacyPolicyPage() {
                 </ul>
                 <p className={p}>
                   To exercise these rights, send your request to:{" "}
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">
-                    cthalinger@outlook.fr
+                  <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">
+                    christian@thalinger-avocat.fr
                   </a>{" "}
                   or by post to 20 rue du Fossé des Tanneurs, 67000 Strasbourg, enclosing
                   a copy of proof of identity.

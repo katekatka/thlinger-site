@@ -292,8 +292,8 @@ export default function HomePage() {
                 />
                 <ContactItem
                   label="Email"
-                  href="mailto:cthalinger@outlook.fr?subject=Prise%20de%20contact"
-                  value="cthalinger@outlook.fr"
+                  href="mailto:christian@thalinger-avocat.fr?subject=Prise%20de%20contact"
+                  value="christian@thalinger-avocat.fr"
                 />
                 <ContactItem
                   label="LinkedIn"

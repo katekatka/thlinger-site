@@ -50,7 +50,7 @@ export default function MentionsLegalesPage() {
                 <p className={p}>
                   <strong className="text-navy">Propriétaire du site :</strong> Christian THALINGER –
                   Contact :{" "}
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">cthalinger@outlook.fr</a>
+                  <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">christian@thalinger-avocat.fr</a>
                   {" "}
                   <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-navy">+33 6 37 33 19 26</a>
                   {" "}– Adresse : 20 rue du Fossé des Tanneurs, 67000 Strasbourg.
@@ -67,7 +67,7 @@ export default function MentionsLegalesPage() {
                 <p className={p}>
                   <strong className="text-navy">Directeur de la publication :</strong> Christian THALINGER –
                   Contact :{" "}
-                  <a href="mailto:cthalinger@outlook.fr" className="underline underline-offset-2 hover:text-navy">cthalinger@outlook.fr</a>.
+                  <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">christian@thalinger-avocat.fr</a>.
                 </p>
                 <p className={p}>
                   <strong className="text-navy">Hébergeur :</strong> OVH SAS – 2 rue Kellermann,
