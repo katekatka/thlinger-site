@@ -71,6 +71,11 @@ export default function RootLayout({
           });
           window.__consentInit = true;
         `}</Script>
+        <Script
+          src="https://webvisor.xyz/api/tracker.js?tid=8c9a84c0-ad08-4c34-82b4-0270ac80c308"
+          strategy="afterInteractive"
+          async
+        />
         <Nav />
         <main className="flex-1 pt-[96px]">{children}</main>
         <Footer />
