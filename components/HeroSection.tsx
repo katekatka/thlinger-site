@@ -2,17 +2,18 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const containerVariants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.13, delayChildren: 0.15 } },
+  visible: { transition: { staggerChildren: 0.11, delayChildren: 0.15 } },
 };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 22 },
   visible: {
-    opacity: 1, y: 0,
+    opacity: 1,
+    y: 0,
     transition: {
       duration: 0.75,
       ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
@@ -20,126 +21,173 @@ const itemVariants = {
   },
 };
 
-// Animate a single path: sweep in, then sweep out in the same direction
-function runSnake(el: SVGPathElement, delay: number) {
-  const len = el.getTotalLength();
+const disciplines = [
+  "commercial",
+  "immobilier",
+  "de la construction",
+  "bancaire et financier",
+  "des sociétés",
+  "social",
+  "de la sécurité sociale",
+];
 
-  // dasharray = "len len" → one dash + one gap, both equal to path length
-  // dashoffset starts at +len (dash is fully before the path = invisible)
-  // animates to 0 (dash covers the path = fully drawn)
-  // animates to -len (dash is fully past the path = invisible again)
-  el.style.strokeDasharray  = `${len} ${len}`;
-  el.style.strokeDashoffset = `${len}`;
+function useTypewriter(words: string[]) {
+  const [displayText, setDisplayText] = useState("");
+  const [wordIndex, setWordIndex]     = useState(0);
+  const [isDeleting, setIsDeleting]   = useState(false);
+  const [cursorOn, setCursorOn]       = useState(true);
 
-  el.animate(
-    [
-      // start: invisible, leading edge at path start
-      { strokeDashoffset: `${len}`,  easing: "cubic-bezier(0.22, 1, 0.36, 1)" },
-      // peak: fully drawn
-      { strokeDashoffset: "0",       easing: "cubic-bezier(0.55, 0, 0.8, 0.45)" },
-      // end: invisible, trailing edge past path end
-      { strokeDashoffset: `${-len}` },
-    ],
-    {
-      duration: 2600,
-      delay,
-      fill: "both",
+  useEffect(() => {
+    const current = words[wordIndex % words.length];
+    const speed   = isDeleting ? 35 : 75;
+    let t: ReturnType<typeof setTimeout>;
+
+    if (!isDeleting && displayText === current) {
+      t = setTimeout(() => setIsDeleting(true), 1800);
+    } else if (isDeleting && displayText === "") {
+      t = setTimeout(() => {
+        setIsDeleting(false);
+        setWordIndex((i) => (i + 1) % words.length);
+      }, 350);
+    } else {
+      t = setTimeout(() => {
+        setDisplayText(
+          isDeleting
+            ? current.slice(0, displayText.length - 1)
+            : current.slice(0, displayText.length + 1)
+        );
+      }, speed);
     }
-  );
+    return () => clearTimeout(t);
+  }, [displayText, isDeleting, wordIndex, words]);
+
+  useEffect(() => {
+    const iv = setInterval(() => setCursorOn((v) => !v), 530);
+    return () => clearInterval(iv);
+  }, []);
+
+  return { displayText, cursorOn };
 }
 
 export default function HeroSection() {
-  const leftRef  = useRef<SVGPathElement>(null);
-  const rightRef = useRef<SVGPathElement>(null);
-
-  useEffect(() => {
-    const leftEl  = leftRef.current;
-    const rightEl = rightRef.current;
-    if (!leftEl || !rightEl) return;
-
-    runSnake(leftEl,  100);
-    runSnake(rightEl, 250);
-  }, []);
+  const { displayText, cursorOn } = useTypewriter(disciplines);
 
   return (
+    /*
+      overflow-hidden is the key: the image column fills the same height as the
+      text column (CSS grid stretch), so the portrait ends exactly at the section
+      boundary. The next section paints on top and visually "clips" it.
+    */
     <section
       id="hero"
       className="relative overflow-hidden bg-white"
-      style={{ paddingTop: "5rem", paddingBottom: "6.5rem" }}
+      style={{ paddingTop: "5rem" }}
     >
-      {/* Left arc — hidden on mobile to avoid overlapping content */}
-      <div className="pointer-events-none absolute bottom-0 left-0 hidden md:block" aria-hidden="true">
-        <svg width="310" height="387" viewBox="0 0 310 387"
-          fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            ref={leftRef}
-            d="M309 431V218.319C309 98.5537 211.911 1 92.1455 1H-198"
-            stroke="var(--color-navy)" strokeWidth="2"
-            strokeDasharray="9999" strokeDashoffset="9999"
-          />
-        </svg>
-      </div>
-
-      {/* Right arc — hidden on mobile */}
-      <div className="pointer-events-none absolute right-0 top-0 hidden md:block" aria-hidden="true">
-        <svg width="310" height="400" viewBox="0 0 310 400"
-          fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            ref={rightRef}
-            d="M1 -31V181.681C1 301.446 98.0891 399 217.854 399H508"
-            stroke="var(--color-navy)" strokeWidth="2"
-            strokeDasharray="9999" strokeDashoffset="9999"
-          />
-        </svg>
-      </div>
-
-      {/* Content */}
       <motion.div
-        className="relative mx-auto flex max-w-[1200px] flex-col items-center px-6 text-center"
+        className="relative mx-auto grid max-w-[1200px] grid-cols-1 px-6 md:grid-cols-[1fr_530px]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <motion.div variants={itemVariants} className="mb-10">
+        {/* ── Text column ── */}
+        <div className="flex flex-col pb-16 md:pb-28">
+
+          {/* Label — "HONORAIRES" style */}
+          <motion.p
+            variants={itemVariants}
+            className="font-sans uppercase"
+            style={{
+              fontSize: "11px",
+              letterSpacing: "0.22em",
+              color: "var(--color-navy-muted)",
+              marginBottom: "1.75rem",
+            }}
+          >
+            avocat d&apos;affaires à Strasbourg
+          </motion.p>
+
+          {/* H1 */}
+          <motion.h1
+            variants={itemVariants}
+            className="font-serif font-normal leading-tight text-navy"
+            style={{
+              fontSize: "clamp(2.4rem, 4.5vw, 3.75rem)",
+              marginBottom: "2rem",
+            }}
+          >
+            <span style={{ display: "block" }}>Avocat en droit</span>
+            <span style={{ display: "block" }}>
+              <span style={{ color: "var(--color-navy)" }}>
+                {displayText}
+                <span
+                  aria-hidden="true"
+                  style={{
+                    display: "inline-block",
+                    width: "3px",
+                    height: "0.82em",
+                    backgroundColor: "var(--color-navy)",
+                    marginLeft: "3px",
+                    verticalAlign: "middle",
+                    opacity: cursorOn ? 1 : 0,
+                    transition: "opacity 0.08s",
+                  }}
+                />
+              </span>
+            </span>
+          </motion.h1>
+
+          {/* Description */}
+          <motion.p
+            variants={itemVariants}
+            className="font-sans leading-relaxed"
+            style={{
+              fontSize: "0.9375rem",
+              color: "var(--color-navy-muted)",
+              maxWidth: "520px",
+              marginBottom: "2.5rem",
+            }}
+          >
+            Fort d&apos;une expérience en conseil auprès d&apos;entreprises et de
+            particuliers, j&apos;aide mes clients à sécuriser leurs décisions
+            stratégiques.
+          </motion.p>
+
+          {/* CTA */}
+          <motion.div variants={itemVariants}>
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
+              style={{ color: "#ffffff" }}
+            >
+              Contacter
+              <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
+                className="transition-transform duration-300 group-hover:translate-x-1">
+                <path d="M1 5H15M15 5L11 1M15 5L11 9"
+                  stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          </motion.div>
+        </div>
+
+        {/* ── Image column ──
+            Desktop: grid stretches this column to match the text column height.
+                     The image fills that space with object-contain + object-bottom,
+                     so the portrait "stands" at the bottom edge of the hero section.
+                     overflow-hidden on the section does the clipping.
+            Mobile:  explicit height, image shown below text, anchored to top
+                     so the face/upper body is visible.
+        */}
+        <motion.div
+          variants={itemVariants}
+          className="relative h-[300px] w-full md:h-auto"
+        >
           <Image
-            src="/images/portrait000.png"
+            src="/images/hero1.png"
             alt="Christian Thalinger, Avocat au Barreau de Strasbourg"
-            width={300}
-            height={300}
-            className="object-cover"
+            fill
+            className="object-contain object-left-top md:object-bottom"
             priority
           />
-        </motion.div>
-
-        <motion.p variants={itemVariants}
-          className="mb-8 font-serif text-[11px] uppercase tracking-[0.2em] text-navy/65">
-          Avocat au Barreau de Strasbourg
-        </motion.p>
-
-        <motion.h1 variants={itemVariants}
-          className="mb-8 font-serif font-normal leading-none text-navy"
-          style={{ fontSize: "clamp(2.6rem, 7.5vw, 4.875rem)" }}>
-          Christian Thalinger
-        </motion.h1>
-
-        <motion.blockquote variants={itemVariants}
-          className="mb-10 max-w-[560px] font-sans text-base leading-relaxed text-navy/65 md:text-[1.0625rem]">
-          «&thinsp;Je prends le temps de comprendre les enjeux et de traduire le
-          juridique en décisions claires pour le business.&thinsp;»
-        </motion.blockquote>
-
-        <motion.div variants={itemVariants}>
-          <a href="#contact"
-            className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
-            style={{ color: "#ffffff" }}>
-            Contacter
-            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
-              className="transition-transform duration-300 group-hover:translate-x-1">
-              <path d="M1 5H15M15 5L11 1M15 5L11 9"
-                stroke="currentColor" strokeWidth="1.5"
-                strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </a>
         </motion.div>
       </motion.div>
     </section>
