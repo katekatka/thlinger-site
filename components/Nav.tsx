@@ -13,12 +13,14 @@ const navLinksFR = [
   { label: "Accueil",     href: "/#hero" },
   { label: "Compétences", href: "/#competences" },
   { label: "Honoraires",  href: "/honoraires" },
+  { label: "Blog",        href: "/blog" },
 ];
 
 const navLinksEN = [
   { label: "Home",      href: "/en#hero" },
   { label: "Expertise", href: "/en#competences" },
   { label: "Fees",      href: "/en/honoraires" },
+  { label: "Blog",      href: "/en/blog" },
 ];
 
 export default function Nav() {
