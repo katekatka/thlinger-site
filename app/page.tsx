@@ -265,8 +265,8 @@ export default function HomePage() {
                 <Image
                   src="/images/portrait02.png"
                   alt="Christian Thalinger, Avocat au Barreau de Strasbourg"
-                  width={100}
-                  height={100}
+                  width={150}
+                  height={150}
                   className="object-contain shrink-0"
                 />
                 <h2 className="max-w-md font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
