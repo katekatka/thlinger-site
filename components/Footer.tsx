@@ -13,8 +13,6 @@ const skillLinksFR = [
   { label: "Droit Bancaire & Financier",    href: "/competences/droit-bancaire-financier" },
   { label: "Droit des Assurances",          href: "/competences/droit-des-assurances" },
   { label: "Droit Immobilier & Construction", href: "/competences/droit-immobilier-construction" },
-  { label: "Droit Fiscal",                  href: "/competences/droit-fiscal" },
-  { label: "Conseil Transfrontalier",       href: "/competences/conseil-transfrontalier" },
 ];
 
 const skillLinksEN = [
@@ -24,8 +22,6 @@ const skillLinksEN = [
   { label: "Banking & Financial Law",         href: "/en/competences/droit-bancaire-financier" },
   { label: "Insurance Law",                   href: "/en/competences/droit-des-assurances" },
   { label: "Real Estate & Construction Law",  href: "/en/competences/droit-immobilier-construction" },
-  { label: "Tax Law",                         href: "/en/competences/droit-fiscal" },
-  { label: "Cross-border Advisory",           href: "/en/competences/conseil-transfrontalier" },
 ];
 
 const linkClass = "block text-white/50 transition-colors duration-200 hover:text-white active:text-white";

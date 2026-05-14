@@ -44,18 +44,6 @@ const services = [
       "Encadrer vos opérations immobilières, sécuriser vos baux et gérer les contentieux liés à la construction et aux responsabilités des intervenants.",
     href: "/competences/droit-immobilier-construction",
   },
-  {
-    title: "Droit Fiscal",
-    description:
-      "Optimiser votre charge fiscale, sécuriser vos montages et vous défendre face à l'administration fiscale en cas de contrôle ou de contentieux.",
-    href: "/competences/droit-fiscal",
-  },
-  {
-    title: "Conseil Transfrontalier",
-    description:
-      "Accompagner les dirigeants et entreprises dans leurs opérations à dimension internationale, notamment franco-allemande et franco-suisse.",
-    href: "/competences/conseil-transfrontalier",
-  },
 ];
 
 const steps = [

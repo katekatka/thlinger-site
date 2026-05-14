@@ -60,18 +60,6 @@ const pages: PageDef[] = [
     priority: 0.9,
     changeFrequency: "monthly",
   },
-  {
-    path: "/competences/droit-fiscal",
-    enPath: "/en/competences/droit-fiscal",
-    priority: 0.9,
-    changeFrequency: "monthly",
-  },
-  {
-    path: "/competences/conseil-transfrontalier",
-    enPath: "/en/competences/conseil-transfrontalier",
-    priority: 0.9,
-    changeFrequency: "monthly",
-  },
 
   // Fees — high-intent page
   {
