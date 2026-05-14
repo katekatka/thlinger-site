@@ -44,6 +44,18 @@ const services = [
       "Structure your real estate transactions, secure your leases and handle disputes relating to construction and contractor liability.",
     href: "/en/competences/droit-immobilier-construction",
   },
+  {
+    title: "Tax Law",
+    description:
+      "Optimise your tax position, secure your structures and defend your interests against the tax authorities in the event of an audit or dispute.",
+    href: "/en/competences/droit-fiscal",
+  },
+  {
+    title: "Cross-border Advisory",
+    description:
+      "Supporting directors and businesses in their cross-border operations, with a focus on Franco-German and Franco-Swiss matters.",
+    href: "/en/competences/conseil-transfrontalier",
+  },
 ];
 
 const steps = [
