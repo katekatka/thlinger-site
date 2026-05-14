@@ -11,38 +11,38 @@ const services = [
   {
     title: "Droit des Sociétés",
     description:
-      "Structurer, gouverner et protéger votre entreprise de la création à la transmission.",
+      "Structurer, gouverner et sécuriser votre entreprise à chaque étape de son développement, de la création aux relations entre associés.",
     href: "/competences/droit-des-societes",
   },
   {
     title: "Droit Commercial",
     description:
-      "Sécuriser vos contrats, vos partenariats et vos relations commerciales.",
+      "Sécuriser vos contrats, prévenir les conflits commerciaux et protéger votre activité face aux impayés, ruptures ou procédures collectives.",
     href: "/competences/droit-commercial",
   },
   {
-    title: "Droit du Travail",
+    title: "Droit Social",
     description:
-      "Recruter, gérer et restructurer votre équipe sur des bases juridiques solides.",
-    href: "/competences/droit-du-travail",
+      "Gérer vos relations de travail, anticiper les risques sociaux et sécuriser votre entreprise en matière de droit du travail, URSSAF et sécurité sociale.",
+    href: "/competences/droit-social",
   },
   {
-    title: "Conseil Transfrontalier",
+    title: "Droit Bancaire & Financier",
     description:
-      "Pour les entreprises des deux côtés du Rhin : un avocat qui connaît les réalités françaises de l'intérieur.",
-    href: "/competences/conseil-transfrontalier",
+      "Sécuriser vos financements, gérer les litiges bancaires et défendre vos intérêts face aux établissements de crédit et intermédiaires financiers.",
+    href: "/competences/droit-bancaire-financier",
   },
   {
-    title: "Droit Immobilier",
+    title: "Droit des Assurances",
     description:
-      "Clarifier et encadrer vos opérations immobilières, pour avancer sans incertitude.",
-    href: "/competences/droit-immobilier",
+      "Clarifier vos garanties, analyser vos contrats et vous accompagner dans les expertises et litiges avec les compagnies d'assurance.",
+    href: "/competences/droit-des-assurances",
   },
   {
-    title: "Droit Fiscal",
+    title: "Droit Immobilier & Construction",
     description:
-      "Transformer la fiscalité en levier d'optimisation, au service de votre croissance.",
-    href: "/competences/droit-fiscal",
+      "Encadrer vos opérations immobilières, sécuriser vos baux et gérer les contentieux liés à la construction et aux responsabilités des intervenants.",
+    href: "/competences/droit-immobilier-construction",
   },
 ];
 
@@ -71,16 +71,16 @@ const steps = [
 
 const trustBlocks = [
   {
-    title: "Un accès direct.",
-    text: "Quand vous appelez, c'est moi qui réponds. Pas un collaborateur différent à chaque fois. La personne qui comprend votre entreprise aujourd'hui est celle qui vous conseille demain.",
+    title: "Prestations sur mesure.",
+    text: "Avant toute analyse juridique, je prends le temps de cerner votre situation concrète : ce qui est en jeu, ce qui est urgent, ce qui peut attendre.",
   },
   {
-    title: "Le langage des affaires.",
-    text: "Je parle P&L, croissance, timing et pression concurrentielle, pas uniquement articles de loi. Le conseil est formulé en résultats business, pas en abstractions juridiques.",
+    title: "Le droit formulé en termes de business.",
+    text: "Dirigeant moi-même, je structure le conseil juridique autour de ce qui compte pour vous : impact financier, calendrier, risque opérationnel. Pas uniquement les textes applicables.",
   },
   {
-    title: "La dimension humaine.",
-    text: "Les situations juridiques complexes portent un poids émotionnel réel. Je comprends cette dimension et je conseille avec précision et empathie.",
+    title: "Un avocat qui connaît votre environnement.",
+    text: "Je connais les réalités économiques locales, les dynamiques entre acteurs, les spécificités du marché alsacien. Mon conseil en tient compte.",
   },
 ];
 
@@ -130,14 +130,12 @@ export default function HomePage() {
           <AnimatedSection>
             <div className="max-w-2xl">
               <h2 className="mb-8 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
-                Le juridique ne devrait pas ajouter&nbsp;à la confusion.
+                Une compréhension réciproque au cœur de la relation client.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/65 md:text-[1.0625rem]">
-                Un avocat qui vous répond directement quand vous appelez.
-                Quelqu&apos;un qui vous connaît vraiment, sans vous réduire à un
-                numéro de dossier. Un interlocuteur impliqué dans la durée, qui
-                comprend votre entreprise et vos priorités, pour que vous
-                puissiez avancer avec certitude.
+                Je mobilise mon expertise et mon sens de l&apos;analyse afin de
+                clarifier les enjeux juridiques et business de mes clients, et de
+                leur permettre de prendre des décisions stratégiques éclairées.
               </p>
             </div>
           </AnimatedSection>
@@ -230,10 +228,10 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="grid gap-8 md:grid-cols-3">
+          <AnimatedSection stagger className="columns-1 gap-x-8 md:columns-3">
             {trustBlocks.map((block) => (
-              <AnimatedItem key={block.title}>
-                <div>
+              <AnimatedItem key={block.title} className="break-inside-avoid">
+                <div className="pb-10">
                   <AnimatedLine className="mb-5 w-full" />
                   <h3 className="mb-4 font-serif text-lg font-normal text-navy">
                     {block.title}
@@ -272,7 +270,7 @@ export default function HomePage() {
                   className="object-contain shrink-0"
                 />
                 <h2 className="max-w-md font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-                  Contacter Me. Christian Thalinger
+                  Contacter Maître THALINGER
                 </h2>
               </div>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65">

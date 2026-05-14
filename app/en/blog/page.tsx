@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import { getPublishedPosts, getPostWithContent } from "@/lib/notion";
-import BlogGrid from "@/components/BlogGrid";
 import { AnimatedSection } from "@/components/AnimatedSection";
-
-export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Blog — Christian Thalinger, Business Lawyer",
@@ -23,18 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function EnBlogIndexPage() {
-  const posts = await getPublishedPosts("EN").catch(() => []);
-
-  const withContent = await Promise.all(
-    posts.map((p) => getPostWithContent(p.slug, "EN"))
-  );
-
-  const postsWithTime = posts.map((p, i) => ({
-    ...p,
-    readingTimeMinutes: withContent[i]?.readingTimeMinutes ?? 1,
-  }));
-
+export default function EnBlogIndexPage() {
   return (
     <>
       {/* HERO */}
@@ -56,23 +41,14 @@ export default async function EnBlogIndexPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* ARTICLES */}
+      {/* PLACEHOLDER */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
-          {postsWithTime.length === 0 ? (
-            <p className="font-sans text-[1rem] text-navy/60 leading-relaxed">
-              English articles are coming soon. In the meantime, you can read our{" "}
-              <a
-                href="/blog"
-                className="text-navy underline underline-offset-2 hover:text-dark transition-colors"
-              >
-                French articles
-              </a>
-              .
+          <AnimatedSection>
+            <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/50">
+              Articles coming soon.
             </p>
-          ) : (
-            <BlogGrid posts={postsWithTime} lang="EN" />
-          )}
+          </AnimatedSection>
         </div>
       </section>
     </>

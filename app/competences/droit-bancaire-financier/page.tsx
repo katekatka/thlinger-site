@@ -5,92 +5,55 @@ import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid"
 
 const interventions = [
   {
-    title: "Company formation",
+    title: "Financement et relations bancaires",
     items: [
-      "Formation of civil and commercial companies",
-      "SARL, SAS and SCI",
-      "Choice of legal structure",
-      "Drafting articles of association",
+      "Octroi et rupture de crédits",
+      "Conditions et négociation des prêts",
+      "Gestion des relations avec les établissements bancaires",
+      "Accompagnement des difficultés de financement",
     ],
   },
   {
-    title: "Articles of association amendments",
+    title: "Fraudes et responsabilité bancaire",
     items: [
-      "Change of registered office",
-      "Amendment of corporate purpose",
-      "Capital increases and reductions",
-      "Updating articles of association",
+      "Fraude bancaire et fraude au président",
+      "Obligation de vigilance du banquier",
+      "Sécurisation des opérations financières",
+      "Responsabilité des établissements bancaires",
     ],
   },
   {
-    title: "Shareholders' agreements",
+    title: "Cautionnement et garanties",
     items: [
-      "Drafting shareholders' agreements",
-      "Governance and allocation of powers",
-      "Exit and pre-emption clauses",
-      "Minority shareholder protection",
+      "Caution solidaire",
+      "Portée et validité des engagements",
+      "Obligation de conseil et d'information",
+      "Contestation des garanties personnelles",
     ],
   },
   {
-    title: "General meetings",
+    title: "Intermédiaires et services financiers",
     items: [
-      "Organising general meetings",
-      "Approval of accounts",
-      "Annual legal secretarial services",
-      "Minutes and formalities",
+      "Prestataires de services d'investissement",
+      "Courtiers en financement",
+      "Intermédiaires en opérations de financement",
+      "Responsabilité des acteurs financiers",
     ],
   },
   {
-    title: "Share transfers",
+    title: "Contentieux bancaire",
     items: [
-      "Transfer of shares and equity interests",
-      "Due diligence and transaction security",
-      "Asset and liability warranties",
-      "Negotiation support",
-    ],
-  },
-  {
-    title: "Shareholder disputes",
-    items: [
-      "Managing shareholder disputes",
-      "Governance deadlocks",
-      "Exclusion of a shareholder",
-      "Corporate litigation",
-    ],
-  },
-  {
-    title: "Company transformation",
-    items: [
-      "Change of legal form",
-      "Conversion from SARL to SAS",
-      "Legal reorganisation of the company",
-      "Governance adaptation",
-    ],
-  },
-  {
-    title: "Business transfer and asset restructuring",
-    items: [
-      "Family business transfers",
-      "Dutreil pact",
-      "Executive estate planning",
-      "Succession planning for business owners",
-      "Capital restructuring and family governance",
-    ],
-  },
-  {
-    title: "Mergers and acquisitions",
-    items: [
-      "Business acquisitions and disposals",
-      "Mergers and restructurings",
-      "Legal due diligence",
-      "Negotiation and transaction security",
+      "Litiges liés aux financements",
+      "Responsabilité contractuelle bancaire",
+      "Défense des entreprises et dirigeants",
+      "Contentieux en droit bancaire et financier",
     ],
   },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function CorporateLawPage() {
+export default function DroitBancaireFinancierPage() {
   return (
     <>
       {/* 1. HERO */}
@@ -98,16 +61,16 @@ export default function CorporateLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Corporate Law
+              Droit Bancaire &amp; Financier
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
-              Building on foundations<br className="hidden md:block" /> that hold.
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
+              Préserver votre capacité<br className="hidden md:block" /> à décider.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              I start by understanding your growth objectives and your risk tolerance.
-              Then I build the legal architecture that serves those objectives. From company
-              formation to mergers and acquisitions and business transfers, each structure
-              is designed to be resilient, not just compliant.
+              Le financement d&apos;une entreprise ne devrait jamais devenir une perte de contrôle.
+              Pourtant, une ligne de crédit suspendue, une garantie personnelle mal négociée ou
+              une relation bancaire qui se dégrade peuvent rapidement fragiliser la trésorerie,
+              ralentir les décisions et créer une pression constante sur le dirigeant.
             </p>
           </AnimatedSection>
         </div>
@@ -115,19 +78,25 @@ export default function CorporateLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXT — navy */}
+      {/* 2. TEXTE — navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
-              <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                Your articles of association are not just a formality.
+              <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
+                Anticiper les tensions avant qu&apos;elles ne bloquent votre activité.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Your company is built on legal structures: articles of association,
-                shareholders&apos; agreements, governance, which are often drafted once and
-                never revisited. Yet these foundations determine who makes decisions,
-                who controls, and how conflicts are resolved.
+                Une entreprise peut être fragilisée bien avant l&apos;apparition de véritables
+                difficultés financières. Une relation bancaire qui se tend, un financement remis
+                en cause ou une garantie personnelle insuffisamment encadrée suffisent parfois à
+                créer une incertitude permanente pour le dirigeant et à ralentir le développement
+                de l&apos;activité. Dans ces situations, le droit bancaire et financier devient un
+                outil de protection et d&apos;anticipation. J&apos;accompagne les entreprises pour
+                sécuriser leurs financements, analyser les risques liés aux engagements bancaires
+                et intervenir dans les situations de contentieux ou de négociation avec les
+                établissements financiers. L&apos;objectif reste le même : protéger l&apos;entreprise
+                contre les déséquilibres financiers et préserver sa capacité d&apos;action à long terme.
               </p>
             </div>
           </AnimatedSection>
@@ -140,7 +109,7 @@ export default function CorporateLawPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
-            <h2 className="font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
               Interventions
             </h2>
           </AnimatedSection>
@@ -156,11 +125,11 @@ export default function CorporateLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <a
-              href="/en#contact"
+              href="/#contact"
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discuss your corporate law matters
+              Discutons de vos enjeux bancaires et financiers
               <svg
                 width="16"
                 height="10"

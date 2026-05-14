@@ -27,7 +27,7 @@ const disciplines = [
   "de la construction",
   "bancaire et financier",
   "des sociétés",
-  "social",
+  "du travail",
   "de la sécurité sociale",
 ];
 

@@ -1,15 +1,117 @@
-import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
-import { AnimatedLine } from "@/components/AnimatedLine";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "Rédaction et révision de contrats",
-  "CGV et CGS",
-  "Distribution et propriété intellectuelle",
-  "Recouvrement de créances",
-  "Concurrence déloyale",
-  "Litiges commerciaux",
+  {
+    title: "Conditions générales de vente CGV",
+    items: [
+      "Encadrement des relations commerciales",
+      "Clauses de responsabilité et de paiement",
+      "Conformité des pratiques commerciales",
+      "Sécurisation des échanges avec les clients",
+    ],
+  },
+  {
+    title: "Conditions générales d'achat CGA",
+    items: [
+      "Relations fournisseurs",
+      "Négociation des conditions contractuelles",
+      "Gestion des risques d'approvisionnement",
+      "Sécurisation des engagements commerciaux",
+    ],
+  },
+  {
+    title: "Conditions générales d'utilisation CGU",
+    items: [
+      "Services et plateformes numériques",
+      "Protection des contenus",
+      "Encadrement des usages en ligne",
+      "Responsabilité des opérateurs",
+    ],
+  },
+  {
+    title: "Contrats commerciaux",
+    items: [
+      "Négociation contractuelle",
+      "Contrats de prestation et de distribution",
+      "Sécurisation des partenariats",
+      "Gestion des risques contractuels",
+    ],
+  },
+  {
+    title: "Distribution et propriété intellectuelle",
+    items: [
+      "Contrats de licence et d'exploitation",
+      "Protection des actifs immatériels",
+      "Valorisation des marques et contenus",
+      "Réseaux de distribution commerciale",
+    ],
+  },
+  {
+    title: "Baux commerciaux",
+    items: [
+      "Relations locatives professionnelles",
+      "Négociation et renouvellement des baux",
+      "Révision des loyers commerciaux",
+      "Litiges locatifs",
+    ],
+  },
+  {
+    title: "Recouvrement et impayés",
+    items: [
+      "Injonctions de payer",
+      "Mesures conservatoires",
+      "Exécution forcée",
+      "Gestion des retards de paiement",
+    ],
+  },
+  {
+    title: "Litiges commerciaux",
+    items: [
+      "Responsabilité contractuelle",
+      "Conflits entre partenaires commerciaux",
+      "Rupture des relations d'affaires",
+      "Défense des intérêts de l'entreprise",
+    ],
+  },
+  {
+    title: "Concurrence déloyale",
+    items: [
+      "Désorganisation commerciale",
+      "Parasitisme économique",
+      "Atteinte à l'image et à la réputation",
+      "Protection des intérêts stratégiques",
+    ],
+  },
+  {
+    title: "Difficultés des entreprises",
+    items: [
+      "Continuité d'activité",
+      "Réorganisation financière et opérationnelle",
+      "Négociation avec les créanciers",
+      "Accompagnement des dirigeants en période de crise",
+    ],
+  },
+  {
+    title: "Mandat ad hoc et conciliation",
+    items: [
+      "Recherche de solutions amiables",
+      "Restructuration des dettes",
+      "Négociation confidentielle avec les créanciers",
+      "Préservation de l'activité de l'entreprise",
+    ],
+  },
+  {
+    title: "Procédures collectives",
+    items: [
+      "Accompagnement des dirigeants",
+      "Déclaration de créances",
+      "Gestion des relations avec les organes de la procédure",
+      "Préservation des actifs et de l'activité",
+    ],
+  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -69,16 +171,7 @@ export default function DroitCommercialPage() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {interventions.map((item) => (
-              <AnimatedItem key={item}>
-                <div>
-                  <AnimatedLine className="mb-5 w-full" />
-                  <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">{item}</p>
-                </div>
-              </AnimatedItem>
-            ))}
-          </AnimatedSection>
+          <InterventionCategoryGrid categories={interventions} />
         </div>
       </section>
 

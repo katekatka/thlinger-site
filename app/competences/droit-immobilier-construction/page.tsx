@@ -1,20 +1,50 @@
-import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
-import { AnimatedLine } from "@/components/AnimatedLine";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "Contrats de travail",
-  "Licenciement",
-  "Négociation collective",
-  "Restructuration",
-  "Contentieux prud'homal",
-  "Emploi transfrontalier",
+  {
+    title: "Construction et responsabilité des constructeurs",
+    items: [
+      "Responsabilité des constructeurs",
+      "Garanties légales et décennales",
+      "Désordres et malfaçons",
+      "Litiges liés aux travaux et chantiers",
+    ],
+  },
+  {
+    title: "Expertises et contentieux techniques",
+    items: [
+      "Expertises amiables et judiciaires",
+      "Évaluation des préjudices",
+      "Assistance lors des opérations d'expertise",
+      "Défense des intérêts en phase contentieuse",
+    ],
+  },
+  {
+    title: "Baux et relations locatives",
+    items: [
+      "Rédaction de baux",
+      "Négociation des relations locatives",
+      "Sécurisation des engagements contractuels",
+      "Gestion des obligations du bailleur et du locataire",
+    ],
+  },
+  {
+    title: "Litiges locatifs et expulsion",
+    items: [
+      "Impayés et inexécution contractuelle",
+      "Résiliation du bail",
+      "Procédures d'expulsion",
+      "Défense des propriétaires et occupants",
+    ],
+  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function DroitDuTravailPage() {
+export default function DroitImmobilierPage() {
   return (
     <>
       {/* 1. HERO */}
@@ -22,15 +52,16 @@ export default function DroitDuTravailPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Droit du Travail
+              Droit Immobilier
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
-              Une sécurité juridique.
+              Sécuriser vos activités,<br className="hidden md:block" /> vos locaux et vos investissements.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Je fournis un conseil proactif : structurer correctement les contrats dès le
-              premier jour, accompagner les réorganisations avant leur annonce, gérer les
-              ruptures avec précision.
+              Chaque acquisition, bail commercial ou opération de construction engage durablement
+              l&apos;activité de l&apos;entreprise. J&apos;accompagne dirigeants, investisseurs et
+              propriétaires pour structurer leurs opérations immobilières, anticiper les risques
+              juridiques et préserver la stabilité de leurs actifs professionnels.
             </p>
           </AnimatedSection>
         </div>
@@ -44,12 +75,13 @@ export default function DroitDuTravailPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Gérer vos équipes sans créer de risque juridique.
+                Acquérir, louer, construire en Alsace, sans mauvaise surprise.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Le droit du travail en France est complexe et en constante évolution. Chaque
-                embauche, chaque licenciement, chaque réorganisation porte des implications
-                juridiques. Ajoutez l&apos;emploi transfrontalier, et la complexité se multiplie.
+                L&apos;immobilier d&apos;entreprise engage bien plus qu&apos;un actif : il conditionne
+                souvent la stabilité et le développement de l&apos;activité. Un bail commercial
+                mal encadré, des malfaçons, un chantier bloqué ou une expertise contestée peuvent
+                rapidement ralentir un projet et créer une pression immédiate sur le dirigeant.
               </p>
             </div>
           </AnimatedSection>
@@ -67,16 +99,7 @@ export default function DroitDuTravailPage() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {interventions.map((item) => (
-              <AnimatedItem key={item}>
-                <div>
-                  <AnimatedLine className="mb-5 w-full" />
-                  <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">{item}</p>
-                </div>
-              </AnimatedItem>
-            ))}
-          </AnimatedSection>
+          <InterventionCategoryGrid categories={interventions} />
         </div>
       </section>
 
@@ -91,7 +114,7 @@ export default function DroitDuTravailPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discutons de vos enjeux en droit du travail
+              Discutons de votre projet immobilier
               <svg
                 width="16"
                 height="10"

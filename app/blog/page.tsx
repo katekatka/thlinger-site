@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import { getPublishedPosts, getPostWithContent } from "@/lib/notion";
-import BlogGrid from "@/components/BlogGrid";
 import { AnimatedSection } from "@/components/AnimatedSection";
-
-export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Blog — Christian Thalinger, Avocat d'affaires",
@@ -23,18 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function BlogIndexPage() {
-  const posts = await getPublishedPosts("FR").catch(() => []);
-
-  const withContent = await Promise.all(
-    posts.map((p) => getPostWithContent(p.slug, "FR"))
-  );
-
-  const postsWithTime = posts.map((p, i) => ({
-    ...p,
-    readingTimeMinutes: withContent[i]?.readingTimeMinutes ?? 1,
-  }));
-
+export default function BlogIndexPage() {
   return (
     <>
       {/* HERO */}
@@ -48,7 +33,8 @@ export default async function BlogIndexPage() {
               Blog
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Articles et actualités rédigés par Maître Christian Thalinger sur le droit des affaires et la pratique juridique.
+              Articles et actualités rédigés par Maître Christian Thalinger sur le droit
+              des affaires et la pratique juridique.
             </p>
           </AnimatedSection>
         </div>
@@ -56,16 +42,14 @@ export default async function BlogIndexPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* ARTICLES */}
+      {/* PLACEHOLDER */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
-          {postsWithTime.length === 0 ? (
-            <p className="font-sans text-[0.95rem] text-navy/50">
-              Aucun article publié pour le moment.
+          <AnimatedSection>
+            <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/50">
+              Les articles seront publiés prochainement.
             </p>
-          ) : (
-            <BlogGrid posts={postsWithTime} lang="FR" />
-          )}
+          </AnimatedSection>
         </div>
       </section>
     </>

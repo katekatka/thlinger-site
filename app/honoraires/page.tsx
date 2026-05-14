@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
+import { FaqAccordion, type FaqGroup } from "@/components/FaqAccordion";
 
 // ─── Data ──────────────────────────────────────────────────────────────────────
 
@@ -15,6 +15,158 @@ const principes = [
   {
     title: "Résultat",
     text: "Honoraires complémentaires correspondant à un pourcentage des gains procurés ou des économies faites grâce à l'action de l'avocat.",
+  },
+];
+
+const faqGroups: FaqGroup[] = [
+  {
+    title: "Fixation et modalités des honoraires",
+    items: [
+      {
+        question: "Comment sont fixés les honoraires du cabinet ?",
+        answer: (
+          <p>
+            Les honoraires sont fixés selon la nature du dossier, sa complexité, le temps
+            consacré et les enjeux économiques ou juridiques de l&apos;intervention. Avant toute
+            mission, une convention d&apos;honoraires est établie afin de préciser le périmètre
+            de l&apos;intervention, le mode de facturation et les conditions financières
+            applicables. Sauf convention contraire, les honoraires sont payables selon un
+            échéancier défini à l&apos;avance.
+          </p>
+        ),
+      },
+      {
+        question: "Quels modes de facturation sont proposés ?",
+        answer: (
+          <>
+            <p className="mb-5">
+              Le cabinet intervient principalement selon quatre modes de facturation :
+            </p>
+            <ul className="space-y-4">
+              <li>
+                <span className="font-semibold text-navy">Le forfait</span>
+                {" "}— pour les missions à périmètre défini comme une création de société,
+                une rédaction de contrat ou un audit juridique ciblé. Le client connaît
+                précisément le coût de l&apos;intervention avant son commencement.
+              </li>
+              <li>
+                <span className="font-semibold text-navy">Le taux horaire</span>
+                {" "}— pour les missions de conseil ou de contentieux dont l&apos;étendue peut
+                évoluer. Le taux appliqué est communiqué dès le départ, avec un suivi
+                transparent et régulier des diligences et du temps consacré.
+              </li>
+              <li>
+                <span className="font-semibold text-navy">L&apos;honoraire de résultat</span>
+                {" "}— qui peut compléter un honoraire fixe lorsqu&apos;un gain obtenu ou une
+                économie réalisée justifie une rémunération complémentaire.
+              </li>
+              <li>
+                <span className="font-semibold text-navy">L&apos;accompagnement récurrent</span>
+                {" "}— pour certaines entreprises ayant besoin d&apos;un suivi juridique régulier
+                et d&apos;un interlocuteur identifié dans la durée. Les modalités
+                d&apos;intervention sont alors adaptées aux besoins opérationnels du dirigeant
+                et de l&apos;entreprise.
+              </li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        question: "Une convention d'honoraires est-elle obligatoire ?",
+        answer: (
+          <p>
+            Oui. Conformément aux règles de la profession d&apos;avocat, une convention
+            d&apos;honoraires est systématiquement conclue avant toute intervention, sauf urgence
+            ou aide juridictionnelle totale. Elle garantit une parfaite transparence sur les
+            modalités d&apos;accompagnement et de facturation.
+          </p>
+        ),
+      },
+      {
+        question: "Les honoraires d'avocat sont-ils soumis à la TVA ?",
+        answer: (
+          <p>
+            Les honoraires d&apos;avocat sont en principe soumis à la TVA au taux de 20&nbsp;% en
+            France. Certaines situations particulières peuvent relever d&apos;un régime spécifique,
+            notamment dans le cadre de l&apos;aide juridictionnelle ou selon le régime fiscal
+            applicable au cabinet.
+          </p>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Prise en charge et aides",
+    items: [
+      {
+        question: "Puis-je bénéficier d'une protection juridique ?",
+        answer: (
+          <>
+            <p className="mb-4">
+              Oui. Le cabinet vérifie systématiquement si le client bénéficie d&apos;une
+              protection juridique susceptible de prendre en charge tout ou partie des
+              honoraires d&apos;avocat. Cette garantie peut être incluse dans un contrat
+              spécifique ou dans certains contrats d&apos;assurance courants (habitation,
+              automobile, responsabilité civile, etc.).
+            </p>
+            <p>
+              Le client reste toujours libre du choix de son avocat : l&apos;assureur ne peut
+              imposer un cabinet ou un professionnel.
+            </p>
+          </>
+        ),
+      },
+      {
+        question: "Acceptez-vous l'aide juridictionnelle ?",
+        answer: (
+          <p>
+            Le cabinet peut intervenir au titre de l&apos;aide juridictionnelle selon la nature
+            du dossier et les conditions d&apos;éligibilité du client. Lorsque l&apos;aide
+            juridictionnelle est partielle, une convention d&apos;honoraires complémentaire est
+            conclue afin de préciser les modalités de facturation restantes.
+          </p>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Organisation de la relation client",
+    items: [
+      {
+        question: "La première consultation est-elle facturée ?",
+        answer: (
+          <p>
+            La consultation unique, lorsqu&apos;elle n&apos;est pas suivie d&apos;une consultation
+            écrite ou d&apos;une procédure, n&apos;est pas facturée. Ce premier échange permet de
+            comprendre la situation, d&apos;identifier les enjeux du dossier et d&apos;orienter
+            le client vers les solutions les plus adaptées.
+          </p>
+        ),
+      },
+      {
+        question: "Les entreprises peuvent-elles bénéficier d'un accompagnement régulier ?",
+        answer: (
+          <p>
+            Oui. Le cabinet accompagne aussi bien les particuliers que les entreprises dans
+            le cadre de missions ponctuelles ou d&apos;un suivi juridique récurrent. Certaines
+            entreprises choisissent un accompagnement régulier afin de sécuriser leurs
+            décisions juridiques, anticiper les risques et bénéficier d&apos;un interlocuteur
+            unique connaissant déjà leur activité et leurs enjeux.
+          </p>
+        ),
+      },
+      {
+        question: "Comment obtenir une estimation des honoraires ?",
+        answer: (
+          <p>
+            Après un premier échange permettant d&apos;analyser la situation et les objectifs
+            du client, le cabinet propose un mode d&apos;intervention adapté ainsi qu&apos;une
+            visibilité claire sur le périmètre de la mission, les modalités de facturation
+            et les conditions financières applicables.
+          </p>
+        ),
+      },
+    ],
   },
 ];
 
@@ -75,27 +227,24 @@ export default function HonorairesPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 3. CONVENTION */}
+      {/* 3. FAQ */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
-          <AnimatedSection>
-            <div className="max-w-2xl">
-              <h2 className="mb-8 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-                Convention d&apos;honoraires
-              </h2>
-              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-                Conformément aux règles de la profession, une convention d&apos;honoraires est
-                systématiquement établie avant toute intervention. Elle détaille le périmètre,
-                le mode de calcul et les conditions de facturation.
-              </p>
-            </div>
+          <AnimatedSection className="mb-16">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
+              Questions fréquentes
+            </h2>
           </AnimatedSection>
+
+          <div className="max-w-3xl">
+            <FaqAccordion groups={faqGroups} />
+          </div>
         </div>
       </section>
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 4. PREMIER ÉCHANGE */}
+      {/* 4. CTA */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>

@@ -1,5 +1,5 @@
-import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
-import { AnimatedLine } from "@/components/AnimatedLine";
+﻿import { AnimatedSection } from "@/components/AnimatedSection";
+import { InterventionGrid } from "@/components/InterventionGrid";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
@@ -71,17 +71,9 @@ export default function TaxLawPage() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {interventions.map((item) => (
-              <AnimatedItem key={item}>
-                <div>
-                  <AnimatedLine className="mb-5 w-full" />
-                  <p className="font-sans text-sm leading-[1.9] text-navy/65">{item}</p>
-                </div>
-              </AnimatedItem>
-            ))}
-          </AnimatedSection>
-        </div>
+          <InterventionGrid items={interventions} />
+
+</div>
       </section>
 
       <div className="bg-gold" style={{ height: "2px" }} />

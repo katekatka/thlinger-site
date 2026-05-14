@@ -5,92 +5,46 @@ import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid"
 
 const interventions = [
   {
-    title: "Company formation",
+    title: "Contrats et garanties d'assurance",
     items: [
-      "Formation of civil and commercial companies",
-      "SARL, SAS and SCI",
-      "Choice of legal structure",
-      "Drafting articles of association",
+      "Analyse et interprétation des contrats d'assurance",
+      "Clauses d'exclusion et limitations de garantie",
+      "Évaluation et détermination du préjudice",
+      "Sécurisation des garanties et des indemnisations",
     ],
   },
   {
-    title: "Articles of association amendments",
+    title: "Assurance des biens et des personnes",
     items: [
-      "Change of registered office",
-      "Amendment of corporate purpose",
-      "Capital increases and reductions",
-      "Updating articles of association",
+      "Assurance de biens",
+      "Assurance de personnes",
+      "Protection des actifs et du patrimoine",
+      "Gestion des sinistres et indemnisations",
     ],
   },
   {
-    title: "Shareholders' agreements",
+    title: "Responsabilité et risques assurantiels",
     items: [
-      "Drafting shareholders' agreements",
-      "Governance and allocation of powers",
-      "Exit and pre-emption clauses",
-      "Minority shareholder protection",
+      "Assurance de responsabilité civile",
+      "Responsabilité professionnelle et risques d'exploitation",
+      "Gestion des risques et des déclarations de sinistre",
+      "Défense des intérêts de l'assuré",
     ],
   },
   {
-    title: "General meetings",
+    title: "Expertises et contentieux",
     items: [
-      "Organising general meetings",
-      "Approval of accounts",
-      "Annual legal secretarial services",
-      "Minutes and formalities",
-    ],
-  },
-  {
-    title: "Share transfers",
-    items: [
-      "Transfer of shares and equity interests",
-      "Due diligence and transaction security",
-      "Asset and liability warranties",
-      "Negotiation support",
-    ],
-  },
-  {
-    title: "Shareholder disputes",
-    items: [
-      "Managing shareholder disputes",
-      "Governance deadlocks",
-      "Exclusion of a shareholder",
-      "Corporate litigation",
-    ],
-  },
-  {
-    title: "Company transformation",
-    items: [
-      "Change of legal form",
-      "Conversion from SARL to SAS",
-      "Legal reorganisation of the company",
-      "Governance adaptation",
-    ],
-  },
-  {
-    title: "Business transfer and asset restructuring",
-    items: [
-      "Family business transfers",
-      "Dutreil pact",
-      "Executive estate planning",
-      "Succession planning for business owners",
-      "Capital restructuring and family governance",
-    ],
-  },
-  {
-    title: "Mergers and acquisitions",
-    items: [
-      "Business acquisitions and disposals",
-      "Mergers and restructurings",
-      "Legal due diligence",
-      "Negotiation and transaction security",
+      "Expertises amiables et judiciaires",
+      "Contestation des refus de garantie",
+      "Négociation avec les compagnies d'assurance",
+      "Contentieux en droit des assurances",
     ],
   },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function CorporateLawPage() {
+export default function DroitDesAssurancesPage() {
   return (
     <>
       {/* 1. HERO */}
@@ -98,16 +52,16 @@ export default function CorporateLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Corporate Law
+              Droit des Assurances
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
-              Building on foundations<br className="hidden md:block" /> that hold.
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
+              Des garanties réellement<br className="hidden md:block" /> protectrices.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              I start by understanding your growth objectives and your risk tolerance.
-              Then I build the legal architecture that serves those objectives. From company
-              formation to mergers and acquisitions and business transfers, each structure
-              is designed to be resilient, not just compliant.
+              Un contrat d&apos;assurance ne se révèle réellement qu&apos;au moment du sinistre.
+              J&apos;accompagne entreprises et dirigeants pour sécuriser leurs garanties, défendre
+              leurs intérêts face aux compagnies d&apos;assurance et éviter qu&apos;un refus
+              d&apos;indemnisation ne fragilise durablement leur activité.
             </p>
           </AnimatedSection>
         </div>
@@ -115,19 +69,24 @@ export default function CorporateLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXT — navy */}
+      {/* 2. TEXTE — navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
-              <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                Your articles of association are not just a formality.
+              <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
+                Sécuriser vos garanties avant le conflit.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Your company is built on legal structures: articles of association,
-                shareholders&apos; agreements, governance, which are often drafted once and
-                never revisited. Yet these foundations determine who makes decisions,
-                who controls, and how conflicts are resolved.
+                Une entreprise pense souvent être protégée jusqu&apos;au jour où un sinistre révèle
+                les limites réelles de son contrat d&apos;assurance. Clause d&apos;exclusion, désaccord
+                sur l&apos;évaluation du préjudice, refus d&apos;indemnisation ou expertise contestée :
+                ces situations peuvent rapidement créer une pression sur la trésorerie, ralentir les
+                décisions et fragiliser la continuité de l&apos;activité. J&apos;accompagne mes clients
+                pour sécuriser leurs garanties, anticiper les risques de contentieux et défendre leurs
+                intérêts face aux compagnies d&apos;assurance, dans le cadre d&apos;expertises amiables,
+                judiciaires ou de litiges en droit des assurances. Mon approche vise un objectif clair :
+                limiter l&apos;impact financier et opérationnel des situations de crise.
               </p>
             </div>
           </AnimatedSection>
@@ -140,7 +99,7 @@ export default function CorporateLawPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
-            <h2 className="font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
               Interventions
             </h2>
           </AnimatedSection>
@@ -156,11 +115,11 @@ export default function CorporateLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <a
-              href="/en#contact"
+              href="/#contact"
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discuss your corporate law matters
+              Discutons de vos enjeux assurantiels
               <svg
                 width="16"
                 height="10"

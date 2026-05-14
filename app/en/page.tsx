@@ -11,38 +11,38 @@ const services = [
   {
     title: "Corporate Law",
     description:
-      "Structuring, governing and protecting your company from creation to transfer.",
+      "Structure, govern and secure your company at every stage of its development, from incorporation to shareholder relations.",
     href: "/en/competences/droit-des-societes",
   },
   {
     title: "Commercial Law",
     description:
-      "Securing your contracts, partnerships and commercial relationships.",
+      "Secure your contracts, prevent commercial disputes and protect your business against unpaid debts, terminations or insolvency proceedings.",
     href: "/en/competences/droit-commercial",
   },
   {
-    title: "Employment Law",
+    title: "Social Law",
     description:
-      "Hiring, managing and restructuring your team on solid legal foundations.",
-    href: "/en/competences/droit-du-travail",
+      "Manage your employment relationships, anticipate social risks and protect your business in matters of employment law, URSSAF and social security.",
+    href: "/en/competences/droit-social",
   },
   {
-    title: "Cross-border Advisory",
+    title: "Banking & Financial Law",
     description:
-      "For companies on both sides of the Rhine: a lawyer who understands French realities from the inside.",
-    href: "/en/competences/conseil-transfrontalier",
+      "Secure your financing, manage banking disputes and defend your interests against credit institutions and financial intermediaries.",
+    href: "/en/competences/droit-bancaire-financier",
   },
   {
-    title: "Real Estate Law",
+    title: "Insurance Law",
     description:
-      "Clarifying and structuring your real estate operations, so you can move forward without uncertainty.",
-    href: "/en/competences/droit-immobilier",
+      "Clarify your coverage, analyse your contracts and support you through expert assessments and disputes with insurance companies.",
+    href: "/en/competences/droit-des-assurances",
   },
   {
-    title: "Tax Law",
+    title: "Real Estate & Construction Law",
     description:
-      "Turning taxation into a lever for optimization, in service of your growth.",
-    href: "/en/competences/droit-fiscal",
+      "Structure your real estate transactions, secure your leases and handle disputes relating to construction and contractor liability.",
+    href: "/en/competences/droit-immobilier-construction",
   },
 ];
 
@@ -71,16 +71,16 @@ const steps = [
 
 const trustBlocks = [
   {
-    title: "Direct access.",
-    text: "When you call, I answer. Not a different associate each time. The person who understands your business today is the one advising you tomorrow.",
+    title: "Tailored services.",
+    text: "Before any legal analysis, I take the time to understand your concrete situation: what is at stake, what is urgent, what can wait.",
   },
   {
-    title: "The language of business.",
-    text: "I speak P&L, growth, timing and competitive pressure, not only legal articles. Advice is expressed in business outcomes, not legal abstractions.",
+    title: "Law framed in business terms.",
+    text: "A business owner myself, I structure legal advice around what matters to you: financial impact, timeline, operational risk. Not just the applicable rules.",
   },
   {
-    title: "The human dimension.",
-    text: "Complex legal situations carry real emotional weight. I understand this dimension and advise with precision and empathy.",
+    title: "A lawyer who knows your environment.",
+    text: "I know the local economic realities, the dynamics between players, and the specificities of the Alsatian market. My advice takes this into account.",
   },
 ];
 
@@ -130,13 +130,12 @@ export default function HomePageEN() {
           <AnimatedSection>
             <div className="max-w-2xl">
               <h2 className="mb-8 font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
-                Legal should not add to confusion.
+                Mutual understanding at the heart of the client relationship.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/65 md:text-[1.0625rem]">
-                A lawyer who answers you directly when you call.
-                Someone who truly knows you, without reducing you to a case number.
-                A single point of contact, involved over time, who understands your
-                business and your priorities, so that you can move forward with certainty.
+                I bring my expertise and analytical insight to clarify the legal
+                and business challenges my clients face, enabling them to make
+                informed strategic decisions.
               </p>
             </div>
           </AnimatedSection>
@@ -219,15 +218,15 @@ export default function HomePageEN() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="grid gap-8 md:grid-cols-3">
+          <AnimatedSection stagger className="columns-1 gap-x-8 md:columns-3">
             {trustBlocks.map((block) => (
-              <AnimatedItem key={block.title}>
-                <div>
+              <AnimatedItem key={block.title} className="break-inside-avoid">
+                <div className="pb-10">
                   <AnimatedLine className="mb-5 w-full" />
                   <h3 className="mb-4 font-serif text-[1.1875rem] font-normal text-navy">
                     {block.title}
                   </h3>
-                  <p className="font-sans text-sm leading-[1.9] text-navy/65">
+                  <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
                     {block.text}
                   </p>
                 </div>
@@ -257,7 +256,7 @@ export default function HomePageEN() {
                   className="object-contain shrink-0"
                 />
                 <h2 className="max-w-md font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
-                  Contact Christian Thalinger
+                  Contact Maître THALINGER
                 </h2>
               </div>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65">

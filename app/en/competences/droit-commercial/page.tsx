@@ -1,15 +1,117 @@
-import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
-import { AnimatedLine } from "@/components/AnimatedLine";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "Contract drafting and review",
-  "Terms and conditions and website terms of use",
-  "Distribution and intellectual property",
-  "Debt recovery",
-  "Unfair competition",
-  "Commercial disputes",
+  {
+    title: "General terms of sale (GTS)",
+    items: [
+      "Framework for commercial relationships",
+      "Liability and payment clauses",
+      "Compliance of commercial practices",
+      "Securing client transactions",
+    ],
+  },
+  {
+    title: "General terms of purchase (GTP)",
+    items: [
+      "Supplier relations",
+      "Negotiation of contractual terms",
+      "Supply chain risk management",
+      "Securing commercial commitments",
+    ],
+  },
+  {
+    title: "General terms of use (GTU)",
+    items: [
+      "Digital services and platforms",
+      "Content protection",
+      "Regulating online use",
+      "Operator liability",
+    ],
+  },
+  {
+    title: "Commercial contracts",
+    items: [
+      "Contract negotiation",
+      "Service and distribution agreements",
+      "Securing partnerships",
+      "Contractual risk management",
+    ],
+  },
+  {
+    title: "Distribution and intellectual property",
+    items: [
+      "Licence and exploitation agreements",
+      "Protection of intangible assets",
+      "Brand and content monetisation",
+      "Commercial distribution networks",
+    ],
+  },
+  {
+    title: "Commercial leases",
+    items: [
+      "Professional tenancy relations",
+      "Lease negotiation and renewal",
+      "Commercial rent review",
+      "Tenancy disputes",
+    ],
+  },
+  {
+    title: "Debt recovery and unpaid invoices",
+    items: [
+      "Payment orders",
+      "Interim measures",
+      "Enforcement",
+      "Management of late payments",
+    ],
+  },
+  {
+    title: "Commercial disputes",
+    items: [
+      "Contractual liability",
+      "Disputes between commercial partners",
+      "Termination of business relationships",
+      "Defence of the company's interests",
+    ],
+  },
+  {
+    title: "Unfair competition",
+    items: [
+      "Commercial disruption",
+      "Parasitic competition",
+      "Damage to image and reputation",
+      "Protection of strategic interests",
+    ],
+  },
+  {
+    title: "Prevention of business difficulties",
+    items: [
+      "Business continuity",
+      "Financial and operational reorganisation",
+      "Negotiation with creditors",
+      "Supporting directors in times of crisis",
+    ],
+  },
+  {
+    title: "Ad hoc mandate and conciliation",
+    items: [
+      "Finding amicable solutions",
+      "Debt restructuring",
+      "Confidential negotiation with creditors",
+      "Preserving the company's business",
+    ],
+  },
+  {
+    title: "Collective proceedings",
+    items: [
+      "Support for directors",
+      "Proof of debt",
+      "Managing relations with insolvency officers",
+      "Preserving assets and business activity",
+    ],
+  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -68,16 +170,7 @@ export default function CommercialLawPage() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {interventions.map((item) => (
-              <AnimatedItem key={item}>
-                <div>
-                  <AnimatedLine className="mb-5 w-full" />
-                  <p className="font-sans text-sm leading-[1.9] text-navy/65">{item}</p>
-                </div>
-              </AnimatedItem>
-            ))}
-          </AnimatedSection>
+          <InterventionCategoryGrid categories={interventions} />
         </div>
       </section>
 

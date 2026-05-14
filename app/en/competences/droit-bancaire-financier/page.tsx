@@ -1,20 +1,59 @@
-import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
-import { AnimatedLine } from "@/components/AnimatedLine";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "Commercial leases",
-  "Real estate acquisitions and disposals",
-  "Real estate holding structures (SCI)",
-  "Construction law",
-  "Real estate litigation",
-  "Commercial co-ownership",
+  {
+    title: "Financing and banking relations",
+    items: [
+      "Credit facilities and termination",
+      "Loan terms and negotiation",
+      "Managing relations with banking institutions",
+      "Support in financing difficulties",
+    ],
+  },
+  {
+    title: "Banking fraud and liability",
+    items: [
+      "Banking fraud and CEO fraud",
+      "Banker's duty of care",
+      "Securing financial transactions",
+      "Liability of banking institutions",
+    ],
+  },
+  {
+    title: "Guarantees and security interests",
+    items: [
+      "Joint and several guarantee",
+      "Scope and validity of commitments",
+      "Duty to advise and inform",
+      "Challenging personal guarantees",
+    ],
+  },
+  {
+    title: "Financial intermediaries and services",
+    items: [
+      "Investment service providers",
+      "Finance brokers",
+      "Financing intermediaries",
+      "Liability of financial actors",
+    ],
+  },
+  {
+    title: "Banking litigation",
+    items: [
+      "Financing disputes",
+      "Contractual banking liability",
+      "Defence of companies and directors",
+      "Banking and financial law litigation",
+    ],
+  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function RealEstateLawPage() {
+export default function BankingFinancialLawPage() {
   return (
     <>
       {/* 1. HERO */}
@@ -22,14 +61,16 @@ export default function RealEstateLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Real Estate Law
+              Banking &amp; Financial Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
-              Commercial leases and business<br className="hidden md:block" /> real estate: securing your<br className="hidden md:block" /> operations and your premises.
+              Preserving your ability<br className="hidden md:block" /> to decide.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Real estate law in Strasbourg: each decision is structured and secured
-              in line with your business strategy.
+              Business financing should never become a loss of control. Yet a suspended
+              credit line, a poorly negotiated personal guarantee, or a deteriorating banking
+              relationship can quickly weaken cash flow, slow decision-making, and create
+              constant pressure on the director.
             </p>
           </AnimatedSection>
         </div>
@@ -43,14 +84,18 @@ export default function RealEstateLawPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                Acquiring, leasing, building in Alsace, without unpleasant surprises.
+                Anticipating tensions before they disrupt your business.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Business real estate involves significant financial stakes and overlapping
-                legal frameworks: urban planning, taxation, construction, commercial leases.
-                A poorly negotiated lease commits you for several years. An imprecise works
-                clause can weaken an acquisition. And when operations become contentious,
-                the outcome depends on the rigor of the documents structured in advance.
+                A business can be weakened long before genuine financial difficulties emerge.
+                A strained banking relationship, a financing arrangement called into question,
+                or an inadequately framed personal guarantee can sometimes be enough to create
+                permanent uncertainty for the director and slow the development of the business.
+                In these situations, banking and financial law becomes a tool for protection and
+                anticipation. I support companies in securing their financing, analysing the risks
+                linked to banking commitments, and intervening in disputes or negotiations with
+                financial institutions. The objective remains the same: to protect the company
+                against financial imbalances and preserve its capacity to act in the long term.
               </p>
             </div>
           </AnimatedSection>
@@ -68,16 +113,7 @@ export default function RealEstateLawPage() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {interventions.map((item) => (
-              <AnimatedItem key={item}>
-                <div>
-                  <AnimatedLine className="mb-5 w-full" />
-                  <p className="font-sans text-sm leading-[1.9] text-navy/65">{item}</p>
-                </div>
-              </AnimatedItem>
-            ))}
-          </AnimatedSection>
+          <InterventionCategoryGrid categories={interventions} />
         </div>
       </section>
 
@@ -92,7 +128,7 @@ export default function RealEstateLawPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discuss your real estate project
+              Discuss your banking and finance matters
               <svg
                 width="16"
                 height="10"

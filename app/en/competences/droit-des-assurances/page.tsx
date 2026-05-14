@@ -1,17 +1,50 @@
-﻿import { AnimatedSection } from "@/components/AnimatedSection";
-import { InterventionGrid } from "@/components/InterventionGrid";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "Cross-border contracts",
-  "Subsidiary creation",
-  "Cross-jurisdiction disputes",
+  {
+    title: "Insurance contracts and cover",
+    items: [
+      "Analysis and interpretation of insurance policies",
+      "Exclusion clauses and coverage limitations",
+      "Loss assessment and quantification",
+      "Securing cover and maximising compensation",
+    ],
+  },
+  {
+    title: "Property and personal insurance",
+    items: [
+      "Property and asset insurance",
+      "Personal insurance",
+      "Protection of business and personal assets",
+      "Claims handling and compensation",
+    ],
+  },
+  {
+    title: "Liability and risk coverage",
+    items: [
+      "Public and employer liability insurance",
+      "Professional indemnity and operational risks",
+      "Risk management and claims notification",
+      "Defence of the policyholder's interests",
+    ],
+  },
+  {
+    title: "Expert proceedings and litigation",
+    items: [
+      "Agreed and court-appointed expert assessments",
+      "Challenging claim and coverage denials",
+      "Negotiation with insurers",
+      "Insurance law litigation",
+    ],
+  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function CrossBorderAdvisoryPage() {
+export default function InsuranceLawPage() {
   return (
     <>
       {/* 1. HERO */}
@@ -19,14 +52,16 @@ export default function CrossBorderAdvisoryPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Cross-border Advisory
+              Insurance Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
-              One point of contact for<br className="hidden md:block" /> the French legal system.
+              Coverage that holds<br className="hidden md:block" /> when it counts.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Based in Strasbourg, at the intersection of two systems, I guide you through
-              the realities of French law.
+              An insurance policy only shows its true worth at the moment of a claim.
+              I support companies and directors in securing their cover, defending their
+              interests against insurers, and ensuring that a denial of compensation does
+              not permanently damage their business.
             </p>
           </AnimatedSection>
         </div>
@@ -40,12 +75,18 @@ export default function CrossBorderAdvisoryPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                Align your operations with the French legal framework.
+                Know your limits before you need to use them.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Doing business across the Rhine means operating within two legal systems
-                at the same time. Employment law for cross-border employees is a labyrinth.
-                And when a dispute arises, knowing which jurisdiction applies is critical.
+                Businesses often assume they are covered — until a claim exposes the real
+                limits of their policy. An exclusion clause, a disputed loss assessment,
+                a rejected claim, or a challenged expert report can quickly put pressure
+                on cash flow, stall decisions, and threaten business continuity. I support
+                clients in securing their cover, identifying exposure before a dispute arises,
+                and defending their interests against insurers — whether through agreed expert
+                proceedings, court-appointed assessments, or insurance litigation. The goal
+                is always the same: contain the financial and operational damage before it
+                compounds.
               </p>
             </div>
           </AnimatedSection>
@@ -63,9 +104,8 @@ export default function CrossBorderAdvisoryPage() {
             </h2>
           </AnimatedSection>
 
-          <InterventionGrid items={interventions} />
-
-</div>
+          <InterventionCategoryGrid categories={interventions} />
+        </div>
       </section>
 
       <div className="bg-gold" style={{ height: "2px" }} />
@@ -79,7 +119,7 @@ export default function CrossBorderAdvisoryPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discuss your cross-border matters
+              Discuss your insurance matters
               <svg
                 width="16"
                 height="10"

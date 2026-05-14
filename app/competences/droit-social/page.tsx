@@ -5,92 +5,76 @@ import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid"
 
 const interventions = [
   {
-    title: "Company formation",
+    title: "Relations individuelles de travail",
     items: [
-      "Formation of civil and commercial companies",
-      "SARL, SAS and SCI",
-      "Choice of legal structure",
-      "Drafting articles of association",
+      "Rédaction et sécurisation des contrats de travail",
+      "Conventions de forfait jours",
+      "Temps de travail et heures supplémentaires",
+      "Paie et exécution du contrat de travail",
+      "Droit disciplinaire et harcèlement",
     ],
   },
   {
-    title: "Articles of association amendments",
+    title: "Licenciement",
     items: [
-      "Change of registered office",
-      "Amendment of corporate purpose",
-      "Capital increases and reductions",
-      "Updating articles of association",
+      "Licenciement disciplinaire",
+      "Licenciement économique",
+      "Salariés protégés",
+      "Rupture du contrat de travail",
     ],
   },
   {
-    title: "Shareholders' agreements",
+    title: "Contentieux prud'homal",
     items: [
-      "Drafting shareholders' agreements",
-      "Governance and allocation of powers",
-      "Exit and pre-emption clauses",
-      "Minority shareholder protection",
+      "Contestation de licenciement",
+      "Litiges employeur–salarié",
+      "Contentieux liés à l'exécution du contrat de travail",
     ],
   },
   {
-    title: "General meetings",
+    title: "Négociation collective",
     items: [
-      "Organising general meetings",
-      "Approval of accounts",
-      "Annual legal secretarial services",
-      "Minutes and formalities",
+      "Élections du CSE",
+      "Négociation collective",
+      "Accords collectifs et règlement intérieur",
     ],
   },
   {
-    title: "Share transfers",
+    title: "Restructuration",
     items: [
-      "Transfer of shares and equity interests",
-      "Due diligence and transaction security",
-      "Asset and liability warranties",
-      "Negotiation support",
+      "Restructuration sociale",
+      "Réorganisation d'entreprise",
+      "Accompagnement social des difficultés de l'entreprise",
     ],
   },
   {
-    title: "Shareholder disputes",
+    title: "Droit de la sécurité sociale",
     items: [
-      "Managing shareholder disputes",
-      "Governance deadlocks",
-      "Exclusion of a shareholder",
-      "Corporate litigation",
+      "Contrôle et redressement URSSAF",
+      "Cotisations sociales et assiette des cotisations",
+      "Faute inexcusable de l'employeur",
     ],
   },
   {
-    title: "Company transformation",
+    title: "Emploi transfrontalier",
     items: [
-      "Change of legal form",
-      "Conversion from SARL to SAS",
-      "Legal reorganisation of the company",
-      "Governance adaptation",
+      "Contrats de travail transfrontaliers",
+      "Mobilité internationale des salariés",
+      "Détachement de salariés",
     ],
   },
   {
-    title: "Business transfer and asset restructuring",
+    title: "Droit pénal du travail",
     items: [
-      "Family business transfers",
-      "Dutreil pact",
-      "Executive estate planning",
-      "Succession planning for business owners",
-      "Capital restructuring and family governance",
-    ],
-  },
-  {
-    title: "Mergers and acquisitions",
-    items: [
-      "Business acquisitions and disposals",
-      "Mergers and restructurings",
-      "Legal due diligence",
-      "Negotiation and transaction security",
+      "Responsabilité pénale de l'employeur",
+      "Infractions au droit du travail",
     ],
   },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function CorporateLawPage() {
+export default function DroitDuTravailPage() {
   return (
     <>
       {/* 1. HERO */}
@@ -98,16 +82,15 @@ export default function CorporateLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Corporate Law
+              Droit Social
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
-              Building on foundations<br className="hidden md:block" /> that hold.
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
+              Une sécurité juridique.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              I start by understanding your growth objectives and your risk tolerance.
-              Then I build the legal architecture that serves those objectives. From company
-              formation to mergers and acquisitions and business transfers, each structure
-              is designed to be resilient, not just compliant.
+              Je fournis un conseil proactif : structurer correctement les contrats dès le
+              premier jour, accompagner les réorganisations avant leur annonce, gérer les
+              ruptures avec précision.
             </p>
           </AnimatedSection>
         </div>
@@ -115,19 +98,18 @@ export default function CorporateLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXT — navy */}
+      {/* 2. TEXTE — navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
-              <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                Your articles of association are not just a formality.
+              <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
+                Gérer vos équipes sans créer de risque juridique.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Your company is built on legal structures: articles of association,
-                shareholders&apos; agreements, governance, which are often drafted once and
-                never revisited. Yet these foundations determine who makes decisions,
-                who controls, and how conflicts are resolved.
+                Le droit du travail en France est complexe et en constante évolution. Chaque
+                embauche, chaque licenciement, chaque réorganisation porte des implications
+                juridiques. Ajoutez l&apos;emploi transfrontalier, et la complexité se multiplie.
               </p>
             </div>
           </AnimatedSection>
@@ -140,7 +122,7 @@ export default function CorporateLawPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
-            <h2 className="font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
               Interventions
             </h2>
           </AnimatedSection>
@@ -156,11 +138,11 @@ export default function CorporateLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <a
-              href="/en#contact"
+              href="/#contact"
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discuss your corporate law matters
+              Discutons de vos enjeux en droit du travail
               <svg
                 width="16"
                 height="10"

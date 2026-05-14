@@ -9,18 +9,18 @@ import { REOPEN_BANNER_EVENT } from "./CookieBanner";
 const skillLinksFR = [
   { label: "Droit des Sociétés",     href: "/competences/droit-des-societes" },
   { label: "Droit Commercial",       href: "/competences/droit-commercial" },
-  { label: "Droit du Travail",       href: "/competences/droit-du-travail" },
+  { label: "Droit Social",            href: "/competences/droit-social" },
   { label: "Conseil Transfrontalier",href: "/competences/conseil-transfrontalier" },
-  { label: "Droit Immobilier",       href: "/competences/droit-immobilier" },
+  { label: "Droit Immobilier & Construction", href: "/competences/droit-immobilier-construction" },
   { label: "Droit Fiscal",           href: "/competences/droit-fiscal" },
 ];
 
 const skillLinksEN = [
   { label: "Corporate Law",         href: "/en/competences/droit-des-societes" },
   { label: "Commercial Law",        href: "/en/competences/droit-commercial" },
-  { label: "Employment Law",        href: "/en/competences/droit-du-travail" },
+  { label: "Social Law",             href: "/en/competences/droit-social" },
   { label: "Cross-border Advisory", href: "/en/competences/conseil-transfrontalier" },
-  { label: "Real Estate Law",       href: "/en/competences/droit-immobilier" },
+  { label: "Real Estate & Construction Law", href: "/en/competences/droit-immobilier-construction" },
   { label: "Tax Law",               href: "/en/competences/droit-fiscal" },
 ];
 

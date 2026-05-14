@@ -1,15 +1,91 @@
-import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
-import { AnimatedLine } from "@/components/AnimatedLine";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "Création de société",
-  "Pactes d'associés",
-  "Gouvernance",
-  "Fusions-acquisitions",
-  "Transformation",
-  "Transmission d'entreprises familiales",
+  {
+    title: "Création de sociétés",
+    items: [
+      "Création de sociétés civiles et commerciales",
+      "SARL, SAS et SCI",
+      "Choix de la structure juridique",
+      "Rédaction des statuts",
+    ],
+  },
+  {
+    title: "Modifications statutaires",
+    items: [
+      "Changement de siège social",
+      "Modification de l'objet social",
+      "Augmentation et réduction de capital",
+      "Mise à jour des statuts",
+    ],
+  },
+  {
+    title: "Pactes d'associés",
+    items: [
+      "Rédaction de pactes d'associés",
+      "Gouvernance et répartition des pouvoirs",
+      "Clauses de sortie et de préemption",
+      "Protection des associés minoritaires",
+    ],
+  },
+  {
+    title: "Assemblées générales",
+    items: [
+      "Organisation des assemblées générales",
+      "Approbation des comptes",
+      "Secrétariat juridique annuel",
+      "Procès-verbaux et formalités",
+    ],
+  },
+  {
+    title: "Cession de parts sociales",
+    items: [
+      "Cession d'actions et de parts sociales",
+      "Audit et sécurisation des opérations",
+      "Garantie d'actif et de passif",
+      "Accompagnement des négociations",
+    ],
+  },
+  {
+    title: "Conflits entre associés",
+    items: [
+      "Gestion des conflits entre associés",
+      "Blocages de gouvernance",
+      "Exclusion d'associé",
+      "Contentieux sociétaires",
+    ],
+  },
+  {
+    title: "Transformation de sociétés",
+    items: [
+      "Transformation de forme sociale",
+      "Passage de SARL à SAS",
+      "Réorganisation juridique de l'entreprise",
+      "Adaptation de la gouvernance",
+    ],
+  },
+  {
+    title: "Transmission et restructuration patrimoniale",
+    items: [
+      "Transmission d'entreprises familiales",
+      "Pacte Dutreil",
+      "Anticipation patrimoniale du dirigeant",
+      "Organisation de la succession entrepreneuriale",
+      "Réorganisation capitalistique et gouvernance familiale",
+    ],
+  },
+  {
+    title: "Fusions-acquisitions",
+    items: [
+      "Acquisition et cession d'entreprises",
+      "Fusions et restructurations",
+      "Due diligence juridique",
+      "Négociation et sécurisation des opérations",
+    ],
+  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -69,16 +145,7 @@ export default function DroitDesSocietesPage() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {interventions.map((item) => (
-              <AnimatedItem key={item}>
-                <div>
-                  <AnimatedLine className="mb-5 w-full" />
-                  <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">{item}</p>
-                </div>
-              </AnimatedItem>
-            ))}
-          </AnimatedSection>
+          <InterventionCategoryGrid categories={interventions} />
         </div>
       </section>
 

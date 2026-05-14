@@ -23,7 +23,7 @@ export function AnimatedLine({ className = "" }: AnimatedLineProps) {
   return (
     <motion.div
       className={`bg-gold ${className}`}
-      style={{ height: "2px", transformOrigin: "left center" }}
+      style={{ height: "2px", minHeight: "2px", maxHeight: "2px", transformOrigin: "left center" }}
       variants={lineVariants}
     />
   );

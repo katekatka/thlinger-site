@@ -1,15 +1,75 @@
-import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
-import { AnimatedLine } from "@/components/AnimatedLine";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "Employment contracts",
-  "Dismissal",
-  "Collective bargaining",
-  "Restructuring",
-  "Employment litigation",
-  "Cross-border employment",
+  {
+    title: "Individual employment relations",
+    items: [
+      "Drafting and securing employment contracts",
+      "Day-rate agreements",
+      "Working time and overtime",
+      "Payroll and contract performance",
+      "Disciplinary law and harassment",
+    ],
+  },
+  {
+    title: "Dismissal",
+    items: [
+      "Disciplinary dismissal",
+      "Redundancy",
+      "Protected employees",
+      "Termination of employment",
+    ],
+  },
+  {
+    title: "Employment tribunal litigation",
+    items: [
+      "Challenging a dismissal",
+      "Employer–employee disputes",
+      "Disputes arising from contract performance",
+    ],
+  },
+  {
+    title: "Collective bargaining",
+    items: [
+      "Works council elections",
+      "Collective bargaining",
+      "Collective agreements and internal regulations",
+    ],
+  },
+  {
+    title: "Restructuring",
+    items: [
+      "Social restructuring",
+      "Business reorganisation",
+      "Social support in business difficulty",
+    ],
+  },
+  {
+    title: "Social security law",
+    items: [
+      "URSSAF audits and reassessments",
+      "Social contributions and contribution basis",
+      "Employer gross negligence",
+    ],
+  },
+  {
+    title: "Cross-border employment",
+    items: [
+      "Cross-border employment contracts",
+      "International employee mobility",
+      "Posted workers",
+    ],
+  },
+  {
+    title: "Criminal employment law",
+    items: [
+      "Criminal liability of the employer",
+      "Violations of employment law",
+    ],
+  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -22,7 +82,7 @@ export default function EmploymentLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Employment Law
+              Social Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
               Legal certainty.
@@ -67,16 +127,7 @@ export default function EmploymentLawPage() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {interventions.map((item) => (
-              <AnimatedItem key={item}>
-                <div>
-                  <AnimatedLine className="mb-5 w-full" />
-                  <p className="font-sans text-sm leading-[1.9] text-navy/65">{item}</p>
-                </div>
-              </AnimatedItem>
-            ))}
-          </AnimatedSection>
+          <InterventionCategoryGrid categories={interventions} />
         </div>
       </section>
 
