@@ -11,31 +11,31 @@ const services = [
   {
     title: "Droit des Sociétés",
     description:
-      "Structurer, gouverner et sécuriser votre entreprise à chaque étape de son développement, de la création aux relations entre associés.",
+      "Structurer et sécuriser la vie de votre entreprise à chaque étape de son développement.",
     href: "/competences/droit-des-societes",
   },
   {
     title: "Droit Commercial",
     description:
-      "Sécuriser vos contrats, prévenir les conflits commerciaux et protéger votre activité face aux impayés, ruptures ou procédures collectives.",
+      "Sécuriser vos contrats, protéger vos intérêts en contentieux commercial, récupérer vos créances impayées et vous guider à chaque étape d'une procédure collective.",
     href: "/competences/droit-commercial",
   },
   {
     title: "Droit Social",
     description:
-      "Gérer vos relations de travail, anticiper les risques sociaux et sécuriser votre entreprise en matière de droit du travail, URSSAF et sécurité sociale.",
+      "Conseiller en gestion des relations avec les salariés, des rapports collectifs et des cotisations sociales, assurer la représentation en contentieux en droit du travail et de la protection sociale.",
     href: "/competences/droit-social",
   },
   {
     title: "Droit Bancaire & Financier",
     description:
-      "Sécuriser vos financements, gérer les litiges bancaires et défendre vos intérêts face aux établissements de crédit et intermédiaires financiers.",
+      "Assister en contentieux bancaire lié aux financements, investissements, cautionnements, actions en responsabilité des acteurs bancaires et financiers.",
     href: "/competences/droit-bancaire-financier",
   },
   {
     title: "Droit des Assurances",
     description:
-      "Clarifier vos garanties, analyser vos contrats et vous accompagner dans les expertises et litiges avec les compagnies d'assurance.",
+      "Clarifier les clauses des contrats d'assurance, déterminer les préjudices, vous assister dans les expertises et litiges en droit des assurances.",
     href: "/competences/droit-des-assurances",
   },
   {
@@ -50,37 +50,33 @@ const steps = [
   {
     title: "Compréhension du contexte",
     description:
-      "Je commence par vos enjeux, pas par le Code civil. Ce que vous construisez, ce qui vous préoccupe, ce qui bloque.",
+      "Chaque dossier débute par une analyse approfondie de votre situation et de ses circonstances. Cette immersion me permet de cerner précisément ce qui est en jeu pour vous.",
   },
   {
-    title: "Identification des risques",
+    title: "Identification des risques et des enjeux",
     description:
-      "Ce qui menace votre activité, dit explicitement. Pas d'euphémismes, pas de zones grises confortables.",
+      "Je mets en lumière les risques concrets et les leviers à votre disposition, afin que vous puissiez prendre vos décisions en toute connaissance de cause.",
   },
   {
-    title: "Structuration des options",
+    title: "Proposition d'options",
     description:
-      "Des choix clairs, avec leurs implications réelles. Chaque option présentée en termes de conséquences business.",
+      "Je traduis les règles applicables et les issues possibles en scénarios clairs, pour que vous disposiez d'une vision nette des choix qui s'offrent à vous.",
   },
   {
-    title: "Décision conjointe",
+    title: "Mise en place conjointe de la stratégie",
     description:
-      "Je ne décide pas à votre place. Je vous rends la certitude de décider en toute connaissance de cause.",
+      "Votre participation est au cœur de ma démarche : nous construisons ensemble la stratégie la plus adaptée à vos objectifs.",
   },
 ];
 
 const trustBlocks = [
   {
-    title: "Prestations sur mesure.",
-    text: "Avant toute analyse juridique, je prends le temps de cerner votre situation concrète : ce qui est en jeu, ce qui est urgent, ce qui peut attendre.",
+    title: "Des prestations sur mesure.",
+    text: "Je ne propose jamais de solutions standardisées : chaque accompagnement est construit sur mesure, dans un dialogue authentique et impliqué. Le cabinet s'attache à comprendre en profondeur les réalités de chaque situation pour apporter des solutions adaptées à vos enjeux.",
   },
   {
-    title: "Le droit formulé en termes de business.",
-    text: "Dirigeant moi-même, je structure le conseil juridique autour de ce qui compte pour vous : impact financier, calendrier, risque opérationnel. Pas uniquement les textes applicables.",
-  },
-  {
-    title: "Un avocat qui connaît votre environnement.",
-    text: "Je connais les réalités économiques locales, les dynamiques entre acteurs, les spécificités du marché alsacien. Mon conseil en tient compte.",
+    title: "Une immersion dans le monde des affaires.",
+    text: "Le cabinet participe à la vie économique, associative et publique locale. Cette proximité avec le terrain nourrit notre expertise et nous permet de vous conseiller avec une compréhension fine de votre environnement.",
   },
 ];
 
@@ -209,7 +205,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
-              Comment je travaille
+              Mon approche
             </h2>
           </AnimatedSection>
 
@@ -228,7 +224,7 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="columns-1 gap-x-8 md:columns-3">
+          <AnimatedSection stagger className="columns-1 gap-x-8 md:columns-2">
             {trustBlocks.map((block) => (
               <AnimatedItem key={block.title} className="break-inside-avoid">
                 <div className="pb-10">

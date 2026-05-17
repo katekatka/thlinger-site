@@ -9,7 +9,6 @@ const interventions = [
     items: [
       "Octroi et rupture de crédits",
       "Conditions et négociation des prêts",
-      "Gestion des relations avec les établissements bancaires",
       "Accompagnement des difficultés de financement",
     ],
   },
@@ -37,7 +36,6 @@ const interventions = [
       "Prestataires de services d'investissement",
       "Courtiers en financement",
       "Intermédiaires en opérations de financement",
-      "Responsabilité des acteurs financiers",
     ],
   },
   {

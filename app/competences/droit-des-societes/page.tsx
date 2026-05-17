@@ -43,19 +43,16 @@ const interventions = [
   {
     title: "Cession de parts sociales",
     items: [
-      "Cession d'actions et de parts sociales",
       "Audit et sécurisation des opérations",
       "Garantie d'actif et de passif",
-      "Accompagnement des négociations",
+      "Accompagnement dans les négociations",
     ],
   },
   {
-    title: "Conflits entre associés",
+    title: "Contentieux sociétaires",
     items: [
       "Gestion des conflits entre associés",
       "Blocages de gouvernance",
-      "Exclusion d'associé",
-      "Contentieux sociétaires",
     ],
   },
   {
@@ -77,15 +74,6 @@ const interventions = [
       "Réorganisation capitalistique et gouvernance familiale",
     ],
   },
-  {
-    title: "Fusions-acquisitions",
-    items: [
-      "Acquisition et cession d'entreprises",
-      "Fusions et restructurations",
-      "Due diligence juridique",
-      "Négociation et sécurisation des opérations",
-    ],
-  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -101,13 +89,18 @@ export default function DroitDesSocietesPage() {
               Droit des Sociétés
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
-              Construire sur des fondations<br className="hidden md:block" /> qui tiennent.
+              Structurer ce qui détermine le fonctionnement de votre entreprise.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Je commence par comprendre vos objectifs de croissance et votre tolérance au risque.
-              Ensuite, je construis l&apos;architecture juridique qui sert ces objectifs. De la
-              création de société aux fusions-acquisitions et à la transmission, chaque structure
-              est conçue pour être résiliente, pas seulement conforme.
+              Statuts, pacte d&apos;associés, gouvernance : ces documents sont rarement revisités
+              après leur rédaction. Pourtant, ce sont eux qui déterminent qui décide, qui contrôle
+              et comment les situations de blocage se résolvent. Le cabinet analyse le cadre dans
+              lequel vous souhaitez entreprendre : forme sociale, répartition des pouvoirs, droits
+              des associés, modalités de prise de décision. L&apos;objectif est de construire une
+              architecture juridique réellement adaptée à votre activité et à vos objectifs. De la
+              création de société aux évolutions futures, comme l&apos;arrivée de nouveaux associés,
+              l&apos;augmentation d&apos;activité ou une acquisition, chaque structure est conçue
+              pour accompagner votre développement, pas seulement pour remplir une obligation légale.
             </p>
           </AnimatedSection>
         </div>
@@ -121,13 +114,16 @@ export default function DroitDesSocietesPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Vos statuts ne sont pas qu&apos;un formalisme.
+                Quand la relation entre associés devient un obstacle.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Votre entreprise repose sur des structures juridiques : statuts, pactes
-                d&apos;associés, gouvernance, qui sont souvent rédigés une fois et jamais
-                revisités. Or ces fondations déterminent qui décide, qui contrôle, et comment
-                les conflits se résolvent.
+                Abus de majorité, non-respect d&apos;un pacte d&apos;associés, situations de
+                blocage : les conflits entre associés peuvent paralyser une entreprise et mettre
+                en péril ce que vous avez construit. Le cabinet intervient pour analyser la
+                situation, identifier les leviers juridiques à votre disposition et protéger vos
+                intérêts. Que la solution passe par la négociation ou par le contentieux,
+                l&apos;objectif reste le même : débloquer la situation et préserver la continuité
+                de votre activité.
               </p>
             </div>
           </AnimatedSection>

@@ -3,7 +3,19 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(npx skills:*)",
+      "Bash(curl -s \"https://thalinger-avocat.fr\")",
+      "Bash(curl -s --max-time 10 \"https://thalinger-avocat.fr\")",
+      "Bash(curl -sL --max-time 15 \"https://thalinger-avocat.fr\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(python3 \"C:/Users/katbu/.claude/skills/ui-ux-pro-max/scripts/search.py\" \"professional lawyer portrait contact section elegant dark footer\" --design-system -p \"Thalinger Law\")",
+      "Bash(python \"C:/Users/katbu/.claude/skills/ui-ux-pro-max/scripts/search.py\" \"professional lawyer portrait contact section elegant dark footer\" --design-system -p \"Thalinger Law\")",
+      "WebFetch(domain:www.thalinger-avocat.fr)",
+      "WebSearch",
+      "WebFetch(domain:www.boisserie.fr)",
+      "WebFetch(domain:drechsler-avocat.fr)"
     ]
   }
 }

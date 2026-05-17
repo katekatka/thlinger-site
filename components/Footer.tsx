@@ -49,7 +49,7 @@ export default function Footer() {
               <Link href={isEN ? "/en" : "/"} className="flex items-center gap-3 group">
                 <Image
                   src="/logo.svg"
-                  alt="Christian Thalinger logo"
+                  alt="Christian THALINGER logo"
                   width={42}
                   height={42}
                   className="object-contain transition-[filter] duration-200 [filter:brightness(0)_saturate(100%)_invert(73%)_sepia(56%)_saturate(500%)_hue-rotate(5deg)_brightness(95%)] group-hover:[filter:brightness(0)_invert(1)]"
@@ -58,7 +58,7 @@ export default function Footer() {
                   style={{ fontFamily: "var(--font-playfair)" }}
                   className="text-[1.05rem] font-normal text-gold transition-colors duration-200 group-hover:text-white"
                 >
-                  Christian Thalinger
+                  Christian THALINGER
                 </span>
               </Link>
               <p className="text-sm font-[300] leading-7 text-white/50">
@@ -93,7 +93,7 @@ export default function Footer() {
                 <div className="mb-5">
                   <Image
                     src="/images/portrait03.png"
-                    alt={isEN ? "Christian Thalinger, Attorney" : "Christian Thalinger, Avocat"}
+                    alt={isEN ? "Christian THALINGER, Attorney" : "Christian THALINGER, Avocat"}
                     width={72}
                     height={72}
                     className="object-contain"
@@ -125,7 +125,7 @@ export default function Footer() {
 
         <div className="bg-gold" style={{ height: "2px" }} />
         <div className="mx-auto flex flex-col gap-2 px-6 py-5 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
-          <span>© 2026 Christian Thalinger — {isEN ? "Attorney at the Strasbourg Bar" : "Avocat au Barreau de Strasbourg"}</span>
+          <span>© 2026 Christian THALINGER — {isEN ? "Attorney at the Strasbourg Bar" : "Avocat au Barreau de Strasbourg"}</span>
           <div className="flex flex-wrap items-center gap-4">
             <Link
               href={isEN ? "/en/mentions-legales" : "/mentions-legales"}

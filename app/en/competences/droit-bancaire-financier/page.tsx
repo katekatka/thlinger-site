@@ -9,7 +9,6 @@ const interventions = [
     items: [
       "Credit facilities and termination",
       "Loan terms and negotiation",
-      "Managing relations with banking institutions",
       "Support in financing difficulties",
     ],
   },
@@ -37,7 +36,6 @@ const interventions = [
       "Investment service providers",
       "Finance brokers",
       "Financing intermediaries",
-      "Liability of financial actors",
     ],
   },
   {

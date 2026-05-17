@@ -75,7 +75,7 @@ const faqGroups: FaqGroup[] = [
         question: "Une convention d'honoraires est-elle obligatoire ?",
         answer: (
           <p>
-            Oui. Conformément aux règles de la profession d&apos;avocat, une convention
+            Conformément aux règles de la profession d&apos;avocat, une convention
             d&apos;honoraires est systématiquement conclue avant toute intervention, sauf urgence
             ou aide juridictionnelle totale. Elle garantit une parfaite transparence sur les
             modalités d&apos;accompagnement et de facturation.
@@ -103,7 +103,7 @@ const faqGroups: FaqGroup[] = [
         answer: (
           <>
             <p className="mb-4">
-              Oui. Le cabinet vérifie systématiquement si le client bénéficie d&apos;une
+              Le cabinet vérifie systématiquement si le client bénéficie d&apos;une
               protection juridique susceptible de prendre en charge tout ou partie des
               honoraires d&apos;avocat. Cette garantie peut être incluse dans un contrat
               spécifique ou dans certains contrats d&apos;assurance courants (habitation,
@@ -147,7 +147,7 @@ const faqGroups: FaqGroup[] = [
         question: "Les entreprises peuvent-elles bénéficier d'un accompagnement régulier ?",
         answer: (
           <p>
-            Oui. Le cabinet accompagne aussi bien les particuliers que les entreprises dans
+            Le cabinet accompagne aussi bien les particuliers que les entreprises dans
             le cadre de missions ponctuelles ou d&apos;un suivi juridique récurrent. Certaines
             entreprises choisissent un accompagnement régulier afin de sécuriser leurs
             décisions juridiques, anticiper les risques et bénéficier d&apos;un interlocuteur

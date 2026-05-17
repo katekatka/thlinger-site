@@ -43,19 +43,16 @@ const interventions = [
   {
     title: "Share transfers",
     items: [
-      "Transfer of shares and equity interests",
       "Due diligence and transaction security",
       "Asset and liability warranties",
-      "Negotiation support",
+      "Support in negotiations",
     ],
   },
   {
-    title: "Shareholder disputes",
+    title: "Corporate litigation",
     items: [
       "Managing shareholder disputes",
       "Governance deadlocks",
-      "Exclusion of a shareholder",
-      "Corporate litigation",
     ],
   },
   {
@@ -77,15 +74,6 @@ const interventions = [
       "Capital restructuring and family governance",
     ],
   },
-  {
-    title: "Mergers and acquisitions",
-    items: [
-      "Business acquisitions and disposals",
-      "Mergers and restructurings",
-      "Legal due diligence",
-      "Negotiation and transaction security",
-    ],
-  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -101,13 +89,18 @@ export default function CorporateLawPage() {
               Corporate Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
-              Building on foundations<br className="hidden md:block" /> that hold.
+              Structuring what determines how your company operates.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              I start by understanding your growth objectives and your risk tolerance.
-              Then I build the legal architecture that serves those objectives. From company
-              formation to mergers and acquisitions and business transfers, each structure
-              is designed to be resilient, not just compliant.
+              Articles of association, shareholders&apos; agreements, governance: these documents
+              are rarely revisited after they are drafted. Yet they are the ones that determine
+              who makes decisions, who exercises control and how deadlocks are resolved. The firm
+              analyses the framework in which you wish to operate: legal form, allocation of
+              powers, shareholders&apos; rights, decision-making procedures. The objective is to
+              build a legal architecture genuinely suited to your activity and your goals. From
+              company formation to future developments — such as the arrival of new shareholders,
+              business growth or an acquisition — each structure is designed to support your
+              development, not merely to fulfil a legal obligation.
             </p>
           </AnimatedSection>
         </div>
@@ -121,13 +114,15 @@ export default function CorporateLawPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                Your articles of association are not just a formality.
+                When the relationship between shareholders becomes an obstacle.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Your company is built on legal structures: articles of association,
-                shareholders&apos; agreements, governance, which are often drafted once and
-                never revisited. Yet these foundations determine who makes decisions,
-                who controls, and how conflicts are resolved.
+                Abuse of majority, breach of a shareholders&apos; agreement, deadlock: shareholder
+                disputes can paralyse a company and jeopardise everything you have built. The firm
+                intervenes to analyse the situation, identify the legal levers available to you and
+                protect your interests. Whether the solution lies in negotiation or litigation, the
+                objective remains the same: to break the deadlock and preserve the continuity of
+                your business.
               </p>
             </div>
           </AnimatedSection>

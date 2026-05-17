@@ -17,7 +17,6 @@ const interventions = [
     title: "General terms of purchase (GTP)",
     items: [
       "Supplier relations",
-      "Negotiation of contractual terms",
       "Supply chain risk management",
       "Securing commercial commitments",
     ],
@@ -34,25 +33,27 @@ const interventions = [
   {
     title: "Commercial contracts",
     items: [
-      "Contract negotiation",
       "Service and distribution agreements",
       "Securing partnerships",
       "Contractual risk management",
     ],
   },
   {
-    title: "Distribution and intellectual property",
+    title: "Business asset sales",
     items: [
-      "Licence and exploitation agreements",
-      "Protection of intangible assets",
-      "Brand and content monetisation",
-      "Commercial distribution networks",
+      "Acquisition and disposal of business assets",
+      "Due diligence and transaction security",
+      "Drafting and negotiating transfer deeds",
+      "Commercial leases and business transfer",
+      "Post-acquisition disputes",
+      "Business transfer and takeover",
     ],
   },
   {
     title: "Commercial leases",
     items: [
-      "Professional tenancy relations",
+      "Drafting commercial leases",
+      "Precarious occupation agreements and short-term leases",
       "Lease negotiation and renewal",
       "Commercial rent review",
       "Tenancy disputes",
@@ -88,10 +89,10 @@ const interventions = [
   {
     title: "Prevention of business difficulties",
     items: [
-      "Business continuity",
       "Financial and operational reorganisation",
       "Negotiation with creditors",
       "Supporting directors in times of crisis",
+      "Representation before courts",
     ],
   },
   {

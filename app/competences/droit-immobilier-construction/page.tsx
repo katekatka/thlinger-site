@@ -55,13 +55,16 @@ export default function DroitImmobilierPage() {
               Droit Immobilier
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
-              Sécuriser vos activités,<br className="hidden md:block" /> vos locaux et vos investissements.
+              Construire, c&apos;est aussi construire un cadre juridique.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Chaque acquisition, bail commercial ou opération de construction engage durablement
-              l&apos;activité de l&apos;entreprise. J&apos;accompagne dirigeants, investisseurs et
-              propriétaires pour structurer leurs opérations immobilières, anticiper les risques
-              juridiques et préserver la stabilité de leurs actifs professionnels.
+              Malfaçons, désordres, garanties non mobilisées : en matière de construction, les
+              litiges se révèlent souvent après la réception des travaux, quand les délais pour
+              agir sont déjà engagés. Le cabinet intervient pour faire valoir la responsabilité
+              des constructeurs, activer les garanties légales et décennales, et vous assister
+              lors des expertises amiables ou judiciaires. Que vous soyez maître d&apos;ouvrage
+              ou professionnel du bâtiment, chaque étape du chantier crée des obligations
+              qu&apos;il vaut mieux anticiper que découvrir en contentieux.
             </p>
           </AnimatedSection>
         </div>
@@ -75,13 +78,15 @@ export default function DroitImmobilierPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Acquérir, louer, construire en Alsace, sans mauvaise surprise.
+                Un bail mal négocié se paie pendant toute sa durée.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                L&apos;immobilier d&apos;entreprise engage bien plus qu&apos;un actif : il conditionne
-                souvent la stabilité et le développement de l&apos;activité. Un bail commercial
-                mal encadré, des malfaçons, un chantier bloqué ou une expertise contestée peuvent
-                rapidement ralentir un projet et créer une pression immédiate sur le dirigeant.
+                Les clauses de bail signées aujourd&apos;hui déterminent vos droits et vos
+                contraintes pour des années. Le cabinet sécurise la rédaction de vos baux,
+                négocie les conditions locatives et veille à l&apos;équilibre des obligations
+                entre bailleur et locataire. En cas d&apos;impayés, d&apos;inexécution ou de
+                litige sur la résiliation, le cabinet assure votre défense et conduit les
+                procédures nécessaires à la protection de vos intérêts.
               </p>
             </div>
           </AnimatedSection>

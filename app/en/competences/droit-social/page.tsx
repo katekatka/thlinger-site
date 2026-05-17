@@ -12,15 +12,16 @@ const interventions = [
       "Working time and overtime",
       "Payroll and contract performance",
       "Disciplinary law and harassment",
+      "Back pay claims",
     ],
   },
   {
-    title: "Dismissal",
+    title: "Termination of employment",
     items: [
       "Disciplinary dismissal",
       "Redundancy",
       "Protected employees",
-      "Termination of employment",
+      "Agreed termination, constructive dismissal and judicial rescission",
     ],
   },
   {
@@ -32,7 +33,7 @@ const interventions = [
     ],
   },
   {
-    title: "Collective bargaining",
+    title: "Collective labour relations",
     items: [
       "Works council elections",
       "Collective bargaining",
@@ -53,14 +54,6 @@ const interventions = [
       "URSSAF audits and reassessments",
       "Social contributions and contribution basis",
       "Employer gross negligence",
-    ],
-  },
-  {
-    title: "Cross-border employment",
-    items: [
-      "Cross-border employment contracts",
-      "International employee mobility",
-      "Posted workers",
     ],
   },
   {
@@ -85,12 +78,15 @@ export default function EmploymentLawPage() {
               Social Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
-              Legal certainty.
+              Every HR decision is a legal decision.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              I provide proactive advice: structuring contracts correctly from day one,
-              supporting reorganizations before they are announced, managing terminations
-              with precision.
+              A poorly drafted contract, a botched dismissal procedure, an imprecise collective
+              agreement: in employment law, mistakes have a price. The firm supports directors
+              and HR managers in securing their day-to-day practices and defending their
+              interests before the employment tribunal. The objective: to anticipate disputes
+              rather than suffer them, and to make employment law a management tool, not a
+              source of risk.
             </p>
           </AnimatedSection>
         </div>
@@ -104,12 +100,15 @@ export default function EmploymentLawPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                Managing your teams without creating legal risk.
+                A URSSAF audit gives no warning. Your preparation can.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Employment law in France is complex and constantly evolving. Every hire,
-                every dismissal, every reorganization carries legal implications. Add
-                cross-border employment, and the complexity multiplies.
+                A social security reassessment can represent significant amounts and durably
+                weaken your cash flow. The firm intervenes upstream to secure your social
+                contribution practices, and downstream to challenge reassessments and represent
+                you in appeal proceedings. In cases of employer gross negligence, the
+                consequences go beyond increased compensation: they can engage the criminal
+                liability of the director where safety obligations have been breached.
               </p>
             </div>
           </AnimatedSection>

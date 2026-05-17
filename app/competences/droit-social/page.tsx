@@ -12,15 +12,16 @@ const interventions = [
       "Temps de travail et heures supplémentaires",
       "Paie et exécution du contrat de travail",
       "Droit disciplinaire et harcèlement",
+      "Rappel du salaire",
     ],
   },
   {
-    title: "Licenciement",
+    title: "Rupture du contrat de travail",
     items: [
       "Licenciement disciplinaire",
       "Licenciement économique",
       "Salariés protégés",
-      "Rupture du contrat de travail",
+      "Rupture conventionnelle, prise d'acte et résiliation judiciaire",
     ],
   },
   {
@@ -32,7 +33,7 @@ const interventions = [
     ],
   },
   {
-    title: "Négociation collective",
+    title: "Relations collectives",
     items: [
       "Élections du CSE",
       "Négociation collective",
@@ -53,14 +54,6 @@ const interventions = [
       "Contrôle et redressement URSSAF",
       "Cotisations sociales et assiette des cotisations",
       "Faute inexcusable de l'employeur",
-    ],
-  },
-  {
-    title: "Emploi transfrontalier",
-    items: [
-      "Contrats de travail transfrontaliers",
-      "Mobilité internationale des salariés",
-      "Détachement de salariés",
     ],
   },
   {
@@ -85,12 +78,15 @@ export default function DroitDuTravailPage() {
               Droit Social
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
-              Une sécurité juridique.
+              Chaque décision RH est une décision juridique.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Je fournis un conseil proactif : structurer correctement les contrats dès le
-              premier jour, accompagner les réorganisations avant leur annonce, gérer les
-              ruptures avec précision.
+              Un contrat mal rédigé, une procédure de licenciement bâclée, un accord collectif
+              imprécis : en droit du travail, l&apos;erreur se chiffre. Le cabinet accompagne les
+              dirigeants et les responsables RH dans la sécurisation de leurs pratiques au
+              quotidien et dans la défense de leurs intérêts devant le conseil de prud&apos;hommes.
+              L&apos;objectif : anticiper les litiges plutôt que les subir, et faire du droit
+              social un levier de gestion, pas une source de risques.
             </p>
           </AnimatedSection>
         </div>
@@ -104,12 +100,16 @@ export default function DroitDuTravailPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Gérer vos équipes sans créer de risque juridique.
+                Un contrôle URSSAF ne prévient pas. Votre préparation, si.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Le droit du travail en France est complexe et en constante évolution. Chaque
-                embauche, chaque licenciement, chaque réorganisation porte des implications
-                juridiques. Ajoutez l&apos;emploi transfrontalier, et la complexité se multiplie.
+                Un redressement de cotisations peut représenter des montants significatifs et
+                fragiliser durablement votre trésorerie. Le cabinet intervient en amont pour
+                sécuriser vos pratiques en matière de cotisations sociales, et en aval pour
+                contester les redressements et vous représenter dans les procédures de recours.
+                En matière de faute inexcusable de l&apos;employeur, les conséquences vont
+                au-delà de la majoration des indemnités : elles peuvent engager la responsabilité
+                pénale du dirigeant en cas de manquement aux obligations de sécurité.
               </p>
             </div>
           </AnimatedSection>

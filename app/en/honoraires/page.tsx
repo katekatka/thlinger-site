@@ -73,7 +73,7 @@ const faqGroups: FaqGroup[] = [
         question: "Is a fee agreement required?",
         answer: (
           <p>
-            Yes. In accordance with the rules governing the legal profession, a fee
+            In accordance with the rules governing the legal profession, a fee
             agreement is entered into before any work begins, except in cases of urgency
             or full legal aid. It ensures complete transparency on the terms of
             engagement and billing.
@@ -100,7 +100,7 @@ const faqGroups: FaqGroup[] = [
         answer: (
           <>
             <p className="mb-4">
-              Yes. The firm systematically checks whether the client holds legal expenses
+              The firm systematically checks whether the client holds legal expenses
               insurance that may cover all or part of the lawyer&apos;s fees. This cover is
               often included in standard insurance contracts — home, motor, public
               liability, and others.
@@ -143,7 +143,7 @@ const faqGroups: FaqGroup[] = [
         question: "Can businesses benefit from ongoing legal support?",
         answer: (
           <p>
-            Yes. The firm supports both individuals and businesses on a one-off or
+            The firm supports both individuals and businesses on a one-off or
             recurring basis. Some companies choose a regular retainer to keep their
             legal decisions on firm ground, manage risk proactively, and benefit from
             a single point of contact who already understands their business and

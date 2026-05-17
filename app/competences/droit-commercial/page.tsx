@@ -17,7 +17,6 @@ const interventions = [
     title: "Conditions générales d'achat CGA",
     items: [
       "Relations fournisseurs",
-      "Négociation des conditions contractuelles",
       "Gestion des risques d'approvisionnement",
       "Sécurisation des engagements commerciaux",
     ],
@@ -34,25 +33,27 @@ const interventions = [
   {
     title: "Contrats commerciaux",
     items: [
-      "Négociation contractuelle",
       "Contrats de prestation et de distribution",
       "Sécurisation des partenariats",
       "Gestion des risques contractuels",
     ],
   },
   {
-    title: "Distribution et propriété intellectuelle",
+    title: "Vente de fonds de commerce",
     items: [
-      "Contrats de licence et d'exploitation",
-      "Protection des actifs immatériels",
-      "Valorisation des marques et contenus",
-      "Réseaux de distribution commerciale",
+      "Acquisition et cession de fonds de commerce",
+      "Audit et sécurisation des opérations",
+      "Rédaction et négociation d'actes de cession",
+      "Baux commerciaux et transfert d'exploitation",
+      "Contentieux post-acquisition",
+      "Transmission et reprise d'entreprise",
     ],
   },
   {
     title: "Baux commerciaux",
     items: [
-      "Relations locatives professionnelles",
+      "Rédaction de baux commerciaux",
+      "Convention d'occupation précaire et baux dérogatoires",
       "Négociation et renouvellement des baux",
       "Révision des loyers commerciaux",
       "Litiges locatifs",
@@ -88,10 +89,10 @@ const interventions = [
   {
     title: "Difficultés des entreprises",
     items: [
-      "Continuité d'activité",
       "Réorganisation financière et opérationnelle",
       "Négociation avec les créanciers",
       "Accompagnement des dirigeants en période de crise",
+      "Assistance devant les juridictions",
     ],
   },
   {

@@ -11,31 +11,31 @@ const services = [
   {
     title: "Corporate Law",
     description:
-      "Structure, govern and secure your company at every stage of its development, from incorporation to shareholder relations.",
+      "Structuring and securing your company's life at every stage of its development.",
     href: "/en/competences/droit-des-societes",
   },
   {
     title: "Commercial Law",
     description:
-      "Secure your contracts, prevent commercial disputes and protect your business against unpaid debts, terminations or insolvency proceedings.",
+      "Securing your contracts, protecting your interests in commercial disputes, recovering unpaid debts and guiding you through every stage of insolvency proceedings.",
     href: "/en/competences/droit-commercial",
   },
   {
     title: "Social Law",
     description:
-      "Manage your employment relationships, anticipate social risks and protect your business in matters of employment law, URSSAF and social security.",
+      "Advising on the management of employee relations, collective bargaining and social security contributions, representing you in employment and social protection disputes.",
     href: "/en/competences/droit-social",
   },
   {
     title: "Banking & Financial Law",
     description:
-      "Secure your financing, manage banking disputes and defend your interests against credit institutions and financial intermediaries.",
+      "Assisting in banking disputes relating to financing, investments, guarantees and liability claims against banking and financial actors.",
     href: "/en/competences/droit-bancaire-financier",
   },
   {
     title: "Insurance Law",
     description:
-      "Clarify your coverage, analyse your contracts and support you through expert assessments and disputes with insurance companies.",
+      "Clarifying insurance contract clauses, assessing damages, and assisting you in expert assessments and insurance disputes.",
     href: "/en/competences/droit-des-assurances",
   },
   {
@@ -48,39 +48,35 @@ const services = [
 
 const steps = [
   {
-    title: "Understanding your context",
+    title: "Understanding the context",
     description:
-      "I start with your issues, not with the Civil Code. What you are building, what concerns you, what is blocking you.",
+      "Every case begins with an in-depth analysis of your situation and its circumstances. This immersion allows me to pinpoint precisely what is at stake for you.",
   },
   {
-    title: "Identifying risks",
+    title: "Identifying risks and issues",
     description:
-      "What threatens your activity, stated explicitly. No euphemisms, no comfortable grey areas.",
+      "I bring to light the concrete risks and levers at your disposal, so that you can make your decisions with full knowledge of the facts.",
   },
   {
-    title: "Structuring options",
+    title: "Setting out options",
     description:
-      "Clear choices, with their real implications. Each option presented in terms of business consequences.",
+      "I translate the applicable rules and possible outcomes into clear scenarios, so that you have a sharp picture of the choices available to you.",
   },
   {
-    title: "Joint decision",
+    title: "Joint strategy building",
     description:
-      "I do not decide in your place. I give you the certainty to decide with full knowledge of the facts.",
+      "Your involvement is at the heart of my approach: together we build the strategy best suited to your objectives.",
   },
 ];
 
 const trustBlocks = [
   {
     title: "Tailored services.",
-    text: "Before any legal analysis, I take the time to understand your concrete situation: what is at stake, what is urgent, what can wait.",
+    text: "I never propose standardised solutions: every engagement is built to measure, through authentic and engaged dialogue. The firm is committed to understanding the realities of each situation in depth, in order to deliver solutions that match your specific challenges.",
   },
   {
-    title: "Law framed in business terms.",
-    text: "A business owner myself, I structure legal advice around what matters to you: financial impact, timeline, operational risk. Not just the applicable rules.",
-  },
-  {
-    title: "A lawyer who knows your environment.",
-    text: "I know the local economic realities, the dynamics between players, and the specificities of the Alsatian market. My advice takes this into account.",
+    title: "Immersion in the business world.",
+    text: "The firm participates in local economic, associative and public life. This proximity to the field feeds our expertise and enables us to advise you with a nuanced understanding of your environment.",
   },
 ];
 
@@ -199,7 +195,7 @@ export default function HomePageEN() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
-              How I work
+              My approach
             </h2>
           </AnimatedSection>
 
@@ -218,7 +214,7 @@ export default function HomePageEN() {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection stagger className="columns-1 gap-x-8 md:columns-3">
+          <AnimatedSection stagger className="columns-1 gap-x-8 md:columns-2">
             {trustBlocks.map((block) => (
               <AnimatedItem key={block.title} className="break-inside-avoid">
                 <div className="pb-10">
