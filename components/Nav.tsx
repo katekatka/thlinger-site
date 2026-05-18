@@ -367,7 +367,7 @@ export default function Nav() {
                       <div
                         className={[
                           "flex items-center",
-                          mobileExpanded ? "border-b border-gold/20" : "border-b-2 border-gold/40",
+                          mobileExpanded ? "" : "border-b-2 border-gold/40",
                         ].join(" ")}
                       >
                         {/* Text → section + close overlay */}
