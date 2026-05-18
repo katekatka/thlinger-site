@@ -25,7 +25,7 @@ export default function CrossBorderAdvisoryPage() {
               One point of contact for<br className="hidden md:block" /> the French legal system.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Based in Strasbourg, at the intersection of two systems, I guide you through
+              Based in Strasbourg, at the intersection of two systems, the firm guides you through
               the realities of French law.
             </p>
           </AnimatedSection>

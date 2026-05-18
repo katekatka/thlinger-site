@@ -10,9 +10,9 @@ const interventions = [
       "Rédaction et sécurisation des contrats de travail",
       "Conventions de forfait jours",
       "Temps de travail et heures supplémentaires",
-      "Paie et exécution du contrat de travail",
-      "Droit disciplinaire et harcèlement",
-      "Rappel du salaire",
+      "Exécution du contrat de travail et paie",
+      "Droit disciplinaire",
+      "Harcèlement et discrimination",
     ],
   },
   {
@@ -22,14 +22,8 @@ const interventions = [
       "Licenciement économique",
       "Salariés protégés",
       "Rupture conventionnelle, prise d'acte et résiliation judiciaire",
-    ],
-  },
-  {
-    title: "Contentieux prud'homal",
-    items: [
       "Contestation de licenciement",
-      "Litiges employeur–salarié",
-      "Contentieux liés à l'exécution du contrat de travail",
+      "Contentieux liés à la rupture du contrat de travail",
     ],
   },
   {
@@ -38,14 +32,18 @@ const interventions = [
       "Élections du CSE",
       "Négociation collective",
       "Accords collectifs et règlement intérieur",
+      "Relations avec les représentants du personnel",
     ],
   },
   {
-    title: "Restructuration",
+    title: "Restructuration et réorganisation sociale",
     items: [
-      "Restructuration sociale",
       "Réorganisation d'entreprise",
-      "Accompagnement social des difficultés de l'entreprise",
+      "Restructuration sociale",
+      "Plans de sauvegarde de l'emploi (PSE)",
+      "Licenciements économiques collectifs",
+      "Consultation du CSE",
+      "Accompagnement des transformations de l'entreprise",
     ],
   },
   {

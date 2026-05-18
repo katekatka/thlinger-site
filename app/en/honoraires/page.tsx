@@ -129,11 +129,11 @@ const faqGroups: FaqGroup[] = [
     title: "Client relationship",
     items: [
       {
-        question: "Is the initial consultation charged?",
+        question: "Is the first meeting charged?",
         answer: (
           <p>
-            A one-off consultation, where it is not followed by a written advice note or
-            legal proceedings, is not charged. This first meeting is an opportunity to
+            The first meeting, where it is not followed by a written advice note or
+            legal proceedings, is not charged. This initial exchange is an opportunity to
             understand the situation, identify the key issues, and direct the client
             towards the most appropriate course of action.
           </p>
@@ -183,8 +183,7 @@ export default function FeesPage() {
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Fees are freely agreed between the parties depending on the complexity of
-              the matter. This topic is addressed from the first meeting, with full
-              transparency.
+              the matter. This topic is addressed with full transparency.
             </p>
           </AnimatedSection>
         </div>
@@ -251,7 +250,7 @@ export default function FeesPage() {
               </h2>
               <p className="mb-12 font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
                 The first contact is without obligation on your part. Its purpose is to
-                understand your situation and assess whether I can assist you effectively.
+                understand your situation and assess whether the firm can assist you effectively.
                 The terms are specified when scheduling the appointment.
               </p>
               <a

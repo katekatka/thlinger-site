@@ -59,8 +59,8 @@ export default function DroitDesAssurancesPage() {
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Un contrat d&apos;assurance ne se révèle réellement qu&apos;au moment du sinistre.
-              J&apos;accompagne entreprises et dirigeants pour sécuriser leurs garanties, défendre
-              leurs intérêts face aux compagnies d&apos;assurance et éviter qu&apos;un refus
+              Le cabinet accompagne entreprises et dirigeants pour sécuriser leurs garanties,
+              défendre leurs intérêts face aux compagnies d&apos;assurance et éviter qu&apos;un refus
               d&apos;indemnisation ne fragilise durablement leur activité.
             </p>
           </AnimatedSection>
@@ -82,10 +82,10 @@ export default function DroitDesAssurancesPage() {
                 les limites réelles de son contrat d&apos;assurance. Clause d&apos;exclusion, désaccord
                 sur l&apos;évaluation du préjudice, refus d&apos;indemnisation ou expertise contestée :
                 ces situations peuvent rapidement créer une pression sur la trésorerie, ralentir les
-                décisions et fragiliser la continuité de l&apos;activité. J&apos;accompagne mes clients
+                décisions et fragiliser la continuité de l&apos;activité. Le cabinet accompagne ses clients
                 pour sécuriser leurs garanties, anticiper les risques de contentieux et défendre leurs
                 intérêts face aux compagnies d&apos;assurance, dans le cadre d&apos;expertises amiables,
-                judiciaires ou de litiges en droit des assurances. Mon approche vise un objectif clair :
+                judiciaires ou de litiges en droit des assurances. L&apos;objectif est clair :
                 limiter l&apos;impact financier et opérationnel des situations de crise.
               </p>
             </div>

@@ -25,7 +25,7 @@ export default function ConseilTransfrontalierPage() {
               Un interlocuteur pour le système<br className="hidden md:block" /> juridique français.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Situé à Strasbourg, au croisement des deux systèmes, je vous guide à travers
+              Situé à Strasbourg, au croisement des deux systèmes, le cabinet vous guide à travers
               les réalités juridiques françaises.
             </p>
           </AnimatedSection>

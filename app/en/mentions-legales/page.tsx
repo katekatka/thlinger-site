@@ -52,12 +52,12 @@ export default function LegalNoticePage() {
                   <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">christian@thalinger-avocat.fr</a>
                   {" "}
                   <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-navy">+33 6 37 33 19 26</a>
-                  {" "}– Address: 20 rue du Fossé des Tanneurs, 67000 Strasbourg.
+                  {" "}– Address: 5 avenue de la Marseillaise, 67000 Strasbourg.
                 </p>
                 <p className={p}>
                   <strong className="text-navy">Business registration:</strong> EI Christian THALINGER –
                   SIREN: 909 547 721 – Trade register: Strasbourg –
-                  Postal address: 20 rue du Fossé des Tanneurs, 67000 Strasbourg.
+                  Postal address: 5 avenue de la Marseillaise, 67000 Strasbourg.
                 </p>
                 <p className={p}>
                   <strong className="text-navy">Bar registration:</strong> Strasbourg Bar –

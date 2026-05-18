@@ -28,7 +28,7 @@ export default function DroitFiscalPage() {
               Sécuriser et structurer vos<br className="hidden md:block" /> décisions fiscales.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              J&apos;intègre la stratégie fiscale à chaque décision de l&apos;entreprise :
+              Le cabinet intègre la stratégie fiscale à chaque décision de l&apos;entreprise :
               choix de structure, distribution de bénéfices, expansion internationale.
               Quand le contrôle fiscal arrive, la préparation est déjà en place.
             </p>

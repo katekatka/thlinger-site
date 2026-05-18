@@ -37,7 +37,16 @@ const interventions = [
       "Impayés et inexécution contractuelle",
       "Résiliation du bail",
       "Procédures d'expulsion",
-      "Défense des propriétaires et occupants",
+      "Défense des propriétaires",
+    ],
+  },
+  {
+    title: "Transactions immobilières",
+    items: [
+      "Vente en l'état futur d'achèvement (VEFA)",
+      "Acquisition et vente d'immeubles",
+      "Sécurisation des opérations immobilières",
+      "Garanties et obligations du vendeur",
     ],
   },
 ];

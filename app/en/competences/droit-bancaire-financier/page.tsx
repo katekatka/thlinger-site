@@ -10,6 +10,7 @@ const interventions = [
       "Credit facilities and termination",
       "Loan terms and negotiation",
       "Support in financing difficulties",
+      "Debt restructuring and banking negotiation",
     ],
   },
   {
@@ -31,20 +32,12 @@ const interventions = [
     ],
   },
   {
-    title: "Financial intermediaries and services",
+    title: "Financial intermediation",
     items: [
       "Investment service providers",
+      "Banking and payment services intermediaries",
       "Finance brokers",
-      "Financing intermediaries",
-    ],
-  },
-  {
-    title: "Banking litigation",
-    items: [
-      "Financing disputes",
-      "Contractual banking liability",
-      "Defence of companies and directors",
-      "Banking and financial law litigation",
+      "Professional liability and obligations",
     ],
   },
 ];
@@ -62,13 +55,16 @@ export default function BankingFinancialLawPage() {
               Banking &amp; Financial Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
-              Preserving your ability<br className="hidden md:block" /> to decide.
+              Your financing commits you. Find out to what, exactly.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Business financing should never become a loss of control. Yet a suspended
-              credit line, a poorly negotiated personal guarantee, or a deteriorating banking
-              relationship can quickly weaken cash flow, slow decision-making, and create
-              constant pressure on the director.
+              Loan terms, joint and several guarantees, personal security interests: these
+              commitments are often signed in the urgency of a financing need, without
+              measuring their true scope. Yet a poorly framed guarantee can expose your
+              personal assets well beyond the initial amount. A unilateral credit withdrawal
+              by the bank can suffocate a business overnight. The firm intervenes to analyse
+              your financial commitments, negotiate balanced terms, and challenge those that
+              exceed the bank&apos;s statutory duties to inform and advise.
             </p>
           </AnimatedSection>
         </div>
@@ -82,18 +78,16 @@ export default function BankingFinancialLawPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                Anticipating tensions before they disrupt your business.
+                The bank has obligations towards you. Not only the other way around.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                A business can be weakened long before genuine financial difficulties emerge.
-                A strained banking relationship, a financing arrangement called into question,
-                or an inadequately framed personal guarantee can sometimes be enough to create
-                permanent uncertainty for the director and slow the development of the business.
-                In these situations, banking and financial law becomes a tool for protection and
-                anticipation. I support companies in securing their financing, analysing the risks
-                linked to banking commitments, and intervening in disputes or negotiations with
-                financial institutions. The objective remains the same: to protect the company
-                against financial imbalances and preserve its capacity to act in the long term.
+                Duty of care, duty to advise, liability for abusive support or abrupt withdrawal
+                of credit facilities: banking law protects borrowers and guarantors as much as it
+                constrains them. Yet few clients know the leverage they hold when facing a
+                financial institution. CEO fraud, unauthorised transactions, breaches by financial
+                intermediaries: in these situations, it is the bank that bears liability — not
+                you. The firm helps you identify those levers and assert them, whether in
+                negotiation or in litigation.
               </p>
             </div>
           </AnimatedSection>

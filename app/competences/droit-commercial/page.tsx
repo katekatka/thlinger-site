@@ -128,13 +128,15 @@ export default function DroitCommercialPage() {
               Droit Commercial
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
-              Des contrats qui fonctionnent<br className="hidden md:block" /> quand ça compte.
+              Un contrat mal rédigé est invisible. Jusqu&apos;au litige.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Je rédige, relis et négocie chaque contrat avec une seule question en tête :
-              que se passe-t-il quand les choses tournent mal ? Chaque clause est testée contre
-              des scénarios réalistes. Je privilégie la clarté à la complexité, et
-              l&apos;opposabilité à l&apos;élégance.
+              CGV, CGA, CGU, contrats de prestation, baux commerciaux : ces documents encadrent
+              chacune de vos relations d&apos;affaires. Tant que tout va bien, personne ne les relit.
+              Mais une clause absente, une limitation ambiguë ou un délai qui ne reflète pas la
+              réalité opérationnelle suffisent à transformer un désaccord en contentieux coûteux.
+              Le cabinet rédige, négocie et sécurise vos contrats avec une question constante :
+              que se passe-t-il quand les choses tournent mal ?
             </p>
           </AnimatedSection>
         </div>
@@ -148,13 +150,38 @@ export default function DroitCommercialPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Un contrat ne protège que s&apos;il est précis.
+                En droit commercial, le conflit fait partie du jeu. La manière de le gérer, non.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Les contrats régissent chacune de vos relations commerciales. Un contrat mal rédigé
-                est invisible jusqu&apos;au jour où un litige le rend coûteux. Une clause absente,
-                une limitation ambiguë, un délai qui ne reflète pas la réalité opérationnelle :
-                ces lacunes coûtent de l&apos;argent réel.
+                Impayés, rupture brutale de relations d&apos;affaires, concurrence déloyale, conflit
+                entre partenaires commerciaux : ces situations mettent en jeu votre trésorerie,
+                votre réputation et parfois la continuité de votre activité. Le cabinet intervient
+                pour recouvrer vos créances, défendre vos intérêts en contentieux et protéger vos
+                positions stratégiques face aux pratiques déloyales.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* 3. TEXTE — blanc */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection>
+            <div className="max-w-2xl space-y-6">
+              <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-navy">
+                Les difficultés financières n&apos;attendent pas que vous soyez prêt.
+              </h2>
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+                Quand la trésorerie se tend, chaque semaine compte. Le cadre légal offre des outils
+                de protection souvent méconnus : mandat ad hoc, conciliation, procédure de
+                sauvegarde. Ces dispositifs permettent de négocier avec les créanciers de manière
+                confidentielle et de préserver l&apos;activité avant que la situation ne devienne
+                irréversible. Le cabinet accompagne les dirigeants à chaque étape, de la
+                restructuration amiable à la procédure collective, pour protéger ce qui peut
+                l&apos;être et préparer la suite.
               </p>
             </div>
           </AnimatedSection>

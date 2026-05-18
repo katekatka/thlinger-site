@@ -28,7 +28,7 @@ export default function TaxLawPage() {
               Securing and structuring<br className="hidden md:block" /> your tax decisions.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              I integrate tax strategy into every business decision: choice of structure,
+              The firm integrates tax strategy into every business decision: choice of structure,
               profit distribution, international expansion. When a tax audit occurs,
               the preparation is already in place.
             </p>

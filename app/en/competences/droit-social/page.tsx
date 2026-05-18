@@ -10,9 +10,9 @@ const interventions = [
       "Drafting and securing employment contracts",
       "Day-rate agreements",
       "Working time and overtime",
-      "Payroll and contract performance",
-      "Disciplinary law and harassment",
-      "Back pay claims",
+      "Contract performance and payroll",
+      "Disciplinary law",
+      "Harassment and discrimination",
     ],
   },
   {
@@ -22,14 +22,8 @@ const interventions = [
       "Redundancy",
       "Protected employees",
       "Agreed termination, constructive dismissal and judicial rescission",
-    ],
-  },
-  {
-    title: "Employment tribunal litigation",
-    items: [
       "Challenging a dismissal",
-      "Employer–employee disputes",
-      "Disputes arising from contract performance",
+      "Disputes arising from termination",
     ],
   },
   {
@@ -38,14 +32,18 @@ const interventions = [
       "Works council elections",
       "Collective bargaining",
       "Collective agreements and internal regulations",
+      "Relations with employee representatives",
     ],
   },
   {
-    title: "Restructuring",
+    title: "Restructuring and social reorganisation",
     items: [
-      "Social restructuring",
       "Business reorganisation",
-      "Social support in business difficulty",
+      "Social restructuring",
+      "Job protection plans (PSE)",
+      "Collective redundancies",
+      "Works council consultation",
+      "Support through business transformation",
     ],
   },
   {

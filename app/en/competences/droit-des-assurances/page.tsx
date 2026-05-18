@@ -59,7 +59,7 @@ export default function InsuranceLawPage() {
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               An insurance policy only shows its true worth at the moment of a claim.
-              I support companies and directors in securing their cover, defending their
+              The firm supports companies and directors in securing their cover, defending their
               interests against insurers, and ensuring that a denial of compensation does
               not permanently damage their business.
             </p>
@@ -81,7 +81,7 @@ export default function InsuranceLawPage() {
                 Businesses often assume they are covered — until a claim exposes the real
                 limits of their policy. An exclusion clause, a disputed loss assessment,
                 a rejected claim, or a challenged expert report can quickly put pressure
-                on cash flow, stall decisions, and threaten business continuity. I support
+                on cash flow, stall decisions, and threaten business continuity. The firm supports
                 clients in securing their cover, identifying exposure before a dispute arises,
                 and defending their interests against insurers — whether through agreed expert
                 proceedings, court-appointed assessments, or insurance litigation. The goal

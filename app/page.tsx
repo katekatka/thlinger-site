@@ -50,33 +50,33 @@ const steps = [
   {
     title: "Compréhension du contexte",
     description:
-      "Chaque dossier débute par une analyse approfondie de votre situation et de ses circonstances. Cette immersion me permet de cerner précisément ce qui est en jeu pour vous.",
+      "Chaque dossier débute par une analyse approfondie de votre situation et de ses circonstances. Cette immersion permet de cerner précisément ce qui est en jeu pour vous.",
   },
   {
     title: "Identification des risques et des enjeux",
     description:
-      "Je mets en lumière les risques concrets et les leviers à votre disposition, afin que vous puissiez prendre vos décisions en toute connaissance de cause.",
+      "Le cabinet met en lumière les risques concrets et les leviers à votre disposition, afin que vous puissiez prendre vos décisions en toute connaissance de cause.",
   },
   {
     title: "Proposition d'options",
     description:
-      "Je traduis les règles applicables et les issues possibles en scénarios clairs, pour que vous disposiez d'une vision nette des choix qui s'offrent à vous.",
+      "Le cabinet traduit les règles applicables et les issues possibles en scénarios clairs, pour que vous disposiez d'une vision nette des choix qui s'offrent à vous.",
   },
   {
     title: "Mise en place conjointe de la stratégie",
     description:
-      "Votre participation est au cœur de ma démarche : nous construisons ensemble la stratégie la plus adaptée à vos objectifs.",
+      "Votre participation est au cœur de la démarche : la stratégie la plus adaptée à vos objectifs est construite ensemble.",
   },
 ];
 
 const trustBlocks = [
   {
     title: "Des prestations sur mesure.",
-    text: "Je ne propose jamais de solutions standardisées : chaque accompagnement est construit sur mesure, dans un dialogue authentique et impliqué. Le cabinet s'attache à comprendre en profondeur les réalités de chaque situation pour apporter des solutions adaptées à vos enjeux.",
+    text: "Le cabinet ne propose jamais de solutions standardisées : chaque accompagnement est construit sur mesure, dans un dialogue authentique et impliqué. Le cabinet s'attache à comprendre en profondeur les réalités de chaque situation pour apporter des solutions adaptées à vos enjeux.",
   },
   {
     title: "Une immersion dans le monde des affaires.",
-    text: "Le cabinet participe à la vie économique, associative et publique locale. Cette proximité avec le terrain nourrit notre expertise et nous permet de vous conseiller avec une compréhension fine de votre environnement.",
+    text: "Le cabinet participe à la vie économique, associative et publique locale. Cette proximité avec le terrain nourrit son expertise et lui permet de vous conseiller avec une compréhension fine de votre environnement.",
   },
 ];
 
@@ -89,7 +89,7 @@ function ContacterButton() {
       className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
       style={{ color: "#ffffff" }}
     >
-      Contacter
+      Prendre rendez-vous
       <svg
         width="16"
         height="10"
@@ -129,9 +129,11 @@ export default function HomePage() {
                 Une compréhension réciproque au cœur de la relation client.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/65 md:text-[1.0625rem]">
-                Je mobilise mon expertise et mon sens de l&apos;analyse afin de
-                clarifier les enjeux juridiques et business de mes clients, et de
-                leur permettre de prendre des décisions stratégiques éclairées.
+                Vous connaissez votre activité. Le cabinet connaît le droit. La valeur du
+                conseil naît à l&apos;intersection des deux. C&apos;est pourquoi chaque collaboration
+                commence par une écoute attentive de votre réalité avant toute analyse
+                juridique. Pas de solutions génériques, pas de jargon inutile : des réponses
+                claires, ancrées dans vos enjeux concrets.
               </p>
             </div>
           </AnimatedSection>
@@ -205,7 +207,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
-              Mon approche
+              Comment je travaille
             </h2>
           </AnimatedSection>
 
@@ -296,8 +298,8 @@ export default function HomePage() {
                 />
                 <ContactItem
                   label="Adresse"
-                  href="https://maps.google.com/maps?q=20+Rue+du+Foss%C3%A9+des+Tanneurs+67000+Strasbourg"
-                  value={"20 rue du Fossé des Tanneurs\n67000 Strasbourg"}
+                  href="https://maps.google.com/maps?q=5+Avenue+de+la+Marseillaise+67000+Strasbourg"
+                  value={"5 avenue de la Marseillaise\n67000 Strasbourg"}
                   multiline
                 />
               </div>
@@ -307,7 +309,7 @@ export default function HomePage() {
             <AnimatedSection delay={0.15}>
               <div className="h-full min-h-[340px] overflow-hidden rounded-2xl border border-navy/10">
                 <iframe
-                  src="https://maps.google.com/maps?q=20+Rue+du+Foss%C3%A9+des+Tanneurs%2C+67000+Strasbourg%2C+France&output=embed&z=16"
+                  src="https://maps.google.com/maps?q=5+Avenue+de+la+Marseillaise%2C+67000+Strasbourg%2C+France&output=embed&z=16"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: "340px" }}

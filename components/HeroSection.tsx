@@ -147,9 +147,10 @@ export default function HeroSection() {
               marginBottom: "2.5rem",
             }}
           >
-            Fort d&apos;une expérience en conseil auprès d&apos;entreprises et de
-            particuliers, j&apos;aide mes clients à sécuriser leurs décisions
-            stratégiques.
+            Conseil aux entreprises et aux particuliers, le cabinet transforme
+            la complexité juridique en clarté décisionnelle pour sécuriser
+            vos choix stratégiques. Le premier échange est libre, sans engagement
+            et confidentiel. Il sert un seul objectif : comprendre votre situation.
           </motion.p>
 
           {/* CTA */}
@@ -159,7 +160,7 @@ export default function HeroSection() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Contacter
+              Discuter de votre situation
               <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
                 className="transition-transform duration-300 group-hover:translate-x-1">
                 <path d="M1 5H15M15 5L11 1M15 5L11 9"

@@ -10,6 +10,7 @@ const interventions = [
       "Octroi et rupture de crédits",
       "Conditions et négociation des prêts",
       "Accompagnement des difficultés de financement",
+      "Restructuration de dette et négociation bancaire",
     ],
   },
   {
@@ -31,20 +32,12 @@ const interventions = [
     ],
   },
   {
-    title: "Intermédiaires et services financiers",
+    title: "Intermédiation financière",
     items: [
       "Prestataires de services d'investissement",
+      "Intermédiaires en opérations de banque et services de paiement",
       "Courtiers en financement",
-      "Intermédiaires en opérations de financement",
-    ],
-  },
-  {
-    title: "Contentieux bancaire",
-    items: [
-      "Litiges liés aux financements",
-      "Responsabilité contractuelle bancaire",
-      "Défense des entreprises et dirigeants",
-      "Contentieux en droit bancaire et financier",
+      "Responsabilité et obligations professionnelles",
     ],
   },
 ];
@@ -62,13 +55,16 @@ export default function DroitBancaireFinancierPage() {
               Droit Bancaire &amp; Financier
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
-              Préserver votre capacité<br className="hidden md:block" /> à décider.
+              Votre financement vous engage. Vérifiez à quoi exactement.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Le financement d&apos;une entreprise ne devrait jamais devenir une perte de contrôle.
-              Pourtant, une ligne de crédit suspendue, une garantie personnelle mal négociée ou
-              une relation bancaire qui se dégrade peuvent rapidement fragiliser la trésorerie,
-              ralentir les décisions et créer une pression constante sur le dirigeant.
+              Conditions de prêt, cautions solidaires, garanties personnelles : ces engagements
+              sont souvent signés dans l&apos;urgence d&apos;un besoin de financement, sans mesurer leur
+              portée réelle. Or une caution mal encadrée peut engager votre patrimoine bien
+              au-delà du montant initial. Une rupture de crédit décidée unilatéralement par la
+              banque peut asphyxier une activité du jour au lendemain. Le cabinet intervient pour
+              analyser vos engagements financiers, négocier des conditions équilibrées, et
+              contester ceux qui dépassent les obligations légales d&apos;information et de conseil.
             </p>
           </AnimatedSection>
         </div>
@@ -82,19 +78,17 @@ export default function DroitBancaireFinancierPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Anticiper les tensions avant qu&apos;elles ne bloquent votre activité.
+                La banque a des obligations envers vous. Pas seulement l&apos;inverse.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Une entreprise peut être fragilisée bien avant l&apos;apparition de véritables
-                difficultés financières. Une relation bancaire qui se tend, un financement remis
-                en cause ou une garantie personnelle insuffisamment encadrée suffisent parfois à
-                créer une incertitude permanente pour le dirigeant et à ralentir le développement
-                de l&apos;activité. Dans ces situations, le droit bancaire et financier devient un
-                outil de protection et d&apos;anticipation. J&apos;accompagne les entreprises pour
-                sécuriser leurs financements, analyser les risques liés aux engagements bancaires
-                et intervenir dans les situations de contentieux ou de négociation avec les
-                établissements financiers. L&apos;objectif reste le même : protéger l&apos;entreprise
-                contre les déséquilibres financiers et préserver sa capacité d&apos;action à long terme.
+                Obligation de vigilance, devoir de conseil, responsabilité en cas de soutien
+                abusif ou de rupture brutale de concours : le droit bancaire protège les
+                emprunteurs et les cautions autant qu&apos;il les contraint. Pourtant, peu de clients
+                connaissent les leviers dont ils disposent face à un établissement financier.
+                Fraude au président, opérations non autorisées, manquements des intermédiaires
+                financiers : ces situations engagent la responsabilité de la banque, pas la
+                vôtre. Le cabinet vous aide à identifier ces leviers et à les faire valoir, en
+                négociation comme en contentieux.
               </p>
             </div>
           </AnimatedSection>

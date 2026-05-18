@@ -128,12 +128,15 @@ export default function CommercialLawPage() {
               Commercial Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
-              Contracts that work<br className="hidden md:block" /> when it matters.
+              A poorly drafted contract is invisible. Until the dispute.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              I draft, review and negotiate every contract with one question in mind:
-              what happens when things go wrong? Each clause is tested against realistic
-              scenarios. I prioritize clarity over complexity, and enforceability over elegance.
+              GTC, GPC, terms of use, service agreements, commercial leases: these documents
+              govern every business relationship you have. As long as things run smoothly,
+              no one reads them twice. But a missing clause, an ambiguous limitation, or a
+              deadline that does not reflect operational reality is enough to turn a
+              disagreement into costly litigation. The firm drafts, negotiates and secures your
+              contracts with one constant question: what happens when things go wrong?
             </p>
           </AnimatedSection>
         </div>
@@ -147,13 +150,14 @@ export default function CommercialLawPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                A contract only protects you if it is precise.
+                In commercial law, conflict is part of the game. How you manage it is not.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Contracts govern each of your business relationships. A poorly drafted
-                contract remains invisible until the day a dispute makes it costly.
-                A missing clause, an ambiguous limitation, a timeframe that does not
-                reflect operational reality: these gaps cost real money.
+                Unpaid debts, abrupt termination of business relationships, unfair competition,
+                disputes between commercial partners: these situations put your cash flow,
+                your reputation, and sometimes the continuity of your business at stake. The
+                firm intervenes to recover your receivables, defend your interests in litigation,
+                and protect your strategic positions against unfair practices.
               </p>
             </div>
           </AnimatedSection>
@@ -162,7 +166,31 @@ export default function CommercialLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 3. INTERVENTIONS */}
+      {/* 3. TEXT — white */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection>
+            <div className="max-w-2xl space-y-6">
+              <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-navy md:text-[2.25rem]">
+                Financial difficulties do not wait until you are ready.
+              </h2>
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+                When cash flow tightens, every week counts. The legal framework offers
+                protective tools that are often overlooked: ad hoc mandate, conciliation,
+                safeguard proceedings. These mechanisms allow confidential negotiations with
+                creditors and help preserve the business before the situation becomes
+                irreversible. The firm supports directors at every stage, from amicable
+                restructuring to formal insolvency proceedings, to protect what can be saved
+                and prepare what comes next.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* 4. INTERVENTIONS */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
@@ -177,7 +205,7 @@ export default function CommercialLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 4. CTA */}
+      {/* 5. CTA */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>

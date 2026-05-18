@@ -50,33 +50,33 @@ const steps = [
   {
     title: "Understanding the context",
     description:
-      "Every case begins with an in-depth analysis of your situation and its circumstances. This immersion allows me to pinpoint precisely what is at stake for you.",
+      "Every case begins with an in-depth analysis of your situation and its circumstances. This immersion allows the firm to pinpoint precisely what is at stake for you.",
   },
   {
     title: "Identifying risks and issues",
     description:
-      "I bring to light the concrete risks and levers at your disposal, so that you can make your decisions with full knowledge of the facts.",
+      "The firm brings to light the concrete risks and levers at your disposal, so that you can make your decisions with full knowledge of the facts.",
   },
   {
     title: "Setting out options",
     description:
-      "I translate the applicable rules and possible outcomes into clear scenarios, so that you have a sharp picture of the choices available to you.",
+      "The firm translates the applicable rules and possible outcomes into clear scenarios, so that you have a sharp picture of the choices available to you.",
   },
   {
     title: "Joint strategy building",
     description:
-      "Your involvement is at the heart of my approach: together we build the strategy best suited to your objectives.",
+      "Your involvement is at the heart of the process: the strategy best suited to your objectives is built together.",
   },
 ];
 
 const trustBlocks = [
   {
     title: "Tailored services.",
-    text: "I never propose standardised solutions: every engagement is built to measure, through authentic and engaged dialogue. The firm is committed to understanding the realities of each situation in depth, in order to deliver solutions that match your specific challenges.",
+    text: "The firm never proposes standardised solutions: every engagement is built to measure, through authentic and engaged dialogue. The firm is committed to understanding the realities of each situation in depth, in order to deliver solutions that match your specific challenges.",
   },
   {
     title: "Immersion in the business world.",
-    text: "The firm participates in local economic, associative and public life. This proximity to the field feeds our expertise and enables us to advise you with a nuanced understanding of your environment.",
+    text: "The firm participates in local economic, associative and public life. This proximity to the field feeds its expertise and enables it to advise you with a nuanced understanding of your environment.",
   },
 ];
 
@@ -89,7 +89,7 @@ function ContactButton() {
       className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
       style={{ color: "#ffffff" }}
     >
-      Contact
+      Book an appointment
       <svg
         width="16"
         height="10"
@@ -129,9 +129,11 @@ export default function HomePageEN() {
                 Mutual understanding at the heart of the client relationship.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/65 md:text-[1.0625rem]">
-                I bring my expertise and analytical insight to clarify the legal
-                and business challenges my clients face, enabling them to make
-                informed strategic decisions.
+                You know your business. The firm knows the law. The value of legal
+                advice lies at the intersection of both. That is why every collaboration
+                begins with a careful listen to your reality before any legal analysis.
+                No generic solutions, no unnecessary jargon: clear answers, grounded in
+                your concrete challenges.
               </p>
             </div>
           </AnimatedSection>
@@ -195,7 +197,7 @@ export default function HomePageEN() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[2rem] font-normal leading-tight text-white md:text-[2.75rem]">
-              My approach
+              How I work
             </h2>
           </AnimatedSection>
 
@@ -274,8 +276,8 @@ export default function HomePageEN() {
                 />
                 <ContactItem
                   label="Address"
-                  href="https://maps.google.com/maps?q=20+Rue+du+Foss%C3%A9+des+Tanneurs+67000+Strasbourg"
-                  value={"20 rue du Fossé des Tanneurs\n67000 Strasbourg"}
+                  href="https://maps.google.com/maps?q=5+Avenue+de+la+Marseillaise+67000+Strasbourg"
+                  value={"5 avenue de la Marseillaise\n67000 Strasbourg"}
                   multiline
                 />
               </div>
@@ -284,7 +286,7 @@ export default function HomePageEN() {
             <AnimatedSection delay={0.15}>
               <div className="h-full min-h-[340px] overflow-hidden rounded-2xl border border-navy/10">
                 <iframe
-                  src="https://maps.google.com/maps?q=20+Rue+du+Foss%C3%A9+des+Tanneurs%2C+67000+Strasbourg%2C+France&output=embed&z=16"
+                  src="https://maps.google.com/maps?q=5+Avenue+de+la+Marseillaise%2C+67000+Strasbourg%2C+France&output=embed&z=16"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: "340px" }}

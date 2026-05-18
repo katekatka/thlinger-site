@@ -28,13 +28,18 @@ function FaqRow({ question, answer }: FaqItem) {
         <span className="font-serif text-[1.0625rem] leading-snug text-navy">
           {question}
         </span>
-        <span className="relative flex h-5 w-5 shrink-0 items-center justify-center" aria-hidden="true">
-          <span className="block h-[2px] w-4 rounded-full bg-gold" />
-          <span
-            className="absolute block h-4 w-[2px] rounded-full bg-gold transition-transform duration-300"
-            style={{ transform: open ? "scaleY(0)" : "scaleY(1)" }}
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0">
+          <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+          <line
+            x1="10" y1="3" x2="10" y2="17"
+            stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round"
+            style={{
+              transformOrigin: "10px 10px",
+              transform: open ? "scaleY(0)" : "scaleY(1)",
+              transition: "transform 0.3s cubic-bezier(0.22, 1, 0.36, 1)",
+            }}
           />
-        </span>
+        </svg>
       </button>
       <AnimatePresence initial={false}>
         {open && (

@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
                 <p className={p}>The data controller is:</p>
                 <p className={p}>
                   Christian THALINGER – Attorney at the Strasbourg Bar<br />
-                  20 rue du Fossé des Tanneurs, 67000 Strasbourg<br />
+                  5 avenue de la Marseillaise, 67000 Strasbourg<br />
                   <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">christian@thalinger-avocat.fr</a>
                   {" "}–{" "}
                   <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-navy">+33 6 37 33 19 26</a>
@@ -184,7 +184,7 @@ export default function PrivacyPolicyPage() {
                   <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">
                     christian@thalinger-avocat.fr
                   </a>{" "}
-                  or by post to 20 rue du Fossé des Tanneurs, 67000 Strasbourg, enclosing
+                  or by post to 5 avenue de la Marseillaise, 67000 Strasbourg, enclosing
                   a copy of proof of identity.
                 </p>
                 <p className={p}>

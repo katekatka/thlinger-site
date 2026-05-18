@@ -39,7 +39,7 @@ export default function Footer() {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-        className="bg-dark text-white"
+        className="bg-navy text-white"
       >
         <div className="mx-auto max-w-[1200px] px-6 py-16">
           <div className="flex flex-col gap-12 md:flex-row md:justify-between">
@@ -107,12 +107,12 @@ export default function Footer() {
                     christian@thalinger-avocat.fr
                   </Link>
                   <Link
-                    href="https://maps.google.com/maps?q=20+Rue+du+Foss%C3%A9+des+Tanneurs+67000+Strasbourg"
+                    href="https://maps.google.com/maps?q=5+Avenue+de+la+Marseillaise+67000+Strasbourg"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={linkClass + " not-italic"}
                   >
-                    20 rue du Fossé des Tanneurs
+                    5 avenue de la Marseillaise
                     <br />
                     67000 Strasbourg
                   </Link>

@@ -22,8 +22,14 @@ const lineVariants = {
 export function AnimatedLine({ className = "" }: AnimatedLineProps) {
   return (
     <motion.div
-      className={`bg-gold ${className}`}
-      style={{ height: "2px", minHeight: "2px", maxHeight: "2px", transformOrigin: "left center" }}
+      className={className}
+      style={{
+        height: 0,
+        borderTop: "2px solid var(--color-gold)",
+        transformOrigin: "left center",
+        willChange: "transform",
+        backfaceVisibility: "hidden",
+      }}
       variants={lineVariants}
     />
   );

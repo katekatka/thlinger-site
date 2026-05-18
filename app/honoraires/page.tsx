@@ -133,11 +133,11 @@ const faqGroups: FaqGroup[] = [
     title: "Organisation de la relation client",
     items: [
       {
-        question: "La première consultation est-elle facturée ?",
+        question: "Le premier rendez-vous est-il facturé ?",
         answer: (
           <p>
-            La consultation unique, lorsqu&apos;elle n&apos;est pas suivie d&apos;une consultation
-            écrite ou d&apos;une procédure, n&apos;est pas facturée. Ce premier échange permet de
+            Le premier rendez-vous, lorsqu&apos;il n&apos;est pas suivi d&apos;une consultation
+            écrite ou d&apos;une procédure, n&apos;est pas facturé. Ce premier échange permet de
             comprendre la situation, d&apos;identifier les enjeux du dossier et d&apos;orienter
             le client vers les solutions les plus adaptées.
           </p>
@@ -187,7 +187,7 @@ export default function HonorairesPage() {
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Les honoraires sont librement fixés entre les parties en fonction de la complexité du dossier.
-              Cette question est abordée dès le premier rendez-vous, en toute transparence.
+              Cette question est abordée en toute transparence.
             </p>
           </AnimatedSection>
         </div>
@@ -254,7 +254,7 @@ export default function HonorairesPage() {
               </h2>
               <p className="mb-12 font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
                 Le premier contact est sans engagement de votre part et a pour objectif de comprendre
-                votre situation et d&apos;évaluer si je peux vous aider efficacement. Les modalités
+                votre situation et d&apos;évaluer si le cabinet peut vous accompagner efficacement. Les modalités
                 sont précisées lors de la prise de rendez-vous.
               </p>
               <a

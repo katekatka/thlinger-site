@@ -143,8 +143,10 @@ export default function HeroSectionEn() {
               marginBottom: "2.5rem",
             }}
           >
-            With extensive experience advising businesses and individuals,
-            I help my clients secure their strategic decisions.
+            Advising businesses and individuals, the firm turns legal
+            complexity into decision-making clarity to secure your strategic
+            choices. The first meeting is free, without obligation and
+            confidential. It serves one purpose only: to understand your situation.
           </motion.p>
 
           {/* CTA */}
@@ -154,7 +156,7 @@ export default function HeroSectionEn() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Contact
+              Discuss your situation
               <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
                 className="transition-transform duration-300 group-hover:translate-x-1">
                 <path d="M1 5H15M15 5L11 1M15 5L11 9"

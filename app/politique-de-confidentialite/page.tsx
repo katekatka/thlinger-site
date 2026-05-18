@@ -58,7 +58,7 @@ export default function PolitiqueConfidentialitePage() {
                 <p className={p}>Le responsable du traitement des données personnelles est :</p>
                 <p className={p}>
                   Christian THALINGER – Avocat au Barreau de Strasbourg<br />
-                  20 rue du Fossé des Tanneurs, 67000 Strasbourg<br />
+                  5 avenue de la Marseillaise, 67000 Strasbourg<br />
                   <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">christian@thalinger-avocat.fr</a>
                   {" "}–{" "}
                   <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-navy">+33 6 37 33 19 26</a>
@@ -187,7 +187,7 @@ export default function PolitiqueConfidentialitePage() {
                   <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">
                     christian@thalinger-avocat.fr
                   </a>{" "}
-                  ou par courrier à 20 rue du Fossé des Tanneurs, 67000 Strasbourg, en
+                  ou par courrier à 5 avenue de la Marseillaise, 67000 Strasbourg, en
                   joignant une copie d&apos;une pièce d&apos;identité.
                 </p>
                 <p className={p}>

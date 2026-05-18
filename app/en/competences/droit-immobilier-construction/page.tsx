@@ -37,7 +37,16 @@ const interventions = [
       "Rent arrears and breach of contract",
       "Lease termination",
       "Eviction proceedings",
-      "Defence of landlords and occupants",
+      "Defence of landlords",
+    ],
+  },
+  {
+    title: "Real estate transactions",
+    items: [
+      "Sale of property under future completion agreement (VEFA)",
+      "Acquisition and sale of real estate",
+      "Securing real estate transactions",
+      "Seller warranties and obligations",
     ],
   },
 ];
