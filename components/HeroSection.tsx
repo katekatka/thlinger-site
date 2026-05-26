@@ -105,7 +105,7 @@ export default function HeroSection() {
               marginBottom: "1.75rem",
             }}
           >
-            <span className="block md:inline">Maître Christian Thalinger</span>
+            <span className="block md:inline">Maître Christian THALINGER</span>
             <span className="hidden md:inline"> · </span>
             <span className="block md:inline">Avocat d&apos;affaires à Strasbourg</span>
           </motion.p>
@@ -240,7 +240,7 @@ export default function HeroSection() {
                       </button>
                     </div>
                     <p className="font-sans text-sm leading-relaxed text-navy/70">
-                      Maître Christian Thalinger est avocat au Barreau de Strasbourg depuis janvier 2022.
+                      Maître Christian THALINGER est avocat au Barreau de Strasbourg depuis janvier 2022.
                       Le cabinet THALINGER Avocat, situé au 5 avenue de la Marseillaise 67000 Strasbourg,
                       intervient en droit des sociétés, droit commercial, droit du travail, droit de la
                       sécurité sociale, droit immobilier, droit de la construction et droit bancaire et
@@ -256,7 +256,7 @@ export default function HeroSection() {
               {/* Desktop hover card — display:none on mobile (no overflow), in DOM on desktop for crawlers */}
               <div className="hidden md:block invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-200 absolute left-0 top-full z-50 mt-2 w-[480px] max-w-[90vw] rounded-2xl border border-gold/20 bg-white p-6 shadow-[0_12px_40px_rgba(7,19,123,0.12)]">
                 <p className="font-sans text-sm leading-relaxed text-navy/70">
-                  Maître Christian Thalinger est avocat au Barreau de Strasbourg depuis janvier 2022.
+                  Maître Christian THALINGER est avocat au Barreau de Strasbourg depuis janvier 2022.
                   Le cabinet THALINGER Avocat, situé au 5 avenue de la Marseillaise 67000 Strasbourg,
                   intervient en droit des sociétés, droit commercial, droit du travail, droit de la
                   sécurité sociale, droit immobilier, droit de la construction et droit bancaire et
@@ -277,7 +277,7 @@ export default function HeroSection() {
         >
           <Image
             src="/images/hero1.png"
-            alt="Christian Thalinger, Avocat au Barreau de Strasbourg"
+            alt="Christian THALINGER, Avocat au Barreau de Strasbourg"
             fill
             className="object-contain object-left-top md:object-bottom"
             priority

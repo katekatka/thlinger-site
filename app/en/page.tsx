@@ -248,7 +248,7 @@ export default function HomePageEN() {
               <div className="flex items-center gap-5">
                 <Image
                   src="/images/portrait02.png"
-                  alt="Christian Thalinger, Attorney at the Strasbourg Bar"
+                  alt="Christian THALINGER, Attorney at the Strasbourg Bar"
                   width={150}
                   height={150}
                   className="object-contain shrink-0"
@@ -293,7 +293,7 @@ export default function HomePageEN() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Christian Thalinger Law Office — Strasbourg"
+                  title="Christian THALINGER Law Office — Strasbourg"
                 />
               </div>
             </AnimatedSection>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Politique de Confidentialité — Christian Thalinger",
+  title: "Politique de Confidentialité — Christian THALINGER",
   description: "Politique de confidentialité et protection des données personnelles du cabinet Thalinger Avocat.",
 };
 

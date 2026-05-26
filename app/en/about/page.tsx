@@ -6,7 +6,7 @@ import AboutHero from "@/components/AboutHero";
 // ─── Metadata ────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "About — Christian Thalinger, Business Lawyer in Strasbourg",
+  title: "About — Christian THALINGER, Business Lawyer in Strasbourg",
   description:
     "Business lawyer at the Strasbourg Bar since 2022, specialising in corporate law, commercial law, employment law, banking law, insurance law and real estate law. Strategic, personalised approach.",
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Christian Thalinger — Business Lawyer in Strasbourg, France",
+    title: "Christian THALINGER — Business Lawyer in Strasbourg, France",
     description: "Strategic business law counsel. Personalised approach, response within 24 hours.",
     url: "https://www.thalinger-avocat.fr/en/about",
     type: "profile",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: "https://www.thalinger-avocat.fr/images/OG.png",
         width: 1200,
         height: 630,
-        alt: "Maître Christian Thalinger, business lawyer in Strasbourg",
+        alt: "Maître Christian THALINGER, business lawyer in Strasbourg",
       },
     ],
   },
@@ -40,12 +40,12 @@ const jsonLdGraph = {
     {
       "@type": "Person",
       "@id": "https://www.thalinger-avocat.fr/#christian-thalinger",
-      name: "Christian Thalinger",
+      name: "Christian THALINGER",
       givenName: "Christian",
       familyName: "Thalinger",
       jobTitle: "Avocat au Barreau de Strasbourg",
       description:
-        "Maître Christian Thalinger (THALINGER AVOCAT, SIREN 909547721) is a business lawyer at the Strasbourg Bar, specialising in corporate law, commercial law, employment law, banking and insurance law, and real estate and construction law. Sworn in on 13 January 2022.",
+        "Maître Christian THALINGER (THALINGER AVOCAT, SIREN 909547721) is a business lawyer at the Strasbourg Bar, specialising in corporate law, commercial law, employment law, banking and insurance law, and real estate and construction law. Sworn in on 13 January 2022.",
       url: "https://www.thalinger-avocat.fr/en/about",
       image: "https://www.thalinger-avocat.fr/images/bio.png",
       telephone: "+33637331926",
@@ -122,9 +122,9 @@ const jsonLdGraph = {
     {
       "@type": "WebPage",
       "@id": "https://www.thalinger-avocat.fr/en/about",
-      name: "About — Maître Christian Thalinger",
+      name: "About — Maître Christian THALINGER",
       description:
-        "Biography and background of Maître Christian Thalinger, business lawyer at the Strasbourg Bar.",
+        "Biography and background of Maître Christian THALINGER, business lawyer at the Strasbourg Bar.",
       isPartOf: { "@id": "https://www.thalinger-avocat.fr/#website" },
       about: { "@id": "https://www.thalinger-avocat.fr/#christian-thalinger" },
       inLanguage: "en",
@@ -148,7 +148,7 @@ const jsonLdFaq = {
       name: "What areas of law does Maître Thalinger cover?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Maître Christian Thalinger practises primarily in corporate law, commercial law, employment law, banking and insurance law, and real estate and construction law. His approach is geared towards the strategic support of SME owners and entrepreneurs.",
+        text: "Maître Christian THALINGER practises primarily in corporate law, commercial law, employment law, banking and insurance law, and real estate and construction law. His approach is geared towards the strategic support of SME owners and entrepreneurs.",
       },
     },
     {
@@ -266,7 +266,7 @@ const caseStudies = [
 const faqItems = [
   {
     question: "What areas of law does Maître Thalinger cover?",
-    answer: "Maître Christian Thalinger practises primarily in corporate law, commercial law, employment law, banking and insurance law, and real estate and construction law. His approach is geared towards the strategic support of SME owners and entrepreneurs.",
+    answer: "Maître Christian THALINGER practises primarily in corporate law, commercial law, employment law, banking and insurance law, and real estate and construction law. His approach is geared towards the strategic support of SME owners and entrepreneurs.",
   },
   {
     question: "How does an initial consultation work?",
@@ -338,7 +338,7 @@ export default function AboutPage() {
         eyebrow="About"
         staticLine="Business Lawyer in Strasbourg"
         description="A business lawyer in Strasbourg, I have been a member of the Bar since 2022 and advise clients in French and English. I structure every matter around one conviction: complexity is managed through rigour and explanation, never through opacity. When the stakes are high, I tell the truth — including what is uncomfortable. This is the approach I apply across every area of my practice."
-        imageAlt="Maître Christian Thalinger, business lawyer at the Strasbourg Bar"
+        imageAlt="Maître Christian THALINGER, business lawyer at the Strasbourg Bar"
       />
 
       <GoldDivider />

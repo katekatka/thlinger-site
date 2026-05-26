@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Legal Notice — Christian Thalinger",
-  description: "Legal notice for the website of Christian Thalinger, Attorney at the Strasbourg Bar.",
+  title: "Legal Notice — Christian THALINGER",
+  description: "Legal notice for the website of Christian THALINGER, Attorney at the Strasbourg Bar.",
 };
 
 const h2 = "mb-4 font-serif text-[1.125rem] font-normal text-navy";

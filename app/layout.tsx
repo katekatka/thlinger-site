@@ -22,8 +22,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://thalinger-avocat.fr"),
-  title: "Christian Thalinger — Avocat d'affaires",
-  description: "Site officiel du cabinet de Christian Thalinger, avocat d'affaires à Strasbourg.",
+  title: "Christian THALINGER — Avocat d'affaires",
+  description: "Site officiel du cabinet de Christian THALINGER, avocat d'affaires à Strasbourg.",
   icons: {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
     icon: [
@@ -33,16 +33,16 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Christian Thalinger — Avocat d'affaires",
+    title: "Christian THALINGER — Avocat d'affaires",
     description: "Avocat d'affaires à Strasbourg. Conseil stratégique pour les entreprises en Alsace et au-delà.",
     url: "https://thalinger-avocat.fr",
-    siteName: "Christian Thalinger",
+    siteName: "Christian THALINGER",
     locale: "fr_FR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Christian Thalinger — Avocat d'affaires",
+    title: "Christian THALINGER — Avocat d'affaires",
     description: "Avocat d'affaires à Strasbourg. Conseil stratégique pour les entreprises en Alsace et au-delà.",
   },
 };

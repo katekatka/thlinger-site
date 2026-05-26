@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Mentions Légales — Christian Thalinger",
-  description: "Mentions légales du site de Me Christian Thalinger, avocat au Barreau de Strasbourg.",
+  title: "Mentions Légales — Christian THALINGER",
+  description: "Mentions légales du site de Me Christian THALINGER, avocat au Barreau de Strasbourg.",
 };
 
 const h2 = "mb-4 font-serif text-[1.125rem] font-normal text-navy";

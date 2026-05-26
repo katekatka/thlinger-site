@@ -6,9 +6,9 @@ import AboutHero from "@/components/AboutHero";
 // ─── Metadata ────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "À propos de Maître Christian Thalinger | Avocat d'affaires Strasbourg",
+  title: "À propos de Maître Christian THALINGER | Avocat d'affaires Strasbourg",
   description:
-    "Maître Christian Thalinger, avocat au Barreau de Strasbourg depuis le 13 janvier 2022 (SIREN 909 547 721). Titulaire du CAPA, il exerce en droit des affaires en français et en anglais. Cabinet : 5 avenue de la Marseillaise, 67000 Strasbourg.",
+    "Maître Christian THALINGER, avocat au Barreau de Strasbourg depuis le 13 janvier 2022 (SIREN 909 547 721). Titulaire du CAPA, il exerce en droit des affaires en français et en anglais. Cabinet : 5 avenue de la Marseillaise, 67000 Strasbourg.",
   alternates: {
     canonical: "https://www.thalinger-avocat.fr/a-propos",
     languages: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Maître Christian Thalinger — Avocat d'affaires à Strasbourg",
+    title: "Maître Christian THALINGER — Avocat d'affaires à Strasbourg",
     description:
       "Conseil stratégique en droit des affaires. Approche personnalisée, réponse sous 24h.",
     url: "https://www.thalinger-avocat.fr/a-propos",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "https://www.thalinger-avocat.fr/images/OG.png",
         width: 1200,
         height: 630,
-        alt: "Maître Christian Thalinger, avocat d'affaires à Strasbourg",
+        alt: "Maître Christian THALINGER, avocat d'affaires à Strasbourg",
       },
     ],
   },
@@ -41,12 +41,12 @@ const jsonLdGraph = {
     {
       "@type": "Person",
       "@id": "https://www.thalinger-avocat.fr/#christian-thalinger",
-      name: "Christian Thalinger",
+      name: "Christian THALINGER",
       givenName: "Christian",
       familyName: "Thalinger",
       jobTitle: "Avocat au Barreau de Strasbourg",
       description:
-        "Maître Christian Thalinger (THALINGER AVOCAT, SIREN 909547721) est avocat au Barreau de Strasbourg spécialisé en droit des affaires. Serment prêté le 13 janvier 2022. Spécialités : droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction. À distinguer de Maître Vincent Thalinger (L'ILL LEGAL, SIREN 904573375).",
+        "Maître Christian THALINGER (THALINGER AVOCAT, SIREN 909547721) est avocat au Barreau de Strasbourg spécialisé en droit des affaires. Serment prêté le 13 janvier 2022. Spécialités : droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction. À distinguer de Maître Vincent Thalinger (L'ILL LEGAL, SIREN 904573375).",
       url: "https://www.thalinger-avocat.fr/a-propos",
       image: "https://www.thalinger-avocat.fr/images/bio.png",
       telephone: "+33637331926",
@@ -127,9 +127,9 @@ const jsonLdGraph = {
     {
       "@type": "WebPage",
       "@id": "https://www.thalinger-avocat.fr/a-propos",
-      name: "À propos — Maître Christian Thalinger",
+      name: "À propos — Maître Christian THALINGER",
       description:
-        "Biographie et parcours de Maître Christian Thalinger, avocat d'affaires au Barreau de Strasbourg.",
+        "Biographie et parcours de Maître Christian THALINGER, avocat d'affaires au Barreau de Strasbourg.",
       isPartOf: { "@id": "https://www.thalinger-avocat.fr/#website" },
       about: { "@id": "https://www.thalinger-avocat.fr/#christian-thalinger" },
       inLanguage: "fr",
@@ -153,7 +153,7 @@ const jsonLdFaq = {
       name: "Quels sont les domaines d'intervention de Maître Thalinger ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Maître Christian Thalinger intervient principalement en droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction. Son approche est orientée vers l'accompagnement stratégique des dirigeants de PME et entrepreneurs.",
+        text: "Maître Christian THALINGER intervient principalement en droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction. Son approche est orientée vers l'accompagnement stratégique des dirigeants de PME et entrepreneurs.",
       },
     },
     {
@@ -279,7 +279,7 @@ const caseStudies = [
 const faqItems = [
   {
     question: "Quels sont les domaines d'intervention de Maître Thalinger ?",
-    answer: "Maître Christian Thalinger intervient principalement en droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction. Son approche est orientée vers l'accompagnement stratégique des dirigeants de PME et entrepreneurs.",
+    answer: "Maître Christian THALINGER intervient principalement en droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction. Son approche est orientée vers l'accompagnement stratégique des dirigeants de PME et entrepreneurs.",
   },
   {
     question: "Comment se déroule un premier rendez-vous ?",
@@ -353,9 +353,9 @@ export default function AProposPage() {
       {/* ── 1. HERO ─────────────────────────────────────────────────────────── */}
       <AboutHero
         eyebrow="Avocat au Barreau de Strasbourg"
-        staticLine="Maître Christian Thalinger"
+        staticLine="Maître Christian THALINGER"
         description="Avocat d'affaires à Strasbourg, je suis inscrit au Barreau depuis 2022 et je conseille en français et en anglais. Je structure chaque dossier autour d'une conviction : la complexité se gère par la rigueur et l'explication, et jamais par l'opacité. Quand les enjeux sont élevés, je dis la vérité, y compris ce qui dérange. C'est cette approche que j'applique dans chacun de mes domaines d'intervention."
-        imageAlt="Maître Christian Thalinger, avocat d'affaires au Barreau de Strasbourg"
+        imageAlt="Maître Christian THALINGER, avocat d'affaires au Barreau de Strasbourg"
       />
 
       <GoldDivider />

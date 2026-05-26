@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ogImage = post.ogImageUrl ?? `${BASE}/opengraph-image.png`;
 
   return {
-    title: `${post.title} — Christian Thalinger, Avocat d'affaires`,
+    title: `${post.title} — Christian THALINGER, Avocat d'affaires`,
     description: post.metaDescription,
     alternates: {
       canonical: `${BASE}/blog/${post.slug}`,
@@ -71,12 +71,12 @@ export default async function BlogPostPage({ params }: Props) {
     dateModified: post.lastUpdated || post.publishedDate,
     author: {
       "@type": "Person",
-      name: "Christian Thalinger",
+      name: "Christian THALINGER",
       url: BASE,
     },
     publisher: {
       "@type": "Organization",
-      name: "Christian Thalinger — Avocat d'affaires",
+      name: "Christian THALINGER — Avocat d'affaires",
       url: BASE,
     },
     inLanguage: "fr-FR",

@@ -15,12 +15,12 @@ const jsonLd = {
     {
       "@type": "Person",
       "@id": "https://www.thalinger-avocat.fr/#christian-thalinger",
-      name: "Christian Thalinger",
+      name: "Christian THALINGER",
       givenName: "Christian",
       familyName: "Thalinger",
       jobTitle: "Avocat au Barreau de Strasbourg",
       description:
-        "Maître Christian Thalinger (THALINGER AVOCAT, SIREN 909547721) est avocat au Barreau de Strasbourg spécialisé en droit des affaires. Serment prêté le 13 janvier 2022. Spécialités : droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction.",
+        "Maître Christian THALINGER (THALINGER AVOCAT, SIREN 909547721) est avocat au Barreau de Strasbourg spécialisé en droit des affaires. Serment prêté le 13 janvier 2022. Spécialités : droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction.",
       url: "https://www.thalinger-avocat.fr",
       image: "https://www.thalinger-avocat.fr/images/bio.png",
       telephone: "+33637331926",
@@ -383,7 +383,7 @@ export default async function HomePage() {
               <div className="flex items-center gap-5">
                 <Image
                   src="/images/portrait02.png"
-                  alt="Christian Thalinger, Avocat au Barreau de Strasbourg"
+                  alt="Christian THALINGER, Avocat au Barreau de Strasbourg"
                   width={150}
                   height={150}
                   className="object-contain shrink-0"
@@ -437,7 +437,7 @@ export default async function HomePage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Cabinet Christian Thalinger — Strasbourg"
+                  title="Cabinet Christian THALINGER — Strasbourg"
                 />
               </div>
             </AnimatedSection>
