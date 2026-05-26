@@ -81,7 +81,7 @@ export default function GoogleReviews({ reviews, rating, totalReviews, placeUrl 
             href={placeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex w-fit items-center gap-3 rounded-full border-2 border-gold px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-gold transition-all duration-300 hover:bg-gold hover:text-navy active:scale-[0.97]"
+            className="group inline-flex w-fit items-center gap-3 rounded-full border-2 border-gold px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-gold transition-all duration-300 hover:bg-gold hover:gap-5 hover:text-navy active:scale-[0.97]"
           >
             Voir tous les avis
             <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
