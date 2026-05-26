@@ -133,7 +133,7 @@ export default function AboutHero({
   return (
     <section className="relative overflow-hidden bg-white" style={{ paddingTop: "5rem" }}>
       <motion.div
-        className="mx-auto grid max-w-[1200px] grid-cols-1 px-6 md:grid-cols-[1fr_480px]"
+        className="mx-auto grid max-w-[1200px] grid-cols-1 px-6 md:grid-cols-[1fr_576px]"
         variants={containerVariants}
         initial={mounted ? "hidden" : "visible"}
         animate="visible"
@@ -232,7 +232,7 @@ export default function AboutHero({
         {/* ── Image column ── */}
         <motion.div
           variants={itemVariants}
-          className="relative h-[440px] w-full md:h-auto"
+          className="relative h-[528px] w-full md:h-auto"
         >
           <Image
             src="/images/bio.png"

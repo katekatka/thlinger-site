@@ -87,7 +87,7 @@ export default function HeroSection() {
       style={{ paddingTop: "5rem" }}
     >
       <motion.div
-        className="relative mx-auto grid max-w-[1200px] grid-cols-1 px-6 md:grid-cols-[1fr_530px]"
+        className="relative mx-auto grid max-w-[1200px] grid-cols-1 px-6 md:grid-cols-[1fr_636px]"
         variants={containerVariants}
         initial={mounted ? "hidden" : "visible"}
         animate="visible"
@@ -273,7 +273,7 @@ export default function HeroSection() {
         {/* ── Image column ── */}
         <motion.div
           variants={itemVariants}
-          className="relative h-[300px] w-full overflow-hidden md:h-auto"
+          className="relative h-[360px] w-full overflow-hidden md:h-auto"
         >
           <Image
             src="/images/hero1.png"
