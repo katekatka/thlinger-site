@@ -105,7 +105,9 @@ export default function HeroSectionEn() {
               marginBottom: "1.75rem",
             }}
           >
-            Maître Christian Thalinger · Business Lawyer in Strasbourg
+            <span className="block md:inline">Maître Christian Thalinger</span>
+            <span className="hidden md:inline"> · </span>
+            <span className="block md:inline">Business Lawyer in Strasbourg</span>
           </motion.p>
 
           {/*

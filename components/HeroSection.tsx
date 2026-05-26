@@ -105,7 +105,9 @@ export default function HeroSection() {
               marginBottom: "1.75rem",
             }}
           >
-            Maître Christian Thalinger · Avocat d&apos;affaires à Strasbourg
+            <span className="block md:inline">Maître Christian Thalinger</span>
+            <span className="hidden md:inline"> · </span>
+            <span className="block md:inline">Avocat d&apos;affaires à Strasbourg</span>
           </motion.p>
 
           {/*
