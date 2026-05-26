@@ -67,7 +67,6 @@ const jsonLdGraph = {
         "Construction Law",
         "Business Law",
         "Social Security Law",
-
       ],
       hasCredential: [
         {
@@ -161,18 +160,18 @@ const jsonLdFaq = {
     },
     {
       "@type": "Question",
-      name: "Does Maître Thalinger speak English?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, Maître Thalinger is fluent in English and can assist English-speaking clients with their legal matters in France. The website is also available in English.",
-      },
-    },
-    {
-      "@type": "Question",
       name: "What are the fees for a business lawyer in Strasbourg?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Fees depend on the nature and complexity of the matter. Maître Thalinger offers several billing arrangements: hourly rate, fixed fee per matter, or a retainer for ongoing support. An estimate is always provided before any engagement begins.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between a business lawyer and a general practice lawyer?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A business lawyer focuses on company-related matters: incorporation, commercial contracts, employer-employee relations, disputes between partners. Their approach systematically integrates the economic and strategic dimension of legal decisions.",
       },
     },
     {
@@ -191,6 +190,14 @@ const jsonLdFaq = {
         text: "Yes. Certain situations — formal notices, court summons, social security audits, shareholder disputes — require a swift response. Maître Thalinger commits to responding within 24 hours and can arrange an initial exchange at short notice.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Does Maître Thalinger speak English?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Maître Thalinger is fluent in English and can assist English-speaking clients with their legal matters in France. The website is also available in English.",
+      },
+    },
   ],
 };
 
@@ -199,7 +206,7 @@ const jsonLdFaq = {
 const approachPillars = [
   {
     title: "Strategic",
-    text: "I take an interest in your market, your competitors, your timeline, and your ambitions — because a legal answer that ignores business reality is only half an answer.",
+    text: "I take an interest in your market, your competitors, your timeline, and your ambitions — because a legal answer that ignores business reality is not sufficient.",
   },
   {
     title: "Preventive",
@@ -273,12 +280,12 @@ const faqItems = [
     answer: "The first exchange allows a clear picture of your situation to be formed without commitment. Maître Thalinger listens to your concerns, identifies the legal risks, and presents the available options with their implications. The goal is to give you the clarity you need to decide on next steps.",
   },
   {
-    question: "Does Maître Thalinger speak English?",
-    answer: "Yes, Maître Thalinger is fluent in English and can assist English-speaking clients with their legal matters in France. The website is also available in English.",
-  },
-  {
     question: "What are the fees for a business lawyer in Strasbourg?",
     answer: "Fees depend on the nature and complexity of the matter. Maître Thalinger offers several billing arrangements: hourly rate, fixed fee per matter, or a retainer for ongoing support. An estimate is always provided before any engagement begins.",
+  },
+  {
+    question: "What is the difference between a business lawyer and a general practice lawyer?",
+    answer: "A business lawyer focuses on company-related matters: incorporation, commercial contracts, employer-employee relations, disputes between partners. Their approach systematically integrates the economic and strategic dimension of legal decisions.",
   },
   {
     question: "Is the initial consultation free?",
@@ -287,6 +294,10 @@ const faqItems = [
   {
     question: "Can Maître Thalinger act at short notice?",
     answer: "Yes. Certain situations — formal notices, court summons, social security audits, shareholder disputes — require a swift response. Maître Thalinger commits to responding within 24 hours and can arrange an initial exchange at short notice.",
+  },
+  {
+    question: "Does Maître Thalinger speak English?",
+    answer: "Yes, Maître Thalinger is fluent in English and can assist English-speaking clients with their legal matters in France. The website is also available in English.",
   },
 ];
 
@@ -335,8 +346,8 @@ export default function AboutPage() {
 
       {/* ── 1. HERO ─────────────────────────────────────────────────────────── */}
       <AboutHero
-        eyebrow="About"
-        staticLine="Business Lawyer in Strasbourg"
+        eyebrow="Attorney at the Strasbourg Bar"
+        staticLine="Maître Christian THALINGER"
         description="A business lawyer in Strasbourg, I have been a member of the Bar since 2022 and advise clients in French and English. I structure every matter around one conviction: complexity is managed through rigour and explanation, never through opacity. When the stakes are high, I tell the truth — including what is uncomfortable. This is the approach I apply across every area of my practice."
         imageAlt="Maître Christian THALINGER, business lawyer at the Strasbourg Bar"
       />
@@ -376,7 +387,7 @@ export default function AboutPage() {
           <AnimatedSection className="mb-16">
             <p className="mb-4 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">Background</p>
             <h2 className="mb-8 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-              Business law.
+              A multidisciplinary approach.
             </h2>
             <div className="max-w-2xl space-y-5 font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               <p>
@@ -391,11 +402,11 @@ export default function AboutPage() {
                 that businesses face.
               </p>
               <p>
-                In January 2024, I founded THALINGER Avocat.
-              </p>
-              <p>
                 I then broadened this practice through a firm collaboration between October 2024 and
                 May 2026, covering employment law, real estate law, and construction law.
+              </p>
+              <p>
+                In January 2024, I founded THALINGER Avocat.
               </p>
               <p>
                 Today, the firm brings these experiences together in service of an approach built on
@@ -471,7 +482,6 @@ export default function AboutPage() {
               </details>
 
             </div>
-
           </AnimatedSection>
         </div>
       </section>
@@ -589,54 +599,7 @@ export default function AboutPage() {
 
       <GoldDivider />
 
-      {/* ── 6. BEYOND THE PRACTICE ──────────────────────────────────────────── */}
-      <section className="bg-navy py-24 md:py-32">
-        <div className="mx-auto max-w-[1200px] px-6">
-          <AnimatedSection className="mb-16">
-            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
-              Beyond the practice.
-            </h2>
-          </AnimatedSection>
-
-          <AnimatedSection stagger className="grid gap-6 md:grid-cols-3">
-            <AnimatedItem>
-              <div className="flex h-full flex-col rounded-[2.5rem] border-2 border-gold bg-white p-8 md:p-10">
-                <h3 className="mb-3 font-serif text-lg font-normal text-navy">BNI Maximus Wasselonne</h3>
-                <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
-                  Active member of the BNI Maximus Wasselonne network, the world&apos;s leading business
-                  referral organisation. Each week, a structured exchange with business owners and
-                  independents from Alsace — because understanding a company&apos;s challenges starts
-                  with meeting them every day.
-                </p>
-              </div>
-            </AnimatedItem>
-            <AnimatedItem>
-              <div className="flex h-full flex-col rounded-[2.5rem] border-2 border-gold bg-white p-8 md:p-10">
-                <h3 className="mb-3 font-serif text-lg font-normal text-navy">History, geopolitics and strategy</h3>
-                <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
-                  A lifelong passion for French and European history. This curiosity for power dynamics,
-                  balances of force, and influence strategies directly informs how I analyse a case and
-                  build an argument.
-                </p>
-              </div>
-            </AnimatedItem>
-            <AnimatedItem>
-              <div className="flex h-full flex-col rounded-[2.5rem] border-2 border-gold bg-white p-8 md:p-10">
-                <h3 className="mb-3 font-serif text-lg font-normal text-navy">Skiing, swimming, water polo</h3>
-                <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
-                  Team sport teaches reading the game, decision-making under pressure, and trust in a
-                  collective. Individual sport teaches discipline and endurance. Both transfer directly
-                  to the practice of business law.
-                </p>
-              </div>
-            </AnimatedItem>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <GoldDivider />
-
-      {/* ── 7. FAQ ──────────────────────────────────────────────────────────── */}
+      {/* ── 6. FAQ ──────────────────────────────────────────────────────────── */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
@@ -658,7 +621,7 @@ export default function AboutPage() {
               Questions about fees?{" "}
               <Link
                 href="/en/honoraires"
-                className="text-navy underline decoration-gold underline-offset-2 transition-colors hover:text-gold"
+                className="text-navy transition-colors hover:text-gold"
               >
                 See the Fees page
               </Link>
@@ -670,7 +633,7 @@ export default function AboutPage() {
 
       <GoldDivider />
 
-      {/* ── 8. CTA ──────────────────────────────────────────────────────────── */}
+      {/* ── 7. CTA ──────────────────────────────────────────────────────────── */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
