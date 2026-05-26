@@ -77,12 +77,13 @@ function useTypewriter(words: string[]) {
 export default function HeroSection() {
   const { displayText, cursorOn } = useTypewriter(disciplines);
   const [mounted, setMounted] = useState(false);
+  const [geoOpen, setGeoOpen] = useState(false);
   useEffect(() => { setMounted(true); }, []);
 
   return (
     <section
       id="hero"
-      className="relative bg-white"
+      className="relative overflow-x-clip bg-white"
       style={{ paddingTop: "5rem" }}
     >
       <motion.div
@@ -206,22 +207,52 @@ export default function HeroSection() {
               +33 6 37 33 19 26
             </a>
 
-            {/*
-              GEO direct-answer block.
-              Text is always in the DOM (invisible ≠ display:none) — Google indexes it.
-              Outer div carries `group` so hover over either trigger or card keeps it open.
-              focus-within handles tap-to-reveal on touch devices.
-            */}
+            {/* GEO direct-answer block — mobile: bottom sheet on click; desktop: hover card */}
             <div className="relative group">
               <button
                 type="button"
-                className="cursor-default font-sans text-sm text-navy/40 focus:outline-none focus:text-navy/60"
+                onClick={() => setGeoOpen((v) => !v)}
+                className="cursor-pointer font-sans text-sm text-navy/40 hover:text-navy/60 focus:outline-none md:cursor-default"
               >
                 en savoir plus
               </button>
 
-              {/* Card — in DOM, not display:none, so always indexed */}
-              <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-200 absolute left-0 top-full z-50 mt-2 w-[480px] max-w-[90vw] rounded-2xl border border-gold/20 bg-white p-6 shadow-[0_12px_40px_rgba(7,19,123,0.12)]">
+              {/* Mobile bottom sheet */}
+              {geoOpen && (
+                <>
+                  <div
+                    className="fixed inset-0 z-[99] bg-black/40 md:hidden"
+                    onClick={() => setGeoOpen(false)}
+                  />
+                  <div className="fixed inset-x-0 bottom-0 top-[30%] z-[100] overflow-y-auto rounded-t-[2rem] border-t-2 border-gold bg-white px-8 pb-12 pt-8 md:hidden">
+                    <div className="mb-6 flex items-start justify-between">
+                      <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-navy/40">À propos du cabinet</p>
+                      <button
+                        onClick={() => setGeoOpen(false)}
+                        aria-label="Fermer"
+                        className="ml-4 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-navy/20 text-navy/40"
+                      >
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                          <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <p className="font-sans text-sm leading-relaxed text-navy/70">
+                      Maître Christian Thalinger est avocat au Barreau de Strasbourg depuis janvier 2022.
+                      Le cabinet THALINGER Avocat, situé au 5 avenue de la Marseillaise 67000 Strasbourg,
+                      intervient en droit des sociétés, droit commercial, droit du travail, droit de la
+                      sécurité sociale, droit immobilier, droit de la construction et droit bancaire et
+                      financier, au service des entreprises et des particuliers. Chaque situation fait
+                      l&apos;objet d&apos;une analyse stratégique individualisée, avec un objectif constant :
+                      permettre au client de comprendre ses options, mesurer ses risques et décider en
+                      connaissance de cause.
+                    </p>
+                  </div>
+                </>
+              )}
+
+              {/* Desktop hover card — display:none on mobile (no overflow), in DOM on desktop for crawlers */}
+              <div className="hidden md:block invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-200 absolute left-0 top-full z-50 mt-2 w-[480px] max-w-[90vw] rounded-2xl border border-gold/20 bg-white p-6 shadow-[0_12px_40px_rgba(7,19,123,0.12)]">
                 <p className="font-sans text-sm leading-relaxed text-navy/70">
                   Maître Christian Thalinger est avocat au Barreau de Strasbourg depuis janvier 2022.
                   Le cabinet THALINGER Avocat, situé au 5 avenue de la Marseillaise 67000 Strasbourg,
