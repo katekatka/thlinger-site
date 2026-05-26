@@ -104,7 +104,7 @@ export default function CookieBanner() {
           {/* Refuse — outlined, equally prominent */}
           <button
             onClick={deny}
-            className="inline-flex items-center justify-center rounded-full border-2 border-navy bg-white px-6 py-3 font-serif text-[0.75rem] uppercase tracking-[0.14em] text-navy transition-all duration-200 hover:border-gold active:border-gold"
+            className="inline-flex items-center justify-center rounded-full border-2 border-gold bg-white px-6 py-3 font-serif text-[0.75rem] uppercase tracking-[0.14em] text-navy transition-all duration-200 hover:bg-navy hover:text-white active:bg-navy"
           >
             {isEN ? "Refuse" : "Refuser"}
           </button>

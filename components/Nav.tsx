@@ -36,6 +36,7 @@ type NavLink = { label: string; href: string; dropdown?: boolean };
 const navLinksFR: NavLink[] = [
   { label: "Accueil",     href: "/#hero" },
   { label: "Compétences", href: "/#competences", dropdown: true },
+  { label: "À propos",    href: "/a-propos" },
   { label: "Honoraires",  href: "/honoraires" },
   { label: "Blog",        href: "/blog" },
 ];
@@ -43,6 +44,7 @@ const navLinksFR: NavLink[] = [
 const navLinksEN: NavLink[] = [
   { label: "Home",      href: "/en#hero" },
   { label: "Expertise", href: "/en#competences", dropdown: true },
+  { label: "About",     href: "/en/about" },
   { label: "Fees",      href: "/en/honoraires" },
   { label: "Blog",      href: "/en/blog" },
 ];

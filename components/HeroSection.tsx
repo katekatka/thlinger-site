@@ -21,6 +21,7 @@ const itemVariants = {
   },
 };
 
+// All 7 practice-area variants — must stay in sync with the sr-only list below
 const disciplines = [
   "commercial",
   "immobilier",
@@ -31,8 +32,10 @@ const disciplines = [
   "de la sécurité sociale",
 ];
 
+// ─── Typewriter ───────────────────────────────────────────────────────────────
+
 function useTypewriter(words: string[]) {
-  const [displayText, setDisplayText] = useState("");
+  const [displayText, setDisplayText] = useState(words[0]);
   const [wordIndex, setWordIndex]     = useState(0);
   const [isDeleting, setIsDeleting]   = useState(false);
   const [cursorOn, setCursorOn]       = useState(true);
@@ -69,30 +72,28 @@ function useTypewriter(words: string[]) {
   return { displayText, cursorOn };
 }
 
+// ─── Component ────────────────────────────────────────────────────────────────
+
 export default function HeroSection() {
   const { displayText, cursorOn } = useTypewriter(disciplines);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
 
   return (
-    /*
-      overflow-hidden is the key: the image column fills the same height as the
-      text column (CSS grid stretch), so the portrait ends exactly at the section
-      boundary. The next section paints on top and visually "clips" it.
-    */
     <section
       id="hero"
-      className="relative overflow-hidden bg-white"
+      className="relative bg-white"
       style={{ paddingTop: "5rem" }}
     >
       <motion.div
         className="relative mx-auto grid max-w-[1200px] grid-cols-1 px-6 md:grid-cols-[1fr_530px]"
         variants={containerVariants}
-        initial="hidden"
+        initial={mounted ? "hidden" : "visible"}
         animate="visible"
       >
         {/* ── Text column ── */}
         <div className="flex flex-col pb-16 md:pb-28">
 
-          {/* Label — "HONORAIRES" style */}
           <motion.p
             variants={itemVariants}
             className="font-sans uppercase"
@@ -103,10 +104,20 @@ export default function HeroSection() {
               marginBottom: "1.75rem",
             }}
           >
-            avocat d&apos;affaires à Strasbourg
+            Maître Christian Thalinger · Avocat d&apos;affaires à Strasbourg
           </motion.p>
 
-          {/* H1 */}
+          {/*
+            H1 structure:
+              Line 1 — "Avocat en droit"           (static)
+              Line 2 — [rotating discipline]        (typewriter for users)
+                        + sr-only list of all 7    (for crawlers, always in DOM)
+              Line 3 — "à Strasbourg."              (static)
+
+            The sr-only span keeps all 7 variants in the server-rendered HTML so
+            Google, AI engines, and no-JS crawlers index the full keyword set.
+            The aria-hidden typewriter is purely presentational on top.
+          */}
           <motion.h1
             variants={itemVariants}
             className="font-serif font-normal leading-tight text-navy"
@@ -116,11 +127,29 @@ export default function HeroSection() {
             }}
           >
             <span style={{ display: "block" }}>Avocat en droit</span>
-            <span style={{ display: "block" }}>
-              <span style={{ color: "var(--color-navy)" }}>
+
+            <span style={{ display: "block", position: "relative" }}>
+              {/* All 7 disciplines — always in the DOM for crawlers */}
+              <span
+                style={{
+                  position: "absolute",
+                  width: "1px",
+                  height: "1px",
+                  padding: 0,
+                  margin: "-1px",
+                  overflow: "hidden",
+                  clip: "rect(0,0,0,0)",
+                  whiteSpace: "nowrap",
+                  borderWidth: 0,
+                }}
+              >
+                {disciplines.join(", ")}
+              </span>
+
+              {/* Visual typewriter — hidden from assistive tech (sr-only covers it) */}
+              <span aria-hidden="true" style={{ color: "var(--color-navy)" }}>
                 {displayText}
                 <span
-                  aria-hidden="true"
                   style={{
                     display: "inline-block",
                     width: "3px",
@@ -134,6 +163,8 @@ export default function HeroSection() {
                 />
               </span>
             </span>
+
+            <span style={{ display: "block" }}>à Strasbourg.</span>
           </motion.h1>
 
           {/* Description */}
@@ -147,14 +178,14 @@ export default function HeroSection() {
               marginBottom: "2.5rem",
             }}
           >
-            Conseil aux entreprises et aux particuliers, le cabinet transforme
-            la complexité juridique en clarté décisionnelle pour sécuriser
-            vos choix stratégiques. Le premier échange est libre, sans engagement
-            et confidentiel. Il sert un seul objectif : comprendre votre situation.
+            Le cabinet transforme la complexité juridique des entreprises et
+            particuliers en clarté décisionnelle. Le premier échange est libre,
+            sans engagement et confidentiel. Il sert un seul objectif :
+            comprendre votre situation.
           </motion.p>
 
-          {/* CTA */}
-          <motion.div variants={itemVariants}>
+          {/* CTA row */}
+          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4">
             <a
               href="#contact"
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
@@ -167,20 +198,49 @@ export default function HeroSection() {
                   stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
+
+            <a
+              href="tel:+33637331926"
+              className="inline-flex items-center rounded-full border-2 border-gold px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-navy transition-all duration-300 hover:bg-navy hover:text-white active:scale-[0.97]"
+            >
+              +33 6 37 33 19 26
+            </a>
+
+            {/*
+              GEO direct-answer block.
+              Text is always in the DOM (invisible ≠ display:none) — Google indexes it.
+              Outer div carries `group` so hover over either trigger or card keeps it open.
+              focus-within handles tap-to-reveal on touch devices.
+            */}
+            <div className="relative group">
+              <button
+                type="button"
+                className="cursor-default font-sans text-sm text-navy/40 focus:outline-none focus:text-navy/60"
+              >
+                en savoir plus
+              </button>
+
+              {/* Card — in DOM, not display:none, so always indexed */}
+              <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-200 absolute left-0 top-full z-50 mt-2 w-[480px] max-w-[90vw] rounded-2xl border border-gold/20 bg-white p-6 shadow-[0_12px_40px_rgba(7,19,123,0.12)]">
+                <p className="font-sans text-sm leading-relaxed text-navy/70">
+                  Maître Christian Thalinger est avocat au Barreau de Strasbourg depuis janvier 2022.
+                  Le cabinet THALINGER Avocat, situé au 5 avenue de la Marseillaise 67000 Strasbourg,
+                  intervient en droit des sociétés, droit commercial, droit du travail, droit de la
+                  sécurité sociale, droit immobilier, droit de la construction et droit bancaire et
+                  financier, au service des entreprises et des particuliers. Chaque situation fait
+                  l&apos;objet d&apos;une analyse stratégique individualisée, avec un objectif constant :
+                  permettre au client de comprendre ses options, mesurer ses risques et décider en
+                  connaissance de cause.
+                </p>
+              </div>
+            </div>
           </motion.div>
         </div>
 
-        {/* ── Image column ──
-            Desktop: grid stretches this column to match the text column height.
-                     The image fills that space with object-contain + object-bottom,
-                     so the portrait "stands" at the bottom edge of the hero section.
-                     overflow-hidden on the section does the clipping.
-            Mobile:  explicit height, image shown below text, anchored to top
-                     so the face/upper body is visible.
-        */}
+        {/* ── Image column ── */}
         <motion.div
           variants={itemVariants}
-          className="relative h-[300px] w-full md:h-auto"
+          className="relative h-[300px] w-full overflow-hidden md:h-auto"
         >
           <Image
             src="/images/hero1.png"

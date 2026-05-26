@@ -4,6 +4,88 @@ import HeroSection from "@/components/HeroSection";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 import { AnimatedLine } from "@/components/AnimatedLine";
 import { StepsSection } from "@/components/StepsSection";
+import GoogleReviews from "@/components/GoogleReviews";
+import { fetchGoogleReviews } from "@/lib/google-places";
+
+// ─── JSON-LD ──────────────────────────────────────────────────────────────────
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.thalinger-avocat.fr/#christian-thalinger",
+      name: "Christian Thalinger",
+      givenName: "Christian",
+      familyName: "Thalinger",
+      jobTitle: "Avocat au Barreau de Strasbourg",
+      description:
+        "Maître Christian Thalinger (THALINGER AVOCAT, SIREN 909547721) est avocat au Barreau de Strasbourg spécialisé en droit des affaires. Serment prêté le 13 janvier 2022. Spécialités : droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction.",
+      url: "https://www.thalinger-avocat.fr",
+      image: "https://www.thalinger-avocat.fr/images/bio.png",
+      telephone: "+33637331926",
+      email: "christian@thalinger-avocat.fr",
+      worksFor: { "@id": "https://www.thalinger-avocat.fr/#organization" },
+      knowsLanguage: ["fr", "en"],
+      knowsAbout: [
+        "Droit des sociétés",
+        "Droit commercial",
+        "Droit du travail",
+        "Droit bancaire",
+        "Droit des assurances",
+        "Droit immobilier",
+        "Droit de la construction",
+        "Droit de la sécurité sociale",
+        "Droit bancaire et financier",
+      ],
+      memberOf: [{ "@type": "Organization", name: "Barreau de Strasbourg" }],
+      sameAs: [
+        "https://www.linkedin.com/in/christian-thalinger-565446216/",
+        "https://www.doctrine.fr/p/avocat/L2F17E9BA4F70F6A24AE1",
+        "https://justice.pappers.fr/avocat/thalinger-christian-67000",
+      ],
+    },
+    {
+      "@type": ["LegalService", "LocalBusiness"],
+      "@id": "https://www.thalinger-avocat.fr/#organization",
+      name: "THALINGER Avocat",
+      legalName: "THALINGER CHRISTIAN",
+      description:
+        "Cabinet d'avocat d'affaires à Strasbourg — droit des sociétés, droit commercial, droit du travail, droit bancaire et des assurances, droit immobilier et de la construction.",
+      url: "https://www.thalinger-avocat.fr",
+      telephone: "+33637331926",
+      email: "christian@thalinger-avocat.fr",
+      founder: { "@id": "https://www.thalinger-avocat.fr/#christian-thalinger" },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "5 avenue de la Marseillaise",
+        addressLocality: "Strasbourg",
+        postalCode: "67000",
+        addressRegion: "Grand Est",
+        addressCountry: "FR",
+      },
+      geo: { "@type": "GeoCoordinates", latitude: 48.5813, longitude: 7.7484 },
+      areaServed: ["Strasbourg", "Alsace", "Grand Est", "France"],
+      availableLanguage: ["French", "English"],
+      priceRange: "€€",
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "18:00",
+      },
+      sameAs: ["https://www.linkedin.com/in/christian-thalinger-565446216/"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.thalinger-avocat.fr/#website",
+      name: "THALINGER Avocat",
+      url: "https://www.thalinger-avocat.fr",
+      inLanguage: "fr",
+      publisher: { "@id": "https://www.thalinger-avocat.fr/#organization" },
+    },
+  ],
+};
 
 // ─── Data ──────────────────────────────────────────────────────────────────────
 
@@ -80,6 +162,32 @@ const trustBlocks = [
   },
 ];
 
+// ─── Google Reviews fallback ─────────────────────────────────────────────────
+// Shown only when GOOGLE_PLACES_API_KEY is not set in .env.local.
+// Paste real review data here for instant display while the key is pending.
+
+const fallbackReviews = {
+  placeUrl: `https://www.google.com/maps/place/?q=place_id:ChIJG1o0kVXJlkcRkMxPv0VL_WM`,
+  rating: 5.0,
+  totalReviews: 2,
+  reviews: [
+    {
+      author: "Arbogast Laura",
+      authorUrl: "https://www.google.com/maps/contrib/100264503749605105444/reviews",
+      rating: 5,
+      text: "Nous tenons à remercier chaleureusement Maître Thalinger pour la qualité de son accompagnement.\n\nProfessionnel, réactif et particulièrement à l'écoute, il a su nous conseiller et nous rassurer à chaque étape avec beaucoup de sérieux et de bienveillance. Son implication, sa disponibilité et la clarté de ses explications ont été très appréciées.\n\nNous recommandons Maître Thalinger sans hésitation à toute personne recherchant un avocat compétent et humain. Encore merci pour votre aide précieuse !",
+      date: "il y a une semaine",
+    },
+    {
+      author: "Marc CHRETIEN",
+      authorUrl: "https://www.google.com/maps/contrib/117262535581386929646/reviews",
+      rating: 5,
+      text: "Excellent avocat, rigoureux et d'un professionnalisme exemplaire. Maître Thalinger m'a accompagné sur un dossier. Ses conseils stratégiques et sa réactivité ont fait toute la différence. Je lui accorde toute ma confiance et le recommande sans hésiter.",
+      date: "il y a une semaine",
+    },
+  ] as import("@/components/GoogleReviews").GoogleReview[],
+};
+
 // ─── Shared components ───────────────────────────────────────────────────────
 
 function ContacterButton() {
@@ -112,9 +220,17 @@ function ContacterButton() {
 
 // ─── Page ───────────────────────────────────────────────────────────────────────
 
-export default function HomePage() {
+export default async function HomePage() {
+  const liveReviews = await fetchGoogleReviews();
+  const reviewsData = liveReviews ?? fallbackReviews;
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* 1. HERO */}
       <HeroSection />
 
@@ -148,7 +264,7 @@ export default function HomePage() {
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
               <h2 className="max-w-xl font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-                Droit des affaires. Une approche pluridisciplinaire.
+                Une approche pluridisciplinaire.
               </h2>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65 md:text-right">
                 Les disciplines clés du droit des affaires.
@@ -254,7 +370,12 @@ export default function HomePage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 6. CONTACT */}
+      {/* 6. AVIS GOOGLE */}
+      <GoogleReviews {...reviewsData} />
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* 7. CONTACT */}
       <section id="contact" className="bg-white py-24 md:py-32 scroll-mt-24">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">

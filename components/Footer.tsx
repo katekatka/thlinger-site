@@ -68,8 +68,26 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Compétences + Contact */}
+            {/* Cabinet + Compétences + Contact */}
             <div className="flex flex-col gap-12 md:flex-row md:gap-20">
+
+              {/* Cabinet */}
+              <div className="space-y-4">
+                <p className="text-sm uppercase tracking-[0.15em] text-gold">
+                  {isEN ? "Firm" : "Cabinet"}
+                </p>
+                <div className="space-y-3 text-sm">
+                  <Link href={isEN ? "/en/about" : "/a-propos"} className={linkClass}>
+                    {isEN ? "About" : "À propos"}
+                  </Link>
+                  <Link href={isEN ? "/en/honoraires" : "/honoraires"} className={linkClass}>
+                    {isEN ? "Fees" : "Honoraires"}
+                  </Link>
+                  <Link href={isEN ? "/en/blog" : "/blog"} className={linkClass}>
+                    Blog
+                  </Link>
+                </div>
+              </div>
 
               {/* Compétences */}
               <div className="space-y-4">

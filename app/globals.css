@@ -87,6 +87,14 @@ h1, h2, h3, h4, h5, h6 {
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* ─── Details/summary — remove browser disclosure triangle ──────────────── */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 /* ─── Blog prose ─────────────────────────────────────────────────────────── */
 .prose-blog {
   color: var(--color-dark);

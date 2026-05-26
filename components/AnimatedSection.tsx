@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ReactNode, forwardRef } from "react";
+import { ReactNode, forwardRef, useEffect, useState } from "react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -26,12 +26,15 @@ export const AnimatedSection = forwardRef<
   HTMLDivElement,
   { children: ReactNode; className?: string; stagger?: boolean; delay?: number }
 >(function AnimatedSection({ children, className = "", stagger = false, delay = 0 }, ref) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
+
   return (
     <motion.div
       ref={ref}
       className={className}
       variants={stagger ? staggerContainer : fadeUp}
-      initial="hidden"
+      initial={mounted ? "hidden" : "visible"}
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
       {...(!stagger && delay ? { transition: { delay } } : {})}

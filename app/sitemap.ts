@@ -61,6 +61,14 @@ const pages: PageDef[] = [
     changeFrequency: "monthly",
   },
 
+  // About / biography — E-E-A-T anchor page
+  {
+    path: "/a-propos",
+    enPath: "/en/about",
+    priority: 0.85,
+    changeFrequency: "monthly",
+  },
+
   // Fees — high-intent page
   {
     path: "/honoraires",
