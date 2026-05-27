@@ -21,6 +21,19 @@ const itemVariants = {
   },
 };
 
+const portraitVariants = {
+  hidden: { opacity: 0, y: 56, scale: 0.96 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 1.0,
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
+    },
+  },
+};
+
 // All 7 practice-area variants — must stay in sync with the sr-only list below
 const disciplines = [
   "commercial law",
@@ -131,7 +144,7 @@ export default function HeroSectionEn() {
           >
             <span style={{ display: "block" }}>Attorney in</span>
 
-            <span className="md:whitespace-nowrap" style={{ display: "block", position: "relative" }}>
+            <span className="md:whitespace-nowrap" style={{ display: "block", position: "relative", minHeight: "1.1em" }}>
               {/* All 7 disciplines — always in the DOM for crawlers */}
               <span
                 style={{
@@ -269,7 +282,7 @@ export default function HeroSectionEn() {
 
         {/* ── Image column ── */}
         <motion.div
-          variants={itemVariants}
+          variants={portraitVariants}
           className="relative h-[380px] w-full overflow-hidden md:h-auto"
         >
           <Image

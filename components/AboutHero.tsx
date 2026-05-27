@@ -20,6 +20,16 @@ const itemVariants = {
   },
 };
 
+const portraitVariants = {
+  hidden: { opacity: 0, y: 56, scale: 0.96 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 1.0, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
+  },
+};
+
 // ─── Alternating typewriter ───────────────────────────────────────────────────
 // Displays a single line that cycles between line1 and line2:
 //   type line1 → pause → erase → type line2 → pause → erase → repeat
@@ -231,7 +241,7 @@ export default function AboutHero({
 
         {/* ── Image column ── */}
         <motion.div
-          variants={itemVariants}
+          variants={portraitVariants}
           className="relative h-[419px] w-full overflow-hidden md:h-auto md:overflow-visible"
         >
           <Image
