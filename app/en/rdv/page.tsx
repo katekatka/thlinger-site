@@ -45,7 +45,7 @@ export default function RdvPageEn() {
                 {[
                   { label: "Duration", value: "30 minutes" },
                   { label: "Cost", value: "Free, no commitment" },
-                  { label: "Format", value: "Video call or phone" },
+                  { label: "Format", value: "Video call" },
                   { label: "Confirmation", value: "Instant confirmation by email" },
                 ].map(({ label, value }) => (
                   <li key={label} className="flex flex-col">

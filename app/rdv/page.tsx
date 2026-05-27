@@ -45,7 +45,7 @@ export default function RdvPage() {
                 {[
                   { label: "Durée", value: "30 minutes" },
                   { label: "Tarif", value: "Gratuit, sans engagement" },
-                  { label: "Format", value: "Visioconférence ou téléphone" },
+                  { label: "Format", value: "Visioconférence" },
                   { label: "Réponse", value: "Confirmation immédiate par e-mail" },
                 ].map(({ label, value }) => (
                   <li key={label} className="flex flex-col">
