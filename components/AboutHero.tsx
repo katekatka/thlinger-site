@@ -232,7 +232,7 @@ export default function AboutHero({
         {/* ── Image column ── */}
         <motion.div
           variants={itemVariants}
-          className="relative h-[317px] w-full overflow-hidden md:h-auto md:overflow-visible"
+          className="relative h-[349px] w-full overflow-hidden md:h-auto md:overflow-visible"
         >
           <Image
             src="/images/bio.png"

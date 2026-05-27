@@ -93,7 +93,7 @@ export default function HeroSection() {
         animate="visible"
       >
         {/* ── Text column ── */}
-        <div className="flex flex-col pb-3 md:pb-28">
+        <div className="flex flex-col pb-8 md:pb-28">
 
           <motion.p
             variants={itemVariants}
@@ -273,13 +273,13 @@ export default function HeroSection() {
         {/* ── Image column ── */}
         <motion.div
           variants={itemVariants}
-          className="relative h-[288px] w-full overflow-hidden md:h-auto"
+          className="relative h-[317px] w-full overflow-hidden md:h-auto"
         >
           <Image
             src="/images/hero1.png"
             alt="Christian THALINGER, Avocat au Barreau de Strasbourg"
             fill
-            className="object-contain object-left-top md:object-bottom"
+            className="object-contain object-top md:object-bottom"
             priority
           />
         </motion.div>
