@@ -96,7 +96,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-white"
+      className="relative overflow-x-clip bg-white"
       style={{ paddingTop: "5rem" }}
     >
       <motion.div
