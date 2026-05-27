@@ -286,7 +286,7 @@ export default function HeroSection() {
         {/* ── Image column ── */}
         <motion.div
           variants={portraitVariants}
-          className="relative h-[380px] w-full overflow-hidden md:h-auto"
+          className="relative h-[380px] w-full overflow-hidden md:h-[600px]"
         >
           <Image
             src="/images/hero1.png"

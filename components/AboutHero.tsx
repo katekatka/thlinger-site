@@ -118,6 +118,9 @@ interface AboutHeroProps {
   description: string;
   imageAlt: string;
   credentials?: Credential[];
+  ctaPrimaryLabel?: string;
+  ctaPrimaryHref?: string;
+  ctaPhone?: string;
   phone?: string;
   email?: string;
   address?: string;
@@ -132,6 +135,9 @@ export default function AboutHero({
   description,
   imageAlt,
   credentials,
+  ctaPrimaryLabel,
+  ctaPrimaryHref,
+  ctaPhone,
   phone,
   email,
   address,
@@ -198,6 +204,34 @@ export default function AboutHero({
           >
             {description}
           </motion.p>
+
+          {/* CTA row (optional) */}
+          {(ctaPrimaryLabel && ctaPrimaryHref || ctaPhone) && (
+            <motion.div variants={itemVariants} className="mb-8 flex flex-wrap items-center gap-4">
+              {ctaPrimaryLabel && ctaPrimaryHref && (
+                <a
+                  href={ctaPrimaryHref}
+                  className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
+                  style={{ color: "#ffffff" }}
+                >
+                  {ctaPrimaryLabel}
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1">
+                    <path d="M1 5H15M15 5L11 1M15 5L11 9"
+                      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
+              )}
+              {ctaPhone && (
+                <a
+                  href={`tel:${ctaPhone.replace(/\s/g, "")}`}
+                  className="inline-flex items-center rounded-full border-2 border-gold px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-navy transition-all duration-300 hover:bg-navy hover:text-white active:scale-[0.97]"
+                >
+                  {ctaPhone}
+                </a>
+              )}
+            </motion.div>
+          )}
 
           {/* Credentials grid (optional) */}
           {credentials && credentials.length > 0 && (

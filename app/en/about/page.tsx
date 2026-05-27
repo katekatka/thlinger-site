@@ -377,6 +377,9 @@ export default async function AboutPage() {
         staticLine="Maître Christian THALINGER"
         description="A business lawyer in Strasbourg, I have been a member of the Bar since 2022 and advise clients in French and English. I structure every matter around one conviction: complexity is managed through rigour and explanation, never through opacity. When the stakes are high, I tell the truth — including what is uncomfortable. This is the approach I apply across every area of my practice."
         imageAlt="Maître Christian THALINGER, business lawyer at the Strasbourg Bar"
+        ctaPrimaryLabel="Get in touch"
+        ctaPrimaryHref="/en#contact"
+        ctaPhone="+33 6 37 33 19 26"
       />
 
       <GoldDivider />
