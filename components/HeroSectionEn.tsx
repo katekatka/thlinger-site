@@ -144,7 +144,7 @@ export default function HeroSectionEn() {
           >
             <span style={{ display: "block" }}>Attorney in</span>
 
-            <span className="md:whitespace-nowrap" style={{ display: "block", position: "relative", minHeight: "1.1em" }}>
+            <span className="md:whitespace-nowrap" style={{ display: "block", position: "relative", height: "1.25em", overflow: "hidden" }}>
               {/* All 7 disciplines — always in the DOM for crawlers */}
               <span
                 style={{
@@ -283,13 +283,13 @@ export default function HeroSectionEn() {
         {/* ── Image column ── */}
         <motion.div
           variants={portraitVariants}
-          className="relative h-[380px] w-full overflow-hidden md:h-[600px]"
+          className="relative h-[380px] w-full overflow-hidden md:h-full"
         >
           <Image
             src="/images/hero1.png"
             alt="Christian THALINGER, Attorney at the Strasbourg Bar"
             fill
-            className="object-contain object-top md:object-bottom"
+            className="object-cover object-top"
             priority
           />
         </motion.div>
