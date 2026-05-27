@@ -15,11 +15,17 @@ interface Props {
   rating: number;
   totalReviews: number;
   placeUrl: string; // Google Maps business profile URL
+  locale?: "fr" | "en";
 }
 
-function Stars({ count }: { count: number }) {
+const i18n = {
+  fr: { eyebrow: "Avis Google", reviews: "avis", cta: "Voir tous les avis", starsLabel: (n: number) => `${n} étoiles sur 5` },
+  en: { eyebrow: "Google Reviews", reviews: "reviews", cta: "See all reviews", starsLabel: (n: number) => `${n} stars out of 5` },
+};
+
+function Stars({ count, locale }: { count: number; locale: "fr" | "en" }) {
   return (
-    <div className="flex gap-0.5" aria-label={`${count} étoiles sur 5`}>
+    <div className="flex gap-0.5" aria-label={i18n[locale].starsLabel(count)}>
       {Array.from({ length: 5 }).map((_, i) => (
         <svg key={i} width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -48,8 +54,9 @@ function GoogleMark() {
   );
 }
 
-export default function GoogleReviews({ reviews, rating, totalReviews, placeUrl }: Props) {
+export default function GoogleReviews({ reviews, rating, totalReviews, placeUrl, locale = "fr" }: Props) {
   if (!reviews.length) return null;
+  const t = i18n[locale];
 
   return (
     <section className="bg-navy py-24 md:py-32">
@@ -59,7 +66,7 @@ export default function GoogleReviews({ reviews, rating, totalReviews, placeUrl 
         <div className="mb-16 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-5 font-sans text-[11px] uppercase tracking-[0.2em] text-gold/60">
-              Avis Google
+              {t.eyebrow}
             </p>
             <div className="flex items-center gap-4">
               <GoogleMark />
@@ -68,10 +75,10 @@ export default function GoogleReviews({ reviews, rating, totalReviews, placeUrl 
                   <span className="font-serif text-[2rem] leading-none text-white">
                     {rating.toFixed(1)}
                   </span>
-                  <Stars count={Math.round(rating)} />
+                  <Stars count={Math.round(rating)} locale={locale} />
                 </div>
                 <p className="mt-1 font-sans text-[0.8125rem] text-white/50">
-                  {totalReviews} avis
+                  {totalReviews} {t.reviews}
                 </p>
               </div>
             </div>
@@ -83,7 +90,7 @@ export default function GoogleReviews({ reviews, rating, totalReviews, placeUrl 
             rel="noopener noreferrer"
             className="group inline-flex w-fit items-center gap-3 rounded-full border-2 border-gold px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-gold transition-all duration-300 hover:bg-gold hover:gap-5 hover:text-navy active:scale-[0.97]"
           >
-            Voir tous les avis
+            {t.cta}
             <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
               className="transition-transform duration-300 group-hover:translate-x-1">
               <path d="M1 5H15M15 5L11 1M15 5L11 9"
