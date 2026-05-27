@@ -445,10 +445,10 @@ export default async function HomePage() {
 
           {/* Book a slot CTA */}
           <AnimatedSection className="mt-12" delay={0.1}>
-            <div className="rounded-2xl border-2 border-gold/40 bg-navy/[0.03] p-8 md:flex md:items-center md:justify-between">
+            <div className="border-t-2 border-navy pt-8 md:flex md:items-center md:justify-between">
               <div className="mb-6 md:mb-0">
                 <p className="mb-1 font-serif text-lg font-normal text-navy">
-                  Premier échange en visio ou par téléphone
+                  Premier échange en visio
                 </p>
                 <p className="font-sans text-sm text-navy/55">
                   30 min · Gratuit · Sans engagement · Confirmation immédiate

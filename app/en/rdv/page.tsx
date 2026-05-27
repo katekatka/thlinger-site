@@ -70,25 +70,6 @@ export default function RdvPageEn() {
               </p>
             </div>
 
-            {/* Divider */}
-            <div className="h-px bg-gold/30" />
-
-            {/* Fallback */}
-            <div>
-              <p className="mb-3 font-sans text-[11px] uppercase tracking-[0.2em] text-navy/40">
-                Prefer to call?
-              </p>
-              <a
-                href="tel:+33637331926"
-                className="font-serif text-base text-navy transition-colors hover:text-gold"
-              >
-                +33 6 37 33 19 26
-              </a>
-              <p className="mt-1 font-sans text-[0.8125rem] text-navy/40">
-                Mon – Fri, 9am – 6pm
-              </p>
-            </div>
-
             {/* Back link */}
             <Link
               href="/en#contact"
