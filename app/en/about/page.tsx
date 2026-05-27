@@ -181,7 +181,7 @@ const jsonLdFaq = {
       name: "Is the initial consultation free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. The first exchange is free, without obligation and confidential. It allows us to understand your situation, identify the legal issues, and assess whether legal support is appropriate. Its duration and format are confirmed when the appointment is arranged.",
+        text: "Yes. The first exchange is free, without obligation and confidential. It allows us to understand your situation, identify the legal issues, and assess whether legal support is appropriate. Its duration and format are confirmed when the appointment is arranged.",
       },
     },
     {
@@ -291,7 +291,7 @@ const faqItems = [
   },
   {
     question: "Is the initial consultation free?",
-    answer: "No. The first exchange is free, without obligation and confidential. It allows us to understand your situation, identify the legal issues, and assess whether legal support is appropriate. Its duration and format are confirmed when the appointment is arranged.",
+    answer: "Yes. The first exchange is free, without obligation and confidential. It allows us to understand your situation, identify the legal issues, and assess whether legal support is appropriate. Its duration and format are confirmed when the appointment is arranged.",
   },
   {
     question: "Can Maître Thalinger act at short notice?",
