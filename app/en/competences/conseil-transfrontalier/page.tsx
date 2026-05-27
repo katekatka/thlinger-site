@@ -21,7 +21,7 @@ export default function CrossBorderAdvisoryPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Cross-border Advisory
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
+            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               One point of contact for<br className="hidden md:block" /> the French legal system.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
@@ -103,3 +103,4 @@ export default function CrossBorderAdvisoryPage() {
     </>
   );
 }
+

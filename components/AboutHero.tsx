@@ -164,7 +164,7 @@ export default function AboutHero({
           <motion.h1
             variants={itemVariants}
             className="font-serif font-normal leading-tight text-navy"
-            style={{ fontSize: "clamp(2.4rem, 4.5vw, 3.75rem)", marginBottom: "2rem" }}
+            style={{ fontSize: "clamp(2.4rem, 4.5vw, 3.6rem)", marginBottom: "2rem" }}
           >
             {typedLine ? (
               <span style={{ display: "flex", alignItems: "flex-end", height: "2.5em" }}>

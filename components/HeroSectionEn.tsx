@@ -87,7 +87,7 @@ export default function HeroSectionEn() {
       style={{ paddingTop: "5rem" }}
     >
       <motion.div
-        className="relative mx-auto grid max-w-[1200px] grid-cols-1 px-6 md:grid-cols-[1fr_636px]"
+        className="relative mx-auto grid max-w-[1400px] grid-cols-1 px-6 md:grid-cols-[1fr_636px] md:gap-x-12"
         variants={containerVariants}
         initial={mounted ? "hidden" : "visible"}
         animate="visible"
@@ -125,7 +125,7 @@ export default function HeroSectionEn() {
             variants={itemVariants}
             className="font-serif font-normal leading-tight text-navy"
             style={{
-              fontSize: "clamp(2.1rem, 4.5vw, 3.2rem)",
+              fontSize: "clamp(2.1rem, 4.5vw, 3.6rem)",
               marginBottom: "2rem",
             }}
           >

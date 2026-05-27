@@ -1,7 +1,7 @@
-import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
-// ─── Data ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const interventions = [
   {
@@ -42,7 +42,7 @@ const interventions = [
   },
 ];
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export default function BankingFinancialLawPage() {
   return (
@@ -54,7 +54,7 @@ export default function BankingFinancialLawPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Banking &amp; Financial Law
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
+            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               Your financing commits you. Find out to what, exactly.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
@@ -72,7 +72,7 @@ export default function BankingFinancialLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXT — navy */}
+      {/* 2. TEXT â€” navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -85,7 +85,7 @@ export default function BankingFinancialLawPage() {
                 of credit facilities: banking law protects borrowers and guarantors as much as it
                 constrains them. Yet few clients know the leverage they hold when facing a
                 financial institution. CEO fraud, unauthorised transactions, breaches by financial
-                intermediaries: in these situations, it is the bank that bears liability — not
+                intermediaries: in these situations, it is the bank that bears liability â€” not
                 you. The firm helps you identify those levers and assert them, whether in
                 negotiation or in litigation.
               </p>
@@ -144,3 +144,4 @@ export default function BankingFinancialLawPage() {
     </>
   );
 }
+

@@ -1,48 +1,48 @@
-import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
-// ─── Data ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const interventions = [
   {
     title: "Financement et relations bancaires",
     items: [
-      "Octroi et rupture de crédits",
-      "Conditions et négociation des prêts",
-      "Accompagnement des difficultés de financement",
-      "Restructuration de dette et négociation bancaire",
+      "Octroi et rupture de crÃ©dits",
+      "Conditions et nÃ©gociation des prÃªts",
+      "Accompagnement des difficultÃ©s de financement",
+      "Restructuration de dette et nÃ©gociation bancaire",
     ],
   },
   {
-    title: "Fraudes et responsabilité bancaire",
+    title: "Fraudes et responsabilitÃ© bancaire",
     items: [
-      "Fraude bancaire et fraude au président",
+      "Fraude bancaire et fraude au prÃ©sident",
       "Obligation de vigilance du banquier",
-      "Sécurisation des opérations financières",
-      "Responsabilité des établissements bancaires",
+      "SÃ©curisation des opÃ©rations financiÃ¨res",
+      "ResponsabilitÃ© des Ã©tablissements bancaires",
     ],
   },
   {
     title: "Cautionnement et garanties",
     items: [
       "Caution solidaire",
-      "Portée et validité des engagements",
+      "PortÃ©e et validitÃ© des engagements",
       "Obligation de conseil et d'information",
       "Contestation des garanties personnelles",
     ],
   },
   {
-    title: "Intermédiation financière",
+    title: "IntermÃ©diation financiÃ¨re",
     items: [
       "Prestataires de services d'investissement",
-      "Intermédiaires en opérations de banque et services de paiement",
+      "IntermÃ©diaires en opÃ©rations de banque et services de paiement",
       "Courtiers en financement",
-      "Responsabilité et obligations professionnelles",
+      "ResponsabilitÃ© et obligations professionnelles",
     ],
   },
 ];
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export default function DroitBancaireFinancierPage() {
   return (
@@ -54,17 +54,17 @@ export default function DroitBancaireFinancierPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Droit Bancaire &amp; Financier
             </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
-              Votre financement vous engage. Vérifiez à quoi exactement.
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+              Votre financement vous engage. VÃ©rifiez Ã  quoi exactement.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Conditions de prêt, cautions solidaires, garanties personnelles : ces engagements
-              sont souvent signés dans l&apos;urgence d&apos;un besoin de financement, sans mesurer leur
-              portée réelle. Or une caution mal encadrée peut engager votre patrimoine bien
-              au-delà du montant initial. Une rupture de crédit décidée unilatéralement par la
-              banque peut asphyxier une activité du jour au lendemain. Le cabinet intervient pour
-              analyser vos engagements financiers, négocier des conditions équilibrées, et
-              contester ceux qui dépassent les obligations légales d&apos;information et de conseil.
+              Conditions de prÃªt, cautions solidaires, garanties personnelles : ces engagements
+              sont souvent signÃ©s dans l&apos;urgence d&apos;un besoin de financement, sans mesurer leur
+              portÃ©e rÃ©elle. Or une caution mal encadrÃ©e peut engager votre patrimoine bien
+              au-delÃ  du montant initial. Une rupture de crÃ©dit dÃ©cidÃ©e unilatÃ©ralement par la
+              banque peut asphyxier une activitÃ© du jour au lendemain. Le cabinet intervient pour
+              analyser vos engagements financiers, nÃ©gocier des conditions Ã©quilibrÃ©es, et
+              contester ceux qui dÃ©passent les obligations lÃ©gales d&apos;information et de conseil.
             </p>
           </AnimatedSection>
         </div>
@@ -72,7 +72,7 @@ export default function DroitBancaireFinancierPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXTE — navy */}
+      {/* 2. TEXTE â€” navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -81,14 +81,14 @@ export default function DroitBancaireFinancierPage() {
                 La banque a des obligations envers vous. Pas seulement l&apos;inverse.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Obligation de vigilance, devoir de conseil, responsabilité en cas de soutien
-                abusif ou de rupture brutale de concours : le droit bancaire protège les
+                Obligation de vigilance, devoir de conseil, responsabilitÃ© en cas de soutien
+                abusif ou de rupture brutale de concours : le droit bancaire protÃ¨ge les
                 emprunteurs et les cautions autant qu&apos;il les contraint. Pourtant, peu de clients
-                connaissent les leviers dont ils disposent face à un établissement financier.
-                Fraude au président, opérations non autorisées, manquements des intermédiaires
-                financiers : ces situations engagent la responsabilité de la banque, pas la
-                vôtre. Le cabinet vous aide à identifier ces leviers et à les faire valoir, en
-                négociation comme en contentieux.
+                connaissent les leviers dont ils disposent face Ã  un Ã©tablissement financier.
+                Fraude au prÃ©sident, opÃ©rations non autorisÃ©es, manquements des intermÃ©diaires
+                financiers : ces situations engagent la responsabilitÃ© de la banque, pas la
+                vÃ´tre. Le cabinet vous aide Ã  identifier ces leviers et Ã  les faire valoir, en
+                nÃ©gociation comme en contentieux.
               </p>
             </div>
           </AnimatedSection>
@@ -145,3 +145,4 @@ export default function DroitBancaireFinancierPage() {
     </>
   );
 }
+

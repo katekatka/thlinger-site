@@ -1,69 +1,69 @@
-import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
-// ─── Data ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const interventions = [
   {
     title: "Relations individuelles de travail",
     items: [
-      "Rédaction et sécurisation des contrats de travail",
+      "RÃ©daction et sÃ©curisation des contrats de travail",
       "Conventions de forfait jours",
-      "Temps de travail et heures supplémentaires",
-      "Exécution du contrat de travail et paie",
+      "Temps de travail et heures supplÃ©mentaires",
+      "ExÃ©cution du contrat de travail et paie",
       "Droit disciplinaire",
-      "Harcèlement et discrimination",
+      "HarcÃ¨lement et discrimination",
     ],
   },
   {
     title: "Rupture du contrat de travail",
     items: [
       "Licenciement disciplinaire",
-      "Licenciement économique",
-      "Salariés protégés",
-      "Rupture conventionnelle, prise d'acte et résiliation judiciaire",
+      "Licenciement Ã©conomique",
+      "SalariÃ©s protÃ©gÃ©s",
+      "Rupture conventionnelle, prise d'acte et rÃ©siliation judiciaire",
       "Contestation de licenciement",
-      "Contentieux liés à la rupture du contrat de travail",
+      "Contentieux liÃ©s Ã  la rupture du contrat de travail",
     ],
   },
   {
     title: "Relations collectives",
     items: [
-      "Élections du CSE",
-      "Négociation collective",
-      "Accords collectifs et règlement intérieur",
-      "Relations avec les représentants du personnel",
+      "Ã‰lections du CSE",
+      "NÃ©gociation collective",
+      "Accords collectifs et rÃ¨glement intÃ©rieur",
+      "Relations avec les reprÃ©sentants du personnel",
     ],
   },
   {
-    title: "Restructuration et réorganisation sociale",
+    title: "Restructuration et rÃ©organisation sociale",
     items: [
-      "Réorganisation d'entreprise",
+      "RÃ©organisation d'entreprise",
       "Restructuration sociale",
       "Plans de sauvegarde de l'emploi (PSE)",
-      "Licenciements économiques collectifs",
+      "Licenciements Ã©conomiques collectifs",
       "Consultation du CSE",
       "Accompagnement des transformations de l'entreprise",
     ],
   },
   {
-    title: "Droit de la sécurité sociale",
+    title: "Droit de la sÃ©curitÃ© sociale",
     items: [
-      "Contrôle et redressement URSSAF",
+      "ContrÃ´le et redressement URSSAF",
       "Cotisations sociales et assiette des cotisations",
       "Faute inexcusable de l'employeur",
     ],
   },
   {
-    title: "Droit pénal du travail",
+    title: "Droit pÃ©nal du travail",
     items: [
-      "Responsabilité pénale de l'employeur",
+      "ResponsabilitÃ© pÃ©nale de l'employeur",
       "Infractions au droit du travail",
     ],
   },
 ];
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export default function DroitDuTravailPage() {
   return (
@@ -75,15 +75,15 @@ export default function DroitDuTravailPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Droit Social
             </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
-              Chaque décision RH est une décision juridique.
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+              Chaque dÃ©cision RH est une dÃ©cision juridique.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Un contrat mal rédigé, une procédure de licenciement bâclée, un accord collectif
-              imprécis : en droit du travail, l&apos;erreur se chiffre. Le cabinet accompagne les
-              dirigeants et les responsables RH dans la sécurisation de leurs pratiques au
-              quotidien et dans la défense de leurs intérêts devant le conseil de prud&apos;hommes.
-              L&apos;objectif : anticiper les litiges plutôt que les subir, et faire du droit
+              Un contrat mal rÃ©digÃ©, une procÃ©dure de licenciement bÃ¢clÃ©e, un accord collectif
+              imprÃ©cis : en droit du travail, l&apos;erreur se chiffre. Le cabinet accompagne les
+              dirigeants et les responsables RH dans la sÃ©curisation de leurs pratiques au
+              quotidien et dans la dÃ©fense de leurs intÃ©rÃªts devant le conseil de prud&apos;hommes.
+              L&apos;objectif : anticiper les litiges plutÃ´t que les subir, et faire du droit
               social un levier de gestion, pas une source de risques.
             </p>
           </AnimatedSection>
@@ -92,22 +92,22 @@ export default function DroitDuTravailPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXTE — navy */}
+      {/* 2. TEXTE â€” navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Un contrôle URSSAF ne prévient pas. Votre préparation, si.
+                Un contrÃ´le URSSAF ne prÃ©vient pas. Votre prÃ©paration, si.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Un redressement de cotisations peut représenter des montants significatifs et
-                fragiliser durablement votre trésorerie. Le cabinet intervient en amont pour
-                sécuriser vos pratiques en matière de cotisations sociales, et en aval pour
-                contester les redressements et vous représenter dans les procédures de recours.
-                En matière de faute inexcusable de l&apos;employeur, les conséquences vont
-                au-delà de la majoration des indemnités : elles peuvent engager la responsabilité
-                pénale du dirigeant en cas de manquement aux obligations de sécurité.
+                Un redressement de cotisations peut reprÃ©senter des montants significatifs et
+                fragiliser durablement votre trÃ©sorerie. Le cabinet intervient en amont pour
+                sÃ©curiser vos pratiques en matiÃ¨re de cotisations sociales, et en aval pour
+                contester les redressements et vous reprÃ©senter dans les procÃ©dures de recours.
+                En matiÃ¨re de faute inexcusable de l&apos;employeur, les consÃ©quences vont
+                au-delÃ  de la majoration des indemnitÃ©s : elles peuvent engager la responsabilitÃ©
+                pÃ©nale du dirigeant en cas de manquement aux obligations de sÃ©curitÃ©.
               </p>
             </div>
           </AnimatedSection>
@@ -164,3 +164,4 @@ export default function DroitDuTravailPage() {
     </>
   );
 }
+

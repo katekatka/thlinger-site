@@ -1,7 +1,7 @@
-import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
+﻿import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 import { FaqAccordion, type FaqGroup } from "@/components/FaqAccordion";
 
-// ─── Data ──────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const principles = [
   {
@@ -44,24 +44,24 @@ const faqGroups: FaqGroup[] = [
             <ul className="space-y-4">
               <li>
                 <span className="font-semibold text-navy">Fixed fee</span>
-                {" "}— for engagements with a defined scope such as company formation,
+                {" "}â€” for engagements with a defined scope such as company formation,
                 contract drafting, or a targeted legal audit. The client knows the exact
                 cost before work begins.
               </li>
               <li>
                 <span className="font-semibold text-navy">Hourly rate</span>
-                {" "}— for advisory or litigation matters where the scope may evolve.
+                {" "}â€” for advisory or litigation matters where the scope may evolve.
                 The applicable rate is communicated from the outset, with transparent
                 and regular reporting of time spent.
               </li>
               <li>
                 <span className="font-semibold text-navy">Success fee</span>
-                {" "}— a supplementary fee, agreed alongside a base fee, where a gain
+                {" "}â€” a supplementary fee, agreed alongside a base fee, where a gain
                 obtained or a saving achieved warrants additional remuneration.
               </li>
               <li>
                 <span className="font-semibold text-navy">Retainer</span>
-                {" "}— for companies requiring regular legal support and a consistent
+                {" "}â€” for companies requiring regular legal support and a consistent
                 point of contact over time. The terms of engagement are tailored to
                 the operational needs of the director and the business.
               </li>
@@ -85,7 +85,7 @@ const faqGroups: FaqGroup[] = [
         answer: (
           <p>
             Legal fees are in principle subject to VAT at the standard rate of 20&nbsp;% in
-            France. Certain situations may fall under a different regime — in particular
+            France. Certain situations may fall under a different regime â€” in particular
             in the context of legal aid, or depending on the firm&apos;s applicable tax status.
           </p>
         ),
@@ -102,7 +102,7 @@ const faqGroups: FaqGroup[] = [
             <p className="mb-4">
               The firm systematically checks whether the client holds legal expenses
               insurance that may cover all or part of the lawyer&apos;s fees. This cover is
-              often included in standard insurance contracts — home, motor, public
+              often included in standard insurance contracts â€” home, motor, public
               liability, and others.
             </p>
             <p>
@@ -166,7 +166,7 @@ const faqGroups: FaqGroup[] = [
   },
 ];
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export default function FeesPage() {
   return (
@@ -178,7 +178,7 @@ export default function FeesPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Fees
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
+            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               Clarity begins<br className="hidden md:block" /> with pricing.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
@@ -191,7 +191,7 @@ export default function FeesPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. PRINCIPLES — navy */}
+      {/* 2. PRINCIPLES â€” navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
@@ -283,3 +283,4 @@ export default function FeesPage() {
     </>
   );
 }
+

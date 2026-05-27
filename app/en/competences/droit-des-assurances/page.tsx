@@ -1,7 +1,7 @@
-import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
-// ─── Data ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const interventions = [
   {
@@ -42,7 +42,7 @@ const interventions = [
   },
 ];
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export default function InsuranceLawPage() {
   return (
@@ -54,7 +54,7 @@ export default function InsuranceLawPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Insurance Law
             </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.75rem]">
+            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               Coverage that holds<br className="hidden md:block" /> when it counts.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
@@ -69,7 +69,7 @@ export default function InsuranceLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXT — navy */}
+      {/* 2. TEXT â€” navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -78,12 +78,12 @@ export default function InsuranceLawPage() {
                 Know your limits before you need to use them.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Businesses often assume they are covered — until a claim exposes the real
+                Businesses often assume they are covered â€” until a claim exposes the real
                 limits of their policy. An exclusion clause, a disputed loss assessment,
                 a rejected claim, or a challenged expert report can quickly put pressure
                 on cash flow, stall decisions, and threaten business continuity. The firm supports
                 clients in securing their cover, identifying exposure before a dispute arises,
-                and defending their interests against insurers — whether through agreed expert
+                and defending their interests against insurers â€” whether through agreed expert
                 proceedings, court-appointed assessments, or insurance litigation. The goal
                 is always the same: contain the financial and operational damage before it
                 compounds.
@@ -143,3 +143,4 @@ export default function InsuranceLawPage() {
     </>
   );
 }
+

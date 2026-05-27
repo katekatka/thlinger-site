@@ -24,7 +24,7 @@ export default function DroitFiscalPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Droit Fiscal
             </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Sécuriser et structurer vos<br className="hidden md:block" /> décisions fiscales.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
@@ -112,3 +112,4 @@ export default function DroitFiscalPage() {
     </>
   );
 }
+

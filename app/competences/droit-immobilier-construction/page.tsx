@@ -1,57 +1,57 @@
-import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
-// ─── Data ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const interventions = [
   {
-    title: "Construction et responsabilité des constructeurs",
+    title: "Construction et responsabilitÃ© des constructeurs",
     items: [
-      "Responsabilité des constructeurs",
-      "Garanties légales et décennales",
-      "Désordres et malfaçons",
-      "Litiges liés aux travaux et chantiers",
+      "ResponsabilitÃ© des constructeurs",
+      "Garanties lÃ©gales et dÃ©cennales",
+      "DÃ©sordres et malfaÃ§ons",
+      "Litiges liÃ©s aux travaux et chantiers",
     ],
   },
   {
     title: "Expertises et contentieux techniques",
     items: [
       "Expertises amiables et judiciaires",
-      "Évaluation des préjudices",
-      "Assistance lors des opérations d'expertise",
-      "Défense des intérêts en phase contentieuse",
+      "Ã‰valuation des prÃ©judices",
+      "Assistance lors des opÃ©rations d'expertise",
+      "DÃ©fense des intÃ©rÃªts en phase contentieuse",
     ],
   },
   {
     title: "Baux et relations locatives",
     items: [
-      "Rédaction de baux",
-      "Négociation des relations locatives",
-      "Sécurisation des engagements contractuels",
+      "RÃ©daction de baux",
+      "NÃ©gociation des relations locatives",
+      "SÃ©curisation des engagements contractuels",
       "Gestion des obligations du bailleur et du locataire",
     ],
   },
   {
     title: "Litiges locatifs et expulsion",
     items: [
-      "Impayés et inexécution contractuelle",
-      "Résiliation du bail",
-      "Procédures d'expulsion",
-      "Défense des propriétaires",
+      "ImpayÃ©s et inexÃ©cution contractuelle",
+      "RÃ©siliation du bail",
+      "ProcÃ©dures d'expulsion",
+      "DÃ©fense des propriÃ©taires",
     ],
   },
   {
-    title: "Transactions immobilières",
+    title: "Transactions immobiliÃ¨res",
     items: [
-      "Vente en l'état futur d'achèvement (VEFA)",
+      "Vente en l'Ã©tat futur d'achÃ¨vement (VEFA)",
       "Acquisition et vente d'immeubles",
-      "Sécurisation des opérations immobilières",
+      "SÃ©curisation des opÃ©rations immobiliÃ¨res",
       "Garanties et obligations du vendeur",
     ],
   },
 ];
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export default function DroitImmobilierPage() {
   return (
@@ -63,17 +63,17 @@ export default function DroitImmobilierPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Droit Immobilier
             </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Construire, c&apos;est aussi construire un cadre juridique.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Malfaçons, désordres, garanties non mobilisées : en matière de construction, les
-              litiges se révèlent souvent après la réception des travaux, quand les délais pour
-              agir sont déjà engagés. Le cabinet intervient pour faire valoir la responsabilité
-              des constructeurs, activer les garanties légales et décennales, et vous assister
-              lors des expertises amiables ou judiciaires. Que vous soyez maître d&apos;ouvrage
-              ou professionnel du bâtiment, chaque étape du chantier crée des obligations
-              qu&apos;il vaut mieux anticiper que découvrir en contentieux.
+              MalfaÃ§ons, dÃ©sordres, garanties non mobilisÃ©es : en matiÃ¨re de construction, les
+              litiges se rÃ©vÃ¨lent souvent aprÃ¨s la rÃ©ception des travaux, quand les dÃ©lais pour
+              agir sont dÃ©jÃ  engagÃ©s. Le cabinet intervient pour faire valoir la responsabilitÃ©
+              des constructeurs, activer les garanties lÃ©gales et dÃ©cennales, et vous assister
+              lors des expertises amiables ou judiciaires. Que vous soyez maÃ®tre d&apos;ouvrage
+              ou professionnel du bÃ¢timent, chaque Ã©tape du chantier crÃ©e des obligations
+              qu&apos;il vaut mieux anticiper que dÃ©couvrir en contentieux.
             </p>
           </AnimatedSection>
         </div>
@@ -81,21 +81,21 @@ export default function DroitImmobilierPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXTE — navy */}
+      {/* 2. TEXTE â€” navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Un bail mal négocié se paie pendant toute sa durée.
+                Un bail mal nÃ©gociÃ© se paie pendant toute sa durÃ©e.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Les clauses de bail signées aujourd&apos;hui déterminent vos droits et vos
-                contraintes pour des années. Le cabinet sécurise la rédaction de vos baux,
-                négocie les conditions locatives et veille à l&apos;équilibre des obligations
-                entre bailleur et locataire. En cas d&apos;impayés, d&apos;inexécution ou de
-                litige sur la résiliation, le cabinet assure votre défense et conduit les
-                procédures nécessaires à la protection de vos intérêts.
+                Les clauses de bail signÃ©es aujourd&apos;hui dÃ©terminent vos droits et vos
+                contraintes pour des annÃ©es. Le cabinet sÃ©curise la rÃ©daction de vos baux,
+                nÃ©gocie les conditions locatives et veille Ã  l&apos;Ã©quilibre des obligations
+                entre bailleur et locataire. En cas d&apos;impayÃ©s, d&apos;inexÃ©cution ou de
+                litige sur la rÃ©siliation, le cabinet assure votre dÃ©fense et conduit les
+                procÃ©dures nÃ©cessaires Ã  la protection de vos intÃ©rÃªts.
               </p>
             </div>
           </AnimatedSection>
@@ -152,3 +152,4 @@ export default function DroitImmobilierPage() {
     </>
   );
 }
+

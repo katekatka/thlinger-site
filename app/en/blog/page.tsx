@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Blog — Christian THALINGER, Business Lawyer",
+  title: "Blog â€” Christian THALINGER, Business Lawyer",
   description:
     "Legal articles and updates by Christian THALINGER, business lawyer at the Strasbourg Bar.",
   alternates: {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     languages: { fr: "https://thalinger-avocat.fr/blog" },
   },
   openGraph: {
-    title: "Blog — Christian THALINGER, Business Lawyer",
+    title: "Blog â€” Christian THALINGER, Business Lawyer",
     description:
       "Legal articles and updates by Christian THALINGER, business lawyer at the Strasbourg Bar.",
     url: "https://thalinger-avocat.fr/en/blog",
@@ -29,7 +29,7 @@ export default function EnBlogIndexPage() {
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Legal resources
             </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-normal leading-tight text-navy">
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Blog
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
@@ -54,3 +54,4 @@ export default function EnBlogIndexPage() {
     </>
   );
 }
+
