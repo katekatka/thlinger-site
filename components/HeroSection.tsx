@@ -125,13 +125,13 @@ export default function HeroSection() {
             variants={itemVariants}
             className="font-serif font-normal leading-tight text-navy"
             style={{
-              fontSize: "clamp(2.4rem, 4.5vw, 3.75rem)",
+              fontSize: "clamp(2.1rem, 4.5vw, 3.2rem)",
               marginBottom: "2rem",
             }}
           >
             <span style={{ display: "block" }}>Avocat en droit</span>
 
-            <span style={{ display: "block", position: "relative" }}>
+            <span className="md:whitespace-nowrap" style={{ display: "block", position: "relative" }}>
               {/* All 7 disciplines — always in the DOM for crawlers */}
               <span
                 style={{
