@@ -140,7 +140,7 @@ export default function AboutHero({
       >
 
         {/* ── Text column ── */}
-        <div className="flex flex-col pb-16 md:pb-28">
+        <div className="flex flex-col pb-3 md:pb-28">
 
           {/* Eyebrow */}
           <motion.p
@@ -232,7 +232,7 @@ export default function AboutHero({
         {/* ── Image column ── */}
         <motion.div
           variants={itemVariants}
-          className="relative h-[634px] w-full md:h-auto"
+          className="relative h-[317px] w-full overflow-hidden md:h-auto md:overflow-visible"
         >
           <Image
             src="/images/bio.png"

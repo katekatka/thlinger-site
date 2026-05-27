@@ -93,7 +93,7 @@ export default function HeroSectionEn() {
         animate="visible"
       >
         {/* ── Text column ── */}
-        <div className="flex flex-col pb-16 md:pb-28">
+        <div className="flex flex-col pb-3 md:pb-28">
 
           <motion.p
             variants={itemVariants}
@@ -270,7 +270,7 @@ export default function HeroSectionEn() {
         {/* ── Image column ── */}
         <motion.div
           variants={itemVariants}
-          className="relative h-[360px] w-full overflow-hidden md:h-auto"
+          className="relative h-[288px] w-full overflow-hidden md:h-auto"
         >
           <Image
             src="/images/hero1.png"
