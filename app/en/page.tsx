@@ -76,7 +76,7 @@ const trustBlocks = [
   },
   {
     title: "Immersion in the business world.",
-    text: "The firm participates in local economic, associative and public life. This proximity to the field feeds its expertise and enables it to advise you with a nuanced understanding of your environment.",
+    text: "The firm participates in local economic, civic and public life. This proximity to the field feeds its expertise and enables it to advise you with a nuanced understanding of your environment.",
   },
 ];
 
@@ -131,7 +131,7 @@ export default function HomePageEN() {
               <p className="font-sans text-base leading-[1.85] text-white/65 md:text-[1.0625rem]">
                 You know your business. The firm knows the law. The value of legal
                 advice lies at the intersection of both. That is why every collaboration
-                begins with a careful listen to your reality before any legal analysis.
+                begins with careful attention to your reality before any legal analysis.
                 No generic solutions, no unnecessary jargon: clear answers, grounded in
                 your concrete challenges.
               </p>

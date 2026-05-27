@@ -189,7 +189,7 @@ const jsonLdFaq = {
       name: "Can Maître Thalinger act at short notice?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Certain situations — formal notices, court summons, social security audits, shareholder disputes — require a swift response. Maître Thalinger commits to responding within 24 hours and can arrange an initial exchange at short notice.",
+        text: "Yes. Certain situations (formal notices, court summons, social security audits, shareholder disputes) require a swift response. Maître Thalinger commits to responding within 24 hours and can arrange an initial exchange at short notice.",
       },
     },
     {
@@ -208,7 +208,7 @@ const jsonLdFaq = {
 const approachPillars = [
   {
     title: "Strategic",
-    text: "I take an interest in your market, your competitors, your timeline, and your ambitions — because a legal answer that ignores business reality is not sufficient.",
+    text: "I take an interest in your market, your competitors, your timeline, and your ambitions, because a legal answer that ignores business reality is not sufficient.",
   },
   {
     title: "Preventive",
@@ -295,7 +295,7 @@ const faqItems = [
   },
   {
     question: "Can Maître Thalinger act at short notice?",
-    answer: "Yes. Certain situations — formal notices, court summons, social security audits, shareholder disputes — require a swift response. Maître Thalinger commits to responding within 24 hours and can arrange an initial exchange at short notice.",
+    answer: "Yes. Certain situations (formal notices, court summons, social security audits, shareholder disputes) require a swift response. Maître Thalinger commits to responding within 24 hours and can arrange an initial exchange at short notice.",
   },
   {
     question: "Does Maître Thalinger speak English?",
@@ -375,7 +375,7 @@ export default async function AboutPage() {
       <AboutHero
         eyebrow="Attorney at the Strasbourg Bar"
         staticLine="Maître Christian THALINGER"
-        description="A business lawyer in Strasbourg, I have been a member of the Bar since 2022 and advise clients in French and English. I structure every matter around one conviction: complexity is managed through rigour and explanation, never through opacity. When the stakes are high, I tell the truth — including what is uncomfortable. This is the approach I apply across every area of my practice."
+        description="A business lawyer in Strasbourg, I have been a member of the Bar since 2022 and advise clients in French and English. I structure every matter around one conviction: complexity is managed through rigour and explanation, never through opacity. When the stakes are high, I tell the truth, including what is uncomfortable. This is the approach I apply across every area of my practice."
         imageAlt="Maître Christian THALINGER, business lawyer at the Strasbourg Bar"
         ctaPrimaryLabel="Get in touch"
         ctaPrimaryHref="/en#contact"

@@ -96,7 +96,7 @@ export default function HeroSectionEn() {
   return (
     <section
       id="hero"
-      className="relative overflow-x-clip bg-white"
+      className="relative overflow-hidden bg-white"
       style={{ paddingTop: "5rem" }}
     >
       <motion.div
@@ -281,9 +281,10 @@ export default function HeroSectionEn() {
         </div>
 
         {/* ── Image column ── */}
+        {/* Mobile: in-flow below text. Desktop: absolute background layer — decoupled from text height */}
         <motion.div
           variants={portraitVariants}
-          className="relative h-[380px] w-full overflow-hidden md:h-full"
+          className="relative h-[380px] w-full overflow-hidden md:absolute md:inset-y-0 md:right-0 md:h-auto md:w-[560px]"
         >
           <Image
             src="/images/hero1.png"
