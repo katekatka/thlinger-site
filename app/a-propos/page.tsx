@@ -383,7 +383,7 @@ export default async function AProposPage() {
         staticLine="Maître Christian THALINGER"
         description="Avocat d'affaires à Strasbourg, je suis inscrit au Barreau depuis 2022 et je conseille en français et en anglais. Je structure chaque dossier autour d'une conviction : la complexité se gère par la rigueur et l'explication, et jamais par l'opacité. Quand les enjeux sont élevés, je dis la vérité, y compris ce qui dérange. C'est cette approche que j'applique dans chacun de mes domaines d'intervention."
         imageAlt="Maître Christian THALINGER, avocat d'affaires au Barreau de Strasbourg"
-        ctaPrimaryLabel="Prendre contact"
+        ctaPrimaryLabel="Parler de votre situation"
         ctaPrimaryHref="/#contact"
         ctaPhone="+33 6 37 33 19 26"
       />
