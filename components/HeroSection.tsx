@@ -87,7 +87,7 @@ export default function HeroSection() {
       style={{ paddingTop: "5rem" }}
     >
       <motion.div
-        className="relative mx-auto grid max-w-[1400px] grid-cols-1 px-6 md:grid-cols-[1fr_636px] md:gap-x-12"
+        className="relative mx-auto grid max-w-[1200px] grid-cols-1 px-6 md:grid-cols-[1fr_560px] md:gap-x-[72px]"
         variants={containerVariants}
         initial={mounted ? "hidden" : "visible"}
         animate="visible"
