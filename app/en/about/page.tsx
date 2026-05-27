@@ -586,7 +586,7 @@ export default function AboutPage() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="inline-flex items-center rounded-full border border-gold px-4 py-2 font-sans text-[0.8125rem] text-navy transition-all duration-200 hover:bg-navy hover:text-white"
+                    className="inline-flex items-center rounded-full border-2 border-gold px-4 py-2 font-sans text-[0.8125rem] text-navy transition-all duration-200 hover:bg-navy hover:text-white"
                   >
                     {link.label}
                   </Link>

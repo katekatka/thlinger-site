@@ -350,7 +350,7 @@ export default function Nav() {
                   type="button"
                   onClick={() => setOpen(false)}
                   aria-label={isEN ? "Close menu" : "Fermer le menu"}
-                  className="rounded-full border border-parchment p-3 text-parchment"
+                  className="rounded-full border-2 border-parchment p-3 text-parchment"
                 >
                   <X size={20} />
                 </button>

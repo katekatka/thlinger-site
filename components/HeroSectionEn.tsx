@@ -231,7 +231,7 @@ export default function HeroSectionEn() {
                       <button
                         onClick={() => setGeoOpen(false)}
                         aria-label="Close"
-                        className="ml-4 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-navy/20 text-navy/40"
+                        className="ml-4 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-navy/20 text-navy/40"
                       >
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                           <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
