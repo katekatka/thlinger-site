@@ -22,9 +22,8 @@ const items: { label: string; value: string; note?: string }[] = [
   {
     label: "Format",
     value: "Google Meet",
-    note: "No installation required. A meeting link is sent to you by email upon confirmation.",
+    note: "No installation required. A meeting link is sent to you by email upon confirmation. The aim is to understand your situation, identify the legal issues at stake, and assess the available options together. No commitment required on your part at the end of this exchange.",
   },
-  { label: "Confirmation", value: "Instant confirmation by email" },
 ];
 
 export default function RdvPageEn() {
@@ -88,21 +87,6 @@ export default function RdvPageEn() {
                 ))}
               </ul>
             </div>
-
-            {/* What happens */}
-            <div>
-              <p className="mb-4 font-sans text-[11px] uppercase tracking-[0.2em] text-navy/40">
-                Purpose
-              </p>
-              <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
-                To understand your situation, identify the legal issues at stake, and
-                assess the available options together. No commitment required on your part
-                at the end of this exchange.
-              </p>
-            </div>
-
-            {/* Divider */}
-            <div className="h-px bg-gold" />
 
             {/* Phone fallback */}
             <div>
