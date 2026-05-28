@@ -301,27 +301,35 @@ export default function HomePageEN() {
 
           {/* Book a slot CTA */}
           <AnimatedSection className="mt-12" delay={0.1}>
-            <div className="border-t-2 border-navy pt-8 md:flex md:items-center md:justify-between">
-              <div className="mb-6 md:mb-0">
-                <p className="mb-1 font-serif text-lg font-normal text-navy">
-                  Initial exchange — video call
+            <Link
+              href="/en/rdv"
+              className="group flex w-full items-center justify-between rounded-2xl bg-navy px-10 py-8 transition-all duration-300 hover:bg-dark active:scale-[0.99]"
+            >
+              <div>
+                <p className="font-serif text-xl font-normal text-white">
+                  Initial exchange — video call : book a slot
                 </p>
-                <p className="font-sans text-sm text-navy/55">
-                  30 min · Free · No commitment · Instant confirmation
+                <p className="mt-2 font-sans text-sm text-white/55">
+                  30 min · Free · Instant confirmation
                 </p>
               </div>
-              <Link
-                href="/en/rdv"
-                className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97] shrink-0"
+              <svg
+                width="20"
+                height="12"
+                viewBox="0 0 20 12"
+                fill="none"
+                aria-hidden="true"
+                className="ml-8 shrink-0 transition-transform duration-300 group-hover:translate-x-1"
               >
-                Book a slot
-                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
-                  className="transition-transform duration-300 group-hover:translate-x-1">
-                  <path d="M1 5H15M15 5L11 1M15 5L11 9"
-                    stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </Link>
-            </div>
+                <path
+                  d="M1 6H19M19 6L14 1M19 6L14 11"
+                  stroke="white"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
           </AnimatedSection>
 
           <AnimatedSection className="mt-20 pt-12 text-center" delay={0.1}>

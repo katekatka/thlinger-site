@@ -1,57 +1,56 @@
 "use client";
 
-import { useEffect } from "react";
+import Script from "next/script";
 
 export default function CalEmbed() {
-  useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const w = window as any;
-    (function (C: any, A: string, L: string) {
-      const p = (a: any, ar: any) => a.q.push(ar);
-      const d = C.document;
-      C.Cal =
-        C.Cal ||
-        function (...args: any[]) {
-          const cal = C.Cal;
-          if (!cal.loaded) {
-            cal.ns = {};
-            cal.q = cal.q || [];
-            const s = d.createElement("script");
-            s.src = A;
-            d.head.appendChild(s);
-            cal.loaded = true;
-          }
-          if (args[0] === L) {
-            const api = (...a: any[]) => p(api, a);
-            const ns = args[1];
-            api.q = [];
-            if (typeof ns === "string") {
-              cal.ns[ns] = cal.ns[ns] || api;
-              p(cal.ns[ns], args);
-              p(cal, ["initNamespace", ns]);
-            } else p(cal, args);
-            return;
-          }
-          p(cal, args);
-        };
-    })(w, "https://app.cal.eu/embed/embed.js", "init");
-
-    w.Cal("init", "premier-echange", { origin: "https://app.cal.eu" });
-    w.Cal.ns["premier-echange"]("inline", {
-      elementOrSelector: "#my-cal-inline-premier-echange",
-      config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
-      calLink: "thalinger/premier-echange",
-    });
-    w.Cal.ns["premier-echange"]("ui", {
-      hideEventTypeDetails: false,
-      layout: "month_view",
-    });
-  }, []);
-
   return (
-    <div
-      id="my-cal-inline-premier-echange"
-      style={{ width: "100%", minHeight: "660px", overflow: "auto" }}
-    />
+    <>
+      <div
+        id="my-cal-inline-premier-echange"
+        style={{ width: "100%", minHeight: "660px", overflow: "auto" }}
+      />
+      <Script
+        id="cal-embed"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function (C, A, L) {
+              var p = function (a, ar) { a.q.push(ar) };
+              var d = C.document;
+              C.Cal = C.Cal || function () {
+                var cal = C.Cal; var ar = arguments;
+                if (!cal.loaded) {
+                  cal.ns = {}; cal.q = cal.q || [];
+                  d.head.appendChild(d.createElement("script")).src = A;
+                  cal.loaded = true;
+                }
+                if (ar[0] === L) {
+                  var api = function () { p(api, arguments) };
+                  var namespace = ar[1]; api.q = [];
+                  if (typeof namespace === "string") {
+                    cal.ns[namespace] = cal.ns[namespace] || api;
+                    p(cal.ns[namespace], ar);
+                    p(cal, ["initNamespace", namespace]);
+                  } else p(cal, ar);
+                  return;
+                }
+                p(cal, ar);
+              };
+            })(window, "https://app.cal.eu/embed/embed.js", "init");
+
+            Cal("init", "premier-echange", { origin: "https://app.cal.eu" });
+            Cal.ns["premier-echange"]("inline", {
+              elementOrSelector: "#my-cal-inline-premier-echange",
+              config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
+              calLink: "thalinger/premier-echange",
+            });
+            Cal.ns["premier-echange"]("ui", {
+              hideEventTypeDetails: false,
+              layout: "month_view",
+            });
+          `,
+        }}
+      />
+    </>
   );
 }

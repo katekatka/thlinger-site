@@ -5,7 +5,7 @@ import CalEmbed from "@/components/CalEmbed";
 export const metadata: Metadata = {
   title: "Book an appointment | THALINGER Avocat — Strasbourg",
   description:
-    "Book a free 30-minute initial exchange with Maître Christian THALINGER, business lawyer at the Strasbourg Bar. No commitment. Video call or phone.",
+    "Book a free 30-minute initial exchange with Maître Christian THALINGER, business lawyer at the Strasbourg Bar. No commitment. Video call.",
   alternates: {
     canonical: "https://www.thalinger-avocat.fr/en/rdv",
     languages: {
@@ -80,7 +80,7 @@ export default function RdvPageEn() {
           </div>
 
           {/* Right — Cal.com embed */}
-          <div className="min-h-[660px] overflow-hidden rounded-2xl border-2 border-gold/30">
+          <div className="min-h-[660px] overflow-hidden rounded-2xl border-2 border-gold">
             <CalEmbed />
           </div>
         </div>
