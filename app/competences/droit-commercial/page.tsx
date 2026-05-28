@@ -1,5 +1,12 @@
-﻿import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import type { Metadata } from "next";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+
+export const metadata: Metadata = {
+  title: "Avocat droit commercial à Strasbourg | Cabinet THALINGER",
+  description: "Avocat en droit commercial à Strasbourg. Contrats, contentieux commercial, recouvrement de créances, baux commerciaux, procédures collectives. Cabinet THALINGER.",
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-commercial" },
+};
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 

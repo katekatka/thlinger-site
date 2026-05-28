@@ -1,5 +1,12 @@
-﻿import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import type { Metadata } from "next";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+
+export const metadata: Metadata = {
+  title: "Avocat droit des assurances à Strasbourg | Cabinet THALINGER",
+  description: "Avocat en droit des assurances à Strasbourg. Litiges assurance, refus de garantie, expertise contradictoire, responsabilité civile, assurance construction. Cabinet THALINGER.",
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-des-assurances" },
+};
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 

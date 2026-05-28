@@ -1,5 +1,12 @@
-﻿import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import type { Metadata } from "next";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+
+export const metadata: Metadata = {
+  title: "Avocat droit bancaire et financier à Strasbourg | Cabinet THALINGER",
+  description: "Avocat en droit bancaire et financier à Strasbourg. Contentieux bancaire, financement, cautionnement, responsabilité bancaire, investissements. Cabinet THALINGER.",
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-bancaire-financier" },
+};
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 

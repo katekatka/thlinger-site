@@ -1,5 +1,12 @@
-﻿import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import type { Metadata } from "next";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+
+export const metadata: Metadata = {
+  title: "Avocat droit des sociétés à Strasbourg | Cabinet THALINGER",
+  description: "Avocat en droit des sociétés à Strasbourg. Création, statuts, pacte d'associés, cession de parts, gouvernance, contentieux sociétaire. Cabinet THALINGER.",
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-des-societes" },
+};
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 

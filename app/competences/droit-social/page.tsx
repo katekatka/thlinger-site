@@ -1,5 +1,12 @@
-﻿import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import type { Metadata } from "next";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+
+export const metadata: Metadata = {
+  title: "Avocat droit du travail à Strasbourg | Cabinet THALINGER",
+  description: "Avocat en droit social et droit du travail à Strasbourg. Licenciement, rupture conventionnelle, contentieux prud'homal, relations collectives, sécurité sociale. Cabinet THALINGER.",
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-social" },
+};
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 

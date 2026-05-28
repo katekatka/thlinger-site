@@ -1,5 +1,12 @@
-﻿import { AnimatedSection } from "@/components/AnimatedSection";
+﻿import type { Metadata } from "next";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionGrid } from "@/components/InterventionGrid";
+
+export const metadata: Metadata = {
+  title: "Avocat conseil transfrontalier franco-allemand à Strasbourg | Cabinet THALINGER",
+  description: "Avocat pour les entreprises et dirigeants franco-allemands à Strasbourg. Contrats transfrontaliers, création de filiales, litiges entre juridictions. Cabinet THALINGER.",
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/conseil-transfrontalier" },
+};
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 

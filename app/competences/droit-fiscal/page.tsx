@@ -1,15 +1,22 @@
-﻿import { AnimatedSection } from "@/components/AnimatedSection";
+import type { Metadata } from "next";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionGrid } from "@/components/InterventionGrid";
+
+export const metadata: Metadata = {
+  title: "Avocat droit fiscal à Strasbourg | Cabinet THALINGER",
+  description: "Avocat en droit fiscal à Strasbourg. Structuration fiscale, contrôle fiscal, fiscalité internationale, TVA, fiscalité immobilière, rémunération du dirigeant. Cabinet THALINGER.",
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-fiscal" },
+};
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
   "Structuration fiscale",
-  "D�fense en contr�le fiscal",
-  "Fiscalit� internationale",
+  "Défense en contrôle fiscal",
+  "Fiscalité internationale",
   "TVA",
-  "Fiscalit� immobili�re",
-  "R�mun�ration du dirigeant",
+  "Fiscalité immobilière",
+  "Rémunération du dirigeant",
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -25,12 +32,12 @@ export default function DroitFiscalPage() {
               Droit Fiscal
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              S�curiser et structurer vos<br className="hidden md:block" /> d�cisions fiscales.
+              Sécuriser et structurer vos<br className="hidden md:block" /> décisions fiscales.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Le cabinet int�gre la strat�gie fiscale � chaque d�cision de l&apos;entreprise :
-              choix de structure, distribution de b�n�fices, expansion internationale.
-              Quand le contr�le fiscal arrive, la pr�paration est d�j� en place.
+              Le cabinet intègre la stratégie fiscale à chaque décision de l&apos;entreprise :
+              choix de structure, distribution de bénéfices, expansion internationale.
+              Quand le contrôle fiscal arrive, la préparation est déjà en place.
             </p>
           </AnimatedSection>
         </div>
@@ -38,23 +45,23 @@ export default function DroitFiscalPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXTE � navy */}
+      {/* 2. TEXTE — navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Optimiser dans les r�gles, anticiper le contr�le fiscal.
+                Optimiser dans les règles, anticiper le contrôle fiscal.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                La fiscalit�, c&apos;est le domaine o� une erreur silencieuse peut co�ter
-                tr�s cher. Vous prenez des d�cisions tous les jours : structure,
-                r�mun�ration, investissement, et chacune a des cons�quences fiscales.
-                Le probl�me, c&apos;est que la fronti�re entre une optimisation intelligente
-                et un risque de redressement n&apos;est pas toujours claire. Un contr�le
-                fiscal peut bloquer votre entreprise pendant des mois. Une d�claration
-                incompl�te peut d�clencher des p�nalit�s que vous n&apos;aviez pas vues
-                venir. Et d�s qu&apos;il y a une dimension internationale, tout se
+                La fiscalité, c&apos;est le domaine où une erreur silencieuse peut coûter
+                très cher. Vous prenez des décisions tous les jours : structure,
+                rémunération, investissement, et chacune a des conséquences fiscales.
+                Le problème, c&apos;est que la frontière entre une optimisation intelligente
+                et un risque de redressement n&apos;est pas toujours claire. Un contrôle
+                fiscal peut bloquer votre entreprise pendant des mois. Une déclaration
+                incomplète peut déclencher des pénalités que vous n&apos;aviez pas vues
+                venir. Et dès qu&apos;il y a une dimension internationale, tout se
                 complique encore.
               </p>
             </div>
@@ -112,4 +119,3 @@ export default function DroitFiscalPage() {
     </>
   );
 }
-
