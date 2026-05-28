@@ -114,7 +114,7 @@ export default function RdvPage() {
           </div>
 
           {/* Right — Cal.com embed */}
-          <div className="min-h-[660px] overflow-hidden">
+          <div className="min-h-[750px]">
             <CalEmbed />
           </div>
         </div>
