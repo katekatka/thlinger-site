@@ -1,40 +1,40 @@
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
-// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
   {
-    title: "Conditions gÃ©nÃ©rales de vente CGV",
+    title: "Conditions générales de vente CGV",
     items: [
       "Encadrement des relations commerciales",
-      "Clauses de responsabilitÃ© et de paiement",
-      "ConformitÃ© des pratiques commerciales",
-      "SÃ©curisation des Ã©changes avec les clients",
+      "Clauses de responsabilité et de paiement",
+      "Conformité des pratiques commerciales",
+      "Sécurisation des échanges avec les clients",
     ],
   },
   {
-    title: "Conditions gÃ©nÃ©rales d'achat CGA",
+    title: "Conditions générales d'achat CGA",
     items: [
       "Relations fournisseurs",
       "Gestion des risques d'approvisionnement",
-      "SÃ©curisation des engagements commerciaux",
+      "Sécurisation des engagements commerciaux",
     ],
   },
   {
-    title: "Conditions gÃ©nÃ©rales d'utilisation CGU",
+    title: "Conditions générales d'utilisation CGU",
     items: [
-      "Services et plateformes numÃ©riques",
+      "Services et plateformes numériques",
       "Protection des contenus",
       "Encadrement des usages en ligne",
-      "ResponsabilitÃ© des opÃ©rateurs",
+      "Responsabilité des opérateurs",
     ],
   },
   {
     title: "Contrats commerciaux",
     items: [
       "Contrats de prestation et de distribution",
-      "SÃ©curisation des partenariats",
+      "Sécurisation des partenariats",
       "Gestion des risques contractuels",
     ],
   },
@@ -42,8 +42,8 @@ const interventions = [
     title: "Vente de fonds de commerce",
     items: [
       "Acquisition et cession de fonds de commerce",
-      "Audit et sÃ©curisation des opÃ©rations",
-      "RÃ©daction et nÃ©gociation d'actes de cession",
+      "Audit et sécurisation des opérations",
+      "Rédaction et négociation d'actes de cession",
       "Baux commerciaux et transfert d'exploitation",
       "Contentieux post-acquisition",
       "Transmission et reprise d'entreprise",
@@ -52,46 +52,46 @@ const interventions = [
   {
     title: "Baux commerciaux",
     items: [
-      "RÃ©daction de baux commerciaux",
-      "Convention d'occupation prÃ©caire et baux dÃ©rogatoires",
-      "NÃ©gociation et renouvellement des baux",
-      "RÃ©vision des loyers commerciaux",
+      "Rédaction de baux commerciaux",
+      "Convention d'occupation précaire et baux dérogatoires",
+      "Négociation et renouvellement des baux",
+      "Révision des loyers commerciaux",
       "Litiges locatifs",
     ],
   },
   {
-    title: "Recouvrement et impayÃ©s",
+    title: "Recouvrement et impayés",
     items: [
       "Injonctions de payer",
       "Mesures conservatoires",
-      "ExÃ©cution forcÃ©e",
+      "Exécution forcée",
       "Gestion des retards de paiement",
     ],
   },
   {
     title: "Litiges commerciaux",
     items: [
-      "ResponsabilitÃ© contractuelle",
+      "Responsabilité contractuelle",
       "Conflits entre partenaires commerciaux",
       "Rupture des relations d'affaires",
-      "DÃ©fense des intÃ©rÃªts de l'entreprise",
+      "Défense des intérêts de l'entreprise",
     ],
   },
   {
-    title: "Concurrence dÃ©loyale",
+    title: "Concurrence déloyale",
     items: [
-      "DÃ©sorganisation commerciale",
-      "Parasitisme Ã©conomique",
-      "Atteinte Ã  l'image et Ã  la rÃ©putation",
-      "Protection des intÃ©rÃªts stratÃ©giques",
+      "Désorganisation commerciale",
+      "Parasitisme économique",
+      "Atteinte à l'image et à la réputation",
+      "Protection des intérêts stratégiques",
     ],
   },
   {
-    title: "DifficultÃ©s des entreprises",
+    title: "Difficultés des entreprises",
     items: [
-      "RÃ©organisation financiÃ¨re et opÃ©rationnelle",
-      "NÃ©gociation avec les crÃ©anciers",
-      "Accompagnement des dirigeants en pÃ©riode de crise",
+      "Réorganisation financière et opérationnelle",
+      "Négociation avec les créanciers",
+      "Accompagnement des dirigeants en période de crise",
       "Assistance devant les juridictions",
     ],
   },
@@ -100,22 +100,22 @@ const interventions = [
     items: [
       "Recherche de solutions amiables",
       "Restructuration des dettes",
-      "NÃ©gociation confidentielle avec les crÃ©anciers",
-      "PrÃ©servation de l'activitÃ© de l'entreprise",
+      "Négociation confidentielle avec les créanciers",
+      "Préservation de l'activité de l'entreprise",
     ],
   },
   {
-    title: "ProcÃ©dures collectives",
+    title: "Procédures collectives",
     items: [
       "Accompagnement des dirigeants",
-      "DÃ©claration de crÃ©ances",
-      "Gestion des relations avec les organes de la procÃ©dure",
-      "PrÃ©servation des actifs et de l'activitÃ©",
+      "Déclaration de créances",
+      "Gestion des relations avec les organes de la procédure",
+      "Préservation des actifs et de l'activité",
     ],
   },
 ];
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function DroitCommercialPage() {
   return (
@@ -128,14 +128,14 @@ export default function DroitCommercialPage() {
               Droit Commercial
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              Un contrat mal rÃ©digÃ© est invisible. Jusqu&apos;au litige.
+              Un contrat mal rédigé est invisible. Jusqu&apos;au litige.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               CGV, CGA, CGU, contrats de prestation, baux commerciaux : ces documents encadrent
               chacune de vos relations d&apos;affaires. Tant que tout va bien, personne ne les relit.
-              Mais une clause absente, une limitation ambiguÃ« ou un dÃ©lai qui ne reflÃ¨te pas la
-              rÃ©alitÃ© opÃ©rationnelle suffisent Ã  transformer un dÃ©saccord en contentieux coÃ»teux.
-              Le cabinet rÃ©dige, nÃ©gocie et sÃ©curise vos contrats avec une question constante :
+              Mais une clause absente, une limitation ambiguë ou un délai qui ne reflète pas la
+              réalité opérationnelle suffisent à transformer un désaccord en contentieux coûteux.
+              Le cabinet rédige, négocie et sécurise vos contrats avec une question constante :
               que se passe-t-il quand les choses tournent mal ?
             </p>
           </AnimatedSection>
@@ -144,20 +144,20 @@ export default function DroitCommercialPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXTE â€” navy */}
+      {/* 2. TEXTE — navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                En droit commercial, le conflit fait partie du jeu. La maniÃ¨re de le gÃ©rer, non.
+                En droit commercial, le conflit fait partie du jeu. La manière de le gérer, non.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                ImpayÃ©s, rupture brutale de relations d&apos;affaires, concurrence dÃ©loyale, conflit
-                entre partenaires commerciaux : ces situations mettent en jeu votre trÃ©sorerie,
-                votre rÃ©putation et parfois la continuitÃ© de votre activitÃ©. Le cabinet intervient
-                pour recouvrer vos crÃ©ances, dÃ©fendre vos intÃ©rÃªts en contentieux et protÃ©ger vos
-                positions stratÃ©giques face aux pratiques dÃ©loyales.
+                Impayés, rupture brutale de relations d&apos;affaires, concurrence déloyale, conflit
+                entre partenaires commerciaux : ces situations mettent en jeu votre trésorerie,
+                votre réputation et parfois la continuité de votre activité. Le cabinet intervient
+                pour recouvrer vos créances, défendre vos intérêts en contentieux et protéger vos
+                positions stratégiques face aux pratiques déloyales.
               </p>
             </div>
           </AnimatedSection>
@@ -166,22 +166,22 @@ export default function DroitCommercialPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 3. TEXTE â€” blanc */}
+      {/* 3. TEXTE — blanc */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-navy">
-                Les difficultÃ©s financiÃ¨res n&apos;attendent pas que vous soyez prÃªt.
+                Les difficultés financières n&apos;attendent pas que vous soyez prêt.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-                Quand la trÃ©sorerie se tend, chaque semaine compte. Le cadre lÃ©gal offre des outils
-                de protection souvent mÃ©connus : mandat ad hoc, conciliation, procÃ©dure de
-                sauvegarde. Ces dispositifs permettent de nÃ©gocier avec les crÃ©anciers de maniÃ¨re
-                confidentielle et de prÃ©server l&apos;activitÃ© avant que la situation ne devienne
-                irrÃ©versible. Le cabinet accompagne les dirigeants Ã  chaque Ã©tape, de la
-                restructuration amiable Ã  la procÃ©dure collective, pour protÃ©ger ce qui peut
-                l&apos;Ãªtre et prÃ©parer la suite.
+                Quand la trésorerie se tend, chaque semaine compte. Le cadre légal offre des outils
+                de protection souvent méconnus : mandat ad hoc, conciliation, procédure de
+                sauvegarde. Ces dispositifs permettent de négocier avec les créanciers de manière
+                confidentielle et de préserver l&apos;activité avant que la situation ne devienne
+                irréversible. Le cabinet accompagne les dirigeants à chaque étape, de la
+                restructuration amiable à la procédure collective, pour protéger ce qui peut
+                l&apos;être et préparer la suite.
               </p>
             </div>
           </AnimatedSection>

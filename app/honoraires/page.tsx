@@ -1,42 +1,42 @@
 ﻿import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 import { FaqAccordion, type FaqGroup } from "@/components/FaqAccordion";
 
-// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Data ──────────────────────────────────────────────────────────────────────
 
 const principes = [
   {
     title: "Forfait",
-    text: "Pour les missions Ã  pÃ©rimÃ¨tre dÃ©fini : crÃ©ation de sociÃ©tÃ©, rÃ©daction de contrat, audit juridique ciblÃ©. Vous connaissez le prix avant de commencer.",
+    text: "Pour les missions à périmètre défini : création de société, rédaction de contrat, audit juridique ciblé. Vous connaissez le prix avant de commencer.",
   },
   {
     title: "Taux horaire",
-    text: "Pour les missions de conseil ou de contentieux dont l'Ã©tendue Ã©volue. Le taux est communiquÃ© dÃ¨s le dÃ©part, avec un suivi rÃ©gulier des heures engagÃ©es.",
+    text: "Pour les missions de conseil ou de contentieux dont l'étendue évolue. Le taux est communiqué dès le départ, avec un suivi régulier des heures engagées.",
   },
   {
-    title: "RÃ©sultat",
-    text: "Honoraires complÃ©mentaires correspondant Ã  un pourcentage des gains procurÃ©s ou des Ã©conomies faites grÃ¢ce Ã  l'action de l'avocat.",
+    title: "Résultat",
+    text: "Honoraires complémentaires correspondant à un pourcentage des gains procurés ou des économies faites grâce à l'action de l'avocat.",
   },
 ];
 
 const faqGroups: FaqGroup[] = [
   {
-    title: "Fixation et modalitÃ©s des honoraires",
+    title: "Fixation et modalités des honoraires",
     items: [
       {
-        question: "Comment sont fixÃ©s les honoraires du cabinet ?",
+        question: "Comment sont fixés les honoraires du cabinet ?",
         answer: (
           <p>
-            Les honoraires sont fixÃ©s selon la nature du dossier, sa complexitÃ©, le temps
-            consacrÃ© et les enjeux Ã©conomiques ou juridiques de l&apos;intervention. Avant toute
-            mission, une convention d&apos;honoraires est Ã©tablie afin de prÃ©ciser le pÃ©rimÃ¨tre
-            de l&apos;intervention, le mode de facturation et les conditions financiÃ¨res
+            Les honoraires sont fixés selon la nature du dossier, sa complexité, le temps
+            consacré et les enjeux économiques ou juridiques de l&apos;intervention. Avant toute
+            mission, une convention d&apos;honoraires est établie afin de préciser le périmètre
+            de l&apos;intervention, le mode de facturation et les conditions financières
             applicables. Sauf convention contraire, les honoraires sont payables selon un
-            Ã©chÃ©ancier dÃ©fini Ã  l&apos;avance.
+            échéancier défini à l&apos;avance.
           </p>
         ),
       },
       {
-        question: "Quels modes de facturation sont proposÃ©s ?",
+        question: "Quels modes de facturation sont proposés ?",
         answer: (
           <>
             <p className="mb-5">
@@ -45,26 +45,26 @@ const faqGroups: FaqGroup[] = [
             <ul className="space-y-4">
               <li>
                 <span className="font-semibold text-navy">Le forfait</span>
-                {" "}â€” pour les missions Ã  pÃ©rimÃ¨tre dÃ©fini comme une crÃ©ation de sociÃ©tÃ©,
-                une rÃ©daction de contrat ou un audit juridique ciblÃ©. Le client connaÃ®t
-                prÃ©cisÃ©ment le coÃ»t de l&apos;intervention avant son commencement.
+                {" "}— pour les missions à périmètre défini comme une création de société,
+                une rédaction de contrat ou un audit juridique ciblé. Le client connaît
+                précisément le coût de l&apos;intervention avant son commencement.
               </li>
               <li>
                 <span className="font-semibold text-navy">Le taux horaire</span>
-                {" "}â€” pour les missions de conseil ou de contentieux dont l&apos;Ã©tendue peut
-                Ã©voluer. Le taux appliquÃ© est communiquÃ© dÃ¨s le dÃ©part, avec un suivi
-                transparent et rÃ©gulier des diligences et du temps consacrÃ©.
+                {" "}— pour les missions de conseil ou de contentieux dont l&apos;étendue peut
+                évoluer. Le taux appliqué est communiqué dès le départ, avec un suivi
+                transparent et régulier des diligences et du temps consacré.
               </li>
               <li>
-                <span className="font-semibold text-navy">L&apos;honoraire de rÃ©sultat</span>
-                {" "}â€” qui peut complÃ©ter un honoraire fixe lorsqu&apos;un gain obtenu ou une
-                Ã©conomie rÃ©alisÃ©e justifie une rÃ©munÃ©ration complÃ©mentaire.
+                <span className="font-semibold text-navy">L&apos;honoraire de résultat</span>
+                {" "}— qui peut compléter un honoraire fixe lorsqu&apos;un gain obtenu ou une
+                économie réalisée justifie une rémunération complémentaire.
               </li>
               <li>
-                <span className="font-semibold text-navy">L&apos;accompagnement rÃ©current</span>
-                {" "}â€” pour certaines entreprises ayant besoin d&apos;un suivi juridique rÃ©gulier
-                et d&apos;un interlocuteur identifiÃ© dans la durÃ©e. Les modalitÃ©s
-                d&apos;intervention sont alors adaptÃ©es aux besoins opÃ©rationnels du dirigeant
+                <span className="font-semibold text-navy">L&apos;accompagnement récurrent</span>
+                {" "}— pour certaines entreprises ayant besoin d&apos;un suivi juridique régulier
+                et d&apos;un interlocuteur identifié dans la durée. Les modalités
+                d&apos;intervention sont alors adaptées aux besoins opérationnels du dirigeant
                 et de l&apos;entreprise.
               </li>
             </ul>
@@ -75,20 +75,20 @@ const faqGroups: FaqGroup[] = [
         question: "Une convention d'honoraires est-elle obligatoire ?",
         answer: (
           <p>
-            ConformÃ©ment aux rÃ¨gles de la profession d&apos;avocat, une convention
-            d&apos;honoraires est systÃ©matiquement conclue avant toute intervention, sauf urgence
+            Conformément aux règles de la profession d&apos;avocat, une convention
+            d&apos;honoraires est systématiquement conclue avant toute intervention, sauf urgence
             ou aide juridictionnelle totale. Elle garantit une parfaite transparence sur les
-            modalitÃ©s d&apos;accompagnement et de facturation.
+            modalités d&apos;accompagnement et de facturation.
           </p>
         ),
       },
       {
-        question: "Les honoraires d'avocat sont-ils soumis Ã  la TVA ?",
+        question: "Les honoraires d'avocat sont-ils soumis à la TVA ?",
         answer: (
           <p>
-            Les honoraires d&apos;avocat sont en principe soumis Ã  la TVA au taux de 20&nbsp;% en
-            France. Certaines situations particuliÃ¨res peuvent relever d&apos;un rÃ©gime spÃ©cifique,
-            notamment dans le cadre de l&apos;aide juridictionnelle ou selon le rÃ©gime fiscal
+            Les honoraires d&apos;avocat sont en principe soumis à la TVA au taux de 20&nbsp;% en
+            France. Certaines situations particulières peuvent relever d&apos;un régime spécifique,
+            notamment dans le cadre de l&apos;aide juridictionnelle ou selon le régime fiscal
             applicable au cabinet.
           </p>
         ),
@@ -99,15 +99,15 @@ const faqGroups: FaqGroup[] = [
     title: "Prise en charge et aides",
     items: [
       {
-        question: "Puis-je bÃ©nÃ©ficier d'une protection juridique ?",
+        question: "Puis-je bénéficier d'une protection juridique ?",
         answer: (
           <>
             <p className="mb-4">
-              Le cabinet vÃ©rifie systÃ©matiquement si le client bÃ©nÃ©ficie d&apos;une
+              Le cabinet vérifie systématiquement si le client bénéficie d&apos;une
               protection juridique susceptible de prendre en charge tout ou partie des
-              honoraires d&apos;avocat. Cette garantie peut Ãªtre incluse dans un contrat
-              spÃ©cifique ou dans certains contrats d&apos;assurance courants (habitation,
-              automobile, responsabilitÃ© civile, etc.).
+              honoraires d&apos;avocat. Cette garantie peut être incluse dans un contrat
+              spécifique ou dans certains contrats d&apos;assurance courants (habitation,
+              automobile, responsabilité civile, etc.).
             </p>
             <p>
               Le client reste toujours libre du choix de son avocat : l&apos;assureur ne peut
@@ -121,9 +121,9 @@ const faqGroups: FaqGroup[] = [
         answer: (
           <p>
             Le cabinet peut intervenir au titre de l&apos;aide juridictionnelle selon la nature
-            du dossier et les conditions d&apos;Ã©ligibilitÃ© du client. Lorsque l&apos;aide
-            juridictionnelle est partielle, une convention d&apos;honoraires complÃ©mentaire est
-            conclue afin de prÃ©ciser les modalitÃ©s de facturation restantes.
+            du dossier et les conditions d&apos;éligibilité du client. Lorsque l&apos;aide
+            juridictionnelle est partielle, une convention d&apos;honoraires complémentaire est
+            conclue afin de préciser les modalités de facturation restantes.
           </p>
         ),
       },
@@ -133,25 +133,25 @@ const faqGroups: FaqGroup[] = [
     title: "Organisation de la relation client",
     items: [
       {
-        question: "Le premier rendez-vous est-il facturÃ© ?",
+        question: "Le premier rendez-vous est-il facturé ?",
         answer: (
           <p>
             Le premier rendez-vous, lorsqu&apos;il n&apos;est pas suivi d&apos;une consultation
-            Ã©crite ou d&apos;une procÃ©dure, n&apos;est pas facturÃ©. Ce premier Ã©change permet de
+            écrite ou d&apos;une procédure, n&apos;est pas facturé. Ce premier échange permet de
             comprendre la situation, d&apos;identifier les enjeux du dossier et d&apos;orienter
-            le client vers les solutions les plus adaptÃ©es.
+            le client vers les solutions les plus adaptées.
           </p>
         ),
       },
       {
-        question: "Les entreprises peuvent-elles bÃ©nÃ©ficier d'un accompagnement rÃ©gulier ?",
+        question: "Les entreprises peuvent-elles bénéficier d'un accompagnement régulier ?",
         answer: (
           <p>
             Le cabinet accompagne aussi bien les particuliers que les entreprises dans
-            le cadre de missions ponctuelles ou d&apos;un suivi juridique rÃ©current. Certaines
-            entreprises choisissent un accompagnement rÃ©gulier afin de sÃ©curiser leurs
-            dÃ©cisions juridiques, anticiper les risques et bÃ©nÃ©ficier d&apos;un interlocuteur
-            unique connaissant dÃ©jÃ  leur activitÃ© et leurs enjeux.
+            le cadre de missions ponctuelles ou d&apos;un suivi juridique récurrent. Certaines
+            entreprises choisissent un accompagnement régulier afin de sécuriser leurs
+            décisions juridiques, anticiper les risques et bénéficier d&apos;un interlocuteur
+            unique connaissant déjà leur activité et leurs enjeux.
           </p>
         ),
       },
@@ -159,10 +159,10 @@ const faqGroups: FaqGroup[] = [
         question: "Comment obtenir une estimation des honoraires ?",
         answer: (
           <p>
-            AprÃ¨s un premier Ã©change permettant d&apos;analyser la situation et les objectifs
-            du client, le cabinet propose un mode d&apos;intervention adaptÃ© ainsi qu&apos;une
-            visibilitÃ© claire sur le pÃ©rimÃ¨tre de la mission, les modalitÃ©s de facturation
-            et les conditions financiÃ¨res applicables.
+            Après un premier échange permettant d&apos;analyser la situation et les objectifs
+            du client, le cabinet propose un mode d&apos;intervention adapté ainsi qu&apos;une
+            visibilité claire sur le périmètre de la mission, les modalités de facturation
+            et les conditions financières applicables.
           </p>
         ),
       },
@@ -170,7 +170,7 @@ const faqGroups: FaqGroup[] = [
   },
 ];
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function HonorairesPage() {
   return (
@@ -183,11 +183,11 @@ export default function HonorairesPage() {
               Honoraires
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              La clartÃ© commence<br className="hidden md:block" /> par le prix.
+              La clarté commence<br className="hidden md:block" /> par le prix.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Les honoraires sont librement fixÃ©s entre les parties en fonction de la complexitÃ© du dossier.
-              Cette question est abordÃ©e en toute transparence.
+              Les honoraires sont librement fixés entre les parties en fonction de la complexité du dossier.
+              Cette question est abordée en toute transparence.
             </p>
           </AnimatedSection>
         </div>
@@ -195,7 +195,7 @@ export default function HonorairesPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. PRINCIPES â€” navy */}
+      {/* 2. PRINCIPES — navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
@@ -203,8 +203,8 @@ export default function HonorairesPage() {
               Un cadre clair avant chaque mission.
             </h2>
             <p className="mt-6 max-w-2xl font-sans text-base leading-[1.85] text-white/60 md:text-[1.0625rem]">
-              Avant de commencer, nous dÃ©finissons ensemble le pÃ©rimÃ¨tre de l&apos;intervention,
-              le mode de facturation, et une estimation du coÃ»t.
+              Avant de commencer, nous définissons ensemble le périmètre de l&apos;intervention,
+              le mode de facturation, et une estimation du coût.
             </p>
           </AnimatedSection>
 
@@ -232,7 +232,7 @@ export default function HonorairesPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-              Questions frÃ©quentes
+              Questions fréquentes
             </h2>
           </AnimatedSection>
 
@@ -250,12 +250,12 @@ export default function HonorairesPage() {
           <AnimatedSection>
             <div className="max-w-2xl">
               <h2 className="mb-8 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-                Premier Ã©change
+                Premier échange
               </h2>
               <p className="mb-12 font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
                 Le premier contact est sans engagement de votre part et a pour objectif de comprendre
-                votre situation et d&apos;Ã©valuer si le cabinet peut vous accompagner efficacement. Les modalitÃ©s
-                sont prÃ©cisÃ©es lors de la prise de rendez-vous.
+                votre situation et d&apos;évaluer si le cabinet peut vous accompagner efficacement. Les modalités
+                sont précisées lors de la prise de rendez-vous.
               </p>
               <a
                 href="/#contact"

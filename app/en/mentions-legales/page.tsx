@@ -2,7 +2,7 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Legal Notice â€” Christian THALINGER",
+  title: "Legal Notice — Christian THALINGER",
   description: "Legal notice for the website of Christian THALINGER, Attorney at the Strasbourg Bar.",
 };
 
@@ -36,7 +36,7 @@ export default function LegalNoticePage() {
 
               {/* 1 */}
               <div className="space-y-3">
-                <h2 className={h2}>1 â€“ Website publisher</h2>
+                <h2 className={h2}>1 – Website publisher</h2>
                 <p className={p}>
                   Pursuant to Article 6 of French Law No. 2004-575 of 21 June 2004 on
                   confidence in the digital economy, the following information is provided
@@ -47,37 +47,37 @@ export default function LegalNoticePage() {
                   regarding the persons involved in its creation and operation:
                 </p>
                 <p className={p}>
-                  <strong className="text-navy">Website owner:</strong> Christian THALINGER â€“
+                  <strong className="text-navy">Website owner:</strong> Christian THALINGER –
                   Contact:{" "}
                   <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">christian@thalinger-avocat.fr</a>
                   {" "}
                   <a href="tel:+33637331926" className="underline underline-offset-2 hover:text-navy">+33 6 37 33 19 26</a>
-                  {" "}â€“ Address: 5 avenue de la Marseillaise, 67000 Strasbourg.
+                  {" "}– Address: 5 avenue de la Marseillaise, 67000 Strasbourg.
                 </p>
                 <p className={p}>
-                  <strong className="text-navy">Business registration:</strong> EI Christian THALINGER â€“
-                  SIREN: 909 547 721 â€“ Trade register: Strasbourg â€“
+                  <strong className="text-navy">Business registration:</strong> EI Christian THALINGER –
+                  SIREN: 909 547 721 – Trade register: Strasbourg –
                   Postal address: 5 avenue de la Marseillaise, 67000 Strasbourg.
                 </p>
                 <p className={p}>
-                  <strong className="text-navy">Bar registration:</strong> Strasbourg Bar â€“
-                  Bar Association: Barreau de Strasbourg, 3 Rue du GÃ©nÃ©ral FrÃ¨re, 67000 Strasbourg.
+                  <strong className="text-navy">Bar registration:</strong> Strasbourg Bar –
+                  Bar Association: Barreau de Strasbourg, 3 Rue du Général Frère, 67000 Strasbourg.
                 </p>
                 <p className={p}>
-                  <strong className="text-navy">Publication director:</strong> Christian THALINGER â€“
+                  <strong className="text-navy">Publication director:</strong> Christian THALINGER –
                   Contact:{" "}
                   <a href="mailto:christian@thalinger-avocat.fr" className="underline underline-offset-2 hover:text-navy">christian@thalinger-avocat.fr</a>.
                 </p>
                 <p className={p}>
-                  <strong className="text-navy">Hosting provider:</strong> OVH SAS â€“ 2 rue Kellermann,
-                  59100 Roubaix, France â€“ Phone:{" "}
+                  <strong className="text-navy">Hosting provider:</strong> OVH SAS – 2 rue Kellermann,
+                  59100 Roubaix, France – Phone:{" "}
                   <a href="tel:+33972101007" className="underline underline-offset-2 hover:text-navy">+33 9 72 10 10 07</a>.
                 </p>
               </div>
 
               {/* 2 */}
               <div className="space-y-3">
-                <h2 className={h2}>2 â€“ Intellectual property and counterfeiting.</h2>
+                <h2 className={h2}>2 – Intellectual property and counterfeiting.</h2>
                 <p className={p}>
                   Christian THALINGER owns the intellectual property rights and holds the
                   usage rights to all elements accessible on the website, including texts,
@@ -98,7 +98,7 @@ export default function LegalNoticePage() {
 
               {/* 3 */}
               <div className="space-y-3">
-                <h2 className={h2}>3 â€“ Limitation of liability.</h2>
+                <h2 className={h2}>3 – Limitation of liability.</h2>
                 <p className={p}>
                   Christian THALINGER cannot be held liable for direct or indirect damage
                   caused to the user&apos;s equipment when accessing the website{" "}
@@ -137,7 +137,7 @@ export default function LegalNoticePage() {
 
               {/* 4 */}
               <div className="space-y-3">
-                <h2 className={h2}>4 â€“ GDPR and personal data management.</h2>
+                <h2 className={h2}>4 – GDPR and personal data management.</h2>
                 <p className={p}>
                   In accordance with the provisions of Law No. 78-17 of 6 January 1978 as
                   amended, users of the website{" "}
@@ -157,7 +157,7 @@ export default function LegalNoticePage() {
 
               {/* 5 */}
               <div className="space-y-3">
-                <h2 className={h2}>5 â€“ Hyperlinks and cookies.</h2>
+                <h2 className={h2}>5 – Hyperlinks and cookies.</h2>
                 <p className={p}>
                   The website{" "}
                   <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">
@@ -198,7 +198,7 @@ export default function LegalNoticePage() {
 
               {/* 6 */}
               <div className="space-y-3">
-                <h2 className={h2}>6 â€“ Applicable law and jurisdiction.</h2>
+                <h2 className={h2}>6 – Applicable law and jurisdiction.</h2>
                 <p className={p}>
                   Any dispute relating to the use of the website{" "}
                   <a href="http://www.thalinger-avocat.fr/" className="underline underline-offset-2 hover:text-navy">

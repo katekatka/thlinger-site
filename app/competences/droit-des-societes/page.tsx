@@ -1,66 +1,66 @@
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
-// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
   {
-    title: "CrÃ©ation de sociÃ©tÃ©s",
+    title: "Création de sociétés",
     items: [
-      "CrÃ©ation de sociÃ©tÃ©s civiles et commerciales",
+      "Création de sociétés civiles et commerciales",
       "SARL, SAS et SCI",
       "Choix de la structure juridique",
-      "RÃ©daction des statuts",
+      "Rédaction des statuts",
     ],
   },
   {
     title: "Modifications statutaires",
     items: [
-      "Changement de siÃ¨ge social",
+      "Changement de siège social",
       "Modification de l'objet social",
-      "Augmentation et rÃ©duction de capital",
-      "Mise Ã  jour des statuts",
+      "Augmentation et réduction de capital",
+      "Mise à jour des statuts",
     ],
   },
   {
-    title: "Pactes d'associÃ©s",
+    title: "Pactes d'associés",
     items: [
-      "RÃ©daction de pactes d'associÃ©s",
-      "Gouvernance et rÃ©partition des pouvoirs",
-      "Clauses de sortie et de prÃ©emption",
-      "Protection des associÃ©s minoritaires",
+      "Rédaction de pactes d'associés",
+      "Gouvernance et répartition des pouvoirs",
+      "Clauses de sortie et de préemption",
+      "Protection des associés minoritaires",
     ],
   },
   {
-    title: "AssemblÃ©es gÃ©nÃ©rales",
+    title: "Assemblées générales",
     items: [
-      "Organisation des assemblÃ©es gÃ©nÃ©rales",
+      "Organisation des assemblées générales",
       "Approbation des comptes",
-      "SecrÃ©tariat juridique annuel",
-      "ProcÃ¨s-verbaux et formalitÃ©s",
+      "Secrétariat juridique annuel",
+      "Procès-verbaux et formalités",
     ],
   },
   {
     title: "Cession de parts sociales",
     items: [
-      "Audit et sÃ©curisation des opÃ©rations",
+      "Audit et sécurisation des opérations",
       "Garantie d'actif et de passif",
-      "Accompagnement dans les nÃ©gociations",
+      "Accompagnement dans les négociations",
     ],
   },
   {
-    title: "Contentieux sociÃ©taires",
+    title: "Contentieux sociétaires",
     items: [
-      "Gestion des conflits entre associÃ©s",
+      "Gestion des conflits entre associés",
       "Blocages de gouvernance",
     ],
   },
   {
-    title: "Transformation de sociÃ©tÃ©s",
+    title: "Transformation de sociétés",
     items: [
       "Transformation de forme sociale",
-      "Passage de SARL Ã  SAS",
-      "RÃ©organisation juridique de l'entreprise",
+      "Passage de SARL à SAS",
+      "Réorganisation juridique de l'entreprise",
       "Adaptation de la gouvernance",
     ],
   },
@@ -71,12 +71,12 @@ const interventions = [
       "Pacte Dutreil",
       "Anticipation patrimoniale du dirigeant",
       "Organisation de la succession entrepreneuriale",
-      "RÃ©organisation capitalistique et gouvernance familiale",
+      "Réorganisation capitalistique et gouvernance familiale",
     ],
   },
 ];
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function DroitDesSocietesPage() {
   return (
@@ -86,21 +86,21 @@ export default function DroitDesSocietesPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Droit des SociÃ©tÃ©s
+              Droit des Sociétés
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              Structurer ce qui dÃ©termine le fonctionnement de votre entreprise.
+              Structurer ce qui détermine le fonctionnement de votre entreprise.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Statuts, pacte d&apos;associÃ©s, gouvernance : ces documents sont rarement revisitÃ©s
-              aprÃ¨s leur rÃ©daction. Pourtant, ce sont eux qui dÃ©terminent qui dÃ©cide, qui contrÃ´le
-              et comment les situations de blocage se rÃ©solvent. Le cabinet analyse le cadre dans
-              lequel vous souhaitez entreprendre : forme sociale, rÃ©partition des pouvoirs, droits
-              des associÃ©s, modalitÃ©s de prise de dÃ©cision. L&apos;objectif est de construire une
-              architecture juridique rÃ©ellement adaptÃ©e Ã  votre activitÃ© et Ã  vos objectifs. De la
-              crÃ©ation de sociÃ©tÃ© aux Ã©volutions futures, comme l&apos;arrivÃ©e de nouveaux associÃ©s,
-              l&apos;augmentation d&apos;activitÃ© ou une acquisition, chaque structure est conÃ§ue
-              pour accompagner votre dÃ©veloppement, pas seulement pour remplir une obligation lÃ©gale.
+              Statuts, pacte d&apos;associés, gouvernance : ces documents sont rarement revisités
+              après leur rédaction. Pourtant, ce sont eux qui déterminent qui décide, qui contrôle
+              et comment les situations de blocage se résolvent. Le cabinet analyse le cadre dans
+              lequel vous souhaitez entreprendre : forme sociale, répartition des pouvoirs, droits
+              des associés, modalités de prise de décision. L&apos;objectif est de construire une
+              architecture juridique réellement adaptée à votre activité et à vos objectifs. De la
+              création de société aux évolutions futures, comme l&apos;arrivée de nouveaux associés,
+              l&apos;augmentation d&apos;activité ou une acquisition, chaque structure est conçue
+              pour accompagner votre développement, pas seulement pour remplir une obligation légale.
             </p>
           </AnimatedSection>
         </div>
@@ -108,22 +108,22 @@ export default function DroitDesSocietesPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXTE â€” navy */}
+      {/* 2. TEXTE — navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Quand la relation entre associÃ©s devient un obstacle.
+                Quand la relation entre associés devient un obstacle.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Abus de majoritÃ©, non-respect d&apos;un pacte d&apos;associÃ©s, situations de
-                blocage : les conflits entre associÃ©s peuvent paralyser une entreprise et mettre
-                en pÃ©ril ce que vous avez construit. Le cabinet intervient pour analyser la
-                situation, identifier les leviers juridiques Ã  votre disposition et protÃ©ger vos
-                intÃ©rÃªts. Que la solution passe par la nÃ©gociation ou par le contentieux,
-                l&apos;objectif reste le mÃªme : dÃ©bloquer la situation et prÃ©server la continuitÃ©
-                de votre activitÃ©.
+                Abus de majorité, non-respect d&apos;un pacte d&apos;associés, situations de
+                blocage : les conflits entre associés peuvent paralyser une entreprise et mettre
+                en péril ce que vous avez construit. Le cabinet intervient pour analyser la
+                situation, identifier les leviers juridiques à votre disposition et protéger vos
+                intérêts. Que la solution passe par la négociation ou par le contentieux,
+                l&apos;objectif reste le même : débloquer la situation et préserver la continuité
+                de votre activité.
               </p>
             </div>
           </AnimatedSection>
@@ -156,7 +156,7 @@ export default function DroitDesSocietesPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discutons de vos enjeux en droit des sociÃ©tÃ©s
+              Discutons de vos enjeux en droit des sociétés
               <svg
                 width="16"
                 height="10"

@@ -2,17 +2,17 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Blog â€” Christian THALINGER, Avocat d'affaires",
+  title: "Blog — Christian THALINGER, Avocat d'affaires",
   description:
-    "Articles et actualitÃ©s juridiques rÃ©digÃ©s par MaÃ®tre Christian THALINGER, avocat d'affaires Ã  Strasbourg.",
+    "Articles et actualités juridiques rédigés par Maître Christian THALINGER, avocat d'affaires à Strasbourg.",
   alternates: {
     canonical: "https://thalinger-avocat.fr/blog",
     languages: { en: "https://thalinger-avocat.fr/en/blog" },
   },
   openGraph: {
-    title: "Blog â€” Christian THALINGER, Avocat d'affaires",
+    title: "Blog — Christian THALINGER, Avocat d'affaires",
     description:
-      "Articles et actualitÃ©s juridiques rÃ©digÃ©s par MaÃ®tre Christian THALINGER, avocat d'affaires Ã  Strasbourg.",
+      "Articles et actualités juridiques rédigés par Maître Christian THALINGER, avocat d'affaires à Strasbourg.",
     url: "https://thalinger-avocat.fr/blog",
     locale: "fr_FR",
     type: "website",
@@ -33,7 +33,7 @@ export default function BlogIndexPage() {
               Blog
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Articles et actualitÃ©s rÃ©digÃ©s par MaÃ®tre Christian THALINGER sur le droit
+              Articles et actualités rédigés par Maître Christian THALINGER sur le droit
               des affaires et la pratique juridique.
             </p>
           </AnimatedSection>
@@ -47,7 +47,7 @@ export default function BlogIndexPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="font-sans text-[0.9375rem] leading-[1.9] text-navy/50">
-              Les articles seront publiÃ©s prochainement.
+              Les articles seront publiés prochainement.
             </p>
           </AnimatedSection>
         </div>

@@ -1,16 +1,16 @@
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
-// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
   {
     title: "Contrats et garanties d'assurance",
     items: [
-      "Analyse et interprÃ©tation des contrats d'assurance",
+      "Analyse et interprétation des contrats d'assurance",
       "Clauses d'exclusion et limitations de garantie",
-      "Ã‰valuation et dÃ©termination du prÃ©judice",
-      "SÃ©curisation des garanties et des indemnisations",
+      "Évaluation et détermination du préjudice",
+      "Sécurisation des garanties et des indemnisations",
     ],
   },
   {
@@ -23,12 +23,12 @@ const interventions = [
     ],
   },
   {
-    title: "ResponsabilitÃ© et risques assurantiels",
+    title: "Responsabilité et risques assurantiels",
     items: [
-      "Assurance de responsabilitÃ© civile",
-      "ResponsabilitÃ© professionnelle et risques d'exploitation",
-      "Gestion des risques et des dÃ©clarations de sinistre",
-      "DÃ©fense des intÃ©rÃªts de l'assurÃ©",
+      "Assurance de responsabilité civile",
+      "Responsabilité professionnelle et risques d'exploitation",
+      "Gestion des risques et des déclarations de sinistre",
+      "Défense des intérêts de l'assuré",
     ],
   },
   {
@@ -36,13 +36,13 @@ const interventions = [
     items: [
       "Expertises amiables et judiciaires",
       "Contestation des refus de garantie",
-      "NÃ©gociation avec les compagnies d'assurance",
+      "Négociation avec les compagnies d'assurance",
       "Contentieux en droit des assurances",
     ],
   },
 ];
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function DroitDesAssurancesPage() {
   return (
@@ -55,13 +55,13 @@ export default function DroitDesAssurancesPage() {
               Droit des Assurances
             </p>
             <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              Des garanties rÃ©ellement<br className="hidden md:block" /> protectrices.
+              Des garanties réellement<br className="hidden md:block" /> protectrices.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Un contrat d&apos;assurance ne se rÃ©vÃ¨le rÃ©ellement qu&apos;au moment du sinistre.
-              Le cabinet accompagne entreprises et dirigeants pour sÃ©curiser leurs garanties,
-              dÃ©fendre leurs intÃ©rÃªts face aux compagnies d&apos;assurance et Ã©viter qu&apos;un refus
-              d&apos;indemnisation ne fragilise durablement leur activitÃ©.
+              Un contrat d&apos;assurance ne se révèle réellement qu&apos;au moment du sinistre.
+              Le cabinet accompagne entreprises et dirigeants pour sécuriser leurs garanties,
+              défendre leurs intérêts face aux compagnies d&apos;assurance et éviter qu&apos;un refus
+              d&apos;indemnisation ne fragilise durablement leur activité.
             </p>
           </AnimatedSection>
         </div>
@@ -69,24 +69,24 @@ export default function DroitDesAssurancesPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. TEXTE â€” navy */}
+      {/* 2. TEXTE — navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                SÃ©curiser vos garanties avant le conflit.
+                Sécuriser vos garanties avant le conflit.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Une entreprise pense souvent Ãªtre protÃ©gÃ©e jusqu&apos;au jour oÃ¹ un sinistre rÃ©vÃ¨le
-                les limites rÃ©elles de son contrat d&apos;assurance. Clause d&apos;exclusion, dÃ©saccord
-                sur l&apos;Ã©valuation du prÃ©judice, refus d&apos;indemnisation ou expertise contestÃ©e :
-                ces situations peuvent rapidement crÃ©er une pression sur la trÃ©sorerie, ralentir les
-                dÃ©cisions et fragiliser la continuitÃ© de l&apos;activitÃ©. Le cabinet accompagne ses clients
-                pour sÃ©curiser leurs garanties, anticiper les risques de contentieux et dÃ©fendre leurs
-                intÃ©rÃªts face aux compagnies d&apos;assurance, dans le cadre d&apos;expertises amiables,
+                Une entreprise pense souvent être protégée jusqu&apos;au jour où un sinistre révèle
+                les limites réelles de son contrat d&apos;assurance. Clause d&apos;exclusion, désaccord
+                sur l&apos;évaluation du préjudice, refus d&apos;indemnisation ou expertise contestée :
+                ces situations peuvent rapidement créer une pression sur la trésorerie, ralentir les
+                décisions et fragiliser la continuité de l&apos;activité. Le cabinet accompagne ses clients
+                pour sécuriser leurs garanties, anticiper les risques de contentieux et défendre leurs
+                intérêts face aux compagnies d&apos;assurance, dans le cadre d&apos;expertises amiables,
                 judiciaires ou de litiges en droit des assurances. L&apos;objectif est clair :
-                limiter l&apos;impact financier et opÃ©rationnel des situations de crise.
+                limiter l&apos;impact financier et opérationnel des situations de crise.
               </p>
             </div>
           </AnimatedSection>
