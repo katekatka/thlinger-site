@@ -41,7 +41,7 @@ const services = [
   {
     title: "Real Estate & Construction Law",
     description:
-      "Structure your real estate transactions, secure your leases and handle disputes relating to construction and contractor liability.",
+      "Structuring your real estate transactions, securing your leases and handling disputes relating to construction and contractor liability.",
     href: "/en/competences/droit-immobilier-construction",
   },
 ];
@@ -148,7 +148,7 @@ export default function HomePageEN() {
           <AnimatedSection className="mb-16">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
               <h2 className="max-w-xl font-serif text-[2rem] font-normal leading-tight text-navy md:text-[2.75rem]">
-                Business Law. A multidisciplinary approach.
+                Business Law.<br />A multidisciplinary approach.
               </h2>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65 md:text-right">
                 The key disciplines of business law.
