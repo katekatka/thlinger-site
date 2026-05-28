@@ -447,7 +447,7 @@ export default async function HomePage() {
           <AnimatedSection className="mt-12" delay={0.1}>
             <Link
               href="/rdv"
-              className="group flex w-full items-center justify-between rounded-2xl bg-navy px-10 py-8 transition-all duration-300 hover:bg-dark active:scale-[0.99]"
+              className="group flex w-full items-center justify-between rounded-full border-2 border-gold bg-navy px-10 py-8 transition-all duration-300 hover:bg-dark active:scale-[0.99]"
             >
               <div>
                 <p className="font-serif text-xl font-normal text-white">
