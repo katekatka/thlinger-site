@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 const NS = "premier-echange";
 const EL_ID = "my-cal-inline";
@@ -69,6 +70,19 @@ export default function CalEmbed() {
     })(w, "https://app.cal.eu/embed/embed.js", "init");
 
     mountCal(w);
+
+    // Listen for Cal.com booking events
+    const handleCalEvent = (e: MessageEvent) => {
+      if (typeof e.data !== "object" || !e.data) return;
+      const { type } = e.data as { type?: string };
+      if (type === "bookingSuccessful") {
+        trackEvent("booking_completed", { event_type: NS });
+      } else if (type === "eventTypeSelected") {
+        trackEvent("booking_slot_selected", { event_type: NS });
+      }
+    };
+    window.addEventListener("message", handleCalEvent);
+    return () => window.removeEventListener("message", handleCalEvent);
   }, []);
 
   return (

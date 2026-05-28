@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
+import { Suspense } from "react";
 import Script from "next/script";
 import "./globals.css";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import CookieBanner from "../components/CookieBanner";
+import AnalyticsPageView from "../components/AnalyticsPageView";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -150,6 +152,9 @@ export default function RootLayout({
           strategy="afterInteractive"
           async
         />
+        <Suspense fallback={null}>
+          <AnalyticsPageView />
+        </Suspense>
         <Nav />
         <main className="flex-1 pt-[96px]">{children}</main>
         <Footer />

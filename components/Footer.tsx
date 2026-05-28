@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { REOPEN_BANNER_EVENT } from "./CookieBanner";
+import { trackEvent } from "@/lib/analytics";
 
 const skillLinksFR = [
   { label: "Droit des Sociétés",            href: "/competences/droit-des-societes" },
@@ -118,10 +119,18 @@ export default function Footer() {
                   />
                 </div>
                 <div className="space-y-3 text-sm">
-                  <Link href="tel:+33637331926" className={linkClass}>
+                  <Link
+                    href="tel:+33637331926"
+                    className={linkClass}
+                    onClick={() => trackEvent("phone_click", { location: "footer" })}
+                  >
                     +33 6 37 33 19 26
                   </Link>
-                  <Link href="mailto:christian@thalinger-avocat.fr" className={linkClass}>
+                  <Link
+                    href="mailto:christian@thalinger-avocat.fr"
+                    className={linkClass}
+                    onClick={() => trackEvent("email_click", { location: "footer" })}
+                  >
                     christian@thalinger-avocat.fr
                   </Link>
                   <Link

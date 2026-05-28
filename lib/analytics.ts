@@ -36,11 +36,6 @@ export function clearConsent(): void {
 
 // ─── Consent Mode v2 ─────────────────────────────────────────────────────────
 
-/**
- * Initialises the gtag stub and sets Consent Mode v2 defaults to denied.
- * Must be called once — before any GA script loads — so GA never fires
- * cookies without explicit user consent.
- */
 export function initConsentMode(): void {
   if (typeof window === "undefined" || window.__consentInit) return;
   window.__consentInit = true;
@@ -63,30 +58,48 @@ export function initConsentMode(): void {
 
 // ─── GA loader ────────────────────────────────────────────────────────────────
 
-/**
- * Updates consent to granted and dynamically injects the GA4 script.
- * Safe to call multiple times — runs only once per page session.
- */
 export function loadGA(): void {
   if (!GA_ID || typeof window === "undefined") return;
 
-  // Ensure the stub + default-denied are set before we update consent
   initConsentMode();
 
-  // Update consent state to granted
   window.gtag("consent", "update", {
     analytics_storage: "granted",
+    ad_storage: "granted",
+    ad_user_data: "granted",
+    ad_personalization: "granted",
   });
 
-  // Inject the GA4 script only once
   if (window.__gaLoaded) return;
   window.__gaLoaded = true;
 
   window.gtag("js", new Date());
-  window.gtag("config", GA_ID);
+  window.gtag("config", GA_ID, {
+    send_page_view: true,
+  });
 
   const script = document.createElement("script");
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
   script.async = true;
   document.head.appendChild(script);
+}
+
+// ─── Event tracking ───────────────────────────────────────────────────────────
+
+export function trackEvent(
+  eventName: string,
+  params?: Record<string, string | number | boolean>
+): void {
+  if (typeof window === "undefined" || !window.gtag) return;
+  window.gtag("event", eventName, params ?? {});
+}
+
+// ─── SPA page view ────────────────────────────────────────────────────────────
+
+export function trackPageView(url: string): void {
+  if (!GA_ID || typeof window === "undefined" || !window.__gaLoaded) return;
+  window.gtag("event", "page_view", {
+    page_location: url,
+    page_title: document.title,
+  });
 }
