@@ -47,6 +47,76 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": ["LegalService", "LocalBusiness"],
+  "@id": "https://www.thalinger-avocat.fr/#firm",
+  name: "Cabinet THALINGER",
+  legalName: "Cabinet Christian THALINGER",
+  description:
+    "Cabinet d'avocats d'affaires à Strasbourg. Conseil stratégique et contentieux en droit des sociétés, droit commercial, droit du travail, droit bancaire, droit immobilier et de la construction.",
+  url: "https://www.thalinger-avocat.fr",
+  telephone: "+33637331926",
+  email: "christian@thalinger-avocat.fr",
+  image: "https://www.thalinger-avocat.fr/images/portrait03.png",
+  logo: "https://www.thalinger-avocat.fr/logo.svg",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "5 avenue de la Marseillaise",
+    addressLocality: "Strasbourg",
+    postalCode: "67000",
+    addressRegion: "Grand Est",
+    addressCountry: "FR",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
+  priceRange: "$$",
+  areaServed: [
+    { "@type": "City", name: "Strasbourg" },
+    { "@type": "AdministrativeArea", name: "Alsace" },
+  ],
+  knowsLanguage: ["fr", "en"],
+  serviceType: [
+    "Droit des sociétés",
+    "Droit commercial",
+    "Droit social",
+    "Droit bancaire et financier",
+    "Droit des assurances",
+    "Droit immobilier et de la construction",
+    "Droit fiscal",
+    "Conseil transfrontalier franco-allemand",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Services juridiques",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Premier échange — consultation gratuite",
+          description:
+            "Échange de 30 minutes en visioconférence. Gratuit, sans engagement.",
+          offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+        },
+      },
+    ],
+  },
+  employee: {
+    "@type": "Person",
+    name: "Christian THALINGER",
+    jobTitle: "Avocat au Barreau de Strasbourg",
+    email: "christian@thalinger-avocat.fr",
+    telephone: "+33637331926",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -58,6 +128,10 @@ export default function RootLayout({
       className={`${playfair.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-white text-dark">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/* Consent Mode v2 default-denied stub — must run before any GA script */}
         <Script id="gtag-consent-init" strategy="beforeInteractive">{`
           window.dataLayer = window.dataLayer || [];
