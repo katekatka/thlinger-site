@@ -45,6 +45,7 @@ export default function CalEmbed() {
               calLink: "thalinger/premier-echange",
             });
             Cal.ns["premier-echange"]("ui", {
+              theme: "light",
               hideEventTypeDetails: true,
               layout: "month_view",
               styles: {

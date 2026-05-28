@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import CalEmbed from "@/components/CalEmbed";
 
 export const metadata: Metadata = {
   title: "Book an appointment | THALINGER Avocat — Strasbourg",
   description:
-    "Book a free 30-minute initial exchange with Maître Christian THALINGER, business lawyer at the Strasbourg Bar. No commitment. Video call.",
+    "Book a free 30-minute initial exchange with Maître Christian THALINGER, business lawyer at the Strasbourg Bar. No commitment. Video call via Google Meet.",
   alternates: {
     canonical: "https://www.thalinger-avocat.fr/en/rdv",
     languages: {
@@ -14,6 +15,17 @@ export const metadata: Metadata = {
     },
   },
 };
+
+const items: { label: string; value: string; note?: string }[] = [
+  { label: "Duration", value: "30 minutes" },
+  { label: "Cost", value: "Free, no commitment" },
+  {
+    label: "Format",
+    value: "Google Meet",
+    note: "No installation required. A meeting link is sent to you by email upon confirmation.",
+  },
+  { label: "Confirmation", value: "Instant confirmation by email" },
+];
 
 export default function RdvPageEn() {
   return (
@@ -36,23 +48,42 @@ export default function RdvPageEn() {
           {/* Left — context */}
           <div className="flex flex-col gap-10">
 
+            {/* Portrait */}
+            <div className="flex items-center gap-4">
+              <Image
+                src="/images/portrait02.png"
+                alt="Maître Christian THALINGER"
+                width={72}
+                height={72}
+                className="shrink-0 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-serif text-base font-normal text-navy">
+                  Maître Christian THALINGER
+                </p>
+                <p className="font-sans text-[0.8125rem] text-navy/50">
+                  Attorney at the Strasbourg Bar
+                </p>
+              </div>
+            </div>
+
             {/* What to expect */}
             <div>
               <p className="mb-5 font-sans text-[11px] uppercase tracking-[0.2em] text-navy/40">
                 What to expect
               </p>
               <ul className="space-y-4">
-                {[
-                  { label: "Duration", value: "30 minutes" },
-                  { label: "Cost", value: "Free, no commitment" },
-                  { label: "Format", value: "Video call" },
-                  { label: "Confirmation", value: "Instant confirmation by email" },
-                ].map(({ label, value }) => (
+                {items.map(({ label, value, note }) => (
                   <li key={label} className="flex flex-col">
                     <span className="font-sans text-[10px] uppercase tracking-[0.18em] text-navy/40">
                       {label}
                     </span>
                     <span className="font-serif text-base text-navy">{value}</span>
+                    {note && (
+                      <span className="mt-1.5 font-sans text-[0.8125rem] leading-relaxed text-navy/55">
+                        {note}
+                      </span>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -99,7 +130,7 @@ export default function RdvPageEn() {
           </div>
 
           {/* Right — Cal.com embed */}
-          <div className="min-h-[660px] overflow-hidden rounded-2xl border-2 border-gold">
+          <div className="min-h-[660px] overflow-hidden">
             <CalEmbed />
           </div>
         </div>
