@@ -307,7 +307,7 @@ export default function HomePageEN() {
             >
               <div>
                 <p className="font-serif text-xl font-normal text-white">
-                  Initial exchange — video call : book a slot
+                  Initial exchange · video call : book a slot
                 </p>
                 <p className="mt-2 font-sans text-sm text-white/55">
                   30 min · Free · Instant confirmation
