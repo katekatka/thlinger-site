@@ -54,7 +54,7 @@ export default function CalEmbed() {
             cal.loaded = true;
           }
           if (ar[0] === L) {
-            const api = (...a: any[]) => p(api, a);
+            const api: any = (...a: any[]) => p(api, a);
             const ns = ar[1];
             api.q = [];
             if (typeof ns === "string") {
