@@ -45,8 +45,13 @@ export default function CalEmbed() {
               calLink: "thalinger/premier-echange",
             });
             Cal.ns["premier-echange"]("ui", {
-              hideEventTypeDetails: false,
+              hideEventTypeDetails: true,
               layout: "month_view",
+              styles: {
+                branding: {
+                  brandColor: "#07137B",
+                },
+              },
             });
           `,
         }}
