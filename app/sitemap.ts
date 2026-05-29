@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE = "https://thalinger-avocat.fr";
-const LAST_MODIFIED = new Date("2026-05-14");
+const LAST_MODIFIED = new Date();
 
 type Freq = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
 
