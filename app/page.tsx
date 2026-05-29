@@ -74,7 +74,13 @@ const jsonLd = {
         opens: "09:00",
         closes: "18:00",
       },
-      sameAs: ["https://www.linkedin.com/in/christian-thalinger-565446216/"],
+      sameAs: [
+        "https://www.linkedin.com/in/christian-thalinger-565446216/",
+        "https://www.doctrine.fr/p/avocat/L2F17E9BA4F70F6A24AE1",
+        "https://justice.pappers.fr/avocat/thalinger-christian-67000",
+        // ↓ add your GBP share URL: open Google Business Profile → Share → Copy link
+        // "https://maps.app.goo.gl/YOUR_GBP_SHORT_LINK",
+      ],
     },
     {
       "@type": "WebSite",
