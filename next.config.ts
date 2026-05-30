@@ -14,8 +14,6 @@ const competenceRedirects = [
   ["/competences/droit-bancaire-financier",      "/competences/avocat-droit-bancaire-financier-strasbourg"],
   ["/competences/droit-des-assurances",          "/competences/avocat-droit-des-assurances-strasbourg"],
   ["/competences/droit-immobilier-construction", "/competences/avocat-droit-immobilier-construction-strasbourg"],
-  ["/competences/droit-fiscal",                  "/competences/avocat-droit-fiscal-strasbourg"],
-  ["/competences/conseil-transfrontalier",       "/competences/avocat-conseil-transfrontalier-strasbourg"],
 ];
 
 const nextConfig: NextConfig = {

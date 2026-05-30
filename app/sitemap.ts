@@ -60,18 +60,6 @@ const pages: PageDef[] = [
     priority: 0.9,
     changeFrequency: "monthly",
   },
-  {
-    path: "/competences/avocat-droit-fiscal-strasbourg",
-    enPath: "/en/competences/droit-fiscal",
-    priority: 0.85,
-    changeFrequency: "monthly",
-  },
-  {
-    path: "/competences/avocat-conseil-transfrontalier-strasbourg",
-    enPath: "/en/competences/conseil-transfrontalier",
-    priority: 0.85,
-    changeFrequency: "monthly",
-  },
 
   // About / biography — E-E-A-T anchor page
   {
