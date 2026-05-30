@@ -99,37 +99,37 @@ const services = [
     title: "Droit des Sociétés",
     description:
       "Structurer et sécuriser la vie de votre entreprise à chaque étape de son développement.",
-    href: "/competences/droit-des-societes",
+    href: "/competences/avocat-droit-des-societes-strasbourg",
   },
   {
     title: "Droit Commercial",
     description:
       "Sécuriser vos contrats, protéger vos intérêts en contentieux commercial, récupérer vos créances impayées et vous guider à chaque étape d'une procédure collective.",
-    href: "/competences/droit-commercial",
+    href: "/competences/avocat-droit-commercial-strasbourg",
   },
   {
     title: "Droit Social",
     description:
       "Conseiller en gestion des relations avec les salariés, des rapports collectifs et des cotisations sociales, assurer la représentation en contentieux en droit du travail et de la protection sociale.",
-    href: "/competences/droit-social",
+    href: "/competences/avocat-droit-du-travail-strasbourg",
   },
   {
     title: "Droit Bancaire & Financier",
     description:
       "Assister en contentieux bancaire lié aux financements, investissements, cautionnements, actions en responsabilité des acteurs bancaires et financiers.",
-    href: "/competences/droit-bancaire-financier",
+    href: "/competences/avocat-droit-bancaire-financier-strasbourg",
   },
   {
     title: "Droit des Assurances",
     description:
       "Clarifier les clauses des contrats d'assurance, déterminer les préjudices, vous assister dans les expertises et litiges en droit des assurances.",
-    href: "/competences/droit-des-assurances",
+    href: "/competences/avocat-droit-des-assurances-strasbourg",
   },
   {
     title: "Droit Immobilier & Construction",
     description:
       "Encadrer vos opérations immobilières, sécuriser vos baux et gérer les contentieux liés à la construction et aux responsabilités des intervenants.",
-    href: "/competences/droit-immobilier-construction",
+    href: "/competences/avocat-droit-immobilier-construction-strasbourg",
   },
 ];
 

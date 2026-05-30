@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -12,21 +12,21 @@ import { getLangSwitchUrl } from "@/lib/langSwitch";
 // ── Competences sub-navigation ─────────────────────────────────────────────
 
 const competencesFR = [
-  { label: "Droit des Sociétés",              href: "/competences/droit-des-societes" },
-  { label: "Droit Commercial",                href: "/competences/droit-commercial" },
-  { label: "Droit Social",                    href: "/competences/droit-social" },
-  { label: "Droit Bancaire & Financier",      href: "/competences/droit-bancaire-financier" },
-  { label: "Droit des Assurances",            href: "/competences/droit-des-assurances" },
-  { label: "Droit Immobilier & Construction", href: "/competences/droit-immobilier-construction" },
+  { label: "Droit des Sociétés",              href: "/competences/avocat-droit-des-societes-strasbourg" },
+  { label: "Droit Commercial",                href: "/competences/avocat-droit-commercial-strasbourg" },
+  { label: "Droit Social",                    href: "/competences/avocat-droit-du-travail-strasbourg" },
+  { label: "Droit Bancaire & Financier",      href: "/competences/avocat-droit-bancaire-financier-strasbourg" },
+  { label: "Droit des Assurances",            href: "/competences/avocat-droit-des-assurances-strasbourg" },
+  { label: "Droit Immobilier & Construction", href: "/competences/avocat-droit-immobilier-construction-strasbourg" },
 ];
 
 const competencesEN = [
-  { label: "Corporate Law",                   href: "/en/competences/droit-des-societes" },
-  { label: "Commercial Law",                  href: "/en/competences/droit-commercial" },
-  { label: "Social Law",                      href: "/en/competences/droit-social" },
-  { label: "Banking & Financial Law",         href: "/en/competences/droit-bancaire-financier" },
-  { label: "Insurance Law",                   href: "/en/competences/droit-des-assurances" },
-  { label: "Real Estate & Construction Law",  href: "/en/competences/droit-immobilier-construction" },
+  { label: "Corporate Law",                   href: "/en/competences/avocat-droit-des-societes-strasbourg" },
+  { label: "Commercial Law",                  href: "/en/competences/avocat-droit-commercial-strasbourg" },
+  { label: "Social Law",                      href: "/en/competences/avocat-droit-du-travail-strasbourg" },
+  { label: "Banking & Financial Law",         href: "/en/competences/avocat-droit-bancaire-financier-strasbourg" },
+  { label: "Insurance Law",                   href: "/en/competences/avocat-droit-des-assurances-strasbourg" },
+  { label: "Real Estate & Construction Law",  href: "/en/competences/avocat-droit-immobilier-construction-strasbourg" },
 ];
 
 // ── Nav link data ──────────────────────────────────────────────────────────

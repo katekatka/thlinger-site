@@ -25,39 +25,51 @@ const pages: PageDef[] = [
 
   // Practice areas — primary conversion pages
   {
-    path: "/competences/droit-des-societes",
+    path: "/competences/avocat-droit-des-societes-strasbourg",
     enPath: "/en/competences/droit-des-societes",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
-    path: "/competences/droit-commercial",
+    path: "/competences/avocat-droit-commercial-strasbourg",
     enPath: "/en/competences/droit-commercial",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
-    path: "/competences/droit-social",
+    path: "/competences/avocat-droit-du-travail-strasbourg",
     enPath: "/en/competences/droit-social",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
-    path: "/competences/droit-bancaire-financier",
+    path: "/competences/avocat-droit-bancaire-financier-strasbourg",
     enPath: "/en/competences/droit-bancaire-financier",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
-    path: "/competences/droit-des-assurances",
+    path: "/competences/avocat-droit-des-assurances-strasbourg",
     enPath: "/en/competences/droit-des-assurances",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
-    path: "/competences/droit-immobilier-construction",
+    path: "/competences/avocat-droit-immobilier-construction-strasbourg",
     enPath: "/en/competences/droit-immobilier-construction",
     priority: 0.9,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/competences/avocat-droit-fiscal-strasbourg",
+    enPath: "/en/competences/droit-fiscal",
+    priority: 0.85,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/competences/avocat-conseil-transfrontalier-strasbourg",
+    enPath: "/en/competences/conseil-transfrontalier",
+    priority: 0.85,
     changeFrequency: "monthly",
   },
 

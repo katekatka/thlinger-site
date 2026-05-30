@@ -5,7 +5,7 @@ import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid"
 export const metadata: Metadata = {
   title: "Avocat droit des sociétés à Strasbourg | Cabinet THALINGER",
   description: "Avocat en droit des sociétés à Strasbourg. Création, statuts, pacte d'associés, cession de parts, gouvernance, contentieux sociétaire. Cabinet THALINGER.",
-  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-des-societes" },
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg" },
 };
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -92,12 +92,12 @@ export default function DroitDesSocietesPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Droit des Sociétés
-            </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              Structurer ce qui détermine le fonctionnement de votre entreprise.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Avocat en droit des sociétés à Strasbourg
             </h1>
+            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+              Structurer ce qui détermine le fonctionnement de votre entreprise.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Statuts, pacte d&apos;associés, gouvernance : ces documents sont rarement revisités
               après leur rédaction. Pourtant, ce sont eux qui déterminent qui décide, qui contrôle

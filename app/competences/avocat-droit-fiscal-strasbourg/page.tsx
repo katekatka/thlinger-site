@@ -1,39 +1,43 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionGrid } from "@/components/InterventionGrid";
 
 export const metadata: Metadata = {
-  title: "Avocat conseil transfrontalier franco-allemand à Strasbourg | Cabinet THALINGER",
-  description: "Avocat pour les entreprises et dirigeants franco-allemands à Strasbourg. Contrats transfrontaliers, création de filiales, litiges entre juridictions. Cabinet THALINGER.",
-  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/conseil-transfrontalier" },
+  title: "Avocat droit fiscal à Strasbourg | Cabinet THALINGER",
+  description: "Avocat en droit fiscal à Strasbourg. Structuration fiscale, contrôle fiscal, fiscalité internationale, TVA, fiscalité immobilière, rémunération du dirigeant. Cabinet THALINGER.",
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-fiscal-strasbourg" },
 };
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
-  "Contrats transfrontaliers",
-  "Création de filiales",
-  "Litiges entre juridictions",
+  "Structuration fiscale",
+  "Défense en contrôle fiscal",
+  "Fiscalité internationale",
+  "TVA",
+  "Fiscalité immobilière",
+  "Rémunération du dirigeant",
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function ConseilTransfrontalierPage() {
+export default function DroitFiscalPage() {
   return (
     <>
       {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Conseil Transfrontalier
-            </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              Un interlocuteur pour le système<br className="hidden md:block" /> juridique français.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Avocat en droit fiscal à Strasbourg
             </h1>
+            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+              Sécuriser et structurer vos<br className="hidden md:block" /> décisions fiscales.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Situé à Strasbourg, au croisement des deux systèmes, le cabinet vous guide à travers
-              les réalités juridiques françaises.
+              Le cabinet intègre la stratégie fiscale à chaque décision de l&apos;entreprise :
+              choix de structure, distribution de bénéfices, expansion internationale.
+              Quand le contrôle fiscal arrive, la préparation est déjà en place.
             </p>
           </AnimatedSection>
         </div>
@@ -47,13 +51,18 @@ export default function ConseilTransfrontalierPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                Aligner vos opérations sur le cadre juridique français.
+                Optimiser dans les règles, anticiper le contrôle fiscal.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Faire du business de l&apos;autre côté du Rhin, c&apos;est opérer dans deux
-                systèmes juridiques simultanément. Le droit du travail pour les salariés
-                transfrontaliers est un labyrinthe. Et quand un litige survient, savoir
-                quelle juridiction s&apos;applique est critique.
+                La fiscalité, c&apos;est le domaine où une erreur silencieuse peut coûter
+                très cher. Vous prenez des décisions tous les jours : structure,
+                rémunération, investissement, et chacune a des conséquences fiscales.
+                Le problème, c&apos;est que la frontière entre une optimisation intelligente
+                et un risque de redressement n&apos;est pas toujours claire. Un contrôle
+                fiscal peut bloquer votre entreprise pendant des mois. Une déclaration
+                incomplète peut déclencher des pénalités que vous n&apos;aviez pas vues
+                venir. Et dès qu&apos;il y a une dimension internationale, tout se
+                complique encore.
               </p>
             </div>
           </AnimatedSection>
@@ -86,7 +95,7 @@ export default function ConseilTransfrontalierPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discutons de vos enjeux transfrontaliers
+              Discutons de vos enjeux fiscaux
               <svg
                 width="16"
                 height="10"
@@ -110,4 +119,3 @@ export default function ConseilTransfrontalierPage() {
     </>
   );
 }
-

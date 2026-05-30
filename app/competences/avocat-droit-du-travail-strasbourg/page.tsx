@@ -5,7 +5,7 @@ import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid"
 export const metadata: Metadata = {
   title: "Avocat droit du travail à Strasbourg | Cabinet THALINGER",
   description: "Avocat en droit social et droit du travail à Strasbourg. Licenciement, rupture conventionnelle, contentieux prud'homal, relations collectives, sécurité sociale. Cabinet THALINGER.",
-  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-social" },
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-du-travail-strasbourg" },
 };
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -79,12 +79,12 @@ export default function DroitDuTravailPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Droit Social
-            </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              Chaque décision RH est une décision juridique.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Avocat en droit du travail à Strasbourg
             </h1>
+            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+              Chaque décision RH est une décision juridique.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Un contrat mal rédigé, une procédure de licenciement bâclée, un accord collectif
               imprécis : en droit du travail, l&apos;erreur se chiffre. Le cabinet accompagne les

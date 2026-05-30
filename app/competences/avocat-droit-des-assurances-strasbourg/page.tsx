@@ -3,75 +3,72 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 
 export const metadata: Metadata = {
-  title: "Avocat droit bancaire et financier à Strasbourg | Cabinet THALINGER",
-  description: "Avocat en droit bancaire et financier à Strasbourg. Contentieux bancaire, financement, cautionnement, responsabilité bancaire, investissements. Cabinet THALINGER.",
-  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-bancaire-financier" },
+  title: "Avocat droit des assurances à Strasbourg | Cabinet THALINGER",
+  description: "Avocat en droit des assurances à Strasbourg. Litiges assurance, refus de garantie, expertise contradictoire, responsabilité civile, assurance construction. Cabinet THALINGER.",
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-assurances-strasbourg" },
 };
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const interventions = [
   {
-    title: "Financement et relations bancaires",
+    title: "Contrats et garanties d'assurance",
     items: [
-      "Octroi et rupture de crédits",
-      "Conditions et négociation des prêts",
-      "Accompagnement des difficultés de financement",
-      "Restructuration de dette et négociation bancaire",
+      "Analyse et interprétation des contrats d'assurance",
+      "Clauses d'exclusion et limitations de garantie",
+      "Évaluation et détermination du préjudice",
+      "Sécurisation des garanties et des indemnisations",
     ],
   },
   {
-    title: "Fraudes et responsabilité bancaire",
+    title: "Assurance des biens et des personnes",
     items: [
-      "Fraude bancaire et fraude au président",
-      "Obligation de vigilance du banquier",
-      "Sécurisation des opérations financières",
-      "Responsabilité des établissements bancaires",
+      "Assurance de biens",
+      "Assurance de personnes",
+      "Protection des actifs et du patrimoine",
+      "Gestion des sinistres et indemnisations",
     ],
   },
   {
-    title: "Cautionnement et garanties",
+    title: "Responsabilité et risques assurantiels",
     items: [
-      "Caution solidaire",
-      "Portée et validité des engagements",
-      "Obligation de conseil et d'information",
-      "Contestation des garanties personnelles",
+      "Assurance de responsabilité civile",
+      "Responsabilité professionnelle et risques d'exploitation",
+      "Gestion des risques et des déclarations de sinistre",
+      "Défense des intérêts de l'assuré",
     ],
   },
   {
-    title: "Intermédiation financière",
+    title: "Expertises et contentieux",
     items: [
-      "Prestataires de services d'investissement",
-      "Intermédiaires en opérations de banque et services de paiement",
-      "Courtiers en financement",
-      "Responsabilité et obligations professionnelles",
+      "Expertises amiables et judiciaires",
+      "Contestation des refus de garantie",
+      "Négociation avec les compagnies d'assurance",
+      "Contentieux en droit des assurances",
     ],
   },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function DroitBancaireFinancierPage() {
+export default function DroitDesAssurancesPage() {
   return (
     <>
       {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Droit Bancaire &amp; Financier
-            </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              Votre financement vous engage. Vérifiez à quoi exactement.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Avocat en droit des assurances à Strasbourg
             </h1>
+            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+              Des garanties réellement<br className="hidden md:block" /> protectrices.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Conditions de prêt, cautions solidaires, garanties personnelles : ces engagements
-              sont souvent signés dans l&apos;urgence d&apos;un besoin de financement, sans mesurer leur
-              portée réelle. Or une caution mal encadrée peut engager votre patrimoine bien
-              au-delà du montant initial. Une rupture de crédit décidée unilatéralement par la
-              banque peut asphyxier une activité du jour au lendemain. Le cabinet intervient pour
-              analyser vos engagements financiers, négocier des conditions équilibrées, et
-              contester ceux qui dépassent les obligations légales d&apos;information et de conseil.
+              Un contrat d&apos;assurance ne se révèle réellement qu&apos;au moment du sinistre.
+              Le cabinet accompagne entreprises et dirigeants pour sécuriser leurs garanties,
+              défendre leurs intérêts face aux compagnies d&apos;assurance et éviter qu&apos;un refus
+              d&apos;indemnisation ne fragilise durablement leur activité.
             </p>
           </AnimatedSection>
         </div>
@@ -85,17 +82,18 @@ export default function DroitBancaireFinancierPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-white">
-                La banque a des obligations envers vous. Pas seulement l&apos;inverse.
+                Sécuriser vos garanties avant le conflit.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Obligation de vigilance, devoir de conseil, responsabilité en cas de soutien
-                abusif ou de rupture brutale de concours : le droit bancaire protège les
-                emprunteurs et les cautions autant qu&apos;il les contraint. Pourtant, peu de clients
-                connaissent les leviers dont ils disposent face à un établissement financier.
-                Fraude au président, opérations non autorisées, manquements des intermédiaires
-                financiers : ces situations engagent la responsabilité de la banque, pas la
-                vôtre. Le cabinet vous aide à identifier ces leviers et à les faire valoir, en
-                négociation comme en contentieux.
+                Une entreprise pense souvent être protégée jusqu&apos;au jour où un sinistre révèle
+                les limites réelles de son contrat d&apos;assurance. Clause d&apos;exclusion, désaccord
+                sur l&apos;évaluation du préjudice, refus d&apos;indemnisation ou expertise contestée :
+                ces situations peuvent rapidement créer une pression sur la trésorerie, ralentir les
+                décisions et fragiliser la continuité de l&apos;activité. Le cabinet accompagne ses clients
+                pour sécuriser leurs garanties, anticiper les risques de contentieux et défendre leurs
+                intérêts face aux compagnies d&apos;assurance, dans le cadre d&apos;expertises amiables,
+                judiciaires ou de litiges en droit des assurances. L&apos;objectif est clair :
+                limiter l&apos;impact financier et opérationnel des situations de crise.
               </p>
             </div>
           </AnimatedSection>
@@ -128,7 +126,7 @@ export default function DroitBancaireFinancierPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discutons de vos enjeux bancaires et financiers
+              Discutons de vos enjeux assurantiels
               <svg
                 width="16"
                 height="10"

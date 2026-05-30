@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -8,12 +8,12 @@ import { REOPEN_BANNER_EVENT } from "./CookieBanner";
 import { trackEvent } from "@/lib/analytics";
 
 const skillLinksFR = [
-  { label: "Droit des Sociétés",            href: "/competences/droit-des-societes" },
-  { label: "Droit Commercial",              href: "/competences/droit-commercial" },
-  { label: "Droit Social",                  href: "/competences/droit-social" },
-  { label: "Droit Bancaire & Financier",    href: "/competences/droit-bancaire-financier" },
-  { label: "Droit des Assurances",          href: "/competences/droit-des-assurances" },
-  { label: "Droit Immobilier & Construction", href: "/competences/droit-immobilier-construction" },
+  { label: "Droit des Sociétés",            href: "/competences/avocat-droit-des-societes-strasbourg" },
+  { label: "Droit Commercial",              href: "/competences/avocat-droit-commercial-strasbourg" },
+  { label: "Droit Social",                  href: "/competences/avocat-droit-du-travail-strasbourg" },
+  { label: "Droit Bancaire & Financier",    href: "/competences/avocat-droit-bancaire-financier-strasbourg" },
+  { label: "Droit des Assurances",          href: "/competences/avocat-droit-des-assurances-strasbourg" },
+  { label: "Droit Immobilier & Construction", href: "/competences/avocat-droit-immobilier-construction-strasbourg" },
 ];
 
 const skillLinksEN = [

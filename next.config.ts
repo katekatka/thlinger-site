@@ -7,6 +7,17 @@ const securityHeaders = [
   { key: "Permissions-Policy",     value: "camera=(), microphone=(), geolocation=()" },
 ];
 
+const competenceRedirects = [
+  ["/competences/droit-des-societes",           "/competences/avocat-droit-des-societes-strasbourg"],
+  ["/competences/droit-commercial",              "/competences/avocat-droit-commercial-strasbourg"],
+  ["/competences/droit-social",                  "/competences/avocat-droit-du-travail-strasbourg"],
+  ["/competences/droit-bancaire-financier",      "/competences/avocat-droit-bancaire-financier-strasbourg"],
+  ["/competences/droit-des-assurances",          "/competences/avocat-droit-des-assurances-strasbourg"],
+  ["/competences/droit-immobilier-construction", "/competences/avocat-droit-immobilier-construction-strasbourg"],
+  ["/competences/droit-fiscal",                  "/competences/avocat-droit-fiscal-strasbourg"],
+  ["/competences/conseil-transfrontalier",       "/competences/avocat-conseil-transfrontalier-strasbourg"],
+];
+
 const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
@@ -14,6 +25,13 @@ const nextConfig: NextConfig = {
       { hostname: "*.notion.so" },
       { hostname: "prod-files-secure.s3.us-west-2.amazonaws.com" },
     ],
+  },
+  async redirects() {
+    return competenceRedirects.map(([source, destination]) => ({
+      source,
+      destination,
+      permanent: true,
+    }));
   },
   async headers() {
     return [

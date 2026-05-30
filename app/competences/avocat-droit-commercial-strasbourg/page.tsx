@@ -5,7 +5,7 @@ import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid"
 export const metadata: Metadata = {
   title: "Avocat droit commercial à Strasbourg | Cabinet THALINGER",
   description: "Avocat en droit commercial à Strasbourg. Contrats, contentieux commercial, recouvrement de créances, baux commerciaux, procédures collectives. Cabinet THALINGER.",
-  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/droit-commercial" },
+  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-commercial-strasbourg" },
 };
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -131,12 +131,12 @@ export default function DroitCommercialPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Droit Commercial
-            </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              Un contrat mal rédigé est invisible. Jusqu&apos;au litige.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Avocat en droit commercial à Strasbourg
             </h1>
+            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+              Un contrat mal rédigé est invisible. Jusqu&apos;au litige.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               CGV, CGA, CGU, contrats de prestation, baux commerciaux : ces documents encadrent
               chacune de vos relations d&apos;affaires. Tant que tout va bien, personne ne les relit.
