@@ -22,6 +22,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { hostname: "*.notion.so" },
       { hostname: "prod-files-secure.s3.us-west-2.amazonaws.com" },
+      { hostname: "cdn.sanity.io" },
     ],
   },
   async redirects() {
