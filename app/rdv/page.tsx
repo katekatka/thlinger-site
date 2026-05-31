@@ -115,7 +115,7 @@ export default function RdvPage() {
 
           {/* Right — Cal.com embed */}
           <div className="min-h-[750px]">
-            <CalEmbed />
+            <CalEmbed language="fr" />
           </div>
         </div>
       </div>
