@@ -431,8 +431,8 @@ export default async function HomePage() {
               </div>
             </AnimatedSection>
 
-            {/* Map */}
-            <AnimatedSection delay={0.15}>
+            {/* Map — hidden on mobile: iframe intercepts touch and opens Maps app */}
+            <AnimatedSection delay={0.15} className="hidden md:block">
               <div className="h-full min-h-[340px] overflow-hidden rounded-2xl border border-navy/10">
                 <iframe
                   src="https://maps.google.com/maps?q=5+Avenue+de+la+Marseillaise%2C+67000+Strasbourg%2C+France&output=embed&z=16"

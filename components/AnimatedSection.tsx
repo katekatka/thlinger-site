@@ -36,7 +36,7 @@ export const AnimatedSection = forwardRef<
       variants={stagger ? staggerContainer : fadeUp}
       initial={mounted ? "hidden" : "visible"}
       whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
+      viewport={{ once: true, margin: "0px" }}
       {...(!stagger && delay ? { transition: { delay } } : {})}
     >
       {children}
