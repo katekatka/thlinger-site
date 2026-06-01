@@ -168,9 +168,65 @@ const faqGroups: FaqGroup[] = [
 
 // â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How are fees determined?",
+      acceptedAnswer: { "@type": "Answer", text: "Fees are set according to the nature of the matter, its complexity, the time required, and the legal and financial stakes involved. Before any engagement, a fee agreement is drawn up to define the scope of work, the billing method, and the applicable financial terms. Unless otherwise agreed, fees are payable on a schedule defined in advance." },
+    },
+    {
+      "@type": "Question",
+      name: "What billing arrangements are available?",
+      acceptedAnswer: { "@type": "Answer", text: "The firm works primarily on four billing arrangements: fixed fee (for engagements with a defined scope such as company formation or a targeted legal audit), hourly rate (for advisory or litigation matters where the scope may evolve), success fee (a supplementary fee where a gain obtained warrants additional remuneration), and retainer (for companies requiring regular legal support and a consistent point of contact)." },
+    },
+    {
+      "@type": "Question",
+      name: "Is a fee agreement required?",
+      acceptedAnswer: { "@type": "Answer", text: "In accordance with the rules governing the legal profession, a fee agreement is entered into before any work begins, except in cases of urgency or full legal aid. It ensures complete transparency on the terms of engagement and billing." },
+    },
+    {
+      "@type": "Question",
+      name: "Are legal fees subject to VAT?",
+      acceptedAnswer: { "@type": "Answer", text: "Legal fees are in principle subject to VAT at the standard rate of 20% in France. Certain situations may fall under a different regime — in particular in the context of legal aid, or depending on the firm's applicable tax status." },
+    },
+    {
+      "@type": "Question",
+      name: "Can my legal expenses insurance cover the fees?",
+      acceptedAnswer: { "@type": "Answer", text: "The firm systematically checks whether the client holds legal expenses insurance that may cover all or part of the lawyer's fees. This cover is often included in standard insurance contracts — home, motor, public liability, and others. The client always retains the right to choose their own lawyer: the insurer cannot impose a particular firm or professional." },
+    },
+    {
+      "@type": "Question",
+      name: "Do you accept legally aided clients?",
+      acceptedAnswer: { "@type": "Answer", text: "The firm can act for legally aided clients depending on the nature of the matter and the client's eligibility. Where legal aid is partial, a supplementary fee agreement is entered into to specify the remaining billing arrangements." },
+    },
+    {
+      "@type": "Question",
+      name: "Is the first meeting charged?",
+      acceptedAnswer: { "@type": "Answer", text: "The first meeting, where it is not followed by a written advice note or legal proceedings, is not charged. This initial exchange is an opportunity to understand the situation, identify the key issues, and direct the client towards the most appropriate course of action." },
+    },
+    {
+      "@type": "Question",
+      name: "Can businesses benefit from ongoing legal support?",
+      acceptedAnswer: { "@type": "Answer", text: "The firm supports both individuals and businesses on a one-off or recurring basis. Some companies choose a regular retainer to keep their legal decisions on firm ground, manage risk proactively, and benefit from a single point of contact who already understands their business and its challenges." },
+    },
+    {
+      "@type": "Question",
+      name: "How can I get a fee estimate?",
+      acceptedAnswer: { "@type": "Answer", text: "After an initial conversation to understand the situation and the client's objectives, the firm sets out an appropriate course of action along with a clear picture of the scope of work, the billing method, and the applicable financial terms." },
+    },
+  ],
+};
+
 export default function FeesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">

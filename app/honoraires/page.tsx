@@ -170,11 +170,96 @@ const faqGroups: FaqGroup[] = [
   },
 ];
 
+// ─── FAQPage JSON-LD (plain text — Schema.org does not accept HTML) ───────────
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Comment sont fixés les honoraires du cabinet ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Les honoraires sont fixés selon la nature du dossier, sa complexité, le temps consacré et les enjeux économiques ou juridiques de l'intervention. Avant toute mission, une convention d'honoraires est établie afin de préciser le périmètre de l'intervention, le mode de facturation et les conditions financières applicables. Sauf convention contraire, les honoraires sont payables selon un échéancier défini à l'avance.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Quels modes de facturation sont proposés ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Le cabinet intervient principalement selon quatre modes de facturation : le forfait (pour les missions à périmètre défini comme une création de société ou un audit juridique ciblé), le taux horaire (pour les missions de conseil ou de contentieux dont l'étendue peut évoluer), l'honoraire de résultat (qui peut compléter un honoraire fixe lorsqu'un gain obtenu justifie une rémunération complémentaire), et l'accompagnement récurrent (pour les entreprises ayant besoin d'un suivi juridique régulier).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Une convention d'honoraires est-elle obligatoire ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Conformément aux règles de la profession d'avocat, une convention d'honoraires est systématiquement conclue avant toute intervention, sauf urgence ou aide juridictionnelle totale. Elle garantit une parfaite transparence sur les modalités d'accompagnement et de facturation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Les honoraires d'avocat sont-ils soumis à la TVA ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Les honoraires d'avocat sont en principe soumis à la TVA au taux de 20 % en France. Certaines situations particulières peuvent relever d'un régime spécifique, notamment dans le cadre de l'aide juridictionnelle ou selon le régime fiscal applicable au cabinet.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Puis-je bénéficier d'une protection juridique ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Le cabinet vérifie systématiquement si le client bénéficie d'une protection juridique susceptible de prendre en charge tout ou partie des honoraires d'avocat. Cette garantie peut être incluse dans un contrat spécifique ou dans certains contrats d'assurance courants (habitation, automobile, responsabilité civile, etc.). Le client reste toujours libre du choix de son avocat : l'assureur ne peut imposer un cabinet ou un professionnel.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Acceptez-vous l'aide juridictionnelle ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Le cabinet peut intervenir au titre de l'aide juridictionnelle selon la nature du dossier et les conditions d'éligibilité du client. Lorsque l'aide juridictionnelle est partielle, une convention d'honoraires complémentaire est conclue afin de préciser les modalités de facturation restantes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Le premier rendez-vous est-il facturé ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Le premier rendez-vous, lorsqu'il n'est pas suivi d'une consultation écrite ou d'une procédure, n'est pas facturé. Ce premier échange permet de comprendre la situation, d'identifier les enjeux du dossier et d'orienter le client vers les solutions les plus adaptées.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Les entreprises peuvent-elles bénéficier d'un accompagnement régulier ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Le cabinet accompagne aussi bien les particuliers que les entreprises dans le cadre de missions ponctuelles ou d'un suivi juridique récurrent. Certaines entreprises choisissent un accompagnement régulier afin de sécuriser leurs décisions juridiques, anticiper les risques et bénéficier d'un interlocuteur unique connaissant déjà leur activité et leurs enjeux.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Comment obtenir une estimation des honoraires ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Après un premier échange permettant d'analyser la situation et les objectifs du client, le cabinet propose un mode d'intervention adapté ainsi qu'une visibilité claire sur le périmètre de la mission, les modalités de facturation et les conditions financières applicables.",
+      },
+    },
+  ],
+};
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function HonorairesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
