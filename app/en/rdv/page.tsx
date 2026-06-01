@@ -6,7 +6,7 @@ import CalEmbed from "@/components/CalEmbed";
 export const metadata: Metadata = {
   title: "Book an appointment | THALINGER Avocat — Strasbourg",
   description:
-    "Book a free 30-minute initial exchange with Maître Christian THALINGER, business lawyer at the Strasbourg Bar. No commitment. Video call via Google Meet.",
+    "Book a free 30-minute initial exchange with Maître Christian THALINGER, business lawyer at the Strasbourg Bar. No commitment. Video call.",
   alternates: {
     canonical: "https://www.thalinger-avocat.fr/en/rdv",
     languages: {
@@ -21,8 +21,8 @@ const items: { label: string; value: string; note?: string }[] = [
   { label: "Cost", value: "Free, no commitment" },
   {
     label: "Format",
-    value: "Google Meet",
-    note: "No installation required. A meeting link is sent to you by email upon confirmation. The aim is to understand your situation, identify the legal issues at stake, and assess the available options together. No commitment required on your part at the end of this exchange.",
+    value: "Video call",
+    note: "No installation required. A meeting link is sent to you by email upon confirmation. The appointment can be rescheduled or cancelled at any time if needed. The aim is to understand your situation, identify the legal issues at stake, and assess the available options together. No commitment required on your part at the end of this exchange.",
   },
 ];
 

@@ -21,8 +21,8 @@ const items: { label: string; value: string; note?: string }[] = [
   { label: "Tarif", value: "Gratuit, sans engagement" },
   {
     label: "Format",
-    value: "Google Meet",
-    note: "Aucune installation requise. Un lien de connexion vous est envoyé par e-mail dès la confirmation. L'objectif est de comprendre votre situation, identifier les enjeux juridiques et évaluer ensemble les options disponibles. Aucun engagement de votre part à l'issue de cet échange.",
+    value: "Visioconférence",
+    note: "Aucune installation requise. Un lien de connexion vous est envoyé par e-mail dès la confirmation. Le créneau peut être modifié ou annulé à tout moment en cas d'empêchement. L'objectif est de comprendre votre situation, identifier les enjeux juridiques et évaluer ensemble les options disponibles. Aucun engagement de votre part à l'issue de cet échange.",
   },
 ];
 
