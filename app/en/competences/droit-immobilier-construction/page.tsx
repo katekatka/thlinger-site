@@ -1,5 +1,16 @@
+import type { Metadata } from "next";
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction",
+    languages: {
+      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-immobilier-construction-strasbourg",
+      en: "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction",
+    },
+  },
+};
+
 
 // â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
@@ -53,10 +64,72 @@ const interventions = [
 
 // â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What should I do about defects after handover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Identify the applicable warranty (completion, two-year, ten-year), serve formal notice, and activate the structural-damage insurance. The amicable route is often tried before litigation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I handle a commercial-lease dispute?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By reviewing the lease and each party's obligations, then choosing between negotiation and action depending on the stakes and the relationship."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a lawyer frame my real-estate project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Framing contracts and responsibilities upfront strongly reduces the risk of disputes during and after the works."
+      }
+    }
+  ]
+} as const;
+
+const caseListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Examples of real-estate-and-construction work",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Construction defects after handover",
+      "url": "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction#construction-defects"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Commercial landlord-tenant dispute",
+      "url": "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction#commercial-lease-dispute"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Securing a real-estate project",
+      "url": "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction#real-estate-project"
+    }
+  ]
+} as const;
+
 export default function RealEstateLawPage() {
   return (
     <>
-      {/* 1. HERO */}
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+
+            {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -114,6 +187,114 @@ export default function RealEstateLawPage() {
           </AnimatedSection>
 
           <InterventionCategoryGrid categories={interventions} />
+        </div>
+      </section>
+
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* EXEMPLES D&apos;INTERVENTION */}
+      <section id="cas-concrets" className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-4">
+            <h2 className="mb-5 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
+              Examples of real-estate-and-construction work
+            </h2>
+            <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65">
+              Defects, commercial leases, real-estate projects: construction and property involve multiple, long-lasting responsibilities. The following examples illustrate how these are framed and defended.
+            </p>
+          </AnimatedSection>
+
+          <div className="max-w-3xl">
+
+            <div id="construction-defects" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Construction defects after handover</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An owner discovers structural defects several months after a project is handed over. Communication with the builder breaks down.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Formal notice, analysis of the applicable statutory warranties, activation of the structural-damage insurance (dommages-ouvrage), direct negotiation with the parties involved.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Enforcing the owner&apos;s warranties and seeking compensation, favoring an amicable resolution where possible.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="commercial-lease-dispute" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Commercial landlord-tenant dispute</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A landlord and commercial tenant disagree (rent, charges, condition report, renewal). The relationship grows tense.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the lease and each party&apos;s obligations, identification of the levers, negotiation or action depending on the client&apos;s interest.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying the rights and obligations under the lease and defending the client&apos;s position.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="real-estate-project" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Securing a real-estate project</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A developer is starting a real-estate project. The contracts and responsibilities of the parties must be framed before launch.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Drafting and review of the contractual documents, allocation of responsibilities, advice on the applicable warranties.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Setting a clear framework upfront to limit the risk of disputes during and after the works.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+              The situations described are illustrative, anonymized examples based on commonly encountered issues. They do not describe any identifiable matter and constitute neither a guarantee nor a prediction of outcome. Every case is assessed on its own circumstances.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* FAQ */}
+      <section id="faq" className="bg-navy py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-12">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
+              Frequently asked questions
+            </h2>
+          </AnimatedSection>
+          <div className="max-w-3xl">
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">What should I do about defects after handover?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Identify the applicable warranty (completion, two-year, ten-year), serve formal notice, and activate the structural-damage insurance. The amicable route is often tried before litigation.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">How do I handle a commercial-lease dispute?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">By reviewing the lease and each party&apos;s obligations, then choosing between negotiation and action depending on the stakes and the relationship.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Should a lawyer frame my real-estate project?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Framing contracts and responsibilities upfront strongly reduces the risk of disputes during and after the works.</p>
+            </div>
+          </div>
         </div>
       </section>
 

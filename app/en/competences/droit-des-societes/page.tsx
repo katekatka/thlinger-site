@@ -1,5 +1,16 @@
+import type { Metadata } from "next";
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://www.thalinger-avocat.fr/en/competences/droit-des-societes",
+    languages: {
+      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg",
+      en: "https://www.thalinger-avocat.fr/en/competences/droit-des-societes",
+    },
+  },
+};
+
 
 // â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
@@ -78,10 +89,72 @@ const interventions = [
 
 // â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When should I put a shareholders' agreement in place?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ideally at formation, or before a new shareholder joins. It organizes the relationship between shareholders and prevents a large share of later disputes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can be done about a shareholder deadlock?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Several levers exist depending on the articles and agreement: mediation, governance changes, a negotiated exit, or court action as a last resort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I secure the sale of my business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By structuring the deal upfront: audit, deal structure, warranties, precise drafting, so every commitment is understood before signing."
+      }
+    }
+  ]
+} as const;
+
+const caseListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Examples of corporate-law work",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Shareholder deadlock",
+      "url": "https://www.thalinger-avocat.fr/en/competences/droit-des-societes#shareholder-deadlock"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sale of a business",
+      "url": "https://www.thalinger-avocat.fr/en/competences/droit-des-societes#sale-of-business"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Structuring at formation",
+      "url": "https://www.thalinger-avocat.fr/en/competences/droit-des-societes#structuring-at-formation"
+    }
+  ]
+} as const;
+
 export default function CorporateLawPage() {
   return (
     <>
-      {/* 1. HERO */}
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+
+            {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -141,6 +214,114 @@ export default function CorporateLawPage() {
           </AnimatedSection>
 
           <InterventionCategoryGrid categories={interventions} />
+        </div>
+      </section>
+
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* EXEMPLES D&apos;INTERVENTION */}
+      <section id="cas-concrets" className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-4">
+            <h2 className="mb-5 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
+              Examples of corporate-law work
+            </h2>
+            <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65">
+              A company&apos;s life raises high-stakes decisions: structuring, governance, transfer. The following examples illustrate how such situations are analyzed and structured.
+            </p>
+          </AnimatedSection>
+
+          <div className="max-w-3xl">
+
+            <div id="shareholder-deadlock" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Shareholder deadlock</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Three shareholders, a lasting deadlock. Decisions no longer pass in general meeting. The business keeps running, but its leadership is paralyzed.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the shareholders&apos; agreement and governance, identification of ways to break the deadlock, structuring of options: revising the agreement, operational governance, or a negotiated exit for the minority shareholder.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Restoring functional decision-making while preserving the business and each party&apos;s interests.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="sale-of-business" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Sale of a business</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An owner is considering selling the company. The deal affects personal assets and the future of the business; the implications must be understood before any commitment.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Legal structuring of the deal, securing the warranties (notably the representations-and-warranties, garantie d&apos;actif et de passif), drafting and negotiating the sale documents.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Securing the transfer and clarifying the commitments made by seller and buyer alike.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="structuring-at-formation" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Structuring at formation</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Founders are launching their company. The choice of corporate form and allocation of powers will shape how the business runs.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Advice on the appropriate corporate form, drafting the articles and shareholders&apos; agreement, organizing governance and capital operations.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Setting a clear framework from the start to prevent deadlock and secure future strategic decisions.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+              The situations described are illustrative, anonymized examples based on commonly encountered issues. They do not describe any identifiable matter and constitute neither a guarantee nor a prediction of outcome. Every case is assessed on its own circumstances.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* FAQ */}
+      <section id="faq" className="bg-navy py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-12">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
+              Frequently asked questions
+            </h2>
+          </AnimatedSection>
+          <div className="max-w-3xl">
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">When should I put a shareholders&apos; agreement in place?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Ideally at formation, or before a new shareholder joins. It organizes the relationship between shareholders and prevents a large share of later disputes.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">What can be done about a shareholder deadlock?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Several levers exist depending on the articles and agreement: mediation, governance changes, a negotiated exit, or court action as a last resort.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">How do I secure the sale of my business?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">By structuring the deal upfront: audit, deal structure, warranties, precise drafting, so every commitment is understood before signing.</p>
+            </div>
+          </div>
         </div>
       </section>
 

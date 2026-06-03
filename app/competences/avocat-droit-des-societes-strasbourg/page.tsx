@@ -5,7 +5,13 @@ import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid"
 export const metadata: Metadata = {
   title: "Avocat droit des sociétés à Strasbourg | Cabinet THALINGER",
   description: "Avocat en droit des sociétés à Strasbourg. Création, statuts, pacte d'associés, cession de parts, gouvernance, contentieux sociétaire. Cabinet THALINGER.",
-  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg" },
+  alternates: {
+    canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg",
+    languages: {
+      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg",
+      en: "https://www.thalinger-avocat.fr/en/competences/droit-des-societes",
+    },
+  },
 };
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -85,10 +91,72 @@ const interventions = [
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quand rédiger un pacte d'associés ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Idéalement dès la création de la société, ou avant l'entrée d'un nouvel associé. Le pacte organise les rapports entre associés : gouvernance, cession de titres, sortie, et prévient une part importante des conflits ultérieurs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que faire en cas de blocage entre associés ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plusieurs leviers existent selon les statuts et le pacte : médiation, révision de la gouvernance, sortie négociée d'un associé, ou recours judiciaire en dernier ressort. Le choix dépend des circonstances et des objectifs de chacun."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment sécuriser la cession de mon entreprise ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En structurant l'opération en amont : audit, choix du montage, garantie d'actif et de passif, et rédaction précise des actes. L'objectif est de comprendre chaque engagement avant de signer."
+      }
+    }
+  ]
+} as const;
+
+const caseListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Exemples d'intervention en droit des sociétés",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Conflit entre associés",
+      "url": "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg#conflit-associes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Cession d'entreprise",
+      "url": "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg#cession-entreprise"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Structuration à la création",
+      "url": "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg#structuration-creation"
+    }
+  ]
+} as const;
+
 export default function DroitDesSocietesPage() {
   return (
     <>
-      {/* 1. HERO */}
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+
+            {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -149,6 +217,114 @@ export default function DroitDesSocietesPage() {
           </AnimatedSection>
 
           <InterventionCategoryGrid categories={interventions} />
+        </div>
+      </section>
+
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* EXEMPLES D&apos;INTERVENTION */}
+      <section id="cas-concrets" className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-4">
+            <h2 className="mb-5 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
+              Exemples d&apos;intervention en droit des sociétés
+            </h2>
+            <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65">
+              La vie d&apos;une société soulève des décisions à fort enjeu : structuration, gouvernance, transmission. Les exemples suivants illustrent comment ces situations s&apos;analysent et se structurent.
+            </p>
+          </AnimatedSection>
+
+          <div className="max-w-3xl">
+
+            <div id="conflit-associes" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Conflit entre associés</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Trois associés, un blocage durable. Les décisions ne passent plus en assemblée. L&apos;entreprise poursuit son activité, mais sa direction est paralysée.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Intervention</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analyse du pacte d&apos;associés et de la gouvernance, identification des leviers de déblocage, structuration des options : révision du pacte, gouvernance opérationnelle, ou sortie négociée de l&apos;associé minoritaire.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Enjeu</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Rétablir une prise de décision fonctionnelle tout en préservant la continuité de l&apos;activité et les intérêts de chaque partie.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="cession-entreprise" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Cession d&apos;entreprise</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un dirigeant envisage de céder son entreprise. L&apos;opération engage son patrimoine et l&apos;avenir de l&apos;activité ; les implications doivent être comprises avant tout engagement.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Intervention</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Structuration juridique de l&apos;opération, sécurisation des garanties (notamment la garantie d&apos;actif et de passif), rédaction et négociation des actes de cession.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Enjeu</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Sécuriser la transmission et clarifier les engagements pris par le cédant comme par le repreneur.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="structuration-creation" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Structuration à la création</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Des associés fondateurs lancent leur société. Le choix de la forme sociale et la répartition des pouvoirs détermineront le fonctionnement futur de l&apos;entreprise.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Intervention</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Conseil sur la forme sociale adaptée, rédaction des statuts et du pacte d&apos;associés, organisation de la gouvernance et des opérations sur le capital.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Enjeu</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Poser un cadre clair dès le départ pour prévenir les blocages et sécuriser les décisions stratégiques à venir.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+              Les situations présentées sont des exemples illustratifs et anonymisés, reconstitués à partir de problématiques fréquemment rencontrées. Elles ne décrivent aucun dossier identifiable et ne constituent ni une garantie ni une prévision de résultat. Chaque affaire est différente et s&apos;apprécie selon ses circonstances propres.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* FAQ */}
+      <section id="faq" className="bg-navy py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-12">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
+              Questions fréquentes
+            </h2>
+          </AnimatedSection>
+          <div className="max-w-3xl">
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Quand rédiger un pacte d&apos;associés ?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Idéalement dès la création de la société, ou avant l&apos;entrée d&apos;un nouvel associé. Le pacte organise les rapports entre associés : gouvernance, cession de titres, sortie, et prévient une part importante des conflits ultérieurs.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Que faire en cas de blocage entre associés ?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Plusieurs leviers existent selon les statuts et le pacte : médiation, révision de la gouvernance, sortie négociée d&apos;un associé, ou recours judiciaire en dernier ressort. Le choix dépend des circonstances et des objectifs de chacun.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Comment sécuriser la cession de mon entreprise ?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">En structurant l&apos;opération en amont : audit, choix du montage, garantie d&apos;actif et de passif, et rédaction précise des actes. L&apos;objectif est de comprendre chaque engagement avant de signer.</p>
+            </div>
+          </div>
         </div>
       </section>
 

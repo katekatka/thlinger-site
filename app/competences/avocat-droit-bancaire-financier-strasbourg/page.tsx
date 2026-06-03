@@ -5,7 +5,13 @@ import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid"
 export const metadata: Metadata = {
   title: "Avocat droit bancaire et financier à Strasbourg | Cabinet THALINGER",
   description: "Avocat en droit bancaire et financier à Strasbourg. Contentieux bancaire, financement, cautionnement, responsabilité bancaire, investissements. Cabinet THALINGER.",
-  alternates: { canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg" },
+  alternates: {
+    canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg",
+    languages: {
+      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg",
+      en: "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier",
+    },
+  },
 };
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -51,10 +57,72 @@ const interventions = [
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Peut-on contester un engagement de caution ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, selon sa validité, le respect des obligations d'information de la banque et sa proportionnalité au regard des revenus et du patrimoine de la caution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quand engager la responsabilité d'une banque ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lorsqu'un manquement de l'établissement (devoir de mise en garde, de conseil, d'information) a causé un préjudice. L'appréciation dépend des circonstances."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment se défendre face à un appel en garantie ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En analysant l'acte, la procédure et la proportionnalité de l'engagement avant toute réponse à l'établissement."
+      }
+    }
+  ]
+} as const;
+
+const caseListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Exemples d'intervention en droit bancaire et financier",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Contestation d'un engagement de caution",
+      "url": "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg#caution"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Responsabilité d'un établissement bancaire",
+      "url": "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg#responsabilite-bancaire"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Contentieux d'un financement professionnel",
+      "url": "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg#financement-professionnel"
+    }
+  ]
+} as const;
+
 export default function DroitBancaireFinancierPage() {
   return (
     <>
-      {/* 1. HERO */}
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+
+            {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -114,6 +182,114 @@ export default function DroitBancaireFinancierPage() {
           </AnimatedSection>
 
           <InterventionCategoryGrid categories={interventions} />
+        </div>
+      </section>
+
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* EXEMPLES D&apos;INTERVENTION */}
+      <section id="cas-concrets" className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-4">
+            <h2 className="mb-5 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
+              Exemples d&apos;intervention en droit bancaire et financier
+            </h2>
+            <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65">
+              Cautionnements, financements, responsabilité de la banque : les rapports avec les établissements financiers exigent une lecture attentive des engagements. Les exemples suivants illustrent la démarche suivie.
+            </p>
+          </AnimatedSection>
+
+          <div className="max-w-3xl">
+
+            <div id="caution" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Contestation d&apos;un engagement de caution</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un dirigeant s&apos;est porté caution d&apos;un financement professionnel. La banque l&apos;appelle en garantie ; l&apos;étendue et la validité de l&apos;engagement sont en question.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Intervention</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analyse de l&apos;acte de cautionnement et des obligations d&apos;information de la banque, vérification de la proportionnalité de l&apos;engagement, construction de la défense.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Enjeu</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Vérifier la validité de la caution et défendre le dirigeant sur les points contestables.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="responsabilite-bancaire" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Responsabilité d&apos;un établissement bancaire</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Une entreprise s&apos;estime lésée par un manquement de sa banque dans un financement ou un conseil. La responsabilité de l&apos;établissement est en jeu.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Intervention</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analyse des relations contractuelles et des obligations de la banque, évaluation du préjudice, mise en cause de l&apos;établissement et des intermédiaires concernés.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Enjeu</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Établir le manquement éventuel et faire valoir les droits de l&apos;entreprise.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="financement-professionnel" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Contentieux d&apos;un financement professionnel</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un désaccord oppose une entreprise à son établissement de crédit sur les conditions ou l&apos;exécution d&apos;un financement.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Intervention</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analyse du contrat de financement et de son exécution, identification des points litigieux, négociation ou action contentieuse selon l&apos;intérêt du client.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Enjeu</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifier les obligations de chacun et défendre la position de l&apos;entreprise.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+              Les situations présentées sont des exemples illustratifs et anonymisés, reconstitués à partir de problématiques fréquemment rencontrées. Elles ne décrivent aucun dossier identifiable et ne constituent ni une garantie ni une prévision de résultat. Chaque affaire est différente et s&apos;apprécie selon ses circonstances propres.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* FAQ */}
+      <section id="faq" className="bg-navy py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-12">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
+              Questions fréquentes
+            </h2>
+          </AnimatedSection>
+          <div className="max-w-3xl">
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Peut-on contester un engagement de caution ?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Oui, selon sa validité, le respect des obligations d&apos;information de la banque et sa proportionnalité au regard des revenus et du patrimoine de la caution.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Quand engager la responsabilité d&apos;une banque ?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Lorsqu&apos;un manquement de l&apos;établissement (devoir de mise en garde, de conseil, d&apos;information) a causé un préjudice. L&apos;appréciation dépend des circonstances.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Comment se défendre face à un appel en garantie ?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">En analysant l&apos;acte, la procédure et la proportionnalité de l&apos;engagement avant toute réponse à l&apos;établissement.</p>
+            </div>
+          </div>
         </div>
       </section>
 

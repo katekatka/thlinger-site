@@ -1,5 +1,16 @@
+import type { Metadata } from "next";
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier",
+    languages: {
+      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg",
+      en: "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier",
+    },
+  },
+};
+
 
 // â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
@@ -44,10 +55,72 @@ const interventions = [
 
 // â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can a personal guarantee be challenged?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, depending on its validity, the bank's disclosure duties, and its proportionality to the guarantor's income and assets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When can a bank be held liable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a failing by the institution (duty to warn, advise, inform) has caused loss, assessed on the circumstances."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I respond to a call on a guarantee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By analyzing the instrument, the procedure, and the proportionality of the commitment before replying to the institution."
+      }
+    }
+  ]
+} as const;
+
+const caseListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Examples of banking-and-finance work",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Challenging a personal guarantee",
+      "url": "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier#personal-guarantee"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bank liability",
+      "url": "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier#bank-liability"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Business-financing dispute",
+      "url": "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier#financing-dispute"
+    }
+  ]
+} as const;
+
 export default function BankingFinancialLawPage() {
   return (
     <>
-      {/* 1. HERO */}
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+
+            {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -106,6 +179,114 @@ export default function BankingFinancialLawPage() {
           </AnimatedSection>
 
           <InterventionCategoryGrid categories={interventions} />
+        </div>
+      </section>
+
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* EXEMPLES D&apos;INTERVENTION */}
+      <section id="cas-concrets" className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-4">
+            <h2 className="mb-5 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
+              Examples of banking-and-finance work
+            </h2>
+            <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65">
+              Guarantees, financing, bank liability: dealings with financial institutions demand a close reading of the commitments made. The following examples illustrate the approach taken.
+            </p>
+          </AnimatedSection>
+
+          <div className="max-w-3xl">
+
+            <div id="personal-guarantee" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Challenging a personal guarantee</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An executive gave a personal guarantee for business financing. The bank calls on the guarantee; its scope and validity are in question.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the guarantee instrument and the bank&apos;s disclosure duties, check on the proportionality of the commitment, building the defense.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Verifying the validity of the guarantee and defending the executive on the contestable points.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="bank-liability" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Bank liability</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A company believes it suffered loss from a bank&apos;s failing in a financing or advice. The institution&apos;s liability is in play.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analysis of the contractual relationship and the bank&apos;s duties, assessment of the loss, action against the institution and the intermediaries involved.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Establishing any breach and enforcing the company&apos;s rights.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="financing-dispute" className="border-t-2 border-gold pt-10 pb-2">
+              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Business-financing dispute</h3>
+              <dl className="space-y-5">
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A company and its lender disagree on the terms or performance of a financing.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the financing contract and its performance, identification of the disputed points, negotiation or litigation depending on the client&apos;s interest.</dd>
+                </div>
+                <div>
+                  <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying each party&apos;s obligations and defending the company&apos;s position.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+              The situations described are illustrative, anonymized examples based on commonly encountered issues. They do not describe any identifiable matter and constitute neither a guarantee nor a prediction of outcome. Every case is assessed on its own circumstances.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* FAQ */}
+      <section id="faq" className="bg-navy py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection className="mb-12">
+            <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
+              Frequently asked questions
+            </h2>
+          </AnimatedSection>
+          <div className="max-w-3xl">
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Can a personal guarantee be challenged?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Yes, depending on its validity, the bank&apos;s disclosure duties, and its proportionality to the guarantor&apos;s income and assets.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">When can a bank be held liable?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">When a failing by the institution (duty to warn, advise, inform) has caused loss, assessed on the circumstances.</p>
+            </div>
+
+            <div className="border-t border-gold/30 pt-8 pb-2">
+              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">How do I respond to a call on a guarantee?</p>
+              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">By analyzing the instrument, the procedure, and the proportionality of the commitment before replying to the institution.</p>
+            </div>
+          </div>
         </div>
       </section>
 
