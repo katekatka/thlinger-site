@@ -110,6 +110,22 @@ const faqJsonLd = {
     },
     {
       "@type": "Question",
+      "name": "Comment sécuriser une procédure de licenciement ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Côté employeur, la sécurisation repose sur la justification du motif, le respect scrupuleux de la procédure (convocation à entretien préalable, notification, délais légaux) et la documentation du dossier. Côté salarié, il s'agit d'analyser la régularité de la procédure et le sérieux du motif pour évaluer les chances de contestation. Le cabinet accompagne les deux parties selon leurs intérêts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le cabinet accompagne-t-il aussi bien les employeurs que les salariés ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Le cabinet intervient pour les employeurs (sécurisation des procédures, rédaction des actes de rupture, défense prud'homale) comme pour les salariés (contestation d'un licenciement, rupture conventionnelle, harcèlement, discrimination). Cette double expérience permet d'anticiper les arguments de la partie adverse et de construire une stratégie plus solide."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Le cabinet propose-t-il des consultations en visioconférence en droit du travail ?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -184,12 +200,12 @@ export default function DroitDuTravailPage() {
               Chaque décision RH est une décision juridique.
             </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Un contrat mal rédigé, une procédure de licenciement bâclée, un accord collectif
-              imprécis : en droit du travail, l&apos;erreur se chiffre. Le cabinet accompagne les
-              dirigeants et les responsables RH dans la sécurisation de leurs pratiques au
-              quotidien et dans la défense de leurs intérêts devant le conseil de prud&apos;hommes.
-              L&apos;objectif : anticiper les litiges plutôt que les subir, et faire du droit
-              social un levier de gestion, pas une source de risques.
+              Licenciement, rupture conventionnelle, contentieux prud&apos;homal : en droit du
+              travail, chaque décision engage les deux parties. Le cabinet accompagne les
+              employeurs dans la sécurisation de leurs procédures de licenciement et les
+              salariés dans la défense de leurs droits, avec un objectif constant : transformer
+              la complexité des règles sociales en clarté décisionnelle pour décider et
+              agir en connaissance de cause.
             </p>
             <ConsultationSignal />
           </AnimatedSection>
@@ -377,6 +393,26 @@ export default function DroitDuTravailPage() {
                 </svg>
               </summary>
               <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui, dans les délais prévus. La contestation peut porter sur le fond du redressement comme sur la régularité de la procédure de contrôle.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Comment sécuriser une procédure de licenciement ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Côté employeur, la sécurisation repose sur la justification du motif, le respect scrupuleux de la procédure (convocation à entretien préalable, notification, délais légaux) et la documentation du dossier. Côté salarié, il s&apos;agit d&apos;analyser la régularité de la procédure et le sérieux du motif pour évaluer les chances de contestation. Le cabinet accompagne les deux parties selon leurs intérêts.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Le cabinet accompagne-t-il aussi bien les employeurs que les salariés ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui. Le cabinet intervient pour les employeurs (sécurisation des procédures, rédaction des actes de rupture, défense prud&apos;homale) comme pour les salariés (contestation d&apos;un licenciement, rupture conventionnelle, harcèlement, discrimination). Cette double expérience permet d&apos;anticiper les arguments de la partie adverse et de construire une stratégie plus solide.</div>
             </details>
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
