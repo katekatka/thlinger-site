@@ -156,6 +156,40 @@ const steps = [
   },
 ];
 
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Comment se déroule un accompagnement avec THALINGER Avocat",
+  description:
+    "Le cabinet transforme la complexité juridique en clarté décisionnelle en quatre étapes : analyse de la situation, identification des risques, proposition d'options, et mise en place conjointe de la stratégie.",
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Compréhension du contexte",
+      text: "Chaque dossier débute par une analyse approfondie de votre situation et de ses circonstances. Cette immersion permet de cerner précisément ce qui est en jeu pour vous.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "Identification des risques et des enjeux",
+      text: "Le cabinet met en lumière les risques concrets et les leviers à votre disposition, afin que vous puissiez prendre vos décisions en toute connaissance de cause.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Proposition d'options",
+      text: "Le cabinet traduit les règles applicables et les issues possibles en scénarios clairs, pour que vous disposiez d'une vision nette des choix qui s'offrent à vous.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "Mise en place conjointe de la stratégie",
+      text: "Votre participation est au cœur de la démarche : la stratégie la plus adaptée à vos objectifs est construite ensemble.",
+    },
+  ],
+};
+
 const trustBlocks = [
   {
     title: "Des prestations sur mesure.",
@@ -234,6 +268,10 @@ export default async function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
 
       {/* 1. HERO */}
