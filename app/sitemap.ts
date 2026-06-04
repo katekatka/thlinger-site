@@ -77,12 +77,20 @@ const pages: PageDef[] = [
     changeFrequency: "monthly",
   },
 
+  // Booking — high-intent conversion page
+  {
+    path: "/rdv",
+    enPath: "/en/rdv",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+
   // Blog — content hub
   {
     path: "/blog",
     enPath: "/en/blog",
     priority: 0.6,
-    changeFrequency: "weekly",
+    changeFrequency: "monthly",
   },
 
   // Legal — boilerplate, rarely changes

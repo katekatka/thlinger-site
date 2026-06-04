@@ -284,8 +284,6 @@ export default function DroitImmobilierPage() {
               </dl>
             </details>
 
-            <div className="bg-gold mt-10" style={{ height: "2px" }} />
-
             <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               Les situations présentées sont des exemples illustratifs et anonymisés, reconstitués à partir de problématiques fréquemment rencontrées. Elles ne décrivent aucun dossier identifiable et ne constituent ni une garantie ni une prévision de résultat. Chaque affaire est différente et s&apos;apprécie selon ses circonstances propres.
             </p>

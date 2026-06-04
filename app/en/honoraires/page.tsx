@@ -231,12 +231,12 @@ export default function FeesPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Fees
-            </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
-              Clarity begins<br className="hidden md:block" /> with pricing.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Attorney fees — Business lawyer in Strasbourg
             </h1>
+            <p className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
+              Clarity begins<br className="hidden md:block" /> with pricing.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Fees are freely agreed between the parties depending on the complexity of
               the matter. This topic is addressed with full transparency.

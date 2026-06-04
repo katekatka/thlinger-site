@@ -273,8 +273,6 @@ export default function InsuranceLawPage() {
               </dl>
             </details>
 
-            <div className="bg-gold mt-10" style={{ height: "2px" }} />
-
             <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               The situations described are illustrative, anonymized examples based on commonly encountered issues. They do not describe any identifiable matter and constitute neither a guarantee nor a prediction of outcome. Every case is assessed on its own circumstances.
             </p>

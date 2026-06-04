@@ -158,8 +158,8 @@ export default function AboutHero({
         {/* ── Text column ── */}
         <div className="flex flex-col pb-3 md:pb-28">
 
-          {/* Eyebrow */}
-          <motion.p
+          {/* Eyebrow — semantic H1 (keyword signal); styled as small uppercase label */}
+          <motion.h1
             variants={itemVariants}
             className="font-sans uppercase"
             style={{
@@ -170,14 +170,10 @@ export default function AboutHero({
             }}
           >
             {eyebrow}
-          </motion.p>
+          </motion.h1>
 
-          {/*
-            H1 — single line that alternates between the name and the title.
-            minHeight reserves the tallest line's height so nothing below
-            ever shifts as the text changes.
-          */}
-          <motion.h1
+          {/* Large display name — visual hero, semantic <p> */}
+          <motion.p
             variants={itemVariants}
             className="font-serif font-normal leading-tight text-navy"
             style={{ fontSize: "clamp(2.4rem, 4.5vw, 3.6rem)", marginBottom: "2rem" }}
@@ -189,7 +185,7 @@ export default function AboutHero({
             ) : (
               staticLine
             )}
-          </motion.h1>
+          </motion.p>
 
           {/* Description */}
           <motion.p

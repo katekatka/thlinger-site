@@ -379,7 +379,7 @@ export default async function AProposPage() {
 
       {/* ── 1. HERO ─────────────────────────────────────────────────────────── */}
       <AboutHero
-        eyebrow="Avocat au Barreau de Strasbourg"
+        eyebrow="Avocat d'affaires à Strasbourg"
         staticLine="Maître Christian THALINGER"
         description="Avocat d'affaires à Strasbourg, je suis inscrit au Barreau depuis 2022 et je conseille en français et en anglais. Je structure chaque dossier autour d'une conviction : la complexité se gère par la rigueur et l'explication, et jamais par l'opacité. Quand les enjeux sont élevés, je dis la vérité, y compris ce qui dérange. C'est cette approche que j'applique dans chacun de mes domaines d'intervention."
         imageAlt="Maître Christian THALINGER, avocat d'affaires au Barreau de Strasbourg"

@@ -264,12 +264,12 @@ export default function HonorairesPage() {
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Honoraires
-            </p>
-            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              La clarté commence<br className="hidden md:block" /> par le prix.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Honoraires avocat d&apos;affaires à Strasbourg
             </h1>
+            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+              La clarté commence<br className="hidden md:block" /> par le prix.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Les honoraires sont librement fixés entre les parties en fonction de la complexité du dossier.
               Cette question est abordée en toute transparence.
