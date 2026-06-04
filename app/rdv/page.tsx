@@ -3,6 +3,41 @@ import Image from "next/image";
 import Link from "next/link";
 import CalEmbed from "@/components/CalEmbed";
 
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Comment prendre rendez-vous avec Maître Christian THALINGER",
+  description:
+    "Réservez un premier échange de 30 minutes en visioconférence avec Maître THALINGER, avocat d'affaires à Strasbourg. Gratuit, sans engagement, confirmation immédiate.",
+  totalTime: "PT5M",
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Choisir un créneau",
+      text: "Sélectionnez la date et l'heure qui vous conviennent dans le calendrier en ligne. Les créneaux disponibles sont affichés en temps réel.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "Confirmer vos coordonnées",
+      text: "Renseignez votre nom et votre adresse e-mail pour finaliser la réservation. Aucun compte n'est nécessaire.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Recevoir la confirmation",
+      text: "Un e-mail de confirmation est envoyé immédiatement avec le lien de connexion à la visioconférence. Le créneau peut être modifié ou annulé à tout moment.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "Participer à l'échange",
+      text: "Rejoignez la visioconférence à l'heure convenue depuis votre navigateur. Aucun logiciel à installer. L'objectif : comprendre votre situation et identifier vos options juridiques.",
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "Prendre rendez-vous | THALINGER Avocat — Strasbourg",
   description:
@@ -28,6 +63,11 @@ const items: { label: string; value: string; note?: string }[] = [
 
 export default function RdvPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
     <section className="bg-white py-24 md:py-32" style={{ paddingTop: "7rem" }}>
       <div className="mx-auto max-w-[1200px] px-6">
 
@@ -120,5 +160,6 @@ export default function RdvPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

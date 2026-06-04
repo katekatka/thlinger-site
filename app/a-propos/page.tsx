@@ -135,6 +135,7 @@ const jsonLdGraph = {
       isPartOf: { "@id": "https://www.thalinger-avocat.fr/#website" },
       about: { "@id": "https://www.thalinger-avocat.fr/#christian-thalinger" },
       inLanguage: "fr",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: ["#faq"] },
     },
     {
       "@type": "BreadcrumbList",
@@ -379,7 +380,7 @@ export default async function AProposPage() {
 
       {/* ── 1. HERO ─────────────────────────────────────────────────────────── */}
       <AboutHero
-        eyebrow="Avocat d'affaires à Strasbourg"
+        eyebrow="Maître Christian THALINGER — Avocat d'affaires Strasbourg"
         staticLine="Maître Christian THALINGER"
         description="Avocat d'affaires à Strasbourg, je suis inscrit au Barreau depuis 2022 et je conseille en français et en anglais. Je structure chaque dossier autour d'une conviction : la complexité se gère par la rigueur et l'explication, et jamais par l'opacité. Quand les enjeux sont élevés, je dis la vérité, y compris ce qui dérange. C'est cette approche que j'applique dans chacun de mes domaines d'intervention."
         imageAlt="Maître Christian THALINGER, avocat d'affaires au Barreau de Strasbourg"
@@ -643,7 +644,7 @@ export default async function AProposPage() {
       <GoldDivider />
 
       {/* ── 6. FAQ ──────────────────────────────────────────────────────────── */}
-      <section className="bg-white py-24 md:py-32">
+      <section id="faq" className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <p className="mb-4 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">

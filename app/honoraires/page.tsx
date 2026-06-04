@@ -170,6 +170,31 @@ const faqGroups: FaqGroup[] = [
   },
 ];
 
+// ─── BreadcrumbList JSON-LD ───────────────────────────────────────────────────
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.thalinger-avocat.fr/" },
+    { "@type": "ListItem", position: 2, name: "Honoraires", item: "https://www.thalinger-avocat.fr/honoraires" },
+  ],
+};
+
+// ─── SpeakableSpecification JSON-LD ──────────────────────────────────────────
+
+const speakableJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.thalinger-avocat.fr/honoraires",
+  isPartOf: { "@id": "https://www.thalinger-avocat.fr/#website" },
+  inLanguage: "fr",
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["#faq"],
+  },
+};
+
 // ─── FAQPage JSON-LD (plain text — Schema.org does not accept HTML) ───────────
 
 const faqJsonLd = {
@@ -260,16 +285,24 @@ export default function HonorairesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
+      />
       {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Avocat d&apos;affaires à Strasbourg
+            </p>
+            <h1 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Honoraires avocat d&apos;affaires à Strasbourg
             </h1>
-            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
-              La clarté commence<br className="hidden md:block" /> par le prix.
-            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Les honoraires sont librement fixés entre les parties en fonction de la complexité du dossier.
               Cette question est abordée en toute transparence.
@@ -313,7 +346,7 @@ export default function HonorairesPage() {
       <div className="bg-gold" style={{ height: "2px" }} />
 
       {/* 3. FAQ */}
-      <section className="bg-white py-24 md:py-32">
+      <section id="faq" className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
             <h2 className="font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">

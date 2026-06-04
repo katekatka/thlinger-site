@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+import { ConsultationSignal } from "@/components/ConsultationSignal";
 
 export const metadata: Metadata = {
   title: "Avocat droit de la construction à Strasbourg | Cabinet THALINGER",
@@ -94,6 +95,30 @@ const faqJsonLd = {
         "@type": "Answer",
         "text": "Cadrer les contrats et les responsabilités en amont limite fortement les risques de litige pendant et après le chantier."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Le livre foncier d'Alsace-Moselle change-t-il quelque chose à mon achat immobilier ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. En Alsace et en Moselle, votre droit de propriété ne devient opposable aux tiers qu'une fois inscrit au livre foncier, registre tenu par un juge. La signature chez le notaire vous lie au vendeur, mais c'est l'inscription qui rend votre position incontestable face à une banque ou à un autre acquéreur. Ce délai doit être anticipé dans le calendrier de l'opération."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "J'hérite d'un bien immobilier en Alsace : ai-je une démarche particulière à faire ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. L'héritier doit faire inscrire son droit de propriété au livre foncier, sauf si un acte est établi dans les dix mois du décès. Une succession non mise à jour pendant plusieurs générations crée des situations très difficiles à débloquer. Régler cette inscription à temps évite un blocage coûteux par la suite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le cabinet propose-t-il des consultations en visioconférence pour les litiges immobiliers et de construction ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Pour un litige de malfaçons, un bail commercial ou un projet immobilier, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Cette consultation à distance est accessible depuis toute la France, sans déplacement à Strasbourg. La réservation s'effectue directement en ligne."
+      }
     }
   ]
 } as const;
@@ -124,12 +149,33 @@ const caseListJsonLd = {
   ]
 } as const;
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.thalinger-avocat.fr/" },
+    { "@type": "ListItem", position: 2, name: "Compétences", item: "https://www.thalinger-avocat.fr/#competences" },
+    { "@type": "ListItem", position: 3, name: "Droit immobilier et construction", item: "https://www.thalinger-avocat.fr/competences/avocat-droit-immobilier-construction-strasbourg" },
+  ],
+} as const;
+
+const speakableJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.thalinger-avocat.fr/competences/avocat-droit-immobilier-construction-strasbourg",
+  isPartOf: { "@id": "https://www.thalinger-avocat.fr/#website" },
+  inLanguage: "fr",
+  speakable: { "@type": "SpeakableSpecification", cssSelector: ["#faq"] },
+} as const;
+
 export default function DroitImmobilierPage() {
   return (
     <>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
 
             {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
@@ -150,6 +196,7 @@ export default function DroitImmobilierPage() {
               ou professionnel du bâtiment, chaque étape du chantier crée des obligations
               qu&apos;il vaut mieux anticiper que découvrir en contentieux.
             </p>
+            <ConsultationSignal />
           </AnimatedSection>
         </div>
       </section>
@@ -179,7 +226,80 @@ export default function DroitImmobilierPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 3. INTERVENTIONS */}
+      {/* 3. ALSACE-MOSELLE */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection>
+            <div className="max-w-2xl space-y-6">
+              <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+                Droit local alsacien-mosellan
+              </p>
+              <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-navy">
+                En Alsace-Moselle, l&apos;inscription décide de tout.
+              </h2>
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+                En Alsace et en Moselle, une opération immobilière ne se joue pas tout à fait
+                comme dans le reste de la France. Hérité de l&apos;histoire locale et maintenu
+                par la{" "}
+                <a
+                  href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006070757/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy underline underline-offset-2 hover:text-gold transition-colors duration-200"
+                >
+                  loi du 1<sup>er</sup> juin 1924
+                </a>
+                , le{" "}
+                <a
+                  href="https://www.service-public.fr/particuliers/vosdroits/F17759"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy underline underline-offset-2 hover:text-gold transition-colors duration-200"
+                >
+                  livre foncier
+                </a>{" "}
+                remplace le service de publicité foncière classique. Il est tenu par un
+                magistrat, le juge du livre foncier, ce qui lui donne une fiabilité
+                particulière.
+              </p>
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+                Concrètement, entre vous et le vendeur, l&apos;accord vous lie dès la
+                signature. Mais face aux tiers (une banque, un créancier, un autre acquéreur),
+                votre droit ne devient solide qu&apos;une fois{" "}
+                <a
+                  href="https://www.livrefoncier.fr/fr/le-livre-foncier-et-la-loi.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy underline underline-offset-2 hover:text-gold transition-colors duration-200"
+                >
+                  inscrit au livre foncier
+                </a>
+                . C&apos;est l&apos;inscription, et non la date de signature, qui fait foi.
+                Cette règle a des conséquences directes sur le calendrier d&apos;une vente,
+                sur l&apos;efficacité d&apos;une garantie hypothécaire et sur les successions
+                comportant un bien immobilier en Alsace ou en Moselle.
+              </p>
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+                Le cabinet intègre cette spécificité dès l&apos;analyse de votre opération,
+                pour sécuriser le moment où votre droit devient incontestable et éviter les
+                retards ou les mauvaises surprises au pire moment.
+              </p>
+              <p className="font-sans text-[0.8125rem] leading-relaxed text-navy/40">
+                Références :{" "}
+                <a href="https://www.rapport-congresdesnotaires.fr/2021-rapport-du-117e-congres/lexception-du-livre-foncier-dalsace-moselle" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 underline underline-offset-2 transition-colors">117<sup>e</sup> Congrès des notaires</a>
+                {" · "}
+                <a href="https://www.senat.fr/rap/l01-109/l01-1092.html" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 underline underline-offset-2 transition-colors">Rapport du Sénat</a>
+                {" · "}
+                <a href="https://www.larcier-intersentia.com/fr/comprendre-livre-foncier-alsace-moselle-pratiquer-9782879988443.html" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 underline underline-offset-2 transition-colors">F. Hubé, <em>Comprendre le livre foncier d&apos;Alsace-Moselle</em>, Larcier 2023</a>
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* 4. INTERVENTIONS */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
@@ -303,20 +423,68 @@ export default function DroitImmobilierPage() {
           </AnimatedSection>
           <div className="max-w-3xl">
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Que faire en cas de malfaçons après réception ?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Identifier la garantie applicable (parfait achèvement, biennale, décennale), mettre en demeure et mobiliser l&apos;assurance dommages-ouvrage. La voie amiable est souvent privilégiée avant le contentieux.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Que faire en cas de malfaçons après réception ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Identifier la garantie applicable (parfait achèvement, biennale, décennale), mettre en demeure et mobiliser l&apos;assurance dommages-ouvrage. La voie amiable est souvent privilégiée avant le contentieux.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Comment gérer un litige de bail commercial ?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">En analysant le bail et les obligations de chaque partie, puis en choisissant entre négociation et action selon l&apos;enjeu et la relation.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Comment gérer un litige de bail commercial ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En analysant le bail et les obligations de chaque partie, puis en choisissant entre négociation et action selon l&apos;enjeu et la relation.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Faut-il faire encadrer un projet immobilier par un avocat ?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Cadrer les contrats et les responsabilités en amont limite fortement les risques de litige pendant et après le chantier.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Faut-il faire encadrer un projet immobilier par un avocat ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Cadrer les contrats et les responsabilités en amont limite fortement les risques de litige pendant et après le chantier.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Le livre foncier d&apos;Alsace-Moselle change-t-il quelque chose à mon achat immobilier ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui. En Alsace et en Moselle, votre droit de propriété ne devient opposable aux tiers qu&apos;une fois inscrit au livre foncier, registre tenu par un juge. La signature chez le notaire vous lie au vendeur, mais c&apos;est l&apos;inscription qui rend votre position incontestable face à une banque ou à un autre acquéreur. Ce délai doit être anticipé dans le calendrier de l&apos;opération.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">J&apos;hérite d&apos;un bien immobilier en Alsace : ai-je une démarche particulière à faire ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui. L&apos;héritier doit faire inscrire son droit de propriété au livre foncier, sauf si un acte est établi dans les dix mois du décès. Une succession non mise à jour pendant plusieurs générations crée des situations très difficiles à débloquer. Régler cette inscription à temps évite un blocage coûteux par la suite.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Le cabinet propose-t-il des consultations en visioconférence pour les litiges immobiliers et de construction ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui. Pour un litige de malfaçons, un bail commercial ou un projet immobilier, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Cette consultation à distance est accessible depuis toute la France, sans déplacement à Strasbourg.</div>
+            </details>
           </div>
         </div>
       </section>

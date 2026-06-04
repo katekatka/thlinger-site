@@ -74,11 +74,30 @@ const jsonLd = {
         opens: "09:00",
         closes: "18:00",
       },
+      availableChannel: {
+        "@type": "ServiceChannel",
+        serviceType: "Consultation en visioconférence",
+        availableLanguage: ["French", "English"],
+        serviceUrl: "https://www.thalinger-avocat.fr/rdv",
+      },
+      makesOffer: {
+        "@type": "Offer",
+        name: "Premier échange gratuit en visioconférence",
+        description:
+          "Premier échange de 30 minutes en visioconférence, gratuit et sans engagement, pour analyser votre situation juridique en droit des affaires.",
+        price: "0",
+        priceCurrency: "EUR",
+        availability: "https://schema.org/InStock",
+        url: "https://www.thalinger-avocat.fr/rdv",
+        seller: { "@id": "https://www.thalinger-avocat.fr/#organization" },
+      },
       sameAs: [
         "https://www.linkedin.com/in/christian-thalinger-565446216/",
         "https://www.doctrine.fr/p/avocat/L2F17E9BA4F70F6A24AE1",
         "https://justice.pappers.fr/avocat/thalinger-christian-67000",
         "https://maps.app.goo.gl/y6zbkoVGJaao5Vsm8",
+        "https://consultation.avocat.fr/avocat-strasbourg/christian-thalinger-61442.html",
+        "https://www.justifit.fr/avocats/avocat-strasbourg-maitre-christian-thalinger-106985",
       ],
     },
     {

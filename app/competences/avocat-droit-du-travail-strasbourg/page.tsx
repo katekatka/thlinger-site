@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+import { ConsultationSignal } from "@/components/ConsultationSignal";
 
 export const metadata: Metadata = {
   title: "Avocat droit du travail à Strasbourg | Cabinet THALINGER",
@@ -106,6 +107,14 @@ const faqJsonLd = {
         "@type": "Answer",
         "text": "Oui, dans les délais prévus. La contestation peut porter sur le fond du redressement comme sur la régularité de la procédure de contrôle."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Le cabinet propose-t-il des consultations en visioconférence en droit du travail ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Pour un licenciement contesté, une rupture conventionnelle ou un contrôle URSSAF, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France. Réservation directement en ligne."
+      }
     }
   ]
 } as const;
@@ -136,12 +145,33 @@ const caseListJsonLd = {
   ]
 } as const;
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.thalinger-avocat.fr/" },
+    { "@type": "ListItem", position: 2, name: "Compétences", item: "https://www.thalinger-avocat.fr/#competences" },
+    { "@type": "ListItem", position: 3, name: "Droit du travail", item: "https://www.thalinger-avocat.fr/competences/avocat-droit-du-travail-strasbourg" },
+  ],
+} as const;
+
+const speakableJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.thalinger-avocat.fr/competences/avocat-droit-du-travail-strasbourg",
+  isPartOf: { "@id": "https://www.thalinger-avocat.fr/#website" },
+  inLanguage: "fr",
+  speakable: { "@type": "SpeakableSpecification", cssSelector: ["#faq"] },
+} as const;
+
 export default function DroitDuTravailPage() {
   return (
     <>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
 
             {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
@@ -161,6 +191,7 @@ export default function DroitDuTravailPage() {
               L&apos;objectif : anticiper les litiges plutôt que les subir, et faire du droit
               social un levier de gestion, pas une source de risques.
             </p>
+            <ConsultationSignal />
           </AnimatedSection>
         </div>
       </section>
@@ -315,20 +346,48 @@ export default function DroitDuTravailPage() {
           </AnimatedSection>
           <div className="max-w-3xl">
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Que faire face à une saisine prud&apos;homale ?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Réagir vite : analyser la procédure suivie, rassembler les éléments de fond et construire une défense structurée dans les délais impartis.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Que faire face à une saisine prud&apos;homale ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Réagir vite : analyser la procédure suivie, rassembler les éléments de fond et construire une défense structurée dans les délais impartis.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Comment sécuriser une réorganisation ?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">En anticipant les implications sociales avant la décision : choix de la procédure, calendrier, dialogue avec les représentants du personnel.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Comment sécuriser une réorganisation ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En anticipant les implications sociales avant la décision : choix de la procédure, calendrier, dialogue avec les représentants du personnel.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Peut-on contester un redressement URSSAF ?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Oui, dans les délais prévus. La contestation peut porter sur le fond du redressement comme sur la régularité de la procédure de contrôle.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Peut-on contester un redressement URSSAF ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui, dans les délais prévus. La contestation peut porter sur le fond du redressement comme sur la régularité de la procédure de contrôle.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Le cabinet propose-t-il des consultations en visioconférence en droit du travail ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui. Pour un licenciement contesté, une rupture conventionnelle ou un contrôle URSSAF, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France, sans déplacement à Strasbourg.</div>
+            </details>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿﻿import type { Metadata } from "next";
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
@@ -312,20 +312,48 @@ export default function EmploymentLawPage() {
           </AnimatedSection>
           <div className="max-w-3xl">
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">What should I do about a labor-tribunal claim?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Act quickly: review the procedure followed, gather the substantive evidence, and build a structured defense within the deadlines.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What should I do about a labor-tribunal claim?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Act quickly: review the procedure followed, gather the substantive evidence, and build a structured defense within the deadlines.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">How do I secure a reorganization?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">By anticipating the employment-law implications before deciding: procedure, timetable, and dialogue with employee representatives.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I secure a reorganization?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By anticipating the employment-law implications before deciding: procedure, timetable, and dialogue with employee representatives.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Can a URSSAF reassessment be challenged?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Yes, within the set deadlines, covering both the substance of the reassessment and the regularity of the inspection procedure.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Can a URSSAF reassessment be challenged?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes, within the set deadlines, covering both the substance of the reassessment and the regularity of the inspection procedure.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for employment law matters?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For an unfair dismissal, a settlement agreement or a URSSAF reassessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
+            </details>
           </div>
         </div>
       </section>

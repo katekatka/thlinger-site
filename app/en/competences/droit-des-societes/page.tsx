@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿﻿import type { Metadata } from "next";
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
@@ -328,20 +328,48 @@ export default function CorporateLawPage() {
           </AnimatedSection>
           <div className="max-w-3xl">
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">When should I put a shareholders&apos; agreement in place?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Ideally at formation, or before a new shareholder joins. It organizes the relationship between shareholders and prevents a large share of later disputes.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">When should I put a shareholders&apos; agreement in place?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Ideally at formation, or before a new shareholder joins. It organizes the relationship between shareholders and prevents a large share of later disputes.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">What can be done about a shareholder deadlock?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Several levers exist depending on the articles and agreement: mediation, governance changes, a negotiated exit, or court action as a last resort.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What can be done about a shareholder deadlock?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Several levers exist depending on the articles and agreement: mediation, governance changes, a negotiated exit, or court action as a last resort.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">How do I secure the sale of my business?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">By structuring the deal upfront: audit, deal structure, warranties, precise drafting, so every commitment is understood before signing.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I secure the sale of my business?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By structuring the deal upfront: audit, deal structure, warranties, precise drafting, so every commitment is understood before signing.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for corporate law matters?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a shareholder dispute, a business sale or a company structuring, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without travelling to Strasbourg.</div>
+            </details>
           </div>
         </div>
       </section>

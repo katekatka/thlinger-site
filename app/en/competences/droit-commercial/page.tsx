@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿﻿import type { Metadata } from "next";
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
@@ -387,20 +387,48 @@ export default function CommercialLawPage() {
           </AnimatedSection>
           <div className="max-w-3xl">
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">How do I recover an unpaid invoice?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Through a graduated strategy: formal reminder, formal notice, then court procedures such as the order to pay. The choice depends on the amount, the debtor, and the relationship.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I recover an unpaid invoice?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Through a graduated strategy: formal reminder, formal notice, then court procedures such as the order to pay. The choice depends on the amount, the debtor, and the relationship.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">What is abrupt termination of a commercial relationship?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Ending an established relationship without sufficient notice may give rise to compensation, depending on its length and circumstances.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What is abrupt termination of a commercial relationship?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Ending an established relationship without sufficient notice may give rise to compensation, depending on its length and circumstances.</div>
+            </details>
 
-            <div className="border-t border-gold/30 pt-8 pb-2">
-              <p className="mb-3 font-serif text-[1.0625rem] font-normal text-white">Should a lawyer review my terms of sale?</p>
-              <p className="font-sans text-[0.9375rem] leading-relaxed text-white/65">Clear, tailored terms prevent a large share of disputes. Better secured before a dispute than after.</p>
-            </div>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should a lawyer review my terms of sale?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Clear, tailored terms prevent a large share of disputes. Better secured before a dispute than after.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for commercial law matters?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For an unpaid invoice, a commercial dispute or insolvency proceedings, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
+            </details>
           </div>
         </div>
       </section>
