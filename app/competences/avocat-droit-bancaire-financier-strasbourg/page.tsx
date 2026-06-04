@@ -202,9 +202,16 @@ export default function DroitBancaireFinancierPage() {
 
           <div className="max-w-3xl">
 
-            <div id="caution" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Contestation d&apos;un engagement de caution</h3>
-              <dl className="space-y-5">
+            <details id="caution" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Contestation d&apos;un engagement de caution</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un dirigeant s&apos;est porté caution d&apos;un financement professionnel. La banque l&apos;appelle en garantie ; l&apos;étendue et la validité de l&apos;engagement sont en question.</dd>
@@ -218,11 +225,18 @@ export default function DroitBancaireFinancierPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Vérifier la validité de la caution et défendre le dirigeant sur les points contestables.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="responsabilite-bancaire" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Responsabilité d&apos;un établissement bancaire</h3>
-              <dl className="space-y-5">
+            <details id="responsabilite-bancaire" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Responsabilité d&apos;un établissement bancaire</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Une entreprise s&apos;estime lésée par un manquement de sa banque dans un financement ou un conseil. La responsabilité de l&apos;établissement est en jeu.</dd>
@@ -236,11 +250,18 @@ export default function DroitBancaireFinancierPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Établir le manquement éventuel et faire valoir les droits de l&apos;entreprise.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="financement-professionnel" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Contentieux d&apos;un financement professionnel</h3>
-              <dl className="space-y-5">
+            <details id="financement-professionnel" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Contentieux d&apos;un financement professionnel</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un désaccord oppose une entreprise à son établissement de crédit sur les conditions ou l&apos;exécution d&apos;un financement.</dd>
@@ -254,9 +275,11 @@ export default function DroitBancaireFinancierPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifier les obligations de chacun et défendre la position de l&apos;entreprise.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+            <div className="bg-gold mt-10" style={{ height: "2px" }} />
+
+            <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               Les situations présentées sont des exemples illustratifs et anonymisés, reconstitués à partir de problématiques fréquemment rencontrées. Elles ne décrivent aucun dossier identifiable et ne constituent ni une garantie ni une prévision de résultat. Chaque affaire est différente et s&apos;apprécie selon ses circonstances propres.
             </p>
           </div>

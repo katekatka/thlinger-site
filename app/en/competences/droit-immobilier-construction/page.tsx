@@ -207,9 +207,16 @@ export default function RealEstateLawPage() {
 
           <div className="max-w-3xl">
 
-            <div id="construction-defects" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Construction defects after handover</h3>
-              <dl className="space-y-5">
+            <details id="construction-defects" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Construction defects after handover</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An owner discovers structural defects several months after a project is handed over. Communication with the builder breaks down.</dd>
@@ -223,11 +230,18 @@ export default function RealEstateLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Enforcing the owner&apos;s warranties and seeking compensation, favoring an amicable resolution where possible.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="commercial-lease-dispute" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Commercial landlord-tenant dispute</h3>
-              <dl className="space-y-5">
+            <details id="commercial-lease-dispute" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Commercial landlord-tenant dispute</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A landlord and commercial tenant disagree (rent, charges, condition report, renewal). The relationship grows tense.</dd>
@@ -241,11 +255,18 @@ export default function RealEstateLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying the rights and obligations under the lease and defending the client&apos;s position.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="real-estate-project" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Securing a real-estate project</h3>
-              <dl className="space-y-5">
+            <details id="real-estate-project" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Securing a real-estate project</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A developer is starting a real-estate project. The contracts and responsibilities of the parties must be framed before launch.</dd>
@@ -259,9 +280,11 @@ export default function RealEstateLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Setting a clear framework upfront to limit the risk of disputes during and after the works.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+            <div className="bg-gold mt-10" style={{ height: "2px" }} />
+
+            <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               The situations described are illustrative, anonymized examples based on commonly encountered issues. They do not describe any identifiable matter and constitute neither a guarantee nor a prediction of outcome. Every case is assessed on its own circumstances.
             </p>
           </div>

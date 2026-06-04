@@ -198,9 +198,16 @@ export default function InsuranceLawPage() {
 
           <div className="max-w-3xl">
 
-            <div id="denial-of-cover" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Contested denial of cover</h3>
-              <dl className="space-y-5">
+            <details id="denial-of-cover" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Contested denial of cover</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">After a loss, the insurer denies cover by relying on a policy clause. The company disputes that reading.</dd>
@@ -214,11 +221,18 @@ export default function InsuranceLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying the true scope of cover and enforcing the insured&apos;s rights.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="loss-assessment" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Loss assessment and compensation</h3>
-              <dl className="space-y-5">
+            <details id="loss-assessment" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Loss assessment and compensation</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A loss caused significant damage. The insurer&apos;s proposed assessment seems insufficient against the actual damage.</dd>
@@ -232,11 +246,18 @@ export default function InsuranceLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Having the true extent of the loss recognized and defending a coherent level of compensation.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="expert-assessment" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Support during a complex expert assessment</h3>
-              <dl className="space-y-5">
+            <details id="expert-assessment" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Support during a complex expert assessment</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A technical assessment is ordered after a loss. Its conclusions will drive the compensation; the insured does not want to face it alone.</dd>
@@ -250,9 +271,11 @@ export default function InsuranceLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Ensuring the insured&apos;s interests are represented at every stage.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+            <div className="bg-gold mt-10" style={{ height: "2px" }} />
+
+            <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               The situations described are illustrative, anonymized examples based on commonly encountered issues. They do not describe any identifiable matter and constitute neither a guarantee nor a prediction of outcome. Every case is assessed on its own circumstances.
             </p>
           </div>

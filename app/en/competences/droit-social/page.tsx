@@ -218,9 +218,16 @@ export default function EmploymentLawPage() {
 
           <div className="max-w-3xl">
 
-            <div id="contested-dismissal" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Contested dismissal</h3>
-              <dl className="space-y-5">
+            <details id="contested-dismissal" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Contested dismissal</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An employer faces a labor-tribunal claim over a contested dismissal. Deadlines are short and the situation needs clarifying quickly.</dd>
@@ -234,11 +241,18 @@ export default function EmploymentLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Securing the employer&apos;s position on procedure and substance, presenting a structured defense at the hearing.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="internal-reorganization" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Internal reorganization</h3>
-              <dl className="space-y-5">
+            <details id="internal-reorganization" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Internal reorganization</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A company is preparing a reorganization affecting several roles. The employment-law implications must be anticipated before any decision.</dd>
@@ -252,11 +266,18 @@ export default function EmploymentLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Carrying out the reorganization within a controlled framework, weighing consequences at each step.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="social-security-dispute" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Social-security contribution dispute</h3>
-              <dl className="space-y-5">
+            <details id="social-security-dispute" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Social-security contribution dispute</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An employer receives a reassessment after a URSSAF inspection. Both the basis and the scope of the reassessment are in question.</dd>
@@ -270,9 +291,11 @@ export default function EmploymentLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Checking that the reassessment is sound and defending the employer on the contestable points.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+            <div className="bg-gold mt-10" style={{ height: "2px" }} />
+
+            <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               The situations described are illustrative, anonymized examples based on commonly encountered issues. They do not describe any identifiable matter and constitute neither a guarantee nor a prediction of outcome. Every case is assessed on its own circumstances.
             </p>
           </div>

@@ -234,9 +234,16 @@ export default function CorporateLawPage() {
 
           <div className="max-w-3xl">
 
-            <div id="shareholder-deadlock" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Shareholder deadlock</h3>
-              <dl className="space-y-5">
+            <details id="shareholder-deadlock" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Shareholder deadlock</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Three shareholders, a lasting deadlock. Decisions no longer pass in general meeting. The business keeps running, but its leadership is paralyzed.</dd>
@@ -250,11 +257,18 @@ export default function CorporateLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Restoring functional decision-making while preserving the business and each party&apos;s interests.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="sale-of-business" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Sale of a business</h3>
-              <dl className="space-y-5">
+            <details id="sale-of-business" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Sale of a business</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An owner is considering selling the company. The deal affects personal assets and the future of the business; the implications must be understood before any commitment.</dd>
@@ -268,11 +282,18 @@ export default function CorporateLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Securing the transfer and clarifying the commitments made by seller and buyer alike.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="structuring-at-formation" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Structuring at formation</h3>
-              <dl className="space-y-5">
+            <details id="structuring-at-formation" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Structuring at formation</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Founders are launching their company. The choice of corporate form and allocation of powers will shape how the business runs.</dd>
@@ -286,9 +307,11 @@ export default function CorporateLawPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Setting a clear framework from the start to prevent deadlock and secure future strategic decisions.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+            <div className="bg-gold mt-10" style={{ height: "2px" }} />
+
+            <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               The situations described are illustrative, anonymized examples based on commonly encountered issues. They do not describe any identifiable matter and constitute neither a guarantee nor a prediction of outcome. Every case is assessed on its own circumstances.
             </p>
           </div>

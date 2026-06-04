@@ -209,9 +209,16 @@ export default function DroitImmobilierPage() {
 
           <div className="max-w-3xl">
 
-            <div id="malfacons" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Malfaçons après livraison</h3>
-              <dl className="space-y-5">
+            <details id="malfacons" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Malfaçons après livraison</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un propriétaire constate des désordres structurels plusieurs mois après la réception d&apos;un chantier. Le dialogue avec le constructeur s&apos;interrompt.</dd>
@@ -225,11 +232,18 @@ export default function DroitImmobilierPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Faire valoir les garanties dont dispose le maître d&apos;ouvrage et rechercher une indemnisation, en privilégiant si possible une issue amiable.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="bail-commercial" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Litige entre bailleur et locataire commercial</h3>
-              <dl className="space-y-5">
+            <details id="bail-commercial" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Litige entre bailleur et locataire commercial</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un désaccord oppose un bailleur et son locataire commercial (loyer, charges, état des lieux, renouvellement). La relation se tend.</dd>
@@ -243,11 +257,18 @@ export default function DroitImmobilierPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifier les droits et obligations issus du bail et défendre la position du client.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="projet-immobilier" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Sécurisation d&apos;un projet immobilier</h3>
-              <dl className="space-y-5">
+            <details id="projet-immobilier" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Sécurisation d&apos;un projet immobilier</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un porteur de projet engage une opération immobilière. Les contrats et responsabilités des intervenants doivent être cadrés avant le lancement.</dd>
@@ -261,9 +282,11 @@ export default function DroitImmobilierPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Poser un cadre clair en amont pour limiter les risques de contentieux pendant et après le chantier.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+            <div className="bg-gold mt-10" style={{ height: "2px" }} />
+
+            <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               Les situations présentées sont des exemples illustratifs et anonymisés, reconstitués à partir de problématiques fréquemment rencontrées. Elles ne décrivent aucun dossier identifiable et ne constituent ni une garantie ni une prévision de résultat. Chaque affaire est différente et s&apos;apprécie selon ses circonstances propres.
             </p>
           </div>

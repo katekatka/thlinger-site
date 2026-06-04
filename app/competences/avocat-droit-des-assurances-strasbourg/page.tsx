@@ -200,9 +200,16 @@ export default function DroitDesAssurancesPage() {
 
           <div className="max-w-3xl">
 
-            <div id="refus-garantie" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Refus de garantie contesté</h3>
-              <dl className="space-y-5">
+            <details id="refus-garantie" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Refus de garantie contesté</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Après un sinistre, l&apos;assureur refuse sa garantie en invoquant une clause du contrat. L&apos;entreprise conteste la lecture qui en est faite.</dd>
@@ -216,11 +223,18 @@ export default function DroitDesAssurancesPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifier l&apos;étendue réelle de la garantie et faire valoir les droits de l&apos;assuré.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="indemnisation-sinistre" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Évaluation et indemnisation d&apos;un sinistre</h3>
-              <dl className="space-y-5">
+            <details id="indemnisation-sinistre" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Évaluation et indemnisation d&apos;un sinistre</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un sinistre a causé un préjudice important. L&apos;évaluation proposée par l&apos;assureur paraît insuffisante au regard des dommages subis.</dd>
@@ -234,11 +248,18 @@ export default function DroitDesAssurancesPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Faire reconnaître l&apos;étendue réelle du préjudice et défendre une indemnisation cohérente.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="expertise" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Assistance lors d&apos;une expertise complexe</h3>
-              <dl className="space-y-5">
+            <details id="expertise" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Assistance lors d&apos;une expertise complexe</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Une expertise technique est ordonnée à la suite d&apos;un sinistre. Ses conclusions détermineront l&apos;indemnisation ; l&apos;assuré ne souhaite pas l&apos;aborder seul.</dd>
@@ -252,9 +273,11 @@ export default function DroitDesAssurancesPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Veiller à ce que les intérêts de l&apos;assuré soient représentés à chaque étape de l&apos;expertise.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+            <div className="bg-gold mt-10" style={{ height: "2px" }} />
+
+            <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               Les situations présentées sont des exemples illustratifs et anonymisés, reconstitués à partir de problématiques fréquemment rencontrées. Elles ne décrivent aucun dossier identifiable et ne constituent ni une garantie ni une prévision de résultat. Chaque affaire est différente et s&apos;apprécie selon ses circonstances propres.
             </p>
           </div>

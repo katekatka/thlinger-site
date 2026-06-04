@@ -295,9 +295,16 @@ export default function DroitCommercialPage() {
 
           <div className="max-w-3xl">
 
-            <div id="creance-impayee" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Créance impayée</h3>
-              <dl className="space-y-5">
+            <details id="creance-impayee" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Créance impayée</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Une entreprise attend le règlement d&apos;une facture importante depuis plusieurs mois. Les relances sont restées sans effet.</dd>
@@ -311,11 +318,18 @@ export default function DroitCommercialPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Obtenir le règlement de la créance tout en pesant l&apos;intérêt à maintenir, ou non, la relation commerciale.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="rupture-relation" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Rupture d&apos;une relation commerciale établie</h3>
-              <dl className="space-y-5">
+            <details id="rupture-relation" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Rupture d&apos;une relation commerciale établie</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un partenaire commercial met fin brutalement à une relation suivie depuis plusieurs années. L&apos;entreprise s&apos;interroge sur ses droits et son préjudice.</dd>
@@ -329,11 +343,18 @@ export default function DroitCommercialPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Faire valoir les droits liés à la rupture et clarifier les options entre négociation et contentieux.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="litige-contrat" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Litige sur un contrat commercial</h3>
-              <dl className="space-y-5">
+            <details id="litige-contrat" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Litige sur un contrat commercial</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un désaccord naît sur l&apos;exécution d&apos;un contrat (CGV, contrat de distribution, prestation). Chaque partie campe sur sa lecture du texte.</dd>
@@ -347,9 +368,11 @@ export default function DroitCommercialPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifier la portée des engagements contractuels et défendre la position de l&apos;entreprise.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+            <div className="bg-gold mt-10" style={{ height: "2px" }} />
+
+            <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               Les situations présentées sont des exemples illustratifs et anonymisés, reconstitués à partir de problématiques fréquemment rencontrées. Elles ne décrivent aucun dossier identifiable et ne constituent ni une garantie ni une prévision de résultat. Chaque affaire est différente et s&apos;apprécie selon ses circonstances propres.
             </p>
           </div>

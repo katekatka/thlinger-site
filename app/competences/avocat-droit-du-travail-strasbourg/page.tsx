@@ -221,9 +221,16 @@ export default function DroitDuTravailPage() {
 
           <div className="max-w-3xl">
 
-            <div id="licenciement-conteste" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Licenciement contesté</h3>
-              <dl className="space-y-5">
+            <details id="licenciement-conteste" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Licenciement contesté</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un employeur fait face à une saisine prud’homale pour licenciement contesté. Les délais sont courts et la situation doit être clarifiée rapidement.</dd>
@@ -237,11 +244,18 @@ export default function DroitDuTravailPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Sécuriser la position de l&apos;employeur sur la procédure et le fond, et présenter une défense structurée à l&apos;audience.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="reorganisation" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Réorganisation interne</h3>
-              <dl className="space-y-5">
+            <details id="reorganisation" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Réorganisation interne</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Une entreprise prépare une réorganisation touchant plusieurs postes. Les implications sociales doivent être anticipées avant toute décision.</dd>
@@ -255,11 +269,18 @@ export default function DroitDuTravailPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Conduire la réorganisation dans un cadre maîtrisé, en mesurant les conséquences à chaque étape.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <div id="cotisations-sociales" className="border-t-2 border-gold pt-10 pb-2">
-              <h3 className="mb-6 font-serif text-[1.375rem] font-normal text-navy">Contentieux de cotisations sociales</h3>
-              <dl className="space-y-5">
+            <details id="cotisations-sociales" className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Contentieux de cotisations sociales</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Un employeur reçoit un redressement à la suite d&apos;un contrôle URSSAF. Le bien-fondé et l&apos;étendue du redressement sont en question.</dd>
@@ -273,9 +294,11 @@ export default function DroitDuTravailPage() {
                   <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Vérifier la régularité du redressement et défendre la position de l&apos;employeur sur les points contestables.</dd>
                 </div>
               </dl>
-            </div>
+            </details>
 
-            <p className="mt-10 border-t border-navy/10 pt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45 italic">
+            <div className="bg-gold mt-10" style={{ height: "2px" }} />
+
+            <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed text-navy/45">
               Les situations présentées sont des exemples illustratifs et anonymisés, reconstitués à partir de problématiques fréquemment rencontrées. Elles ne décrivent aucun dossier identifiable et ne constituent ni une garantie ni une prévision de résultat. Chaque affaire est différente et s&apos;apprécie selon ses circonstances propres.
             </p>
           </div>
