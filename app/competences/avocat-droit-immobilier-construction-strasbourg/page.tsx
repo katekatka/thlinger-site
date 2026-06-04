@@ -242,7 +242,7 @@ export default function DroitImmobilierPage() {
                 comme dans le reste de la France. Hérité de l&apos;histoire locale et maintenu
                 par la{" "}
                 <a
-                  href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006070757/"
+                  href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069443/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-navy/85 hover:text-gold transition-colors duration-200"
