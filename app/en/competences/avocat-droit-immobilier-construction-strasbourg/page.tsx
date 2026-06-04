@@ -177,7 +177,80 @@ export default function RealEstateLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 3. INTERVENTIONS */}
+      {/* 3. ALSACE-MOSELLE */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection>
+            <div className="max-w-2xl space-y-6">
+              <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+                Alsatian-Moselle local law
+              </p>
+              <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-navy">
+                An Alsatian-Moselle peculiarity not to overlook.
+              </h2>
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+                In Alsace and in Moselle, a real estate transaction does not follow quite the
+                same rules as in the rest of France. Inherited from local history and
+                established by the{" "}
+                <a
+                  href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069443/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy/85 transition-colors duration-200 hover:text-gold"
+                >
+                  Law of 1 June 1924
+                </a>
+                , the{" "}
+                <a
+                  href="https://www.livrefoncier.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy/85 transition-colors duration-200 hover:text-gold"
+                >
+                  land register (livre foncier)
+                </a>{" "}
+                replaces the standard property-registration service used in the rest of
+                France. It is maintained by a magistrate — the land register judge — which
+                gives it particular reliability.
+              </p>
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+                In practical terms, between you and the seller, the agreement binds you
+                from the moment of signature. But against third parties — a bank, a
+                creditor, another buyer — your right only becomes secure once it is{" "}
+                <a
+                  href="https://www.livrefoncier.fr/fr/le-livre-foncier-et-la-loi.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy/85 transition-colors duration-200 hover:text-gold"
+                >
+                  registered in the land register
+                </a>
+                . It is the registration, not the date of signature, that takes legal
+                effect. This rule has direct consequences for the timeline of a sale, the
+                effectiveness of a mortgage guarantee, and successions involving property
+                in Alsace or Moselle.
+              </p>
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+                The firm integrates this specificity from the outset of every transaction
+                analysis, to secure the moment at which your right becomes unassailable
+                and to avoid delays or unwelcome surprises at the worst possible time.
+              </p>
+              <p className="font-sans text-[0.8125rem] leading-relaxed text-navy/40">
+                References:{" "}
+                <a href="https://www.rapport-congresdesnotaires.fr/2021-rapport-du-117e-congres/lexception-du-livre-foncier-dalsace-moselle" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">117th Notarial Congress</a>
+                {" · "}
+                <a href="https://www.senat.fr/rap/l01-109/l01-1092.html" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">Senate Report</a>
+                {" · "}
+                <a href="https://www.larcier-intersentia.com/fr/comprendre-livre-foncier-alsace-moselle-pratiquer-9782879988443.html" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">F. Hubé, Comprendre le livre foncier d&apos;Alsace-Moselle, Larcier 2023</a>
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* 4. INTERVENTIONS */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">

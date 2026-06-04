@@ -286,11 +286,11 @@ export default function DroitImmobilierPage() {
               </p>
               <p className="font-sans text-[0.8125rem] leading-relaxed text-navy/40">
                 Références :{" "}
-                <a href="https://www.rapport-congresdesnotaires.fr/2021-rapport-du-117e-congres/lexception-du-livre-foncier-dalsace-moselle" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 transition-colors">117<sup>e</sup> Congrès des notaires</a>
+                <a href="https://www.rapport-congresdesnotaires.fr/2021-rapport-du-117e-congres/lexception-du-livre-foncier-dalsace-moselle" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">117<sup>e</sup> Congrès des notaires</a>
                 {" · "}
-                <a href="https://www.senat.fr/rap/l01-109/l01-1092.html" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 transition-colors">Rapport du Sénat</a>
+                <a href="https://www.senat.fr/rap/l01-109/l01-1092.html" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">Rapport du Sénat</a>
                 {" · "}
-                <a href="https://www.larcier-intersentia.com/fr/comprendre-livre-foncier-alsace-moselle-pratiquer-9782879988443.html" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 transition-colors">F. Hubé, <em>Comprendre le livre foncier d&apos;Alsace-Moselle</em>, Larcier 2023</a>
+                <a href="https://www.larcier-intersentia.com/fr/comprendre-livre-foncier-alsace-moselle-pratiquer-9782879988443.html" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">F. Hubé, Comprendre le livre foncier d&apos;Alsace-Moselle, Larcier 2023</a>
               </p>
             </div>
           </AnimatedSection>
