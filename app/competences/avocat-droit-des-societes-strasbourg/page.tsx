@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg",
     languages: {
       fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-des-societes",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-societes-strasbourg",
     },
   },
 };

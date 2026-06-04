@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-du-travail-strasbourg",
     languages: {
       fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-du-travail-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-social",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-du-travail-strasbourg",
     },
   },
 };

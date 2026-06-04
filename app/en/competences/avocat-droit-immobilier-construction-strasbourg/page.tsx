@@ -3,10 +3,10 @@
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://www.thalinger-avocat.fr/en/competences/droit-des-assurances",
+    canonical: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-immobilier-construction-strasbourg",
     languages: {
-      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-assurances-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-des-assurances",
+      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-immobilier-construction-strasbourg",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-immobilier-construction-strasbourg",
     },
   },
 };
@@ -16,39 +16,48 @@ export const metadata: Metadata = {
 
 const interventions = [
   {
-    title: "Insurance contracts and cover",
+    title: "Construction and contractor liability",
     items: [
-      "Analysis and interpretation of insurance policies",
-      "Exclusion clauses and coverage limitations",
-      "Loss assessment and quantification",
-      "Securing cover and maximising compensation",
+      "Contractor liability",
+      "Statutory and ten-year warranties",
+      "Defects and poor workmanship",
+      "Construction and site disputes",
     ],
   },
   {
-    title: "Property and personal insurance",
-    items: [
-      "Property and asset insurance",
-      "Personal insurance",
-      "Protection of business and personal assets",
-      "Claims handling and compensation",
-    ],
-  },
-  {
-    title: "Liability and risk coverage",
-    items: [
-      "Public and employer liability insurance",
-      "Professional indemnity and operational risks",
-      "Risk management and claims notification",
-      "Defence of the policyholder's interests",
-    ],
-  },
-  {
-    title: "Expert proceedings and litigation",
+    title: "Expert proceedings and technical disputes",
     items: [
       "Agreed and court-appointed expert assessments",
-      "Challenging claim and coverage denials",
-      "Negotiation with insurers",
-      "Insurance law litigation",
+      "Loss assessment",
+      "Support during expert proceedings",
+      "Defence of interests in litigation",
+    ],
+  },
+  {
+    title: "Leases and tenancy relations",
+    items: [
+      "Lease drafting",
+      "Negotiation of tenancy arrangements",
+      "Securing contractual commitments",
+      "Managing landlord and tenant obligations",
+    ],
+  },
+  {
+    title: "Tenancy disputes and eviction",
+    items: [
+      "Rent arrears and breach of contract",
+      "Lease termination",
+      "Eviction proceedings",
+      "Defence of landlords",
+    ],
+  },
+  {
+    title: "Real estate transactions",
+    items: [
+      "Sale of property under future completion agreement (VEFA)",
+      "Acquisition and sale of real estate",
+      "Securing real estate transactions",
+      "Seller warranties and obligations",
     ],
   },
 ];
@@ -62,26 +71,26 @@ const faqJsonLd = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What if the insurer denies cover?",
+      "name": "What should I do about defects after handover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Analyze the reason against the policy clauses. A denial is not final and can be challenged when it rests on a questionable reading."
+        "text": "Identify the applicable warranty (completion, two-year, ten-year), serve formal notice, and activate the structural-damage insurance. The amicable route is often tried before litigation."
       }
     },
     {
       "@type": "Question",
-      "name": "Should I have support during an expert assessment?",
+      "name": "How do I handle a commercial-lease dispute?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The assessment strongly shapes compensation; support lets you present arguments and follow operations knowingly."
+        "text": "By reviewing the lease and each party's obligations, then choosing between negotiation and action depending on the stakes and the relationship."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I challenge insufficient compensation?",
+      "name": "Should a lawyer frame my real-estate project?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By documenting the real loss and testing the insurer's valuation against the actual damage, through negotiation and, if needed, litigation."
+        "text": "Framing contracts and responsibilities upfront strongly reduces the risk of disputes during and after the works."
       }
     }
   ]
@@ -90,30 +99,30 @@ const faqJsonLd = {
 const caseListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Examples of insurance-law work",
+  "name": "Examples of real-estate-and-construction work",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Contested denial of cover",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-des-assurances#denial-of-cover"
+      "name": "Construction defects after handover",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-immobilier-construction-strasbourg#construction-defects"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Loss assessment and compensation",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-des-assurances#loss-assessment"
+      "name": "Commercial landlord-tenant dispute",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-immobilier-construction-strasbourg#commercial-lease-dispute"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Support during a complex expert assessment",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-des-assurances#expert-assessment"
+      "name": "Securing a real-estate project",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-immobilier-construction-strasbourg#real-estate-project"
     }
   ]
 } as const;
 
-export default function InsuranceLawPage() {
+export default function RealEstateLawPage() {
   return (
     <>
 
@@ -125,16 +134,19 @@ export default function InsuranceLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Insurance Law
+              Real Estate Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
-              Coverage that holds<br className="hidden md:block" /> when it counts.
+              Building also means building a legal framework.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              An insurance policy only shows its true worth at the moment of a claim.
-              The firm supports companies and directors in securing their cover, defending their
-              interests against insurers, and ensuring that a denial of compensation does
-              not permanently damage their business.
+              Defects, structural disorders, unactivated warranties: in construction matters,
+              disputes often come to light after works are accepted, when the deadlines for
+              action are already running. The firm intervenes to establish contractor liability,
+              activate statutory and ten-year warranties, and assist you in agreed or
+              court-appointed expert proceedings. Whether you are a project owner or a
+              construction professional, every stage of a project creates obligations that
+              are better anticipated than discovered in litigation.
             </p>
           </AnimatedSection>
         </div>
@@ -148,18 +160,15 @@ export default function InsuranceLawPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                Know your limits before you need to use them.
+                A poorly negotiated lease is paid for throughout its entire term.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Businesses often assume they are covered â€” until a claim exposes the real
-                limits of their policy. An exclusion clause, a disputed loss assessment,
-                a rejected claim, or a challenged expert report can quickly put pressure
-                on cash flow, stall decisions, and threaten business continuity. The firm supports
-                clients in securing their cover, identifying exposure before a dispute arises,
-                and defending their interests against insurers â€” whether through agreed expert
-                proceedings, court-appointed assessments, or insurance litigation. The goal
-                is always the same: contain the financial and operational damage before it
-                compounds.
+                The lease clauses signed today determine your rights and constraints for years
+                to come. The firm secures the drafting of your leases, negotiates the tenancy
+                terms and ensures a fair balance of obligations between landlord and tenant.
+                In the event of rent arrears, breach of contract or a dispute over termination,
+                the firm handles your defence and conducts the necessary proceedings to protect
+                your interests.
               </p>
             </div>
           </AnimatedSection>
@@ -189,18 +198,18 @@ export default function InsuranceLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-4">
             <h2 className="mb-5 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-              Examples of insurance-law work
+              Examples of real-estate-and-construction work
             </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65">
-              Denied cover, compensation, expert assessment: after a loss, the true scope of cover turns on the policy&apos;s details. The following examples illustrate how it is defended.
+              Defects, commercial leases, real-estate projects: construction and property involve multiple, long-lasting responsibilities. The following examples illustrate how these are framed and defended.
             </p>
           </AnimatedSection>
 
           <div className="max-w-3xl">
 
-            <details id="denial-of-cover" className="group border-t-2 border-gold">
+            <details id="construction-defects" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Contested denial of cover</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Construction defects after handover</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -210,22 +219,22 @@ export default function InsuranceLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">After a loss, the insurer denies cover by relying on a policy clause. The company disputes that reading.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An owner discovers structural defects several months after a project is handed over. Communication with the builder breaks down.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analysis of the policy clauses and cover conditions, check on the basis for the denial, challenge and negotiation with the insurer.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Formal notice, analysis of the applicable statutory warranties, activation of the structural-damage insurance (dommages-ouvrage), direct negotiation with the parties involved.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying the true scope of cover and enforcing the insured&apos;s rights.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Enforcing the owner&apos;s warranties and seeking compensation, favoring an amicable resolution where possible.</dd>
                 </div>
               </dl>
             </details>
 
-            <details id="loss-assessment" className="group border-t-2 border-gold">
+            <details id="commercial-lease-dispute" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Loss assessment and compensation</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Commercial landlord-tenant dispute</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -235,22 +244,22 @@ export default function InsuranceLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A loss caused significant damage. The insurer&apos;s proposed assessment seems insufficient against the actual damage.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A landlord and commercial tenant disagree (rent, charges, condition report, renewal). The relationship grows tense.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analysis of the losses, support during the expert assessment, challenge to the valuation, and negotiation of the compensation.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the lease and each party&apos;s obligations, identification of the levers, negotiation or action depending on the client&apos;s interest.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Having the true extent of the loss recognized and defending a coherent level of compensation.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying the rights and obligations under the lease and defending the client&apos;s position.</dd>
                 </div>
               </dl>
             </details>
 
-            <details id="expert-assessment" className="group border-t-2 border-gold">
+            <details id="real-estate-project" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Support during a complex expert assessment</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Securing a real-estate project</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -260,15 +269,15 @@ export default function InsuranceLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A technical assessment is ordered after a loss. Its conclusions will drive the compensation; the insured does not want to face it alone.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A developer is starting a real-estate project. The contracts and responsibilities of the parties must be framed before launch.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Preparation for the assessment, presentation of arguments and evidence, monitoring of operations, and analysis of the report.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Drafting and review of the contractual documents, allocation of responsibilities, advice on the applicable warranties.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Ensuring the insured&apos;s interests are represented at every stage.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Setting a clear framework upfront to limit the risk of disputes during and after the works.</dd>
                 </div>
               </dl>
             </details>
@@ -294,45 +303,45 @@ export default function InsuranceLawPage() {
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">What if the insurer denies cover?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What should I do about defects after handover?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Analyze the reason against the policy clauses. A denial is not final and can be challenged when it rests on a questionable reading.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Identify the applicable warranty (completion, two-year, ten-year), serve formal notice, and activate the structural-damage insurance. The amicable route is often tried before litigation.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should I have support during an expert assessment?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I handle a commercial-lease dispute?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">The assessment strongly shapes compensation; support lets you present arguments and follow operations knowingly.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By reviewing the lease and each party&apos;s obligations, then choosing between negotiation and action depending on the stakes and the relationship.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I challenge insufficient compensation?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should a lawyer frame my real-estate project?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By documenting the real loss and testing the insurer&apos;s valuation against the actual damage, through negotiation and, if needed, litigation.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Framing contracts and responsibilities upfront strongly reduces the risk of disputes during and after the works.</div>
             </details>
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for insurance disputes?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for real-estate and construction matters?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a denial of cover, an insurance dispute or an expert assessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a construction-defect claim, a commercial-lease dispute or a real-estate project, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without travelling to Strasbourg.</div>
             </details>
           </div>
         </div>
@@ -349,7 +358,7 @@ export default function InsuranceLawPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discuss your insurance matters
+              Discuss your real estate project
               <svg
                 width="16"
                 height="10"

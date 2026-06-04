@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg",
     languages: {
       fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-bancaire-financier-strasbourg",
     },
   },
 };

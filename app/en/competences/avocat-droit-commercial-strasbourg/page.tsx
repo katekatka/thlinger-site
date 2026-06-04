@@ -3,10 +3,10 @@
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction",
+    canonical: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-commercial-strasbourg",
     languages: {
-      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-immobilier-construction-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction",
+      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-commercial-strasbourg",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-commercial-strasbourg",
     },
   },
 };
@@ -16,48 +16,112 @@ export const metadata: Metadata = {
 
 const interventions = [
   {
-    title: "Construction and contractor liability",
+    title: "General terms of sale (GTS)",
     items: [
-      "Contractor liability",
-      "Statutory and ten-year warranties",
-      "Defects and poor workmanship",
-      "Construction and site disputes",
+      "Framework for commercial relationships",
+      "Liability and payment clauses",
+      "Compliance of commercial practices",
+      "Securing client transactions",
     ],
   },
   {
-    title: "Expert proceedings and technical disputes",
+    title: "General terms of purchase (GTP)",
     items: [
-      "Agreed and court-appointed expert assessments",
-      "Loss assessment",
-      "Support during expert proceedings",
-      "Defence of interests in litigation",
+      "Supplier relations",
+      "Supply chain risk management",
+      "Securing commercial commitments",
     ],
   },
   {
-    title: "Leases and tenancy relations",
+    title: "General terms of use (GTU)",
     items: [
-      "Lease drafting",
-      "Negotiation of tenancy arrangements",
-      "Securing contractual commitments",
-      "Managing landlord and tenant obligations",
+      "Digital services and platforms",
+      "Content protection",
+      "Regulating online use",
+      "Operator liability",
     ],
   },
   {
-    title: "Tenancy disputes and eviction",
+    title: "Commercial contracts",
     items: [
-      "Rent arrears and breach of contract",
-      "Lease termination",
-      "Eviction proceedings",
-      "Defence of landlords",
+      "Service and distribution agreements",
+      "Securing partnerships",
+      "Contractual risk management",
     ],
   },
   {
-    title: "Real estate transactions",
+    title: "Business asset sales",
     items: [
-      "Sale of property under future completion agreement (VEFA)",
-      "Acquisition and sale of real estate",
-      "Securing real estate transactions",
-      "Seller warranties and obligations",
+      "Acquisition and disposal of business assets",
+      "Due diligence and transaction security",
+      "Drafting and negotiating transfer deeds",
+      "Commercial leases and business transfer",
+      "Post-acquisition disputes",
+      "Business transfer and takeover",
+    ],
+  },
+  {
+    title: "Commercial leases",
+    items: [
+      "Drafting commercial leases",
+      "Precarious occupation agreements and short-term leases",
+      "Lease negotiation and renewal",
+      "Commercial rent review",
+      "Tenancy disputes",
+    ],
+  },
+  {
+    title: "Debt recovery and unpaid invoices",
+    items: [
+      "Payment orders",
+      "Interim measures",
+      "Enforcement",
+      "Management of late payments",
+    ],
+  },
+  {
+    title: "Commercial disputes",
+    items: [
+      "Contractual liability",
+      "Disputes between commercial partners",
+      "Termination of business relationships",
+      "Defence of the company's interests",
+    ],
+  },
+  {
+    title: "Unfair competition",
+    items: [
+      "Commercial disruption",
+      "Parasitic competition",
+      "Damage to image and reputation",
+      "Protection of strategic interests",
+    ],
+  },
+  {
+    title: "Prevention of business difficulties",
+    items: [
+      "Financial and operational reorganisation",
+      "Negotiation with creditors",
+      "Supporting directors in times of crisis",
+      "Representation before courts",
+    ],
+  },
+  {
+    title: "Ad hoc mandate and conciliation",
+    items: [
+      "Finding amicable solutions",
+      "Debt restructuring",
+      "Confidential negotiation with creditors",
+      "Preserving the company's business",
+    ],
+  },
+  {
+    title: "Collective proceedings",
+    items: [
+      "Support for directors",
+      "Proof of debt",
+      "Managing relations with insolvency officers",
+      "Preserving assets and business activity",
     ],
   },
 ];
@@ -71,26 +135,26 @@ const faqJsonLd = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What should I do about defects after handover?",
+      "name": "How do I recover an unpaid invoice?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Identify the applicable warranty (completion, two-year, ten-year), serve formal notice, and activate the structural-damage insurance. The amicable route is often tried before litigation."
+        "text": "Through a graduated strategy: formal reminder, formal notice, then court procedures such as the order to pay. The choice depends on the amount, the debtor, and the relationship."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I handle a commercial-lease dispute?",
+      "name": "What is abrupt termination of a commercial relationship?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By reviewing the lease and each party's obligations, then choosing between negotiation and action depending on the stakes and the relationship."
+        "text": "Ending an established relationship without sufficient notice may give rise to compensation, depending on its length and circumstances."
       }
     },
     {
       "@type": "Question",
-      "name": "Should a lawyer frame my real-estate project?",
+      "name": "Should a lawyer review my terms of sale?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Framing contracts and responsibilities upfront strongly reduces the risk of disputes during and after the works."
+        "text": "Clear, tailored terms prevent a large share of disputes. Better secured before a dispute than after."
       }
     }
   ]
@@ -99,30 +163,30 @@ const faqJsonLd = {
 const caseListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Examples of real-estate-and-construction work",
+  "name": "Examples of commercial-law work",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Construction defects after handover",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction#construction-defects"
+      "name": "Unpaid invoice",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-commercial-strasbourg#unpaid-invoice"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Commercial landlord-tenant dispute",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction#commercial-lease-dispute"
+      "name": "Termination of an established commercial relationship",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-commercial-strasbourg#termination-commercial-relationship"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Securing a real-estate project",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction#real-estate-project"
+      "name": "Commercial-contract dispute",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-commercial-strasbourg#commercial-contract-dispute"
     }
   ]
 } as const;
 
-export default function RealEstateLawPage() {
+export default function CommercialLawPage() {
   return (
     <>
 
@@ -134,19 +198,18 @@ export default function RealEstateLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Real Estate Law
+              Commercial Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
-              Building also means building a legal framework.
+              A poorly drafted contract is invisible. Until the dispute.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Defects, structural disorders, unactivated warranties: in construction matters,
-              disputes often come to light after works are accepted, when the deadlines for
-              action are already running. The firm intervenes to establish contractor liability,
-              activate statutory and ten-year warranties, and assist you in agreed or
-              court-appointed expert proceedings. Whether you are a project owner or a
-              construction professional, every stage of a project creates obligations that
-              are better anticipated than discovered in litigation.
+              GTC, GPC, terms of use, service agreements, commercial leases: these documents
+              govern every business relationship you have. As long as things run smoothly,
+              no one reads them twice. But a missing clause, an ambiguous limitation, or a
+              deadline that does not reflect operational reality is enough to turn a
+              disagreement into costly litigation. The firm drafts, negotiates and secures your
+              contracts with one constant question: what happens when things go wrong?
             </p>
           </AnimatedSection>
         </div>
@@ -160,15 +223,14 @@ export default function RealEstateLawPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                A poorly negotiated lease is paid for throughout its entire term.
+                In commercial law, conflict is part of the game. How you manage it is not.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                The lease clauses signed today determine your rights and constraints for years
-                to come. The firm secures the drafting of your leases, negotiates the tenancy
-                terms and ensures a fair balance of obligations between landlord and tenant.
-                In the event of rent arrears, breach of contract or a dispute over termination,
-                the firm handles your defence and conducts the necessary proceedings to protect
-                your interests.
+                Unpaid debts, abrupt termination of business relationships, unfair competition,
+                disputes between commercial partners: these situations put your cash flow,
+                your reputation, and sometimes the continuity of your business at stake. The
+                firm intervenes to recover your receivables, defend your interests in litigation,
+                and protect your strategic positions against unfair practices.
               </p>
             </div>
           </AnimatedSection>
@@ -177,7 +239,31 @@ export default function RealEstateLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 3. INTERVENTIONS */}
+      {/* 3. TEXT â€” white */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <AnimatedSection>
+            <div className="max-w-2xl space-y-6">
+              <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-navy md:text-[2.25rem]">
+                Financial difficulties do not wait until you are ready.
+              </h2>
+              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+                When cash flow tightens, every week counts. The legal framework offers
+                protective tools that are often overlooked: ad hoc mandate, conciliation,
+                safeguard proceedings. These mechanisms allow confidential negotiations with
+                creditors and help preserve the business before the situation becomes
+                irreversible. The firm supports directors at every stage, from amicable
+                restructuring to formal insolvency proceedings, to protect what can be saved
+                and prepare what comes next.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <div className="bg-gold" style={{ height: "2px" }} />
+
+      {/* 4. INTERVENTIONS */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
@@ -198,18 +284,18 @@ export default function RealEstateLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-4">
             <h2 className="mb-5 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-              Examples of real-estate-and-construction work
+              Examples of commercial-law work
             </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65">
-              Defects, commercial leases, real-estate projects: construction and property involve multiple, long-lasting responsibilities. The following examples illustrate how these are framed and defended.
+              Contracts, unpaid invoices, broken relationships: commercial disputes affect both cash flow and business ties. The following examples illustrate the approach taken.
             </p>
           </AnimatedSection>
 
           <div className="max-w-3xl">
 
-            <details id="construction-defects" className="group border-t-2 border-gold">
+            <details id="unpaid-invoice" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Construction defects after handover</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Unpaid invoice</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -219,22 +305,22 @@ export default function RealEstateLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An owner discovers structural defects several months after a project is handed over. Communication with the builder breaks down.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A company has waited several months for payment of a significant invoice. Reminders have gone unanswered.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Formal notice, analysis of the applicable statutory warranties, activation of the structural-damage insurance (dommages-ouvrage), direct negotiation with the parties involved.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Pre-litigation strategy, use of the appropriate recovery procedures (notably the order to pay, injonction de payer), negotiation of a payment schedule where the relationship can be preserved.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Enforcing the owner&apos;s warranties and seeking compensation, favoring an amicable resolution where possible.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Securing payment while weighing whether the commercial relationship is worth keeping.</dd>
                 </div>
               </dl>
             </details>
 
-            <details id="commercial-lease-dispute" className="group border-t-2 border-gold">
+            <details id="termination-commercial-relationship" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Commercial landlord-tenant dispute</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Termination of an established commercial relationship</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -244,22 +330,22 @@ export default function RealEstateLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A landlord and commercial tenant disagree (rent, charges, condition report, renewal). The relationship grows tense.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A commercial partner abruptly ends a relationship that has run for several years. The company questions its rights and its loss.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the lease and each party&apos;s obligations, identification of the levers, negotiation or action depending on the client&apos;s interest.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the relationship and the conditions of termination, assessment of the loss, formal notice and, if needed, a claim for compensation.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying the rights and obligations under the lease and defending the client&apos;s position.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Enforcing the rights arising from the termination and clarifying the options between negotiation and litigation.</dd>
                 </div>
               </dl>
             </details>
 
-            <details id="real-estate-project" className="group border-t-2 border-gold">
+            <details id="commercial-contract-dispute" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Securing a real-estate project</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Commercial-contract dispute</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -269,15 +355,15 @@ export default function RealEstateLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A developer is starting a real-estate project. The contracts and responsibilities of the parties must be framed before launch.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A disagreement arises over performance of a contract (terms of sale, distribution, services). Each side reads the text differently.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Drafting and review of the contractual documents, allocation of responsibilities, advice on the applicable warranties.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analysis of the clauses and each party&apos;s obligations, identification of weak points, building a position and representation in litigation if the amicable route fails.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Setting a clear framework upfront to limit the risk of disputes during and after the works.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying the scope of the contractual commitments and defending the company&apos;s position.</dd>
                 </div>
               </dl>
             </details>
@@ -303,45 +389,45 @@ export default function RealEstateLawPage() {
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">What should I do about defects after handover?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I recover an unpaid invoice?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Identify the applicable warranty (completion, two-year, ten-year), serve formal notice, and activate the structural-damage insurance. The amicable route is often tried before litigation.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Through a graduated strategy: formal reminder, formal notice, then court procedures such as the order to pay. The choice depends on the amount, the debtor, and the relationship.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I handle a commercial-lease dispute?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What is abrupt termination of a commercial relationship?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By reviewing the lease and each party&apos;s obligations, then choosing between negotiation and action depending on the stakes and the relationship.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Ending an established relationship without sufficient notice may give rise to compensation, depending on its length and circumstances.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should a lawyer frame my real-estate project?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should a lawyer review my terms of sale?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Framing contracts and responsibilities upfront strongly reduces the risk of disputes during and after the works.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Clear, tailored terms prevent a large share of disputes. Better secured before a dispute than after.</div>
             </details>
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for real-estate and construction matters?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for commercial law matters?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a construction-defect claim, a commercial-lease dispute or a real-estate project, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without travelling to Strasbourg.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For an unpaid invoice, a commercial dispute or insolvency proceedings, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
             </details>
           </div>
         </div>
@@ -349,7 +435,7 @@ export default function RealEstateLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 4. CTA */}
+      {/* 5. CTA */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -358,7 +444,7 @@ export default function RealEstateLawPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discuss your real estate project
+              Discuss your commercial matters
               <svg
                 width="16"
                 height="10"

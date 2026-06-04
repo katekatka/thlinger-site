@@ -3,10 +3,10 @@
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://www.thalinger-avocat.fr/en/competences/droit-des-societes",
+    canonical: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-societes-strasbourg",
     languages: {
       fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-des-societes",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-societes-strasbourg",
     },
   },
 };
@@ -130,19 +130,19 @@ const caseListJsonLd = {
       "@type": "ListItem",
       "position": 1,
       "name": "Shareholder deadlock",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-des-societes#shareholder-deadlock"
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-societes-strasbourg#shareholder-deadlock"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Sale of a business",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-des-societes#sale-of-business"
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-societes-strasbourg#sale-of-business"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Structuring at formation",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-des-societes#structuring-at-formation"
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-societes-strasbourg#structuring-at-formation"
     }
   ]
 } as const;

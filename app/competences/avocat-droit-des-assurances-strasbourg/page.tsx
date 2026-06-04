@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-assurances-strasbourg",
     languages: {
       fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-assurances-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-des-assurances",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-assurances-strasbourg",
     },
   },
 };

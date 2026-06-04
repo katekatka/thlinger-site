@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-commercial-strasbourg",
     languages: {
       fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-commercial-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-commercial",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-commercial-strasbourg",
     },
   },
 };

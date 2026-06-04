@@ -3,10 +3,10 @@
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier",
+    canonical: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-bancaire-financier-strasbourg",
     languages: {
       fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-bancaire-financier-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-bancaire-financier-strasbourg",
     },
   },
 };
@@ -96,19 +96,19 @@ const caseListJsonLd = {
       "@type": "ListItem",
       "position": 1,
       "name": "Challenging a personal guarantee",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier#personal-guarantee"
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-bancaire-financier-strasbourg#personal-guarantee"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Bank liability",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier#bank-liability"
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-bancaire-financier-strasbourg#bank-liability"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Business-financing dispute",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-bancaire-financier#financing-dispute"
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-bancaire-financier-strasbourg#financing-dispute"
     }
   ]
 } as const;

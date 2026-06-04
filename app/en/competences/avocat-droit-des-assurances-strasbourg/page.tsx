@@ -3,10 +3,10 @@
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://www.thalinger-avocat.fr/en/competences/droit-social",
+    canonical: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-assurances-strasbourg",
     languages: {
-      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-du-travail-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-social",
+      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-assurances-strasbourg",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-assurances-strasbourg",
     },
   },
 };
@@ -16,60 +16,39 @@ export const metadata: Metadata = {
 
 const interventions = [
   {
-    title: "Individual employment relations",
+    title: "Insurance contracts and cover",
     items: [
-      "Drafting and securing employment contracts",
-      "Day-rate agreements",
-      "Working time and overtime",
-      "Contract performance and payroll",
-      "Disciplinary law",
-      "Harassment and discrimination",
+      "Analysis and interpretation of insurance policies",
+      "Exclusion clauses and coverage limitations",
+      "Loss assessment and quantification",
+      "Securing cover and maximising compensation",
     ],
   },
   {
-    title: "Termination of employment",
+    title: "Property and personal insurance",
     items: [
-      "Disciplinary dismissal",
-      "Redundancy",
-      "Protected employees",
-      "Agreed termination, constructive dismissal and judicial rescission",
-      "Challenging a dismissal",
-      "Disputes arising from termination",
+      "Property and asset insurance",
+      "Personal insurance",
+      "Protection of business and personal assets",
+      "Claims handling and compensation",
     ],
   },
   {
-    title: "Collective labour relations",
+    title: "Liability and risk coverage",
     items: [
-      "Works council elections",
-      "Collective bargaining",
-      "Collective agreements and internal regulations",
-      "Relations with employee representatives",
+      "Public and employer liability insurance",
+      "Professional indemnity and operational risks",
+      "Risk management and claims notification",
+      "Defence of the policyholder's interests",
     ],
   },
   {
-    title: "Restructuring and social reorganisation",
+    title: "Expert proceedings and litigation",
     items: [
-      "Business reorganisation",
-      "Social restructuring",
-      "Job protection plans (PSE)",
-      "Collective redundancies",
-      "Works council consultation",
-      "Support through business transformation",
-    ],
-  },
-  {
-    title: "Social security law",
-    items: [
-      "URSSAF audits and reassessments",
-      "Social contributions and contribution basis",
-      "Employer gross negligence",
-    ],
-  },
-  {
-    title: "Criminal employment law",
-    items: [
-      "Criminal liability of the employer",
-      "Violations of employment law",
+      "Agreed and court-appointed expert assessments",
+      "Challenging claim and coverage denials",
+      "Negotiation with insurers",
+      "Insurance law litigation",
     ],
   },
 ];
@@ -83,26 +62,26 @@ const faqJsonLd = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What should I do about a labor-tribunal claim?",
+      "name": "What if the insurer denies cover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Act quickly: review the procedure followed, gather the substantive evidence, and build a structured defense within the deadlines."
+        "text": "Analyze the reason against the policy clauses. A denial is not final and can be challenged when it rests on a questionable reading."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I secure a reorganization?",
+      "name": "Should I have support during an expert assessment?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By anticipating the employment-law implications before deciding: procedure, timetable, and dialogue with employee representatives."
+        "text": "The assessment strongly shapes compensation; support lets you present arguments and follow operations knowingly."
       }
     },
     {
       "@type": "Question",
-      "name": "Can a URSSAF reassessment be challenged?",
+      "name": "How do I challenge insufficient compensation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, within the set deadlines, covering both the substance of the reassessment and the regularity of the inspection procedure."
+        "text": "By documenting the real loss and testing the insurer's valuation against the actual damage, through negotiation and, if needed, litigation."
       }
     }
   ]
@@ -111,30 +90,30 @@ const faqJsonLd = {
 const caseListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Examples of employment-law work",
+  "name": "Examples of insurance-law work",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Contested dismissal",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-social#contested-dismissal"
+      "name": "Contested denial of cover",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-assurances-strasbourg#denial-of-cover"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Internal reorganization",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-social#internal-reorganization"
+      "name": "Loss assessment and compensation",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-assurances-strasbourg#loss-assessment"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Social-security contribution dispute",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-social#social-security-dispute"
+      "name": "Support during a complex expert assessment",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-assurances-strasbourg#expert-assessment"
     }
   ]
 } as const;
 
-export default function EmploymentLawPage() {
+export default function InsuranceLawPage() {
   return (
     <>
 
@@ -146,18 +125,16 @@ export default function EmploymentLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Social Law
+              Insurance Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
-              Every HR decision is a legal decision.
+              Coverage that holds<br className="hidden md:block" /> when it counts.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              A poorly drafted contract, a botched dismissal procedure, an imprecise collective
-              agreement: in employment law, mistakes have a price. The firm supports directors
-              and HR managers in securing their day-to-day practices and defending their
-              interests before the employment tribunal. The objective: to anticipate disputes
-              rather than suffer them, and to make employment law a management tool, not a
-              source of risk.
+              An insurance policy only shows its true worth at the moment of a claim.
+              The firm supports companies and directors in securing their cover, defending their
+              interests against insurers, and ensuring that a denial of compensation does
+              not permanently damage their business.
             </p>
           </AnimatedSection>
         </div>
@@ -171,15 +148,18 @@ export default function EmploymentLawPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                A URSSAF audit gives no warning. Your preparation can.
+                Know your limits before you need to use them.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                A social security reassessment can represent significant amounts and durably
-                weaken your cash flow. The firm intervenes upstream to secure your social
-                contribution practices, and downstream to challenge reassessments and represent
-                you in appeal proceedings. In cases of employer gross negligence, the
-                consequences go beyond increased compensation: they can engage the criminal
-                liability of the director where safety obligations have been breached.
+                Businesses often assume they are covered â€” until a claim exposes the real
+                limits of their policy. An exclusion clause, a disputed loss assessment,
+                a rejected claim, or a challenged expert report can quickly put pressure
+                on cash flow, stall decisions, and threaten business continuity. The firm supports
+                clients in securing their cover, identifying exposure before a dispute arises,
+                and defending their interests against insurers â€” whether through agreed expert
+                proceedings, court-appointed assessments, or insurance litigation. The goal
+                is always the same: contain the financial and operational damage before it
+                compounds.
               </p>
             </div>
           </AnimatedSection>
@@ -209,18 +189,18 @@ export default function EmploymentLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-4">
             <h2 className="mb-5 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-              Examples of employment-law work
+              Examples of insurance-law work
             </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65">
-              Dismissal, reorganization, contributions: every employment decision carries procedural and substantive risk. The following examples illustrate how these are anticipated and managed.
+              Denied cover, compensation, expert assessment: after a loss, the true scope of cover turns on the policy&apos;s details. The following examples illustrate how it is defended.
             </p>
           </AnimatedSection>
 
           <div className="max-w-3xl">
 
-            <details id="contested-dismissal" className="group border-t-2 border-gold">
+            <details id="denial-of-cover" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Contested dismissal</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Contested denial of cover</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -230,22 +210,22 @@ export default function EmploymentLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An employer faces a labor-tribunal claim over a contested dismissal. Deadlines are short and the situation needs clarifying quickly.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">After a loss, the insurer denies cover by relying on a policy clause. The company disputes that reading.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the procedure followed, identification of weak points, building the line of defense, and representation before the labor tribunal (Conseil de prud&apos;hommes).</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analysis of the policy clauses and cover conditions, check on the basis for the denial, challenge and negotiation with the insurer.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Securing the employer&apos;s position on procedure and substance, presenting a structured defense at the hearing.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying the true scope of cover and enforcing the insured&apos;s rights.</dd>
                 </div>
               </dl>
             </details>
 
-            <details id="internal-reorganization" className="group border-t-2 border-gold">
+            <details id="loss-assessment" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Internal reorganization</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Loss assessment and compensation</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -255,22 +235,22 @@ export default function EmploymentLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A company is preparing a reorganization affecting several roles. The employment-law implications must be anticipated before any decision.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A loss caused significant damage. The insurer&apos;s proposed assessment seems insufficient against the actual damage.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analysis of options and risks, securing the applicable procedures, support in the dialogue with employee representatives.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analysis of the losses, support during the expert assessment, challenge to the valuation, and negotiation of the compensation.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Carrying out the reorganization within a controlled framework, weighing consequences at each step.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Having the true extent of the loss recognized and defending a coherent level of compensation.</dd>
                 </div>
               </dl>
             </details>
 
-            <details id="social-security-dispute" className="group border-t-2 border-gold">
+            <details id="expert-assessment" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Social-security contribution dispute</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Support during a complex expert assessment</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -280,15 +260,15 @@ export default function EmploymentLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An employer receives a reassessment after a URSSAF inspection. Both the basis and the scope of the reassessment are in question.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A technical assessment is ordered after a loss. Its conclusions will drive the compensation; the insured does not want to face it alone.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the grounds for reassessment, verification of the inspection procedure, challenge before the competent courts where justified.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Preparation for the assessment, presentation of arguments and evidence, monitoring of operations, and analysis of the report.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Checking that the reassessment is sound and defending the employer on the contestable points.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Ensuring the insured&apos;s interests are represented at every stage.</dd>
                 </div>
               </dl>
             </details>
@@ -314,45 +294,45 @@ export default function EmploymentLawPage() {
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">What should I do about a labor-tribunal claim?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What if the insurer denies cover?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Act quickly: review the procedure followed, gather the substantive evidence, and build a structured defense within the deadlines.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Analyze the reason against the policy clauses. A denial is not final and can be challenged when it rests on a questionable reading.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I secure a reorganization?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should I have support during an expert assessment?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By anticipating the employment-law implications before deciding: procedure, timetable, and dialogue with employee representatives.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">The assessment strongly shapes compensation; support lets you present arguments and follow operations knowingly.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Can a URSSAF reassessment be challenged?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I challenge insufficient compensation?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes, within the set deadlines, covering both the substance of the reassessment and the regularity of the inspection procedure.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By documenting the real loss and testing the insurer&apos;s valuation against the actual damage, through negotiation and, if needed, litigation.</div>
             </details>
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for employment law matters?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for insurance disputes?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For an unfair dismissal, a settlement agreement or a URSSAF reassessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a denial of cover, an insurance dispute or an expert assessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
             </details>
           </div>
         </div>
@@ -369,7 +349,7 @@ export default function EmploymentLawPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discuss your employment law matters
+              Discuss your insurance matters
               <svg
                 width="16"
                 height="10"

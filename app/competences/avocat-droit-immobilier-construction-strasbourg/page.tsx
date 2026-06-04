@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-immobilier-construction-strasbourg",
     languages: {
       fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-immobilier-construction-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-immobilier-construction",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-immobilier-construction-strasbourg",
     },
   },
 };
@@ -235,7 +235,7 @@ export default function DroitImmobilierPage() {
                 Droit local alsacien-mosellan
               </p>
               <h2 className="font-serif text-[clamp(1.75rem,3.5vw,2.25rem)] font-normal leading-tight text-navy">
-                En Alsace-Moselle, l&apos;inscription décide de tout.
+                Une particularité alsacienne-mosellane à ne pas négliger.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
                 En Alsace et en Moselle, une opération immobilière ne se joue pas tout à fait
@@ -245,16 +245,16 @@ export default function DroitImmobilierPage() {
                   href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006070757/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-navy underline underline-offset-2 hover:text-gold transition-colors duration-200"
+                  className="text-navy/85 hover:text-gold transition-colors duration-200"
                 >
                   loi du 1<sup>er</sup> juin 1924
                 </a>
                 , le{" "}
                 <a
-                  href="https://www.service-public.fr/particuliers/vosdroits/F17759"
+                  href="https://www.livrefoncier.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-navy underline underline-offset-2 hover:text-gold transition-colors duration-200"
+                  className="text-navy/85 hover:text-gold transition-colors duration-200"
                 >
                   livre foncier
                 </a>{" "}
@@ -270,7 +270,7 @@ export default function DroitImmobilierPage() {
                   href="https://www.livrefoncier.fr/fr/le-livre-foncier-et-la-loi.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-navy underline underline-offset-2 hover:text-gold transition-colors duration-200"
+                  className="text-navy/85 hover:text-gold transition-colors duration-200"
                 >
                   inscrit au livre foncier
                 </a>
@@ -286,11 +286,11 @@ export default function DroitImmobilierPage() {
               </p>
               <p className="font-sans text-[0.8125rem] leading-relaxed text-navy/40">
                 Références :{" "}
-                <a href="https://www.rapport-congresdesnotaires.fr/2021-rapport-du-117e-congres/lexception-du-livre-foncier-dalsace-moselle" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 underline underline-offset-2 transition-colors">117<sup>e</sup> Congrès des notaires</a>
+                <a href="https://www.rapport-congresdesnotaires.fr/2021-rapport-du-117e-congres/lexception-du-livre-foncier-dalsace-moselle" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 transition-colors">117<sup>e</sup> Congrès des notaires</a>
                 {" · "}
-                <a href="https://www.senat.fr/rap/l01-109/l01-1092.html" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 underline underline-offset-2 transition-colors">Rapport du Sénat</a>
+                <a href="https://www.senat.fr/rap/l01-109/l01-1092.html" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 transition-colors">Rapport du Sénat</a>
                 {" · "}
-                <a href="https://www.larcier-intersentia.com/fr/comprendre-livre-foncier-alsace-moselle-pratiquer-9782879988443.html" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 underline underline-offset-2 transition-colors">F. Hubé, <em>Comprendre le livre foncier d&apos;Alsace-Moselle</em>, Larcier 2023</a>
+                <a href="https://www.larcier-intersentia.com/fr/comprendre-livre-foncier-alsace-moselle-pratiquer-9782879988443.html" target="_blank" rel="noopener noreferrer" className="hover:text-navy/60 transition-colors">F. Hubé, <em>Comprendre le livre foncier d&apos;Alsace-Moselle</em>, Larcier 2023</a>
               </p>
             </div>
           </AnimatedSection>

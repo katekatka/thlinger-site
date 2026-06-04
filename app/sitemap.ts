@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 
 const BASE = "https://thalinger-avocat.fr";
 const LAST_MODIFIED = new Date();
@@ -26,37 +26,37 @@ const pages: PageDef[] = [
   // Practice areas — primary conversion pages
   {
     path: "/competences/avocat-droit-des-societes-strasbourg",
-    enPath: "/en/competences/droit-des-societes",
+    enPath: "/en/competences/avocat-droit-des-societes-strasbourg",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
     path: "/competences/avocat-droit-commercial-strasbourg",
-    enPath: "/en/competences/droit-commercial",
+    enPath: "/en/competences/avocat-droit-commercial-strasbourg",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
     path: "/competences/avocat-droit-du-travail-strasbourg",
-    enPath: "/en/competences/droit-social",
+    enPath: "/en/competences/avocat-droit-du-travail-strasbourg",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
     path: "/competences/avocat-droit-bancaire-financier-strasbourg",
-    enPath: "/en/competences/droit-bancaire-financier",
+    enPath: "/en/competences/avocat-droit-bancaire-financier-strasbourg",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
     path: "/competences/avocat-droit-des-assurances-strasbourg",
-    enPath: "/en/competences/droit-des-assurances",
+    enPath: "/en/competences/avocat-droit-des-assurances-strasbourg",
     priority: 0.9,
     changeFrequency: "monthly",
   },
   {
     path: "/competences/avocat-droit-immobilier-construction-strasbourg",
-    enPath: "/en/competences/droit-immobilier-construction",
+    enPath: "/en/competences/avocat-droit-immobilier-construction-strasbourg",
     priority: 0.9,
     changeFrequency: "monthly",
   },

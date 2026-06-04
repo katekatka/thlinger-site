@@ -3,10 +3,10 @@
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://www.thalinger-avocat.fr/en/competences/droit-commercial",
+    canonical: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-du-travail-strasbourg",
     languages: {
-      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-commercial-strasbourg",
-      en: "https://www.thalinger-avocat.fr/en/competences/droit-commercial",
+      fr: "https://www.thalinger-avocat.fr/competences/avocat-droit-du-travail-strasbourg",
+      en: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-du-travail-strasbourg",
     },
   },
 };
@@ -16,112 +16,60 @@ export const metadata: Metadata = {
 
 const interventions = [
   {
-    title: "General terms of sale (GTS)",
+    title: "Individual employment relations",
     items: [
-      "Framework for commercial relationships",
-      "Liability and payment clauses",
-      "Compliance of commercial practices",
-      "Securing client transactions",
+      "Drafting and securing employment contracts",
+      "Day-rate agreements",
+      "Working time and overtime",
+      "Contract performance and payroll",
+      "Disciplinary law",
+      "Harassment and discrimination",
     ],
   },
   {
-    title: "General terms of purchase (GTP)",
+    title: "Termination of employment",
     items: [
-      "Supplier relations",
-      "Supply chain risk management",
-      "Securing commercial commitments",
+      "Disciplinary dismissal",
+      "Redundancy",
+      "Protected employees",
+      "Agreed termination, constructive dismissal and judicial rescission",
+      "Challenging a dismissal",
+      "Disputes arising from termination",
     ],
   },
   {
-    title: "General terms of use (GTU)",
+    title: "Collective labour relations",
     items: [
-      "Digital services and platforms",
-      "Content protection",
-      "Regulating online use",
-      "Operator liability",
+      "Works council elections",
+      "Collective bargaining",
+      "Collective agreements and internal regulations",
+      "Relations with employee representatives",
     ],
   },
   {
-    title: "Commercial contracts",
+    title: "Restructuring and social reorganisation",
     items: [
-      "Service and distribution agreements",
-      "Securing partnerships",
-      "Contractual risk management",
+      "Business reorganisation",
+      "Social restructuring",
+      "Job protection plans (PSE)",
+      "Collective redundancies",
+      "Works council consultation",
+      "Support through business transformation",
     ],
   },
   {
-    title: "Business asset sales",
+    title: "Social security law",
     items: [
-      "Acquisition and disposal of business assets",
-      "Due diligence and transaction security",
-      "Drafting and negotiating transfer deeds",
-      "Commercial leases and business transfer",
-      "Post-acquisition disputes",
-      "Business transfer and takeover",
+      "URSSAF audits and reassessments",
+      "Social contributions and contribution basis",
+      "Employer gross negligence",
     ],
   },
   {
-    title: "Commercial leases",
+    title: "Criminal employment law",
     items: [
-      "Drafting commercial leases",
-      "Precarious occupation agreements and short-term leases",
-      "Lease negotiation and renewal",
-      "Commercial rent review",
-      "Tenancy disputes",
-    ],
-  },
-  {
-    title: "Debt recovery and unpaid invoices",
-    items: [
-      "Payment orders",
-      "Interim measures",
-      "Enforcement",
-      "Management of late payments",
-    ],
-  },
-  {
-    title: "Commercial disputes",
-    items: [
-      "Contractual liability",
-      "Disputes between commercial partners",
-      "Termination of business relationships",
-      "Defence of the company's interests",
-    ],
-  },
-  {
-    title: "Unfair competition",
-    items: [
-      "Commercial disruption",
-      "Parasitic competition",
-      "Damage to image and reputation",
-      "Protection of strategic interests",
-    ],
-  },
-  {
-    title: "Prevention of business difficulties",
-    items: [
-      "Financial and operational reorganisation",
-      "Negotiation with creditors",
-      "Supporting directors in times of crisis",
-      "Representation before courts",
-    ],
-  },
-  {
-    title: "Ad hoc mandate and conciliation",
-    items: [
-      "Finding amicable solutions",
-      "Debt restructuring",
-      "Confidential negotiation with creditors",
-      "Preserving the company's business",
-    ],
-  },
-  {
-    title: "Collective proceedings",
-    items: [
-      "Support for directors",
-      "Proof of debt",
-      "Managing relations with insolvency officers",
-      "Preserving assets and business activity",
+      "Criminal liability of the employer",
+      "Violations of employment law",
     ],
   },
 ];
@@ -135,26 +83,26 @@ const faqJsonLd = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How do I recover an unpaid invoice?",
+      "name": "What should I do about a labor-tribunal claim?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Through a graduated strategy: formal reminder, formal notice, then court procedures such as the order to pay. The choice depends on the amount, the debtor, and the relationship."
+        "text": "Act quickly: review the procedure followed, gather the substantive evidence, and build a structured defense within the deadlines."
       }
     },
     {
       "@type": "Question",
-      "name": "What is abrupt termination of a commercial relationship?",
+      "name": "How do I secure a reorganization?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ending an established relationship without sufficient notice may give rise to compensation, depending on its length and circumstances."
+        "text": "By anticipating the employment-law implications before deciding: procedure, timetable, and dialogue with employee representatives."
       }
     },
     {
       "@type": "Question",
-      "name": "Should a lawyer review my terms of sale?",
+      "name": "Can a URSSAF reassessment be challenged?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Clear, tailored terms prevent a large share of disputes. Better secured before a dispute than after."
+        "text": "Yes, within the set deadlines, covering both the substance of the reassessment and the regularity of the inspection procedure."
       }
     }
   ]
@@ -163,30 +111,30 @@ const faqJsonLd = {
 const caseListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Examples of commercial-law work",
+  "name": "Examples of employment-law work",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Unpaid invoice",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-commercial#unpaid-invoice"
+      "name": "Contested dismissal",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-du-travail-strasbourg#contested-dismissal"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Termination of an established commercial relationship",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-commercial#termination-commercial-relationship"
+      "name": "Internal reorganization",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-du-travail-strasbourg#internal-reorganization"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Commercial-contract dispute",
-      "url": "https://www.thalinger-avocat.fr/en/competences/droit-commercial#commercial-contract-dispute"
+      "name": "Social-security contribution dispute",
+      "url": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-du-travail-strasbourg#social-security-dispute"
     }
   ]
 } as const;
 
-export default function CommercialLawPage() {
+export default function EmploymentLawPage() {
   return (
     <>
 
@@ -198,18 +146,18 @@ export default function CommercialLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Commercial Law
+              Social Law
             </p>
             <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
-              A poorly drafted contract is invisible. Until the dispute.
+              Every HR decision is a legal decision.
             </h1>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              GTC, GPC, terms of use, service agreements, commercial leases: these documents
-              govern every business relationship you have. As long as things run smoothly,
-              no one reads them twice. But a missing clause, an ambiguous limitation, or a
-              deadline that does not reflect operational reality is enough to turn a
-              disagreement into costly litigation. The firm drafts, negotiates and secures your
-              contracts with one constant question: what happens when things go wrong?
+              A poorly drafted contract, a botched dismissal procedure, an imprecise collective
+              agreement: in employment law, mistakes have a price. The firm supports directors
+              and HR managers in securing their day-to-day practices and defending their
+              interests before the employment tribunal. The objective: to anticipate disputes
+              rather than suffer them, and to make employment law a management tool, not a
+              source of risk.
             </p>
           </AnimatedSection>
         </div>
@@ -223,14 +171,15 @@ export default function CommercialLawPage() {
           <AnimatedSection>
             <div className="max-w-2xl space-y-6">
               <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-white md:text-[2.25rem]">
-                In commercial law, conflict is part of the game. How you manage it is not.
+                A URSSAF audit gives no warning. Your preparation can.
               </h2>
               <p className="font-sans text-base leading-[1.85] text-white/75 md:text-[1.0625rem]">
-                Unpaid debts, abrupt termination of business relationships, unfair competition,
-                disputes between commercial partners: these situations put your cash flow,
-                your reputation, and sometimes the continuity of your business at stake. The
-                firm intervenes to recover your receivables, defend your interests in litigation,
-                and protect your strategic positions against unfair practices.
+                A social security reassessment can represent significant amounts and durably
+                weaken your cash flow. The firm intervenes upstream to secure your social
+                contribution practices, and downstream to challenge reassessments and represent
+                you in appeal proceedings. In cases of employer gross negligence, the
+                consequences go beyond increased compensation: they can engage the criminal
+                liability of the director where safety obligations have been breached.
               </p>
             </div>
           </AnimatedSection>
@@ -239,31 +188,7 @@ export default function CommercialLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 3. TEXT â€” white */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="mx-auto max-w-[1200px] px-6">
-          <AnimatedSection>
-            <div className="max-w-2xl space-y-6">
-              <h2 className="font-serif text-[1.75rem] font-normal leading-tight text-navy md:text-[2.25rem]">
-                Financial difficulties do not wait until you are ready.
-              </h2>
-              <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-                When cash flow tightens, every week counts. The legal framework offers
-                protective tools that are often overlooked: ad hoc mandate, conciliation,
-                safeguard proceedings. These mechanisms allow confidential negotiations with
-                creditors and help preserve the business before the situation becomes
-                irreversible. The firm supports directors at every stage, from amicable
-                restructuring to formal insolvency proceedings, to protect what can be saved
-                and prepare what comes next.
-              </p>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <div className="bg-gold" style={{ height: "2px" }} />
-
-      {/* 4. INTERVENTIONS */}
+      {/* 3. INTERVENTIONS */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
@@ -284,18 +209,18 @@ export default function CommercialLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-4">
             <h2 className="mb-5 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-navy">
-              Examples of commercial-law work
+              Examples of employment-law work
             </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65">
-              Contracts, unpaid invoices, broken relationships: commercial disputes affect both cash flow and business ties. The following examples illustrate the approach taken.
+              Dismissal, reorganization, contributions: every employment decision carries procedural and substantive risk. The following examples illustrate how these are anticipated and managed.
             </p>
           </AnimatedSection>
 
           <div className="max-w-3xl">
 
-            <details id="unpaid-invoice" className="group border-t-2 border-gold">
+            <details id="contested-dismissal" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Unpaid invoice</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Contested dismissal</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -305,22 +230,22 @@ export default function CommercialLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A company has waited several months for payment of a significant invoice. Reminders have gone unanswered.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An employer faces a labor-tribunal claim over a contested dismissal. Deadlines are short and the situation needs clarifying quickly.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Pre-litigation strategy, use of the appropriate recovery procedures (notably the order to pay, injonction de payer), negotiation of a payment schedule where the relationship can be preserved.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the procedure followed, identification of weak points, building the line of defense, and representation before the labor tribunal (Conseil de prud&apos;hommes).</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Securing payment while weighing whether the commercial relationship is worth keeping.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Securing the employer&apos;s position on procedure and substance, presenting a structured defense at the hearing.</dd>
                 </div>
               </dl>
             </details>
 
-            <details id="termination-commercial-relationship" className="group border-t-2 border-gold">
+            <details id="internal-reorganization" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Termination of an established commercial relationship</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Internal reorganization</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -330,22 +255,22 @@ export default function CommercialLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A commercial partner abruptly ends a relationship that has run for several years. The company questions its rights and its loss.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A company is preparing a reorganization affecting several roles. The employment-law implications must be anticipated before any decision.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the relationship and the conditions of termination, assessment of the loss, formal notice and, if needed, a claim for compensation.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analysis of options and risks, securing the applicable procedures, support in the dialogue with employee representatives.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Enforcing the rights arising from the termination and clarifying the options between negotiation and litigation.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Carrying out the reorganization within a controlled framework, weighing consequences at each step.</dd>
                 </div>
               </dl>
             </details>
 
-            <details id="commercial-contract-dispute" className="group border-t-2 border-gold">
+            <details id="social-security-dispute" className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.375rem] font-normal text-navy">Commercial-contract dispute</span>
+                <span className="font-serif text-[1.375rem] font-normal text-navy">Social-security contribution dispute</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                   className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
@@ -355,15 +280,15 @@ export default function CommercialLawPage() {
               <dl className="space-y-5 pb-8">
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Situation</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">A disagreement arises over performance of a contract (terms of sale, distribution, services). Each side reads the text differently.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">An employer receives a reassessment after a URSSAF inspection. Both the basis and the scope of the reassessment are in question.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">Approach</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Analysis of the clauses and each party&apos;s obligations, identification of weak points, building a position and representation in litigation if the amicable route fails.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Review of the grounds for reassessment, verification of the inspection procedure, challenge before the competent courts where justified.</dd>
                 </div>
                 <div>
                   <dt className="mb-1 font-sans text-[0.7rem] uppercase tracking-[0.2em] text-gold">What&apos;s at stake</dt>
-                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Clarifying the scope of the contractual commitments and defending the company&apos;s position.</dd>
+                  <dd className="font-sans text-[0.9375rem] leading-[1.85] text-navy/70">Checking that the reassessment is sound and defending the employer on the contestable points.</dd>
                 </div>
               </dl>
             </details>
@@ -389,45 +314,45 @@ export default function CommercialLawPage() {
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I recover an unpaid invoice?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What should I do about a labor-tribunal claim?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Through a graduated strategy: formal reminder, formal notice, then court procedures such as the order to pay. The choice depends on the amount, the debtor, and the relationship.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Act quickly: review the procedure followed, gather the substantive evidence, and build a structured defense within the deadlines.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">What is abrupt termination of a commercial relationship?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I secure a reorganization?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Ending an established relationship without sufficient notice may give rise to compensation, depending on its length and circumstances.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By anticipating the employment-law implications before deciding: procedure, timetable, and dialogue with employee representatives.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should a lawyer review my terms of sale?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Can a URSSAF reassessment be challenged?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Clear, tailored terms prevent a large share of disputes. Better secured before a dispute than after.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes, within the set deadlines, covering both the substance of the reassessment and the regularity of the inspection procedure.</div>
             </details>
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for commercial law matters?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for employment law matters?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For an unpaid invoice, a commercial dispute or insolvency proceedings, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For an unfair dismissal, a settlement agreement or a URSSAF reassessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
             </details>
           </div>
         </div>
@@ -435,7 +360,7 @@ export default function CommercialLawPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 5. CTA */}
+      {/* 4. CTA */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
@@ -444,7 +369,7 @@ export default function CommercialLawPage() {
               className="group inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white hover:text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
               style={{ color: "#ffffff" }}
             >
-              Discuss your commercial matters
+              Discuss your employment law matters
               <svg
                 width="16"
                 height="10"
