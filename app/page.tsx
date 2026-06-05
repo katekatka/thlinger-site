@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
+
+export const revalidate = 3600; // re-render at most every hour to pick up new reviews
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 import { AnimatedLine } from "@/components/AnimatedLine";
 import { StepsSection } from "@/components/StepsSection";

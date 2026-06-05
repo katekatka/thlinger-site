@@ -39,7 +39,7 @@ export async function fetchGoogleReviews(): Promise<ReviewsPayload | null> {
     `&key=${key}`;
 
   try {
-    const res = await fetch(url, { next: { revalidate: 3600 } }); // re-fetch every hour
+    const res = await fetch(url, { cache: "no-store" }); // always fresh — page-level revalidation controls cadence
     if (!res.ok) return null;
 
     const data: PlaceDetailsResponse = await res.json();

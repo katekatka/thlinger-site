@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
+
+export const revalidate = 3600; // re-render at most every hour to pick up new reviews
 import AboutHero from "@/components/AboutHero";
 import GoogleReviews from "@/components/GoogleReviews";
 import { fetchGoogleReviews } from "@/lib/google-places";
