@@ -220,31 +220,6 @@ const trustBlocks = [
   },
 ];
 
-// ─── Google Reviews fallback ─────────────────────────────────────────────────
-// Shown only when GOOGLE_PLACES_API_KEY is not set in .env.local.
-// Paste real review data here for instant display while the key is pending.
-
-const fallbackReviews = {
-  placeUrl: `https://www.google.com/maps/place/?q=place_id:ChIJG1o0kVXJlkcRkMxPv0VL_WM`,
-  rating: 5.0,
-  totalReviews: 2,
-  reviews: [
-    {
-      author: "Arbogast Laura",
-      authorUrl: "https://www.google.com/maps/contrib/100264503749605105444/reviews",
-      rating: 5,
-      text: "Nous tenons à remercier chaleureusement Maître Thalinger pour la qualité de son accompagnement.\n\nProfessionnel, réactif et particulièrement à l'écoute, il a su nous conseiller et nous rassurer à chaque étape avec beaucoup de sérieux et de bienveillance. Son implication, sa disponibilité et la clarté de ses explications ont été très appréciées.\n\nNous recommandons Maître Thalinger sans hésitation à toute personne recherchant un avocat compétent et humain. Encore merci pour votre aide précieuse !",
-      date: "il y a une semaine",
-    },
-    {
-      author: "Marc CHRETIEN",
-      authorUrl: "https://www.google.com/maps/contrib/117262535581386929646/reviews",
-      rating: 5,
-      text: "Excellent avocat, rigoureux et d'un professionnalisme exemplaire. Maître Thalinger m'a accompagné sur un dossier. Ses conseils stratégiques et sa réactivité ont fait toute la différence. Je lui accorde toute ma confiance et le recommande sans hésiter.",
-      date: "il y a une semaine",
-    },
-  ] as import("@/components/GoogleReviews").GoogleReview[],
-};
 
 // ─── Shared components ───────────────────────────────────────────────────────
 
@@ -280,7 +255,6 @@ function ContacterButton() {
 
 export default async function HomePage() {
   const liveReviews = await fetchGoogleReviews();
-  const reviewsData = liveReviews ?? fallbackReviews;
 
   return (
     <>
@@ -430,10 +404,13 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <div className="bg-gold" style={{ height: "2px" }} />
-
-      {/* 6. AVIS GOOGLE */}
-      <GoogleReviews {...reviewsData} />
+      {liveReviews && (
+        <>
+          <div className="bg-gold" style={{ height: "2px" }} />
+          {/* 6. AVIS GOOGLE */}
+          <GoogleReviews {...liveReviews} />
+        </>
+      )}
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
