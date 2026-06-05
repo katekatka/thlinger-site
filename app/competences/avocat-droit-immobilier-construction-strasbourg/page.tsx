@@ -77,7 +77,7 @@ const faqJsonLd = {
       "name": "Que faire en cas de malfaçons après réception ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Identifier la garantie applicable (parfait achèvement, biennale, décennale), mettre en demeure et mobiliser l'assurance dommages-ouvrage. La voie amiable est souvent privilégiée avant le contentieux."
+        "text": "Identifiez d'abord la garantie applicable : parfait achèvement (un an), bon fonctionnement (deux ans) ou décennale pour les désordres compromettant la solidité ou rendant l'ouvrage impropre à sa destination. Mettez le constructeur en demeure par écrit et déclarez le sinistre à l'assurance dommages-ouvrage, qui préfinance les réparations sans attendre la recherche de responsabilité. La voie amiable est souvent privilégiée, mais une expertise s'impose dès que le désordre est sérieux ou contesté."
       }
     },
     {
@@ -85,7 +85,7 @@ const faqJsonLd = {
       "name": "Comment gérer un litige de bail commercial ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "En analysant le bail et les obligations de chaque partie, puis en choisissant entre négociation et action selon l'enjeu et la relation."
+        "text": "Commencez par analyser le bail et les obligations de chaque partie : loyers, charges, travaux, état des lieux et clauses sensibles comme la clause résolutoire. La plupart des litiges se règlent par négociation ou mise en demeure, plus rapides et moins coûteuses qu'un contentieux. Mais certains délais sont impératifs - un mois pour répondre à un commandement de payer, deux ans pour contester un congé - et déterminent souvent l'issue. Le bon réflexe est de qualifier la situation avant d'agir."
       }
     },
     {
@@ -93,7 +93,31 @@ const faqJsonLd = {
       "name": "Faut-il faire encadrer un projet immobilier par un avocat ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cadrer les contrats et les responsabilités en amont limite fortement les risques de litige pendant et après le chantier."
+        "text": "Cadrer les contrats et les responsabilités en amont - VEFA, marché de travaux, garanties, assurances, montage de l'opération - limite fortement les risques de litige pendant et après le chantier. C'est aussi le moment où l'on vérifie les engagements de chaque intervenant et où l'on répartit clairement les risques. Une clause précise coûte toujours moins cher qu'un contentieux. L'intervention la plus utile est préventive, pas curative."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que faire face à des loyers impayés en bail commercial ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La voie la plus efficace passe par la clause résolutoire du bail. Le bailleur fait délivrer, par commissaire de justice, un commandement de payer qui ouvre au locataire un délai d'un mois pour régler l'intégralité des sommes dues - un paiement partiel ne suffit pas, et le délai ne peut être réduit. Si rien n'est réglé dans le mois, le bailleur saisit le juge pour faire constater la résiliation et engager l'expulsion. Les loyers impayés se réclament dans la limite de cinq ans."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment obtenir une indemnité d'éviction en cas de non-renouvellement ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lorsque le bailleur refuse de renouveler le bail, il doit en principe verser une indemnité d'éviction égale au préjudice subi (article L. 145-14 du Code de commerce) : valeur du fonds de commerce, frais de déménagement, de réinstallation et de mutation. Le locataire doit remplir les conditions du droit au renouvellement et, si aucune indemnité ne lui est proposée, saisir le tribunal dans un délai de deux ans - au-delà, le droit est perdu. Jusqu'au paiement, il peut rester dans les lieux. L'enjeu principal est souvent la fixation du montant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on contester la clause résolutoire d'un bail commercial ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Recevoir un commandement de payer ne rend pas la résiliation définitive. Le locataire peut régulariser dans le mois, demander des délais de paiement au juge (article L. 145-41 du Code de commerce, combiné au pouvoir général de l'article 1343-5 du Code civil), contester un commandement irrégulier, ou invoquer une exception d'inexécution si le bailleur a lui-même manqué à ses obligations - par exemple des locaux rendus impropres à leur usage. La Cour de cassation a confirmé que ce dernier moyen reste recevable même sans demande de délais dans le mois (Cass. 3e civ., 5 mars 2026, n° 24-15.820). La réaction doit être rapide."
       }
     },
     {
@@ -431,7 +455,7 @@ export default function DroitImmobilierPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Identifier la garantie applicable (parfait achèvement, biennale, décennale), mettre en demeure et mobiliser l&apos;assurance dommages-ouvrage. La voie amiable est souvent privilégiée avant le contentieux.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Identifiez d&apos;abord la garantie applicable : parfait achèvement (un an), bon fonctionnement (deux ans) ou décennale pour les désordres compromettant la solidité ou rendant l&apos;ouvrage impropre à sa destination. Mettez le constructeur en demeure par écrit et déclarez le sinistre à l&apos;assurance dommages-ouvrage, qui préfinance les réparations sans attendre la recherche de responsabilité. La voie amiable est souvent privilégiée, mais une expertise s&apos;impose dès que le désordre est sérieux ou contesté.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -442,7 +466,7 @@ export default function DroitImmobilierPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En analysant le bail et les obligations de chaque partie, puis en choisissant entre négociation et action selon l&apos;enjeu et la relation.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Commencez par analyser le bail et les obligations de chaque partie : loyers, charges, travaux, état des lieux et clauses sensibles comme la clause résolutoire. La plupart des litiges se règlent par négociation ou mise en demeure, plus rapides et moins coûteuses qu&apos;un contentieux. Mais certains délais sont impératifs - un mois pour répondre à un commandement de payer, deux ans pour contester un congé - et déterminent souvent l&apos;issue. Le bon réflexe est de qualifier la situation avant d&apos;agir.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -453,8 +477,42 @@ export default function DroitImmobilierPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Cadrer les contrats et les responsabilités en amont limite fortement les risques de litige pendant et après le chantier.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Cadrer les contrats et les responsabilités en amont - VEFA, marché de travaux, garanties, assurances, montage de l&apos;opération - limite fortement les risques de litige pendant et après le chantier. C&apos;est aussi le moment où l&apos;on vérifie les engagements de chaque intervenant et où l&apos;on répartit clairement les risques. Une clause précise coûte toujours moins cher qu&apos;un contentieux. L&apos;intervention la plus utile est préventive, pas curative.</div>
             </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Que faire face à des loyers impayés en bail commercial ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">La voie la plus efficace passe par la clause résolutoire du bail. Le bailleur fait délivrer, par commissaire de justice, un commandement de payer qui ouvre au locataire un délai d&apos;un mois pour régler l&apos;intégralité des sommes dues - un paiement partiel ne suffit pas, et le délai ne peut être réduit. Si rien n&apos;est réglé dans le mois, le bailleur saisit le juge pour faire constater la résiliation et engager l&apos;expulsion. Les loyers impayés se réclament dans la limite de cinq ans.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Comment obtenir une indemnité d&apos;éviction en cas de non-renouvellement ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Lorsque le bailleur refuse de renouveler le bail, il doit en principe verser une indemnité d&apos;éviction égale au préjudice subi (article L. 145-14 du Code de commerce) : valeur du fonds de commerce, frais de déménagement, de réinstallation et de mutation. Le locataire doit remplir les conditions du droit au renouvellement et, si aucune indemnité ne lui est proposée, saisir le tribunal dans un délai de deux ans - au-delà, le droit est perdu. Jusqu&apos;au paiement, il peut rester dans les lieux. L&apos;enjeu principal est souvent la fixation du montant.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Peut-on contester la clause résolutoire d&apos;un bail commercial ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui. Recevoir un commandement de payer ne rend pas la résiliation définitive. Le locataire peut régulariser dans le mois, demander des délais de paiement au juge (article L. 145-41 du Code de commerce, combiné au pouvoir général de l&apos;article 1343-5 du Code civil), contester un commandement irrégulier, ou invoquer une exception d&apos;inexécution si le bailleur a lui-même manqué à ses obligations - par exemple des locaux rendus impropres à leur usage. La Cour de cassation a confirmé que ce dernier moyen reste recevable même sans demande de délais dans le mois (<a href="https://www.legifrance.gouv.fr/juri/id/JURITEXT000053679063" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">Cass. 3e civ., 5 mars 2026, n° 24-15.820</a>). La réaction doit être rapide.</div>
+            </details>
+
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
                 <span className="font-serif text-[1.0625rem] leading-snug text-white">Le livre foncier d&apos;Alsace-Moselle change-t-il quelque chose à mon achat immobilier ?</span>
