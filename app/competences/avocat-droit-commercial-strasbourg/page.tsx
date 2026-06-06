@@ -191,6 +191,14 @@ const faqJsonLd = {
         "@type": "Answer",
         "text": "Dans les quarante-cinq jours. La cessation des paiements correspond à l'impossibilité de faire face au passif exigible avec l'actif disponible. Le dirigeant doit la déclarer au tribunal dans les quarante-cinq jours qui suivent, sauf à avoir demandé dans ce délai l'ouverture d'une conciliation. Ce point est capital : le défaut de déclaration dans les délais peut constituer une faute de gestion et engager la responsabilité du dirigeant, les sanctions concrètes dépendant toutefois du dossier. Par ailleurs, un créancier dispose en principe de deux mois à compter de la publication du jugement d'ouverture au BODACC pour déclarer sa créance. Là encore, la rapidité d'action protège."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Le cabinet propose-t-il des consultations en visioconférence en droit commercial ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Pour une créance impayée, un contentieux contractuel ou une procédure collective, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France, sans déplacement à Strasbourg."
+      }
     }
   ]
 } as const;
@@ -519,6 +527,17 @@ export default function DroitCommercialPage() {
                 </svg>
               </summary>
               <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Dans les quarante-cinq jours. La cessation des paiements correspond à l&apos;impossibilité de faire face au passif exigible avec l&apos;actif disponible. Le dirigeant doit la déclarer au tribunal dans les quarante-cinq jours qui suivent, sauf à avoir demandé dans ce délai l&apos;ouverture d&apos;une conciliation. Ce point est capital : le défaut de déclaration dans les délais peut constituer une faute de gestion et engager la responsabilité du dirigeant, les sanctions concrètes dépendant toutefois du dossier. Par ailleurs, un créancier dispose en principe de deux mois à compter de la publication du jugement d&apos;ouverture au BODACC pour déclarer sa créance. Là encore, la rapidité d&apos;action protège.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Le cabinet propose-t-il des consultations en visioconférence en droit commercial ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui. Pour une créance impayée, un contentieux contractuel ou une procédure collective, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France, sans déplacement à Strasbourg.</div>
             </details>
           </div>
         </div>

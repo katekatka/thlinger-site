@@ -96,26 +96,66 @@ const faqJsonLd = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "When should I put a shareholders' agreement in place?",
+      "name": "When should a shareholders' agreement be drawn up?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ideally at formation, or before a new shareholder joins. It organizes the relationship between shareholders and prevents a large share of later disputes."
+        "text": "Ideally at the time the company is formed, or before a new shareholder joins. The agreement governs the relationship between shareholders on points that the articles of association do not always address: governance, conditions for transferring shares, exit clauses, pre-emption or approval rights, and minority protection. Unlike the articles, which are filed at the registry and publicly available, the agreement remains confidential and binds only its signatories, which makes it the right place to address sensitive arrangements. A breach triggers contractual liability. Well drafted, it prevents a significant share of disputes and maps out in advance how a shareholder exit or a deadlock would be resolved — at a time when relations are still good."
       }
     },
     {
       "@type": "Question",
-      "name": "What can be done about a shareholder deadlock?",
+      "name": "Articles of association or shareholders' agreement: what is the difference?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Several levers exist depending on the articles and agreement: mediation, governance changes, a negotiated exit, or court action as a last resort."
+        "text": "Both govern the company, but on different levels. The articles of association are the mandatory founding document, filed and publicly available: they set out the corporate form, the purpose, the share capital, the management structure and the rules binding on all. The shareholders' agreement is an optional and confidential contract, binding only on its signatories: it refines governance and organises the relationship between shareholders (exit, pre-emption, tag-along rights, lock-up undertakings). One essential point: the agreement complements the articles, but does not replace them. It cannot contradict them or override a mandatory rule, and a breach of the agreement does not invalidate a corporate decision that complies with the articles; it gives rise to damages. It is the coherence between the two documents that genuinely protects the business."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I secure the sale of my business?",
+      "name": "What to do in the event of a deadlock between shareholders?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By structuring the deal upfront: audit, deal structure, warranties, precise drafting, so every commitment is understood before signing."
+        "text": "Several levers exist, to be activated according to the articles and the shareholders' agreement. The preferred first step is an amicable approach: mediation, governance changes, or a negotiated exit of a shareholder through the clauses of the agreement. Court action is a last resort — for example, to have a provisional administrator appointed when the company is paralysed, or to seek dissolution where the deadlock makes it impossible to continue the business. The right choice depends on the circumstances and the objectives of each party. The more the agreement has anticipated these situations (exit clauses, buy-out mechanisms, unblocking provisions), the faster and more controlled the resolution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is majority abuse and how is it challenged?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a general-meeting resolution passed contrary to the company's interests and with the sole aim of benefiting the majority shareholders to the detriment of the minority. Two cumulative conditions must be met: the resolution must be contrary to the company's interests, and there must be an intentional breach of the principle of equality between shareholders. A classic example is the systematic reservation of profits without economic justification, permanently depriving minority shareholders of dividends. Two remedies are available: annulment of the resolution and an award of damages. The Cour de cassation clarified in 2025 that an action for annulment may be brought against the company alone where no compensation is sought from the majority shareholders. There is also, in mirror image, minority abuse — rarer — where a minority shareholder blocks a decision essential to the company's survival."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can a business sale be secured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By structuring the transaction in advance. This involves a due diligence exercise (legal, accounting, tax, employment), choosing the right deal structure, precise drafting of the transactional documents, and above all, negotiating a warranty of assets and liabilities. The aim is to understand every commitment before signing, on both the seller's and the buyer's side. There are many sensitive points: seller's representations, conditions precedent, non-compete clauses, and price payment terms. A well-prepared deal prevents liabilities arising before the sale from resurfacing afterwards, to the detriment of either party."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a warranty of assets and liabilities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the clause that protects the buyer against unpleasant surprises after completion. Under the warranty of assets and liabilities (garantie d'actif et de passif), the seller undertakes to indemnify the buyer if a liability arising before the sale comes to light afterwards (a tax reassessment, a labour-tribunal claim, a supplier dispute), or if a declared asset turns out to be overvalued. Several parameters are negotiated: the cap, the duration, any step-down mechanism, and the trigger thresholds. These are governed by market practice, not by fixed rules: they vary considerably depending on the balance of power, the sector and the risk profile. To secure payment, part of the price may be placed in escrow or covered by a bank guarantee. Precise drafting of the clause is critical: vague wording offers only illusory protection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can a family business be transferred while minimising taxation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The principal tool is the Dutreil pact, which allows, subject to conditions, a 75% exemption on the value of the shares transferred for the calculation of gift or inheritance tax (article 787 B of the General Tax Code). The arrangement rests on share-retention undertakings — collective then individual — and the exercise of a management function. It is reserved for companies carrying on an operational business and excludes asset-management activities. Recent debate has centred on potential changes to the regime (including extended retention periods and the exclusion of certain non-business assets), but their exact scope must be verified against the version of the legislation in force at the time of the transaction. Given the complexity and evolving nature of this regime, bespoke advice is essential."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the firm offer video consultations for corporate law matters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For a shareholder dispute, a business sale or a company structuring, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without needing to travel to Strasbourg."
       }
     }
   ]
@@ -330,36 +370,81 @@ export default function CorporateLawPage() {
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">When should I put a shareholders&apos; agreement in place?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">When should a shareholders&apos; agreement be drawn up?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Ideally at formation, or before a new shareholder joins. It organizes the relationship between shareholders and prevents a large share of later disputes.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Ideally at the time the company is formed, or before a new shareholder joins. The agreement governs the relationship between shareholders on points that the articles of association do not always address: governance, conditions for transferring shares, exit clauses, pre-emption or approval rights, and minority protection. Unlike the articles, which are filed at the registry and publicly available, the agreement remains confidential and binds only its signatories, which makes it the right place to address sensitive arrangements. A breach triggers contractual liability. Well drafted, it prevents a significant share of disputes and maps out in advance how a shareholder exit or a deadlock would be resolved — at a time when relations are still good.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">What can be done about a shareholder deadlock?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Articles of association or shareholders&apos; agreement: what is the difference?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Several levers exist depending on the articles and agreement: mediation, governance changes, a negotiated exit, or court action as a last resort.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Both govern the company, but on different levels. The articles of association are the mandatory founding document, filed and publicly available: they set out the corporate form, the purpose, the share capital, the management structure and the rules binding on all. The shareholders&apos; agreement is an optional and confidential contract, binding only on its signatories: it refines governance and organises the relationship between shareholders (exit, pre-emption, tag-along rights, lock-up undertakings). One essential point: the agreement complements the articles, but does not replace them. It cannot contradict them or override a mandatory rule, and a breach of the agreement does not invalidate a corporate decision that complies with the articles; it gives rise to damages. It is the coherence between the two documents that genuinely protects the business.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I secure the sale of my business?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What to do in the event of a deadlock between shareholders?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By structuring the deal upfront: audit, deal structure, warranties, precise drafting, so every commitment is understood before signing.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Several levers exist, to be activated according to the articles and the shareholders&apos; agreement. The preferred first step is an amicable approach: mediation, governance changes, or a negotiated exit of a shareholder through the clauses of the agreement. Court action is a last resort — for example, to have a provisional administrator appointed when the company is paralysed, or to seek dissolution where the deadlock makes it impossible to continue the business. The right choice depends on the circumstances and the objectives of each party. The more the agreement has anticipated these situations (exit clauses, buy-out mechanisms, unblocking provisions), the faster and more controlled the resolution.</div>
             </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What is majority abuse and how is it challenged?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">It is a general-meeting resolution passed contrary to the company&apos;s interests and with the sole aim of benefiting the majority shareholders to the detriment of the minority. Two cumulative conditions must be met: the resolution must be contrary to the company&apos;s interests, and there must be an intentional breach of the principle of equality between shareholders. A classic example is the systematic reservation of profits without economic justification, permanently depriving minority shareholders of dividends. Two remedies are available: annulment of the resolution and an award of damages. The Cour de cassation clarified in 2025 that an action for annulment may be brought against the company alone where no compensation is sought from the majority shareholders. There is also, in mirror image, minority abuse — rarer — where a minority shareholder blocks a decision essential to the company&apos;s survival.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How can a business sale be secured?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By structuring the transaction in advance. This involves a due diligence exercise (legal, accounting, tax, employment), choosing the right deal structure, precise drafting of the transactional documents, and above all, negotiating a warranty of assets and liabilities. The aim is to understand every commitment before signing, on both the seller&apos;s and the buyer&apos;s side. There are many sensitive points: seller&apos;s representations, conditions precedent, non-compete clauses, and price payment terms. A well-prepared deal prevents liabilities arising before the sale from resurfacing afterwards, to the detriment of either party.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What is a warranty of assets and liabilities?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">It is the clause that protects the buyer against unpleasant surprises after completion. Under the warranty of assets and liabilities (garantie d&apos;actif et de passif), the seller undertakes to indemnify the buyer if a liability arising before the sale comes to light afterwards (a tax reassessment, a labour-tribunal claim, a supplier dispute), or if a declared asset turns out to be overvalued. Several parameters are negotiated: the cap, the duration, any step-down mechanism, and the trigger thresholds. These are governed by market practice, not by fixed rules: they vary considerably depending on the balance of power, the sector and the risk profile. To secure payment, part of the price may be placed in escrow or covered by a bank guarantee. Precise drafting of the clause is critical: vague wording offers only illusory protection.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How can a family business be transferred while minimising taxation?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">The principal tool is the Dutreil pact, which allows, subject to conditions, a 75% exemption on the value of the shares transferred for the calculation of gift or inheritance tax (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047623071" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article 787 B of the General Tax Code</a>). The arrangement rests on share-retention undertakings — collective then individual — and the exercise of a management function. It is reserved for companies carrying on an operational business and excludes asset-management activities. Recent debate has centred on potential changes to the regime (including extended retention periods and the exclusion of certain non-business assets), but their exact scope must be verified against the version of the legislation in force at the time of the transaction. Given the complexity and evolving nature of this regime, bespoke advice is essential.</div>
+            </details>
+
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
                 <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for corporate law matters?</span>
@@ -368,7 +453,7 @@ export default function CorporateLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a shareholder dispute, a business sale or a company structuring, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without travelling to Strasbourg.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a shareholder dispute, a business sale or a company structuring, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without needing to travel to Strasbourg.</div>
             </details>
           </div>
         </div>

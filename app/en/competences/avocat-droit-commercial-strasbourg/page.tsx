@@ -188,6 +188,14 @@ const faqJsonLd = {
         "@type": "Answer",
         "text": "Within forty-five days. Cessation of payments arises when the company is unable to meet its current liabilities with its available assets. The director must file a declaration with the court within forty-five days, unless an application to open conciliation proceedings has been made within that period. This is critical: failure to declare within the deadline may constitute a management fault and engage the director's personal liability, though the concrete sanctions depend on the specific facts. In addition, a creditor in principle has two months from the publication of the opening judgment in the BODACC to file its claim. Again, speed protects."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the firm offer video consultations for commercial law matters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For an unpaid invoice, a commercial dispute or insolvency proceedings, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without needing to travel to Strasbourg."
+      }
     }
   ]
 } as const;
@@ -494,6 +502,17 @@ export default function CommercialLawPage() {
                 </svg>
               </summary>
               <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Within forty-five days. Cessation of payments arises when the company is unable to meet its current liabilities with its available assets. The director must file a declaration with the court within forty-five days, unless an application to open conciliation proceedings has been made within that period. This is critical: failure to declare within the deadline may constitute a management fault and engage the director&apos;s personal liability, though the concrete sanctions depend on the specific facts. In addition, a creditor in principle has two months from the publication of the opening judgment in the BODACC to file its claim. Again, speed protects.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for commercial law matters?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For an unpaid invoice, a commercial dispute or insolvency proceedings, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without needing to travel to Strasbourg.</div>
             </details>
           </div>
         </div>

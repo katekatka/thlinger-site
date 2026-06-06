@@ -102,7 +102,15 @@ const faqJsonLd = {
       "name": "Quand rédiger un pacte d'associés ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Idéalement dès la création de la société, ou avant l'entrée d'un nouvel associé. Le pacte organise les rapports entre associés : gouvernance, cession de titres, sortie, et prévient une part importante des conflits ultérieurs."
+        "text": "Idéalement dès la création de la société, ou avant l'entrée d'un nouvel associé. Le pacte organise les rapports entre associés sur des points que les statuts ne traitent pas toujours : gouvernance, conditions de cession des titres, clauses de sortie, de préemption ou d'agrément, protection des minoritaires. Contrairement aux statuts, qui sont publics et déposés au greffe, le pacte reste confidentiel et ne lie que ses signataires, ce qui permet d'y régler des équilibres sensibles. Sa violation engage la responsabilité contractuelle de son auteur. Bien rédigé, il prévient une part importante des conflits et organise à l'avance la sortie d'un associé ou la résolution d'un blocage, au moment où les relations sont encore bonnes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Statuts ou pacte d'associés : quelle différence ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les deux organisent la société, mais sur des plans distincts. Les statuts sont le document fondateur obligatoire, déposé et public : ils fixent la forme sociale, l'objet, le capital, les organes de direction et les règles opposables à tous. Le pacte d'associés est un contrat facultatif et confidentiel, qui ne lie que ses signataires : il affine la gouvernance et organise les relations entre associés (sortie, préemption, droit de suite, engagements de conservation). Point essentiel : le pacte complète les statuts, mais ne les remplace pas. Il ne peut ni les contredire ni écarter une règle impérative, et sa violation n'annule pas une décision sociale conforme aux statuts ; elle ouvre droit à des dommages-intérêts. C'est la cohérence entre les deux documents qui sécurise réellement l'entreprise."
       }
     },
     {
@@ -110,7 +118,15 @@ const faqJsonLd = {
       "name": "Que faire en cas de blocage entre associés ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Plusieurs leviers existent selon les statuts et le pacte : médiation, révision de la gouvernance, sortie négociée d'un associé, ou recours judiciaire en dernier ressort. Le choix dépend des circonstances et des objectifs de chacun."
+        "text": "Plusieurs leviers existent, à actionner selon les statuts et le pacte. On privilégie d'abord les voies amiables : médiation, révision de la gouvernance, ou sortie négociée d'un associé via les clauses du pacte. Le recours judiciaire intervient en dernier ressort, par exemple pour faire désigner un administrateur provisoire lorsque la société est paralysée, ou pour demander la dissolution en cas de mésentente rendant impossible la poursuite de l'activité. Le choix dépend des circonstances et des objectifs de chacun. Plus le pacte a anticipé ces situations (clauses de sortie, de rachat, mécanismes de déblocage), plus la résolution est rapide et maîtrisée."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce qu'un abus de majorité et comment le contester ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "C'est une décision d'assemblée prise contrairement à l'intérêt social et dans l'unique dessein de favoriser les associés majoritaires au détriment des minoritaires. Sa caractérisation suppose deux conditions cumulatives : la contrariété à l'intérêt de la société et la rupture intentionnelle d'égalité entre associés. Exemple classique : la mise en réserve systématique des bénéfices sans justification économique, privant durablement les minoritaires de dividendes. Deux sanctions sont possibles : l'annulation de la délibération et l'octroi de dommages-intérêts. La Cour de cassation a précisé en 2025 que l'action en nullité peut être dirigée contre la seule société lorsqu'aucune indemnisation n'est demandée aux majoritaires. Il existe aussi, en miroir, un abus de minorité, plus rare, lorsqu'un minoritaire bloque une décision essentielle à la survie de la société."
       }
     },
     {
@@ -118,7 +134,23 @@ const faqJsonLd = {
       "name": "Comment sécuriser la cession de mon entreprise ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "En structurant l'opération en amont : audit, choix du montage, garantie d'actif et de passif, et rédaction précise des actes. L'objectif est de comprendre chaque engagement avant de signer."
+        "text": "En structurant l'opération en amont. Cela passe par un audit (juridique, comptable, fiscal, social), le choix du montage adapté, la rédaction précise des actes et, surtout, la négociation d'une garantie d'actif et de passif. L'objectif est de comprendre chaque engagement avant de signer, côté cédant comme côté repreneur. Les points sensibles sont nombreux : déclarations du vendeur, conditions suspensives, clauses de non-concurrence, modalités de paiement du prix. Une opération bien préparée évite que des passifs nés avant la cession ne resurgissent après, au détriment de l'une des parties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce qu'une garantie d'actif et de passif ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "C'est la clause qui protège le repreneur contre les mauvaises surprises postérieures à la cession. Par la garantie d'actif et de passif (GAP), le cédant s'engage à l'indemniser si un passif né avant la vente se révèle après (redressement fiscal, contentieux prud'homal, litige fournisseur), ou si un actif déclaré se révèle surévalué. Plusieurs paramètres se négocient : le plafond, la durée, une éventuelle dégressivité, et les seuils de déclenchement. Ces éléments relèvent des usages de marché et non de règles fixes : ils varient fortement selon le rapport de force, le secteur et le niveau de risque. Pour sécuriser le paiement, une partie du prix peut être placée sous séquestre ou garantie par une caution bancaire. La précision rédactionnelle de la clause est déterminante : une formulation vague offre une protection illusoire."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment transmettre son entreprise familiale en limitant la fiscalité ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le principal outil est le pacte Dutreil, qui permet, sous conditions, une exonération de 75 % de la valeur des titres transmis pour le calcul des droits de donation ou de succession (article 787 B du Code général des impôts). Le dispositif repose sur des engagements de conservation des titres, collectif puis individuel, et sur l'exercice d'une fonction de direction. Il est réservé aux sociétés exerçant une activité opérationnelle et exclut la gestion de patrimoine. Des évolutions du dispositif ont été débattues récemment (notamment un allongement des durées d'engagement et l'exclusion de certains actifs non professionnels), mais leur portée exacte doit être vérifiée dans la version du texte applicable au jour de l'opération. Compte tenu de la complexité et du caractère évolutif de ce régime, un accompagnement sur mesure est indispensable."
       }
     },
     {
@@ -126,7 +158,7 @@ const faqJsonLd = {
       "name": "Le cabinet propose-t-il des consultations en visioconférence en droit des sociétés ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui. Pour un conflit entre associés, une cession d'entreprise ou une structuration de société, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France, sans déplacement à Strasbourg. Réservation directement en ligne."
+        "text": "Oui. Pour un conflit entre associés, une cession d'entreprise ou une structuration de société, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France, sans déplacement à Strasbourg."
       }
     }
   ]
@@ -370,7 +402,18 @@ export default function DroitDesSocietesPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Idéalement dès la création de la société, ou avant l&apos;entrée d&apos;un nouvel associé. Le pacte organise les rapports entre associés : gouvernance, cession de titres, sortie, et prévient une part importante des conflits ultérieurs.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Idéalement dès la création de la société, ou avant l&apos;entrée d&apos;un nouvel associé. Le pacte organise les rapports entre associés sur des points que les statuts ne traitent pas toujours : gouvernance, conditions de cession des titres, clauses de sortie, de préemption ou d&apos;agrément, protection des minoritaires. Contrairement aux statuts, qui sont publics et déposés au greffe, le pacte reste confidentiel et ne lie que ses signataires, ce qui permet d&apos;y régler des équilibres sensibles. Sa violation engage la responsabilité contractuelle de son auteur. Bien rédigé, il prévient une part importante des conflits et organise à l&apos;avance la sortie d&apos;un associé ou la résolution d&apos;un blocage, au moment où les relations sont encore bonnes.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Statuts ou pacte d&apos;associés : quelle différence ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Les deux organisent la société, mais sur des plans distincts. Les statuts sont le document fondateur obligatoire, déposé et public : ils fixent la forme sociale, l&apos;objet, le capital, les organes de direction et les règles opposables à tous. Le pacte d&apos;associés est un contrat facultatif et confidentiel, qui ne lie que ses signataires : il affine la gouvernance et organise les relations entre associés (sortie, préemption, droit de suite, engagements de conservation). Point essentiel : le pacte complète les statuts, mais ne les remplace pas. Il ne peut ni les contredire ni écarter une règle impérative, et sa violation n&apos;annule pas une décision sociale conforme aux statuts ; elle ouvre droit à des dommages-intérêts. C&apos;est la cohérence entre les deux documents qui sécurise réellement l&apos;entreprise.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -381,7 +424,18 @@ export default function DroitDesSocietesPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Plusieurs leviers existent selon les statuts et le pacte : médiation, révision de la gouvernance, sortie négociée d&apos;un associé, ou recours judiciaire en dernier ressort. Le choix dépend des circonstances et des objectifs de chacun.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Plusieurs leviers existent, à actionner selon les statuts et le pacte. On privilégie d&apos;abord les voies amiables : médiation, révision de la gouvernance, ou sortie négociée d&apos;un associé via les clauses du pacte. Le recours judiciaire intervient en dernier ressort, par exemple pour faire désigner un administrateur provisoire lorsque la société est paralysée, ou pour demander la dissolution en cas de mésentente rendant impossible la poursuite de l&apos;activité. Le choix dépend des circonstances et des objectifs de chacun. Plus le pacte a anticipé ces situations (clauses de sortie, de rachat, mécanismes de déblocage), plus la résolution est rapide et maîtrisée.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Qu&apos;est-ce qu&apos;un abus de majorité et comment le contester ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">C&apos;est une décision d&apos;assemblée prise contrairement à l&apos;intérêt social et dans l&apos;unique dessein de favoriser les associés majoritaires au détriment des minoritaires. Sa caractérisation suppose deux conditions cumulatives : la contrariété à l&apos;intérêt de la société et la rupture intentionnelle d&apos;égalité entre associés. Exemple classique : la mise en réserve systématique des bénéfices sans justification économique, privant durablement les minoritaires de dividendes. Deux sanctions sont possibles : l&apos;annulation de la délibération et l&apos;octroi de dommages-intérêts. La Cour de cassation a précisé en 2025 que l&apos;action en nullité peut être dirigée contre la seule société lorsqu&apos;aucune indemnisation n&apos;est demandée aux majoritaires. Il existe aussi, en miroir, un abus de minorité, plus rare, lorsqu&apos;un minoritaire bloque une décision essentielle à la survie de la société.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -392,8 +446,31 @@ export default function DroitDesSocietesPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En structurant l&apos;opération en amont : audit, choix du montage, garantie d&apos;actif et de passif, et rédaction précise des actes. L&apos;objectif est de comprendre chaque engagement avant de signer.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En structurant l&apos;opération en amont. Cela passe par un audit (juridique, comptable, fiscal, social), le choix du montage adapté, la rédaction précise des actes et, surtout, la négociation d&apos;une garantie d&apos;actif et de passif. L&apos;objectif est de comprendre chaque engagement avant de signer, côté cédant comme côté repreneur. Les points sensibles sont nombreux : déclarations du vendeur, conditions suspensives, clauses de non-concurrence, modalités de paiement du prix. Une opération bien préparée évite que des passifs nés avant la cession ne resurgissent après, au détriment de l&apos;une des parties.</div>
             </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Qu&apos;est-ce qu&apos;une garantie d&apos;actif et de passif ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">C&apos;est la clause qui protège le repreneur contre les mauvaises surprises postérieures à la cession. Par la garantie d&apos;actif et de passif (GAP), le cédant s&apos;engage à l&apos;indemniser si un passif né avant la vente se révèle après (redressement fiscal, contentieux prud&apos;homal, litige fournisseur), ou si un actif déclaré se révèle surévalué. Plusieurs paramètres se négocient : le plafond, la durée, une éventuelle dégressivité, et les seuils de déclenchement. Ces éléments relèvent des usages de marché et non de règles fixes : ils varient fortement selon le rapport de force, le secteur et le niveau de risque. Pour sécuriser le paiement, une partie du prix peut être placée sous séquestre ou garantie par une caution bancaire. La précision rédactionnelle de la clause est déterminante : une formulation vague offre une protection illusoire.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Comment transmettre son entreprise familiale en limitant la fiscalité ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Le principal outil est le pacte Dutreil, qui permet, sous conditions, une exonération de 75 % de la valeur des titres transmis pour le calcul des droits de donation ou de succession (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047623071" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article 787 B du Code général des impôts</a>). Le dispositif repose sur des engagements de conservation des titres, collectif puis individuel, et sur l&apos;exercice d&apos;une fonction de direction. Il est réservé aux sociétés exerçant une activité opérationnelle et exclut la gestion de patrimoine. Des évolutions du dispositif ont été débattues récemment (notamment un allongement des durées d&apos;engagement et l&apos;exclusion de certains actifs non professionnels), mais leur portée exacte doit être vérifiée dans la version du texte applicable au jour de l&apos;opération. Compte tenu de la complexité et du caractère évolutif de ce régime, un accompagnement sur mesure est indispensable.</div>
+            </details>
+
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
                 <span className="font-serif text-[1.0625rem] leading-snug text-white">Le cabinet propose-t-il des consultations en visioconférence en droit des sociétés ?</span>
