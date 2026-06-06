@@ -93,6 +93,19 @@ const faqGroups: FaqGroup[] = [
           </p>
         ),
       },
+      {
+        question: "Est-il possible de payer les honoraires en plusieurs fois ?",
+        answer: (
+          <p>
+            Oui. Le cabinet peut proposer un échelonnement des honoraires adapté à la situation
+            du client, notamment lorsque la mission porte sur un dossier de longue durée ou
+            implique un engagement financier significatif. Les modalités de paiement — montant,
+            fréquence et calendrier des versements — sont définies dans la convention
+            d&apos;honoraires et ajustées en fonction des contraintes et des besoins du client.
+            Cette possibilité est abordée dès le premier entretien.
+          </p>
+        ),
+      },
     ],
   },
   {
@@ -231,6 +244,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "Les honoraires d'avocat sont en principe soumis à la TVA au taux de 20 % en France. Certaines situations particulières peuvent relever d'un régime spécifique, notamment dans le cadre de l'aide juridictionnelle ou selon le régime fiscal applicable au cabinet.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Est-il possible de payer les honoraires en plusieurs fois ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui. Le cabinet peut proposer un échelonnement des honoraires adapté à la situation du client, notamment lorsque la mission porte sur un dossier de longue durée ou implique un engagement financier significatif. Les modalités de paiement — montant, fréquence et calendrier des versements — sont définies dans la convention d'honoraires et ajustées en fonction des contraintes et des besoins du client. Cette possibilité est abordée dès le premier entretien.",
       },
     },
     {

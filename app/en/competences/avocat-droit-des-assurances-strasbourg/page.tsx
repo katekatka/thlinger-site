@@ -62,10 +62,26 @@ const faqJsonLd = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What if the insurer denies cover?",
+      "name": "What should I do if the insurer refuses cover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Analyze the reason against the policy clauses. A denial is not final and can be challenged when it rests on a questionable reading."
+        "text": "A denial of cover is never automatic. The first step is to check the stated reason against the exact policy clauses and applicable rules: exclusion, forfeiture, breach of a disclosure obligation. Many refusals rest on an extensive or questionable reading of a clause — yet an exclusion clause is only valid if it is express and specific (article L. 113-1 of the Insurance Code). The right response is a written, reasoned challenge based on the policy terms and claim documents, before considering the ombudsman or litigation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the time limit to challenge a denial of cover or claim compensation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two years, as a rule. Almost all claims arising from an insurance contract are subject to a two-year limitation period running from the event giving rise to the right to compensation (article L. 114-1 of the Insurance Code) — far shorter than the standard five-year period under general law. Note: a simple email or letter exchange does not suspend this period. Only a registered letter, the appointment of an expert, or a court summons interrupts it. Many policyholders lose their rights because the insurer lets time run — prompt action is essential."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the insurer rely on an exclusion clause to deny cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not under all circumstances. An exclusion clause is only valid if it is express and specific (article L. 113-1 of the Insurance Code): it must identify precisely what is excluded, leaving no room for interpretation. A vague ground such as the policyholder's negligence is in practice contestable. Moreover, if the policy does not reproduce the grounds for interrupting the limitation period, the insurer cannot later invoke the two-year time bar. A denial based on a questionable clause nearly always warrants review before being accepted."
       }
     },
     {
@@ -73,7 +89,7 @@ const faqJsonLd = {
       "name": "Should I have support during an expert assessment?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The assessment strongly shapes compensation; support lets you present arguments and follow operations knowingly."
+        "text": "The assessment strongly shapes compensation: it is the assessment that values the retained loss, and it is driven by the insurer. The expert it appoints is paid by it. In the event of a disagreement, the policyholder may request a counter-assessment and appoint their own expert, whose fees remain their responsibility unless the policy includes an expert fees cover. If the disagreement persists, a third expert is appointed and their findings are binding on the parties, with costs shared unless a specific clause provides otherwise. Having support allows you to present your case, follow the proceedings and secure a framework that will weigh heavily on the outcome."
       }
     },
     {
@@ -81,7 +97,31 @@ const faqJsonLd = {
       "name": "How do I challenge insufficient compensation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By documenting the real loss and testing the insurer's valuation against the actual damage, through negotiation and, if needed, litigation."
+        "text": "By testing the insurer's valuation against the reality of the damage, with supporting documents: estimates, invoices, photographs, technical reports. The effective route starts with a documented counter-assessment that sets out a reasoned valuation against the insurer's. If the disagreement continues, a third-party assessment decides, then mediation or litigation if needed. Any challenge remains subject to the two-year time limit. It is the strength of the file, not the apparent balance of power, that determines the final amount."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What recourse do I have in a dispute with my insurer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recourse is graduated. You start with a written complaint to the company's customer service, then, if unsuccessful, you can refer the matter free of charge to the Médiateur de l'assurance, an independent body. In parallel, a counter-assessment allows the valuation gap to be examined. If no amicable resolution is reached, legal action remains open, always subject to the two-year time limit. Each step must be documented, as the strength of the file directly influences the outcome."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I sign the settlement receipt or protocol proposed by the insurer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not without reading it carefully. A settlement receipt or transaction protocol frequently contains a clause by which the policyholder waives all further recourse. If damage appears later, it can no longer be claimed. Before signing, it is prudent to verify that the proposed compensation covers the full loss, including its future effects. A prior review, with professional assistance if needed, prevents unknowingly waiving rights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the firm offer video consultations for insurance matters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For a denial of cover, an insurance dispute or an expert assessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, with no need to travel to Strasbourg."
       }
     }
   ]
@@ -294,13 +334,35 @@ export default function InsuranceLawPage() {
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">What if the insurer denies cover?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What should I do if the insurer refuses cover?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Analyze the reason against the policy clauses. A denial is not final and can be challenged when it rests on a questionable reading.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">A denial of cover is never automatic. The first step is to check the stated reason against the exact policy clauses and applicable rules: exclusion, forfeiture, breach of a disclosure obligation. Many refusals rest on an extensive or questionable reading of a clause — yet an exclusion clause is only valid if it is express and specific (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006791984/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 113-1 of the Insurance Code</a>). The right response is a written, reasoned challenge based on the policy terms and claim documents, before considering the ombudsman or litigation.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What is the time limit to challenge a denial of cover or claim compensation?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Two years, as a rule. Almost all claims arising from an insurance contract are subject to a two-year limitation period running from the event giving rise to the right to compensation (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044607740" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 114-1 of the Insurance Code</a>) — far shorter than the standard five-year period under general law. Note: a simple email or letter exchange does not suspend this period. Only a registered letter, the appointment of an expert, or a court summons interrupts it. Many policyholders lose their rights because the insurer lets time run — prompt action is essential.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Can the insurer rely on an exclusion clause to deny cover?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Not under all circumstances. An exclusion clause is only valid if it is express and specific (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006791984/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 113-1 of the Insurance Code</a>): it must identify precisely what is excluded, leaving no room for interpretation. A vague ground such as the policyholder&apos;s &quot;negligence&quot; is in practice contestable. Moreover, if the policy does not reproduce the grounds for interrupting the limitation period, the insurer cannot later invoke the two-year time bar. A denial based on a questionable clause nearly always warrants review before being accepted.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -311,7 +373,7 @@ export default function InsuranceLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">The assessment strongly shapes compensation; support lets you present arguments and follow operations knowingly.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">The assessment strongly shapes compensation: it is the assessment that values the retained loss, and it is driven by the insurer. The expert it appoints is paid by it. In the event of a disagreement, the policyholder may request a counter-assessment and appoint their own expert, whose fees remain their responsibility unless the policy includes an &quot;expert fees&quot; cover. If the disagreement persists, a third expert is appointed and their findings are binding on the parties, with costs shared unless a specific clause provides otherwise. Having support allows you to present your case, follow the proceedings and secure a framework that will weigh heavily on the outcome.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -322,17 +384,39 @@ export default function InsuranceLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By documenting the real loss and testing the insurer&apos;s valuation against the actual damage, through negotiation and, if needed, litigation.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By testing the insurer&apos;s valuation against the reality of the damage, with supporting documents: estimates, invoices, photographs, technical reports. The effective route starts with a documented counter-assessment that sets out a reasoned valuation against the insurer&apos;s. If the disagreement continues, a third-party assessment decides, then mediation or litigation if needed. Any challenge remains subject to the two-year time limit. It is the strength of the file, not the apparent balance of power, that determines the final amount.</div>
             </details>
+
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for insurance disputes?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What recourse do I have in a dispute with my insurer?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a denial of cover, an insurance dispute or an expert assessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Recourse is graduated. You start with a written complaint to the company&apos;s customer service, then, if unsuccessful, you can refer the matter free of charge to the Médiateur de l&apos;assurance, an independent body. In parallel, a counter-assessment allows the valuation gap to be examined. If no amicable resolution is reached, legal action remains open, always subject to the two-year time limit. Each step must be documented, as the strength of the file directly influences the outcome.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should I sign the settlement receipt or protocol proposed by the insurer?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Not without reading it carefully. A settlement receipt or transaction protocol frequently contains a clause by which the policyholder waives all further recourse. If damage appears later, it can no longer be claimed. Before signing, it is prudent to verify that the proposed compensation covers the full loss, including its future effects. A prior review, with professional assistance if needed, prevents unknowingly waiving rights.</div>
+            </details>
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for insurance matters?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a denial of cover, an insurance dispute or an expert assessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, with no need to travel to Strasbourg.</div>
             </details>
           </div>
         </div>

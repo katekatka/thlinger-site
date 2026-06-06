@@ -427,7 +427,7 @@ export default async function AProposPage() {
                 construction.
               </p>
               <p>
-                En janvier 2024, j&apos;ai créé THALINGER Avocat.
+                Le 13 janvier 2022, j&apos;ai créé THALINGER Avocat.
               </p>
               <p>
                 Aujourd&apos;hui, le cabinet réunit ces expériences au service d&apos;un accompagnement fondé

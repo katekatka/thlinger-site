@@ -81,7 +81,7 @@ const faqGroups: FaqGroup[] = [
         ),
       },
       {
-        question: "Are legal fees subject to VAT?",
+        question: “Are legal fees subject to VAT?”,
         answer: (
           <p>
             Legal fees are in principle subject to VAT at the standard rate of 20&nbsp;% in
@@ -90,10 +90,23 @@ const faqGroups: FaqGroup[] = [
           </p>
         ),
       },
+      {
+        question: “Can fees be paid in instalments?”,
+        answer: (
+          <p>
+            Yes. The firm can offer a staged payment schedule tailored to the client&apos;s
+            situation, particularly where the matter spans a longer period or involves a
+            significant financial commitment. The payment terms — amount, frequency and
+            schedule of instalments — are set out in the fee agreement and adjusted to
+            the client&apos;s constraints and needs. This option is discussed at the initial
+            meeting.
+          </p>
+        ),
+      },
     ],
   },
   {
-    title: "Coverage and financial assistance",
+    title: “Coverage and financial assistance”,
     items: [
       {
         question: "Can my legal expenses insurance cover the fees?",
@@ -191,6 +204,11 @@ const faqJsonLd = {
       "@type": "Question",
       name: "Are legal fees subject to VAT?",
       acceptedAnswer: { "@type": "Answer", text: "Legal fees are in principle subject to VAT at the standard rate of 20% in France. Certain situations may fall under a different regime — in particular in the context of legal aid, or depending on the firm's applicable tax status." },
+    },
+    {
+      "@type": "Question",
+      name: "Can fees be paid in instalments?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. The firm can offer a staged payment schedule tailored to the client's situation, particularly where the matter spans a longer period or involves a significant financial commitment. The payment terms — amount, frequency and schedule of instalments — are set out in the fee agreement and adjusted to the client's constraints and needs. This option is discussed at the initial meeting." },
     },
     {
       "@type": "Question",

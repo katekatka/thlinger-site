@@ -436,7 +436,7 @@ export default async function AboutPage() {
                 May 2026, covering employment law, real estate law, and construction law.
               </p>
               <p>
-                In January 2024, I founded THALINGER Avocat.
+                On 13 January 2022, I founded THALINGER Avocat.
               </p>
               <p>
                 Today, the firm brings these experiences together in service of an approach built on

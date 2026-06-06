@@ -1,7 +1,11 @@
 ﻿﻿import type { Metadata } from "next";
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
+import { ConsultationSignal } from "@/components/ConsultationSignal";
+
 export const metadata: Metadata = {
+  title: "Real Estate & Construction Lawyer in Strasbourg | THALINGER",
+  description: "Real estate and construction lawyer in Strasbourg. Commercial leases, unpaid rent, eviction indemnity, construction defects, ten-year warranty, VEFA. THALINGER.",
   alternates: {
     canonical: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-immobilier-construction-strasbourg",
     languages: {
@@ -74,7 +78,7 @@ const faqJsonLd = {
       "name": "What should I do about defects after handover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Identify the applicable warranty (completion, two-year, ten-year), serve formal notice, and activate the structural-damage insurance. The amicable route is often tried before litigation."
+        "text": "First identify the applicable warranty: completion guarantee (one year), two-year warranty for equipment, or the ten-year decennial warranty for defects affecting structural integrity or rendering the building unfit for purpose. Serve formal written notice on the builder and file a claim with the structural-damage insurer (assurance dommages-ouvrage), which pre-finances repairs without waiting for liability to be determined. An amicable route is often preferred, but an expert assessment should be commissioned as soon as the defect is serious or contested."
       }
     },
     {
@@ -82,7 +86,7 @@ const faqJsonLd = {
       "name": "How do I handle a commercial-lease dispute?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By reviewing the lease and each party's obligations, then choosing between negotiation and action depending on the stakes and the relationship."
+        "text": "Start by analysing the lease and each party's obligations: rent, service charges, works, condition report, and sensitive clauses such as the termination clause. Most disputes are resolved through negotiation or formal notice, which is faster and less costly than litigation. However, certain deadlines are mandatory - one month to respond to a payment demand, two years to contest a notice to quit - and often determine the outcome. The right reflex is to qualify the situation before acting."
       }
     },
     {
@@ -90,7 +94,55 @@ const faqJsonLd = {
       "name": "Should a lawyer frame my real-estate project?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Framing contracts and responsibilities upfront strongly reduces the risk of disputes during and after the works."
+        "text": "Framing contracts and responsibilities upfront - VEFA off-plan sales, works contracts, warranties, insurance, and project structure - strongly reduces the risk of disputes during and after the works. It is also the time to verify each party's commitments and to allocate risks clearly. A precise clause always costs less than litigation. The most useful intervention is preventive, not curative."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do about unpaid rent in a commercial lease?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most effective route runs through the termination clause in the lease. The landlord has a bailiff serve a payment demand giving the tenant one month to pay all sums due in full - partial payment is not sufficient and the deadline cannot be shortened. If nothing is settled within that month, the landlord applies to the court to have the termination declared and to begin eviction proceedings. Unpaid rent may be claimed up to a five-year limitation period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I obtain a lease termination indemnity if renewal is refused?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When the landlord refuses to renew the lease, they must in principle pay an eviction indemnity equal to the loss suffered (article L. 145-14 of the French Commercial Code): value of the business, removal costs, re-establishment and transfer costs. The tenant must meet the conditions for the right to renewal and, if no indemnity is offered, bring a claim before the court within two years - after that, the right is lost. Until payment, the tenant may remain in occupation. The main issue is usually fixing the amount."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the termination clause of a commercial lease be contested?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Receiving a payment demand does not make termination final. The tenant may settle within the month, apply to the court for a payment extension (article L. 145-41 of the Commercial Code, combined with the general power under article 1343-5 of the Civil Code), challenge an irregular demand, or raise a defence of non-performance if the landlord has itself breached its obligations - for example by failing to maintain the premises fit for use. The Cour de cassation confirmed that this last defence remains available even without a formal extension request within the month (Cass. 3e civ., 5 March 2026, No 24-15.820). A rapid response is essential."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Alsace-Moselle land register affect my property purchase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In Alsace and Moselle, your property right does not become enforceable against third parties until it is registered in the land register (livre foncier), a register maintained by a judge. The notarial deed binds you to the seller, but registration is what makes your position unassailable against a bank or another buyer. This timing must be planned into the transaction schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I am inheriting property in Alsace - do I have specific formalities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The heir must register their property right in the land register, unless a deed is drawn up within ten months of the death. An estate not updated over several generations creates situations that are very difficult to unblock. Dealing with this registration promptly avoids costly delays later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the firm offer video consultations for real-estate and construction matters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For construction defects, a commercial-lease dispute or a real-estate project, the firm offers a free 30-minute video consultation with no commitment. This remote consultation is available from anywhere in France, with no need to travel to Strasbourg. Booking is done directly online."
       }
     }
   ]
@@ -148,6 +200,7 @@ export default function RealEstateLawPage() {
               construction professional, every stage of a project creates obligations that
               are better anticipated than discovered in litigation.
             </p>
+            <ConsultationSignal lang="en" />
           </AnimatedSection>
         </div>
       </section>
@@ -394,6 +447,17 @@ export default function RealEstateLawPage() {
                 </svg>
               </summary>
               <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By reviewing the lease and each party&apos;s obligations, then choosing between negotiation and action depending on the stakes and the relationship.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Can the termination clause of a commercial lease be contested?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. Receiving a payment demand does not make termination final. The tenant may settle within the month, apply to the court for a payment extension (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032042713" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 145-41 of the Commercial Code</a>, combined with the general power under <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032035267" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article 1343-5 of the Civil Code</a>), challenge an irregular demand, or raise a defence of non-performance if the landlord has itself breached its obligations - for example by failing to maintain the premises fit for use. The Cour de cassation confirmed that this last defence remains available even without a formal extension request within the month (<a href="https://www.legifrance.gouv.fr/juri/id/JURITEXT000053679063" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">Cass. 3e civ., 5 March 2026, No 24-15.820</a>). A rapid response is essential.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
