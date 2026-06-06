@@ -1,7 +1,7 @@
 ﻿import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 import { FaqAccordion, type FaqGroup } from "@/components/FaqAccordion";
 
-// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ Data â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 
 const principles = [
   {
@@ -44,24 +44,24 @@ const faqGroups: FaqGroup[] = [
             <ul className="space-y-4">
               <li>
                 <span className="font-semibold text-navy">Fixed fee</span>
-                {" "}â€” for engagements with a defined scope such as company formation,
+                {" "}â€" for engagements with a defined scope such as company formation,
                 contract drafting, or a targeted legal audit. The client knows the exact
                 cost before work begins.
               </li>
               <li>
                 <span className="font-semibold text-navy">Hourly rate</span>
-                {" "}â€” for advisory or litigation matters where the scope may evolve.
+                {" "}â€" for advisory or litigation matters where the scope may evolve.
                 The applicable rate is communicated from the outset, with transparent
                 and regular reporting of time spent.
               </li>
               <li>
                 <span className="font-semibold text-navy">Success fee</span>
-                {" "}â€” a supplementary fee, agreed alongside a base fee, where a gain
+                {" "}â€" a supplementary fee, agreed alongside a base fee, where a gain
                 obtained or a saving achieved warrants additional remuneration.
               </li>
               <li>
                 <span className="font-semibold text-navy">Retainer</span>
-                {" "}â€” for companies requiring regular legal support and a consistent
+                {" "}â€" for companies requiring regular legal support and a consistent
                 point of contact over time. The terms of engagement are tailored to
                 the operational needs of the director and the business.
               </li>
@@ -81,17 +81,17 @@ const faqGroups: FaqGroup[] = [
         ),
       },
       {
-        question: “Are legal fees subject to VAT?”,
+        question: "Are legal fees subject to VAT?",
         answer: (
           <p>
             Legal fees are in principle subject to VAT at the standard rate of 20&nbsp;% in
-            France. Certain situations may fall under a different regime â€” in particular
+            France. Certain situations may fall under a different regime â€" in particular
             in the context of legal aid, or depending on the firm&apos;s applicable tax status.
           </p>
         ),
       },
       {
-        question: “Can fees be paid in instalments?”,
+        question: "Can fees be paid in instalments?",
         answer: (
           <p>
             Yes. The firm can offer a staged payment schedule tailored to the client&apos;s
@@ -106,7 +106,7 @@ const faqGroups: FaqGroup[] = [
     ],
   },
   {
-    title: “Coverage and financial assistance”,
+    title: "Coverage and financial assistance",
     items: [
       {
         question: "Can my legal expenses insurance cover the fees?",
@@ -115,7 +115,7 @@ const faqGroups: FaqGroup[] = [
             <p className="mb-4">
               The firm systematically checks whether the client holds legal expenses
               insurance that may cover all or part of the lawyer&apos;s fees. This cover is
-              often included in standard insurance contracts â€” home, motor, public
+              often included in standard insurance contracts â€" home, motor, public
               liability, and others.
             </p>
             <p>
@@ -179,7 +179,7 @@ const faqGroups: FaqGroup[] = [
   },
 ];
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ Page â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -265,7 +265,7 @@ export default function FeesPage() {
 
       <div className="bg-gold" style={{ height: "2px" }} />
 
-      {/* 2. PRINCIPLES â€” navy */}
+      {/* 2. PRINCIPLES â€" navy */}
       <section className="bg-navy py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection className="mb-16">
