@@ -68,7 +68,15 @@ const faqJsonLd = {
       "name": "Peut-on contester un engagement de caution ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui, selon sa validité, le respect des obligations d'information de la banque et sa proportionnalité au regard des revenus et du patrimoine de la caution."
+        "text": "Oui, sur trois terrains. Sur la forme d'abord : depuis la réforme du 1er janvier 2022, les règles sont regroupées dans le Code civil et les anciennes mentions manuscrites très strictes ont été simplifiées, mais un formalisme subsiste et son non-respect reste sanctionné. Sur le fond ensuite : la proportionnalité de l'engagement au regard des revenus et du patrimoine de la caution. Sur les obligations de la banque enfin : devoir de mise en garde, information annuelle, information sur le premier incident de paiement. L'analyse de l'acte est donc décisive avant toute réponse à l'établissement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Une caution disproportionnée peut-elle être annulée ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plus exactement, elle est réduite. Pour les cautionnements signés depuis le 1er janvier 2022, l'article 2300 du Code civil prévoit que si l'engagement était, lors de sa conclusion, manifestement disproportionné aux revenus et au patrimoine de la caution, il est réduit au montant qu'elle pouvait raisonnablement garantir à cette date. La disproportion s'apprécie uniquement au jour de la signature, et l'ancienne règle du « retour à meilleure fortune » a disparu : la banque ne peut plus invoquer une amélioration ultérieure de la situation. À noter : en pratique, c'est à la caution qu'il revient de prouver la disproportion, ce qui suppose de reconstituer sa situation patrimoniale à l'époque."
       }
     },
     {
@@ -76,7 +84,15 @@ const faqJsonLd = {
       "name": "Quand engager la responsabilité d'une banque ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lorsqu'un manquement de l'établissement (devoir de mise en garde, de conseil, d'information) a causé un préjudice. L'appréciation dépend des circonstances."
+        "text": "Lorsqu'un manquement de l'établissement a causé un préjudice. Les fondements les plus fréquents sont le manquement au devoir de mise en garde envers un emprunteur ou une caution, le défaut de conseil ou d'information, le soutien abusif et la rupture brutale de concours. La réforme de 2021 a étendu la protection à toutes les cautions personnes physiques, mais l'intensité du devoir de mise en garde dépend toujours du profil de la caution et des informations dont elle disposait. Point essentiel : il faut démontrer un préjudice, souvent analysé comme la perte de chance de ne pas s'engager."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "La banque peut-elle rompre un crédit ou un découvert du jour au lendemain ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non, sauf exceptions strictes. Pour tout concours à durée indéterminée autre qu'occasionnel, l'article L. 313-12 du Code monétaire et financier impose une notification écrite et le respect d'un préavis fixé à l'octroi, qui ne peut être inférieur à soixante jours. La banque n'en est dispensée qu'en cas de comportement gravement répréhensible de l'entreprise ou de situation irrémédiablement compromise. Si elle ne respecte pas ces règles, elle engage sa responsabilité et s'expose à des dommages-intérêts pour le préjudice causé ; le rétablissement du concours, lui, reste rare en pratique. Une rupture brutale mérite donc presque toujours un examen."
       }
     },
     {
@@ -84,15 +100,31 @@ const faqJsonLd = {
       "name": "Comment se défendre face à un appel en garantie ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "En analysant l'acte, la procédure et la proportionnalité de l'engagement avant toute réponse à l'établissement."
+        "text": "Avant toute réponse à la banque, plusieurs vérifications s'imposent : l'acte de cautionnement et ses mentions, la régularité de la procédure d'appel, et la proportionnalité de l'engagement à la date de signature. Il faut aussi contrôler le respect par la banque de ses obligations d'information : l'information annuelle de la caution (article 2302 du Code civil) et l'information sur le premier incident de paiement, dont le défaut peut entraîner la déchéance des intérêts. Répondre ou payer dans la précipitation fait souvent perdre ces moyens. La stratégie, contester, négocier une réduction ou demander des délais, se décide après cet examen."
       }
     },
     {
       "@type": "Question",
-      "name": "Le cabinet propose-t-il des consultations en visioconférence en droit bancaire et financier ?",
+      "name": "Que faire en cas de fraude bancaire ou d'opération non autorisée ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui. Pour un contentieux bancaire, une caution contestée ou une rupture de financement, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France. Réservation directement en ligne."
+        "text": "En cas d'opération de paiement non autorisée, la banque doit en principe rembourser rapidement le client (cadre issu de la directive DSP2 et du Code monétaire et financier). Le client peut toutefois supporter une franchise, en principe jusqu'à 50 euros. Cette protection tombe en cas de fraude ou de négligence grave de sa part, par exemple la communication volontaire de ses codes : la banque peut alors refuser le remboursement. Face à une fraude au président ou un virement frauduleux, le réflexe est de signaler l'opération sans délai et par écrit, puis de réunir les preuves. L'analyse porte sur ce que la banque aurait dû détecter et sur le partage éventuel des responsabilités."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien de temps a-t-on pour agir contre sa banque ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En matière commerciale, l'action se prescrit en principe par cinq ans (article L. 110-4 du Code de commerce). Mais le point de départ varie selon la nature de l'action, ce qui est souvent déterminant : réalisation du dommage, connaissance du manquement, ou date de l'appel en garantie. En matière de cautionnement, certaines actions suivent des logiques propres, parfois liées à l'exigibilité de la dette principale. Ces règles étant techniques et lourdes de conséquences, mieux vaut faire vérifier sa situation tôt plutôt que de laisser un délai s'écouler."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le cabinet propose-t-il des consultations en visioconférence en droit bancaire ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Pour un contentieux bancaire, une caution contestée ou une rupture de financement, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France, sans déplacement à Strasbourg."
       }
     }
   ]
@@ -335,7 +367,18 @@ export default function DroitBancaireFinancierPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui, selon sa validité, le respect des obligations d&apos;information de la banque et sa proportionnalité au regard des revenus et du patrimoine de la caution.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui, sur trois terrains. Sur la forme d&apos;abord : depuis la réforme du 1er janvier 2022, les règles sont regroupées dans le Code civil et les anciennes mentions manuscrites très strictes ont été simplifiées, mais un formalisme subsiste et son non-respect reste sanctionné. Sur le fond ensuite : la proportionnalité de l&apos;engagement au regard des revenus et du patrimoine de la caution. Sur les obligations de la banque enfin : devoir de mise en garde, information annuelle, information sur le premier incident de paiement. L&apos;analyse de l&apos;acte est donc décisive avant toute réponse à l&apos;établissement.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Une caution disproportionnée peut-elle être annulée ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Plus exactement, elle est réduite. Pour les cautionnements signés depuis le 1er janvier 2022, l&apos;<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071221" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article 2300 du Code civil</a> prévoit que si l&apos;engagement était, lors de sa conclusion, manifestement disproportionné aux revenus et au patrimoine de la caution, il est réduit au montant qu&apos;elle pouvait raisonnablement garantir à cette date. La disproportion s&apos;apprécie uniquement au jour de la signature, et l&apos;ancienne règle du « retour à meilleure fortune » a disparu : la banque ne peut plus invoquer une amélioration ultérieure de la situation. À noter : en pratique, c&apos;est à la caution qu&apos;il revient de prouver la disproportion, ce qui suppose de reconstituer sa situation patrimoniale à l&apos;époque.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -346,7 +389,18 @@ export default function DroitBancaireFinancierPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Lorsqu&apos;un manquement de l&apos;établissement (devoir de mise en garde, de conseil, d&apos;information) a causé un préjudice. L&apos;appréciation dépend des circonstances.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Lorsqu&apos;un manquement de l&apos;établissement a causé un préjudice. Les fondements les plus fréquents sont le manquement au devoir de mise en garde envers un emprunteur ou une caution, le défaut de conseil ou d&apos;information, le soutien abusif et la rupture brutale de concours. La réforme de 2021 a étendu la protection à toutes les cautions personnes physiques, mais l&apos;intensité du devoir de mise en garde dépend toujours du profil de la caution et des informations dont elle disposait. Point essentiel : il faut démontrer un préjudice, souvent analysé comme la perte de chance de ne pas s&apos;engager.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">La banque peut-elle rompre un crédit ou un découvert du jour au lendemain ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Non, sauf exceptions strictes. Pour tout concours à durée indéterminée autre qu&apos;occasionnel, l&apos;<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 313-12 du Code monétaire et financier</a> impose une notification écrite et le respect d&apos;un préavis fixé à l&apos;octroi, qui ne peut être inférieur à soixante jours. La banque n&apos;en est dispensée qu&apos;en cas de comportement gravement répréhensible de l&apos;entreprise ou de situation irrémédiablement compromise. Si elle ne respecte pas ces règles, elle engage sa responsabilité et s&apos;expose à des dommages-intérêts pour le préjudice causé ; le rétablissement du concours, lui, reste rare en pratique. Une rupture brutale mérite donc presque toujours un examen.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -357,7 +411,29 @@ export default function DroitBancaireFinancierPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En analysant l&apos;acte, la procédure et la proportionnalité de l&apos;engagement avant toute réponse à l&apos;établissement.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Avant toute réponse à la banque, plusieurs vérifications s&apos;imposent : l&apos;acte de cautionnement et ses mentions, la régularité de la procédure d&apos;appel, et la proportionnalité de l&apos;engagement à la date de signature. Il faut aussi contrôler le respect par la banque de ses obligations d&apos;information : l&apos;information annuelle de la caution (<a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150566/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article 2302 du Code civil</a>) et l&apos;information sur le premier incident de paiement, dont le défaut peut entraîner la déchéance des intérêts. Répondre ou payer dans la précipitation fait souvent perdre ces moyens. La stratégie, contester, négocier une réduction ou demander des délais, se décide après cet examen.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Que faire en cas de fraude bancaire ou d&apos;opération non autorisée ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En cas d&apos;opération de paiement non autorisée, la banque doit en principe rembourser rapidement le client (cadre issu de la <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031878407/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">directive DSP2</a> et du Code monétaire et financier). Le client peut toutefois supporter une franchise, en principe jusqu&apos;à 50 euros. Cette protection tombe en cas de fraude ou de négligence grave de sa part, par exemple la communication volontaire de ses codes : la banque peut alors refuser le remboursement. Face à une fraude au président ou un virement frauduleux, le réflexe est de signaler l&apos;opération sans délai et par écrit, puis de réunir les preuves. L&apos;analyse porte sur ce que la banque aurait dû détecter et sur le partage éventuel des responsabilités.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Combien de temps a-t-on pour agir contre sa banque ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En matière commerciale, l&apos;action se prescrit en principe par cinq ans (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027725867" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 110-4 du Code de commerce</a>). Mais le point de départ varie selon la nature de l&apos;action, ce qui est souvent déterminant : réalisation du dommage, connaissance du manquement, ou date de l&apos;appel en garantie. En matière de cautionnement, certaines actions suivent des logiques propres, parfois liées à l&apos;exigibilité de la dette principale. Ces règles étant techniques et lourdes de conséquences, mieux vaut faire vérifier sa situation tôt plutôt que de laisser un délai s&apos;écouler.</div>
             </details>
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">

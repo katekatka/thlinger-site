@@ -65,7 +65,15 @@ const faqJsonLd = {
       "name": "Can a personal guarantee be challenged?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, depending on its validity, the bank's disclosure duties, and its proportionality to the guarantor's income and assets."
+        "text": "Yes, on three grounds. First, as to form: since the reform of 1 January 2022, the rules have been consolidated in the Civil Code and the strict handwritten-statement requirements have been simplified, though formal requirements remain and non-compliance is still sanctioned. Second, on the merits: the proportionality of the commitment to the guarantor's income and assets. Third, the bank's own obligations: the duty to warn, annual information, and notification of the first missed payment. Analysing the instrument is therefore decisive before making any response to the institution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a disproportionate guarantee be set aside?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "More precisely, it is reduced. For guarantees signed since 1 January 2022, article 2300 of the Civil Code provides that if the commitment was, at the time of signature, manifestly disproportionate to the guarantor's income and assets, it is reduced to the amount the guarantor could reasonably have undertaken at that date. Disproportion is assessed solely at the date of signature, and the old rule of return to better fortune has gone: the bank can no longer rely on a subsequent improvement in the guarantor's situation. In practice, it is for the guarantor to prove the disproportion, which requires reconstructing their financial position at the time."
       }
     },
     {
@@ -73,7 +81,15 @@ const faqJsonLd = {
       "name": "When can a bank be held liable?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When a failing by the institution (duty to warn, advise, inform) has caused loss, assessed on the circumstances."
+        "text": "When a failing by the institution has caused loss. The most common grounds are breach of the duty to warn a borrower or guarantor, failure to advise or inform, reckless support of an insolvent business, and abrupt termination of a credit facility. The 2021 reform extended protection to all individual guarantors, but the intensity of the duty to warn still depends on the guarantor's profile and the information available to them. The key point: loss must be demonstrated — often analysed as the lost chance of not having entered into the commitment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a bank cancel a credit facility overnight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, except in strictly defined circumstances. For any open-ended facility other than an occasional one, article L. 313-12 of the Monetary and Financial Code requires written notice and a minimum notice period set at the time of grant, which cannot be less than sixty days. The bank is released from this obligation only where the business has engaged in seriously blameworthy conduct or its situation is irretrievably compromised. If these rules are not observed, the bank incurs liability and may be ordered to pay damages; reinstatement of the facility, however, remains rare in practice. An abrupt termination therefore nearly always warrants review."
       }
     },
     {
@@ -81,7 +97,31 @@ const faqJsonLd = {
       "name": "How do I respond to a call on a guarantee?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By analyzing the instrument, the procedure, and the proportionality of the commitment before replying to the institution."
+        "text": "Before making any response to the bank, several checks are essential: the guarantee instrument and its required statements, the regularity of the call procedure, and the proportionality of the commitment at the date of signature. The bank's information obligations must also be verified: the annual notice to the guarantor (article 2302 of the Civil Code) and the notification of the first missed payment, the absence of which may result in the bank forfeiting accrued interest. Responding or paying in haste often forfeits these defences. The strategy — challenge, negotiate a reduction, or seek time to pay — is decided after this review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do in the event of bank fraud or an unauthorised transaction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Where a payment transaction is unauthorised, the bank is in principle required to reimburse the customer promptly (under the framework of the PSD2 Directive and the Monetary and Financial Code). The customer may, however, bear an excess, in principle up to 50 euros. This protection is lost where the fraud or gross negligence is attributable to the customer — for example, voluntarily disclosing access codes — in which case the bank may refuse reimbursement. When facing a CEO fraud or fraudulent transfer, the immediate step is to report the transaction without delay and in writing, then gather evidence. The analysis focuses on what the bank should have detected and on any sharing of liability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do I have to bring a claim against my bank?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In commercial matters, the general limitation period is five years (article L. 110-4 of the Commercial Code). However, the start date varies depending on the nature of the claim — often a decisive point: the date the loss occurred, knowledge of the breach, or the date of the call on the guarantee. In guarantee matters, some actions follow their own rules, sometimes linked to when the principal debt fell due. These rules are technical and carry serious consequences; it is therefore better to have your position reviewed early rather than let time run."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the firm offer video consultations for banking and finance matters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For a banking dispute, a disputed guarantee or a credit withdrawal, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, with no need to travel to Strasbourg."
       }
     }
   ]
@@ -301,7 +341,18 @@ export default function BankingFinancialLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes, depending on its validity, the bank&apos;s disclosure duties, and its proportionality to the guarantor&apos;s income and assets.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes, on three grounds. First, as to form: since the reform of 1 January 2022, the rules have been consolidated in the Civil Code and the strict handwritten-statement requirements have been simplified, though formal requirements remain and non-compliance is still sanctioned. Second, on the merits: the proportionality of the commitment to the guarantor&apos;s income and assets. Third, the bank&apos;s own obligations: the duty to warn, annual information, and notification of the first missed payment. Analysing the instrument is therefore decisive before making any response to the institution.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Can a disproportionate guarantee be set aside?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">More precisely, it is reduced. For guarantees signed since 1 January 2022, <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071221" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article 2300 of the Civil Code</a> provides that if the commitment was, at the time of signature, manifestly disproportionate to the guarantor&apos;s income and assets, it is reduced to the amount the guarantor could reasonably have undertaken at that date. Disproportion is assessed solely at the date of signature, and the old rule of &quot;return to better fortune&quot; has gone: the bank can no longer rely on a subsequent improvement in the guarantor&apos;s situation. In practice, it is for the guarantor to prove the disproportion, which requires reconstructing their financial position at the time.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -312,7 +363,18 @@ export default function BankingFinancialLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">When a failing by the institution (duty to warn, advise, inform) has caused loss, assessed on the circumstances.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">When a failing by the institution has caused loss. The most common grounds are breach of the duty to warn a borrower or guarantor, failure to advise or inform, reckless support of an insolvent business, and abrupt termination of a credit facility. The 2021 reform extended protection to all individual guarantors, but the intensity of the duty to warn still depends on the guarantor&apos;s profile and the information available to them. The key point: loss must be demonstrated — often analysed as the lost chance of not having entered into the commitment.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Can a bank cancel a credit facility overnight?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">No, except in strictly defined circumstances. For any open-ended facility other than an occasional one, <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 313-12 of the Monetary and Financial Code</a> requires written notice and a minimum notice period set at the time of grant, which cannot be less than sixty days. The bank is released from this obligation only where the business has engaged in seriously blameworthy conduct or its situation is irretrievably compromised. If these rules are not observed, the bank incurs liability and may be ordered to pay damages; reinstatement of the facility, however, remains rare in practice. An abrupt termination therefore nearly always warrants review.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -323,7 +385,29 @@ export default function BankingFinancialLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By analyzing the instrument, the procedure, and the proportionality of the commitment before replying to the institution.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Before making any response to the bank, several checks are essential: the guarantee instrument and its required statements, the regularity of the call procedure, and the proportionality of the commitment at the date of signature. The bank&apos;s information obligations must also be verified: the annual notice to the guarantor (<a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150566/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article 2302 of the Civil Code</a>) and the notification of the first missed payment, the absence of which may result in the bank forfeiting accrued interest. Responding or paying in haste often forfeits these defences. The strategy — challenge, negotiate a reduction, or seek time to pay — is decided after this review.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What should I do in the event of bank fraud or an unauthorised transaction?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Where a payment transaction is unauthorised, the bank is in principle required to reimburse the customer promptly (under the framework of the <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031878407/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">PSD2 Directive</a> and the Monetary and Financial Code). The customer may, however, bear an excess, in principle up to 50 euros. This protection is lost where the fraud or gross negligence is attributable to the customer — for example, voluntarily disclosing access codes — in which case the bank may refuse reimbursement. When facing a CEO fraud or fraudulent transfer, the immediate step is to report the transaction without delay and in writing, then gather evidence. The analysis focuses on what the bank should have detected and on any sharing of liability.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How long do I have to bring a claim against my bank?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">In commercial matters, the general limitation period is five years (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027725867" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 110-4 of the Commercial Code</a>). However, the start date varies depending on the nature of the claim — often a decisive point: the date the loss occurred, knowledge of the breach, or the date of the call on the guarantee. In guarantee matters, some actions follow their own rules, sometimes linked to when the principal debt fell due. These rules are technical and carry serious consequences; it is therefore better to have your position reviewed early rather than let time run.</div>
             </details>
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
@@ -333,7 +417,7 @@ export default function BankingFinancialLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a banking dispute, a disputed guarantee or a credit withdrawal, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a banking dispute, a disputed guarantee or a credit withdrawal, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, with no need to travel to Strasbourg.</div>
             </details>
           </div>
         </div>
