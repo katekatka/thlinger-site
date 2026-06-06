@@ -138,7 +138,15 @@ const faqJsonLd = {
       "name": "How do I recover an unpaid invoice?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Through a graduated strategy: formal reminder, formal notice, then court procedures such as the order to pay. The choice depends on the amount, the debtor, and the relationship."
+        "text": "Through a graduated strategy. Start with a formal reminder, then a formal demand letter by registered post, and finally, if necessary, a court procedure such as an order to pay (injonction de payer). This route is fast and effective where the debt is certain, liquid and due: it enables a court order to be obtained without a hearing unless the debtor contests it. Note: between professionals, late-payment penalties and the flat-rate recovery fee of 40 euros are due as of right from the moment of the delay, without any prior demand (articles L. 441-10 and D. 441-5 of the Commercial Code). The choice of procedure depends on the amount, the debtor's solvency and the importance of preserving the relationship."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the statutory payment terms between professionals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the absence of agreement, the default period is 30 days from receipt of the goods or completion of the service. By contract, it may be extended to 60 calendar days from the date of the invoice, or 45 days end of month if expressly provided in the agreement (article L. 441-10 of the Commercial Code). These rules are a matter of public policy: a clause providing for a period exceeding the statutory caps exposes the parties to penalties and may be set aside, though the precise consequence depends on the facts. Where payment is late, penalties and the flat-rate fee of 40 euros apply automatically, without any prior demand."
       }
     },
     {
@@ -146,15 +154,39 @@ const faqJsonLd = {
       "name": "What is abrupt termination of a commercial relationship?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ending an established relationship without sufficient notice may give rise to compensation, depending on its length and circumstances."
+        "text": "It is the ending, without sufficient notice, of an established commercial relationship, sanctioned by article L. 442-1 II of the Commercial Code. To be protected, the relationship must display sufficient regularity, intensity and stability for the victim to have legitimately anticipated its continuation. The party terminating the relationship must give written notice, taking into account in particular the length of the relationship and industry practice. The termination may be total or partial (a sudden reduction in volumes). Only the loss caused by the abruptness — not by the termination itself — is compensable."
       }
     },
     {
       "@type": "Question",
-      "name": "Should a lawyer review my terms of sale?",
+      "name": "How much can an abrupt termination of a commercial relationship cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Clear, tailored terms prevent a large share of disputes. Better secured before a dispute than after."
+        "text": "Compensation is calculated primarily on the margin lost during the missing notice period. The victim is awarded the gross margin, or contribution margin, that would have been earned during the notice period that should have been given. Depending on the circumstances, the award can range from a few thousand to several million euros. Other losses may be added: loss in the value of the goodwill resulting from the reduction in clientele, redundancy costs for dedicated staff, and unrecovered investment. Conversely, a victim who took no steps to reorganise may see the award reduced. Precise reconstruction of the accounts — often with the assistance of an expert — is therefore decisive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a lawyer review the firm's terms of sale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, because clear and tailored general terms prevent a significant share of disputes. Terms of sale govern the most sensitive aspects of a commercial relationship: price, payment terms, late-payment penalties, retention of title, limitation of liability, and termination. A missing or ambiguous clause is generally paid for when a dispute arises, which is too late to correct it. Securing them in advance always costs less than litigation. It is also an opportunity to verify compliance with public-policy rules, particularly on payment terms and penalties, where poor contractual drafting creates a risk of sanction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a company do when facing financial difficulties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Act early, because the legal framework offers protective tools that are often overlooked, and all the more effective when used before a full-blown crisis. The mandat ad hoc and conciliation are confidential procedures allowing negotiations with creditors under the supervision of a third party appointed by the court; conciliation is available to a company that has not been in a state of cessation of payments for more than forty-five days. The safeguard procedure (sauvegarde) protects the company that anticipates its difficulties before reaching cessation of payments. The earlier the action, the wider the room for negotiation and protection. Waiting narrows the options and increases the risks for the director."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When must cessation of payments be declared?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Within forty-five days. Cessation of payments arises when the company is unable to meet its current liabilities with its available assets. The director must file a declaration with the court within forty-five days, unless an application to open conciliation proceedings has been made within that period. This is critical: failure to declare within the deadline may constitute a management fault and engage the director's personal liability, though the concrete sanctions depend on the specific facts. In addition, a creditor in principle has two months from the publication of the opening judgment in the BODACC to file its claim. Again, speed protects."
       }
     }
   ]
@@ -395,7 +427,18 @@ export default function CommercialLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Through a graduated strategy: formal reminder, formal notice, then court procedures such as the order to pay. The choice depends on the amount, the debtor, and the relationship.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Through a graduated strategy. Start with a formal reminder, then a formal demand letter by registered post, and finally, if necessary, a court procedure such as an order to pay (injonction de payer). This route is fast and effective where the debt is certain, liquid and due: it enables a court order to be obtained without a hearing unless the debtor contests it. Note: between professionals, late-payment penalties and the flat-rate recovery fee of €40 are due as of right from the moment of the delay, without any prior demand (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038414392" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">articles L. 441-10</a> and <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043197457" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">D. 441-5 of the Commercial Code</a>). The choice of procedure depends on the amount, the debtor&apos;s solvency and the importance of preserving the relationship.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What are the statutory payment terms between professionals?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">In the absence of agreement, the default period is 30 days from receipt of the goods or completion of the service. By contract, it may be extended to 60 calendar days from the date of the invoice, or 45 days end of month if expressly provided in the agreement (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038414392" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 441-10 of the Commercial Code</a>). These rules are a matter of public policy: a clause providing for a period exceeding the statutory caps exposes the parties to penalties and may be set aside, though the precise consequence depends on the facts. Where payment is late, penalties and the flat-rate fee of €40 apply automatically, without any prior demand.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -406,28 +449,51 @@ export default function CommercialLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Ending an established relationship without sufficient notice may give rise to compensation, depending on its length and circumstances.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">It is the ending, without sufficient notice, of an established commercial relationship, sanctioned by <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038414278/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 442-1 II of the Commercial Code</a>. To be protected, the relationship must display sufficient regularity, intensity and stability for the victim to have legitimately anticipated its continuation. The party terminating the relationship must give written notice, taking into account in particular the length of the relationship and industry practice. The termination may be total or partial (a sudden reduction in volumes). Only the loss caused by the abruptness — not by the termination itself — is compensable.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should a lawyer review my terms of sale?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How much can an abrupt termination of a commercial relationship cost?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Clear, tailored terms prevent a large share of disputes. Better secured before a dispute than after.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Compensation is calculated primarily on the margin lost during the missing notice period. The victim is awarded the gross margin, or contribution margin, that would have been earned during the notice period that should have been given. Depending on the circumstances, the award can range from a few thousand to several million euros. Other losses may be added: loss in the value of the goodwill resulting from the reduction in clientele, redundancy costs for dedicated staff, and unrecovered investment. Conversely, a victim who took no steps to reorganise may see the award reduced. Precise reconstruction of the accounts — often with the assistance of an expert — is therefore decisive.</div>
             </details>
+
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for commercial law matters?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Should a lawyer review the firm&apos;s terms of sale?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For an unpaid invoice, a commercial dispute or insolvency proceedings, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes, because clear and tailored general terms prevent a significant share of disputes. Terms of sale govern the most sensitive aspects of a commercial relationship: price, payment terms, late-payment penalties, retention of title, limitation of liability, and termination. A missing or ambiguous clause is generally paid for when a dispute arises, which is too late to correct it. Securing them in advance always costs less than litigation. It is also an opportunity to verify compliance with public-policy rules, particularly on payment terms and penalties, where poor contractual drafting creates a risk of sanction.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What should a company do when facing financial difficulties?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Act early, because the legal framework offers protective tools that are often overlooked, and all the more effective when used before a full-blown crisis. The mandat ad hoc and conciliation are confidential procedures allowing negotiations with creditors under the supervision of a third party appointed by the court; conciliation is available to a company that has not been in a state of cessation of payments for more than forty-five days. The safeguard procedure (sauvegarde) protects the company that anticipates its difficulties before reaching cessation of payments. The earlier the action, the wider the room for negotiation and protection. Waiting narrows the options and increases the risks for the director.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">When must cessation of payments be declared?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Within forty-five days. Cessation of payments arises when the company is unable to meet its current liabilities with its available assets. The director must file a declaration with the court within forty-five days, unless an application to open conciliation proceedings has been made within that period. This is critical: failure to declare within the deadline may constitute a management fault and engage the director&apos;s personal liability, though the concrete sanctions depend on the specific facts. In addition, a creditor in principle has two months from the publication of the opening judgment in the BODACC to file its claim. Again, speed protects.</div>
             </details>
           </div>
         </div>
