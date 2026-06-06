@@ -89,23 +89,23 @@ const faqJsonLd = {
       "name": "Que faire face à une saisine prud'homale ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Réagir vite : analyser la procédure suivie, rassembler les éléments de fond et construire une défense structurée dans les délais impartis."
+        "text": "Réagir vite et de façon méthodique. La première étape est d'analyser la procédure suivie et le motif invoqué, puis de rassembler les pièces (contrat, bulletins, échanges, dossier) et de construire une défense structurée. Depuis les réformes de procédure, l'échange de conclusions et de pièces avant l'audience est central : une préparation écrite solide est souvent déterminante pour l'issue. Côté salarié, l'action doit être engagée dans le délai de prescription applicable ; côté employeur, la rigueur de la préparation pèse lourd. Le réflexe est de faire analyser le dossier dès la réception de la convocation ou de la requête."
       }
     },
     {
       "@type": "Question",
-      "name": "Comment sécuriser une réorganisation ?",
+      "name": "Quel délai pour contester un licenciement aux prud'hommes ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "En anticipant les implications sociales avant la décision : choix de la procédure, calendrier, dialogue avec les représentants du personnel."
+        "text": "En principe, douze mois. Le salarié dispose de douze mois à compter de la notification du licenciement pour le contester devant le Conseil de prud'hommes (article L. 1471-1 du Code du travail). Le point de départ est la date de première présentation de la lettre recommandée. Attention : les autres délais diffèrent, trois ans pour les rappels de salaire (article L. 3245-1), deux ans dans certains cas liés à l'exécution ou à la rupture du contrat. Ce délai de contestation, autrefois de cinq ans, a été fortement réduit, ce qui rend la réactivité décisive. La règle pratique : faire analyser la situation dès la réception de la lettre."
       }
     },
     {
       "@type": "Question",
-      "name": "Peut-on contester un redressement URSSAF ?",
+      "name": "Peut-on revenir sur une rupture conventionnelle signée ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui, dans les délais prévus. La contestation peut porter sur le fond du redressement comme sur la régularité de la procédure de contrôle."
+        "text": "Oui, dans deux cas distincts. D'abord pendant le délai de rétractation : chaque partie dispose de quinze jours calendaires après la signature pour revenir sur son accord, sans avoir à se justifier. Ensuite, après homologation, en cas de litige : le salarié peut saisir le Conseil de prud'hommes dans un délai de douze mois à compter de l'homologation, notamment pour vice du consentement (pressions, menaces) ou non-respect des délais. En cas d'annulation, la rupture produit en principe les effets d'un licenciement sans cause réelle et sérieuse. Toute clause par laquelle les parties renonceraient à contester est réputée non écrite."
       }
     },
     {
@@ -113,7 +113,39 @@ const faqJsonLd = {
       "name": "Comment sécuriser une procédure de licenciement ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Côté employeur, la sécurisation repose sur la justification du motif, le respect scrupuleux de la procédure (convocation à entretien préalable, notification, délais légaux) et la documentation du dossier. Côté salarié, il s'agit d'analyser la régularité de la procédure et le sérieux du motif pour évaluer les chances de contestation. Le cabinet accompagne les deux parties selon leurs intérêts."
+        "text": "Côté employeur, la sécurisation repose sur la justification du motif, le respect scrupuleux de la procédure (convocation à entretien préalable, délais légaux, notification motivée) et la documentation du dossier. En matière disciplinaire, attention au délai de l'article L. 1332-4 : l'employeur ne peut engager de poursuites au-delà de deux mois après la connaissance des faits fautifs. Ce délai vise les faits fautifs, et non les autres motifs comme l'insuffisance professionnelle. Côté salarié, il s'agit d'analyser la régularité de la procédure et le sérieux du motif pour évaluer les chances de contestation. Le cabinet accompagne les deux parties selon leurs intérêts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien peut rapporter un licenciement sans cause réelle et sérieuse ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'indemnisation est encadrée par un barème. Lorsque le licenciement est jugé sans cause réelle et sérieuse, l'indemnité est fixée selon le barème dit « Macron » (article L. 1235-3 du Code du travail), qui prévoit un plancher et un plafond en mois de salaire, selon l'ancienneté du salarié et la taille de l'entreprise. Ce barème s'impose en principe au juge, et la jurisprudence récente l'a globalement validé. Il est écarté dans les cas de nullité du licenciement (harcèlement, discrimination, violation d'une liberté fondamentale), où s'applique un minimum de six mois de salaire, sans plafond. L'enjeu est donc d'abord de qualifier la nature du licenciement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment sécuriser une réorganisation ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En anticipant les implications sociales avant la décision, pas après. Cela suppose de choisir la bonne procédure, d'établir un calendrier réaliste et d'organiser le dialogue avec le CSE et les représentants du personnel. Selon l'ampleur du projet, les obligations diffèrent : un plan de sauvegarde de l'emploi est obligatoire en cas de licenciement économique d'au moins dix salariés sur trente jours dans une entreprise d'au moins cinquante salariés. Le risque principal, pour les PSE, est l'annulation ou la suspension de la procédure par le juge administratif. La sécurité juridique se construit en amont de l'annonce."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on contester un redressement URSSAF ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, mais la procédure est strictement encadrée et le recours amiable est un préalable obligatoire. À compter de la réception de la mise en demeure, l'entreprise dispose de deux mois pour saisir la Commission de recours amiable (CRA) de l'URSSAF. Si la CRA rejette la contestation, expressément ou par son silence gardé pendant deux mois (rejet implicite), un nouveau délai de deux mois s'ouvre pour saisir le pôle social du tribunal judiciaire. La contestation peut porter sur le fond du redressement comme sur la régularité de la procédure de contrôle, un vice de procédure pouvant entraîner la nullité. Manquer un de ces délais rend le redressement définitif."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que risque l'employeur en cas de faute inexcusable ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les conséquences vont au-delà de l'indemnisation classique. La faute inexcusable est reconnue lorsque l'employeur avait ou aurait dû avoir conscience d'un danger sans prendre les mesures nécessaires pour en préserver le salarié. Elle entraîne une majoration de la rente de la victime et la réparation de préjudices complémentaires. Une responsabilité pénale peut s'y ajouter, mais elle n'est pas automatique : elle suppose une infraction caractérisée (par exemple des blessures involontaires) et peut alors viser personnellement le dirigeant, là où la faute inexcusable engage l'employeur. La prévention, évaluation des risques et traçabilité des mesures de sécurité, reste le meilleur levier de défense."
       }
     },
     {
@@ -129,7 +161,7 @@ const faqJsonLd = {
       "name": "Le cabinet propose-t-il des consultations en visioconférence en droit du travail ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui. Pour un licenciement contesté, une rupture conventionnelle ou un contrôle URSSAF, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France. Réservation directement en ligne."
+        "text": "Oui. Pour un licenciement contesté, une rupture conventionnelle ou un contrôle URSSAF, le cabinet propose un premier échange de 30 minutes en visioconférence, gratuit et sans engagement. Accessible depuis toute la France, sans déplacement à Strasbourg."
       }
     }
   ]
@@ -370,7 +402,51 @@ export default function DroitDuTravailPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Réagir vite : analyser la procédure suivie, rassembler les éléments de fond et construire une défense structurée dans les délais impartis.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Réagir vite et de façon méthodique. La première étape est d&apos;analyser la procédure suivie et le motif invoqué, puis de rassembler les pièces (contrat, bulletins, échanges, dossier) et de construire une défense structurée. Depuis les réformes de procédure, l&apos;échange de conclusions et de pièces avant l&apos;audience est central : une préparation écrite solide est souvent déterminante pour l&apos;issue. Côté salarié, l&apos;action doit être engagée dans le délai de prescription applicable ; côté employeur, la rigueur de la préparation pèse lourd. Le réflexe est de faire analyser le dossier dès la réception de la convocation ou de la requête.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Quel délai pour contester un licenciement aux prud&apos;hommes ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En principe, douze mois. Le salarié dispose de douze mois à compter de la notification du licenciement pour le contester devant le Conseil de prud&apos;hommes (<a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000027550102" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 1471-1 du Code du travail</a>). Le point de départ est la date de première présentation de la lettre recommandée. Attention : les autres délais diffèrent, trois ans pour les rappels de salaire (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027566295" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 3245-1</a>), deux ans dans certains cas liés à l&apos;exécution ou à la rupture du contrat. Ce délai de contestation, autrefois de cinq ans, a été fortement réduit, ce qui rend la réactivité décisive. La règle pratique : faire analyser la situation dès la réception de la lettre.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Peut-on revenir sur une rupture conventionnelle signée ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui, dans deux cas distincts. D&apos;abord pendant le délai de rétractation : chaque partie dispose de quinze jours calendaires après la signature pour revenir sur son accord, sans avoir à se justifier. Ensuite, après homologation, en cas de litige : le salarié peut saisir le Conseil de prud&apos;hommes dans un délai de douze mois à compter de l&apos;homologation, notamment pour vice du consentement (pressions, menaces) ou non-respect des délais. En cas d&apos;annulation, la rupture produit en principe les effets d&apos;un licenciement sans cause réelle et sérieuse. Toute clause par laquelle les parties renonceraient à contester est réputée non écrite.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Comment sécuriser une procédure de licenciement ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Côté employeur, la sécurisation repose sur la justification du motif, le respect scrupuleux de la procédure (convocation à entretien préalable, délais légaux, notification motivée) et la documentation du dossier. En matière disciplinaire, attention au délai de l&apos;<a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006189485/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 1332-4</a> : l&apos;employeur ne peut engager de poursuites au-delà de deux mois après la connaissance des faits fautifs. Ce délai vise les faits fautifs, et non les autres motifs comme l&apos;insuffisance professionnelle. Côté salarié, il s&apos;agit d&apos;analyser la régularité de la procédure et le sérieux du motif pour évaluer les chances de contestation. Le cabinet accompagne les deux parties selon leurs intérêts.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Combien peut rapporter un licenciement sans cause réelle et sérieuse ?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">L&apos;indemnisation est encadrée par un barème. Lorsque le licenciement est jugé sans cause réelle et sérieuse, l&apos;indemnité est fixée selon le barème dit « Macron » (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036762052" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 1235-3 du Code du travail</a>), qui prévoit un plancher et un plafond en mois de salaire, selon l&apos;ancienneté du salarié et la taille de l&apos;entreprise. Ce barème s&apos;impose en principe au juge, et la jurisprudence récente l&apos;a globalement validé. Il est écarté dans les cas de nullité du licenciement (harcèlement, discrimination, violation d&apos;une liberté fondamentale), où s&apos;applique un minimum de six mois de salaire, sans plafond. L&apos;enjeu est donc d&apos;abord de qualifier la nature du licenciement.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -381,7 +457,7 @@ export default function DroitDuTravailPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En anticipant les implications sociales avant la décision : choix de la procédure, calendrier, dialogue avec les représentants du personnel.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">En anticipant les implications sociales avant la décision, pas après. Cela suppose de choisir la bonne procédure, d&apos;établir un calendrier réaliste et d&apos;organiser le dialogue avec le CSE et les représentants du personnel. Selon l&apos;ampleur du projet, les obligations diffèrent : un plan de sauvegarde de l&apos;emploi est obligatoire en cas de licenciement économique d&apos;au moins dix salariés sur trente jours dans une entreprise d&apos;au moins cinquante salariés. Le risque principal, pour les PSE, est l&apos;annulation ou la suspension de la procédure par le juge administratif. La sécurité juridique se construit en amont de l&apos;annonce.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -392,18 +468,20 @@ export default function DroitDuTravailPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui, dans les délais prévus. La contestation peut porter sur le fond du redressement comme sur la régularité de la procédure de contrôle.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui, mais la procédure est strictement encadrée et le recours amiable est un préalable obligatoire. À compter de la réception de la mise en demeure, l&apos;entreprise dispose de deux mois pour saisir la Commission de recours amiable (CRA) de l&apos;URSSAF. Si la CRA rejette la contestation, expressément ou par son silence gardé pendant deux mois (rejet implicite), un nouveau délai de deux mois s&apos;ouvre pour saisir le pôle social du tribunal judiciaire. La contestation peut porter sur le fond du redressement comme sur la régularité de la procédure de contrôle, un vice de procédure pouvant entraîner la nullité. Manquer un de ces délais rend le redressement définitif.</div>
             </details>
+
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">Comment sécuriser une procédure de licenciement ?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Que risque l&apos;employeur en cas de faute inexcusable ?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Côté employeur, la sécurisation repose sur la justification du motif, le respect scrupuleux de la procédure (convocation à entretien préalable, notification, délais légaux) et la documentation du dossier. Côté salarié, il s&apos;agit d&apos;analyser la régularité de la procédure et le sérieux du motif pour évaluer les chances de contestation. Le cabinet accompagne les deux parties selon leurs intérêts.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Les conséquences vont au-delà de l&apos;indemnisation classique. La faute inexcusable est reconnue lorsque l&apos;employeur avait ou aurait dû avoir conscience d&apos;un danger sans prendre les mesures nécessaires pour en préserver le salarié. Elle entraîne une majoration de la rente de la victime et la réparation de préjudices complémentaires. Une responsabilité pénale peut s&apos;y ajouter, mais elle n&apos;est pas automatique : elle suppose une infraction caractérisée (par exemple des blessures involontaires) et peut alors viser personnellement le dirigeant, là où la faute inexcusable engage l&apos;employeur. La prévention, évaluation des risques et traçabilité des mesures de sécurité, reste le meilleur levier de défense.</div>
             </details>
+
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
                 <span className="font-serif text-[1.0625rem] leading-snug text-white">Le cabinet accompagne-t-il aussi bien les employeurs que les salariés ?</span>
@@ -414,6 +492,7 @@ export default function DroitDuTravailPage() {
               </summary>
               <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Oui. Le cabinet intervient pour les employeurs (sécurisation des procédures, rédaction des actes de rupture, défense prud&apos;homale) comme pour les salariés (contestation d&apos;un licenciement, rupture conventionnelle, harcèlement, discrimination). Cette double expérience permet d&apos;anticiper les arguments de la partie adverse et de construire une stratégie plus solide.</div>
             </details>
+
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
                 <span className="font-serif text-[1.0625rem] leading-snug text-white">Le cabinet propose-t-il des consultations en visioconférence en droit du travail ?</span>

@@ -86,15 +86,47 @@ const faqJsonLd = {
       "name": "What should I do about a labor-tribunal claim?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Act quickly: review the procedure followed, gather the substantive evidence, and build a structured defense within the deadlines."
+        "text": "Act quickly and methodically. The first step is to review the procedure followed and the grounds invoked, then gather the evidence (employment contract, pay slips, correspondence, file) and build a structured defense. Since the procedural reforms, the exchange of written submissions and documents before the hearing is central: solid written preparation is often decisive. On the employee side, the claim must be brought within the applicable limitation period; on the employer side, rigorous preparation carries significant weight. The reflex is to have the file analysed as soon as the summons or claim is received."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I secure a reorganization?",
+      "name": "What is the time limit to challenge a dismissal before the labour tribunal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By anticipating the employment-law implications before deciding: procedure, timetable, and dialogue with employee representatives."
+        "text": "In principle, twelve months. The employee has twelve months from notification of the dismissal to challenge it before the Conseil de prud'hommes (article L. 1471-1 of the Labour Code). Time starts running from the date of first presentation of the registered letter. Note that other time limits differ: three years for back-pay claims (article L. 3245-1), two years in certain cases relating to performance or termination of the contract. This contestation period, formerly five years, was significantly reduced, making prompt action essential. The practical rule: have the situation reviewed as soon as the letter is received."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a signed settlement agreement (rupture conventionnelle) be undone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in two distinct situations. First, during the withdrawal period: each party has fifteen calendar days after signing to withdraw from the agreement without giving reasons. Second, after approval, in the event of a dispute: the employee may apply to the Conseil de prud'hommes within twelve months of approval, notably for vitiated consent (pressure, threats) or failure to comply with the mandatory time limits. If annulled, the termination in principle produces the effects of an unfair dismissal. Any clause by which the parties would waive their right to contest is deemed unwritten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can a dismissal procedure be secured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On the employer's side, protection rests on justifying the reason, strictly following the procedure (invitation to a preliminary meeting, legal time limits, reasoned notification letter) and documenting the file. In disciplinary matters, note the time limit in article L. 1332-4: the employer cannot initiate proceedings more than two months after becoming aware of the alleged misconduct. This limit applies to misconduct only, not to other grounds such as poor performance. On the employee's side, the approach is to examine the regularity of the procedure and the seriousness of the grounds to assess the prospects of a challenge. The firm acts for both sides."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much compensation can an unfair dismissal yield?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compensation is governed by a scale. Where a dismissal is found to be without real and serious cause, the award is calculated under the so-called Macron scale (article L. 1235-3 of the Labour Code), which sets a floor and a ceiling in months of salary, depending on the employee's length of service and the size of the employer. The scale is in principle binding on the court, and recent case law has broadly upheld it. It is set aside in cases where the dismissal is null and void (harassment, discrimination, breach of a fundamental freedom), where a minimum of six months' salary applies with no ceiling. The initial question is therefore to characterise the nature of the dismissal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can a reorganisation be secured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By anticipating the employment-law implications before the decision is announced, not after. This means choosing the right procedure, setting a realistic timetable, and organising consultation with the works council (CSE) and employee representatives. Obligations vary depending on the scale of the project: a job-protection plan (PSE) is mandatory for an economic redundancy affecting at least ten employees within thirty days in a company employing at least fifty people. For PSEs, the main risk is annulment or suspension of the procedure by the administrative court. Legal security is built before the announcement, not after."
       }
     },
     {
@@ -102,7 +134,31 @@ const faqJsonLd = {
       "name": "Can a URSSAF reassessment be challenged?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, within the set deadlines, covering both the substance of the reassessment and the regularity of the inspection procedure."
+        "text": "Yes, but the procedure is strictly regulated and an internal appeal is a mandatory prerequisite. From receipt of the formal demand, the company has two months to refer the matter to the URSSAF's internal appeal committee (Commission de recours amiable, CRA). If the CRA rejects the challenge — expressly or by maintaining silence for two months (implied rejection) — a further two-month period opens to bring proceedings before the social division of the judicial tribunal. The challenge may cover both the substance of the reassessment and the regularity of the inspection procedure; a procedural defect may lead to annulment. Missing any of these deadlines makes the reassessment final."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the employer risk in the event of inexcusable fault?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The consequences go beyond standard compensation. Inexcusable fault (faute inexcusable) is established when the employer was, or should have been, aware of a danger and failed to take the necessary measures to protect the employee. It leads to an increase in the victim's compensation annuity and the award of additional heads of damages. Criminal liability may also arise, but is not automatic: it requires a specific offence (for example, involuntary injury) and may then target the director personally, whereas inexcusable fault engages the employer as an entity. Prevention — risk assessment and documented safety measures — remains the best line of defence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the firm represent both employers and employees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The firm acts for employers (securing procedures, drafting termination documents, defending claims before the labour tribunal) as well as employees (challenging a dismissal, settlement agreements, harassment, discrimination). This dual experience allows the firm to anticipate the opposing party's arguments and build a stronger strategy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the firm offer video consultations for employment law matters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For a contested dismissal, a settlement agreement or a URSSAF reassessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without needing to travel to Strasbourg."
       }
     }
   ]
@@ -320,18 +376,62 @@ export default function EmploymentLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Act quickly: review the procedure followed, gather the substantive evidence, and build a structured defense within the deadlines.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Act quickly and methodically. The first step is to review the procedure followed and the grounds invoked, then gather the evidence (employment contract, pay slips, correspondence, file) and build a structured defense. Since the procedural reforms, the exchange of written submissions and documents before the hearing is central: solid written preparation is often decisive. On the employee side, the claim must be brought within the applicable limitation period; on the employer side, rigorous preparation carries significant weight. The reflex is to have the file analysed as soon as the summons or claim is received.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
-                <span className="font-serif text-[1.0625rem] leading-snug text-white">How do I secure a reorganization?</span>
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What is the time limit to challenge a dismissal before the labour tribunal?</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
                   <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By anticipating the employment-law implications before deciding: procedure, timetable, and dialogue with employee representatives.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">In principle, twelve months. The employee has twelve months from notification of the dismissal to challenge it before the Conseil de prud&apos;hommes (<a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000027550102" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 1471-1 of the Labour Code</a>). Time starts running from the date of first presentation of the registered letter. Note that other time limits differ: three years for back-pay claims (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027566295" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 3245-1</a>), two years in certain cases relating to performance or termination of the contract. This contestation period, formerly five years, was significantly reduced, making prompt action essential. The practical rule: have the situation reviewed as soon as the letter is received.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Can a signed settlement agreement (rupture conventionnelle) be undone?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes, in two distinct situations. First, during the withdrawal period: each party has fifteen calendar days after signing to withdraw from the agreement without giving reasons. Second, after approval, in the event of a dispute: the employee may apply to the Conseil de prud&apos;hommes within twelve months of approval, notably for vitiated consent (pressure, threats) or failure to comply with the mandatory time limits. If annulled, the termination in principle produces the effects of an unfair dismissal. Any clause by which the parties would waive their right to contest is deemed unwritten.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How can a dismissal procedure be secured?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">On the employer&apos;s side, protection rests on justifying the reason, strictly following the procedure (invitation to a preliminary meeting, legal time limits, reasoned notification letter) and documenting the file. In disciplinary matters, note the time limit in <a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006189485/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 1332-4</a>: the employer cannot initiate proceedings more than two months after becoming aware of the alleged misconduct. This limit applies to misconduct only, not to other grounds such as poor performance. On the employee&apos;s side, the approach is to examine the regularity of the procedure and the seriousness of the grounds to assess the prospects of a challenge. The firm acts for both sides.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How much compensation can an unfair dismissal yield?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Compensation is governed by a scale. Where a dismissal is found to be without real and serious cause, the award is calculated under the so-called &quot;Macron&quot; scale (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036762052" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition-colors duration-200">article L. 1235-3 of the Labour Code</a>), which sets a floor and a ceiling in months of salary, depending on the employee&apos;s length of service and the size of the employer. The scale is in principle binding on the court, and recent case law has broadly upheld it. It is set aside in cases where the dismissal is null and void (harassment, discrimination, breach of a fundamental freedom), where a minimum of six months&apos; salary applies with no ceiling. The initial question is therefore to characterise the nature of the dismissal.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">How can a reorganisation be secured?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">By anticipating the employment-law implications before the decision is announced, not after. This means choosing the right procedure, setting a realistic timetable, and organising consultation with the works council (CSE) and employee representatives. Obligations vary depending on the scale of the project: a job-protection plan (PSE) is mandatory for an economic redundancy affecting at least ten employees within thirty days in a company employing at least fifty people. For PSEs, the main risk is annulment or suspension of the procedure by the administrative court. Legal security is built before the announcement, not after.</div>
             </details>
 
             <details className="group border-t-2 border-gold">
@@ -342,8 +442,31 @@ export default function EmploymentLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes, within the set deadlines, covering both the substance of the reassessment and the regularity of the inspection procedure.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes, but the procedure is strictly regulated and an internal appeal is a mandatory prerequisite. From receipt of the formal demand, the company has two months to refer the matter to the URSSAF&apos;s internal appeal committee (Commission de recours amiable, CRA). If the CRA rejects the challenge — expressly or by maintaining silence for two months (implied rejection) — a further two-month period opens to bring proceedings before the social division of the judicial tribunal. The challenge may cover both the substance of the reassessment and the regularity of the inspection procedure; a procedural defect may lead to annulment. Missing any of these deadlines makes the reassessment final.</div>
             </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">What does the employer risk in the event of inexcusable fault?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">The consequences go beyond standard compensation. Inexcusable fault (faute inexcusable) is established when the employer was, or should have been, aware of a danger and failed to take the necessary measures to protect the employee. It leads to an increase in the victim&apos;s compensation annuity and the award of additional heads of damages. Criminal liability may also arise, but is not automatic: it requires a specific offence (for example, involuntary injury) and may then target the director personally, whereas inexcusable fault engages the employer as an entity. Prevention — risk assessment and documented safety measures — remains the best line of defence.</div>
+            </details>
+
+            <details className="group border-t-2 border-gold">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
+                <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm represent both employers and employees?</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0 transition-transform duration-300 group-open:rotate-45">
+                  <line x1="3" y1="10" x2="17" y2="10" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </summary>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. The firm acts for employers (securing procedures, drafting termination documents, defending claims before the labour tribunal) as well as employees (challenging a dismissal, settlement agreements, harassment, discrimination). This dual experience allows the firm to anticipate the opposing party&apos;s arguments and build a stronger strategy.</div>
+            </details>
+
             <details className="group border-t-2 border-gold">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5">
                 <span className="font-serif text-[1.0625rem] leading-snug text-white">Does the firm offer video consultations for employment law matters?</span>
@@ -352,7 +475,7 @@ export default function EmploymentLawPage() {
                   <line x1="10" y1="3" x2="10" y2="17" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </summary>
-              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For an unfair dismissal, a settlement agreement or a URSSAF reassessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France.</div>
+              <div className="pb-7 font-sans text-[0.9375rem] leading-[1.9] text-white/65">Yes. For a contested dismissal, a settlement agreement or a URSSAF reassessment, the firm offers a first 30-minute video consultation, free of charge and without commitment. Available from anywhere in France, without needing to travel to Strasbourg.</div>
             </details>
           </div>
         </div>
