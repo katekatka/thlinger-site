@@ -210,6 +210,12 @@ export default function DroitDesAssurancesPage() {
             <h2 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Des garanties réellement<br className="hidden md:block" /> protectrices.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Le droit des assurances définit les droits et obligations de l&apos;assuré face à
+              son assureur : étendue des garanties, conditions d&apos;exclusion, délais de
+              déclaration de sinistre, recours en cas de refus d&apos;indemnisation. C&apos;est
+              un droit technique, souvent favorable à l&apos;assuré, à condition de le connaître.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Un contrat d&apos;assurance ne se révèle réellement qu&apos;au moment du sinistre.
               Le cabinet accompagne entreprises et dirigeants pour sécuriser leurs garanties,

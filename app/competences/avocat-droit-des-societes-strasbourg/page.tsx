@@ -244,6 +244,12 @@ export default function DroitDesSocietesPage() {
             <h2 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Structurer ce qui détermine le fonctionnement de votre entreprise.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Le droit des sociétés organise la vie juridique de l&apos;entreprise : choix de la
+              forme sociale, rédaction des statuts et pactes d&apos;associés, cessions de titres,
+              gouvernance, restructurations et transmission. C&apos;est la structure sur laquelle
+              repose chaque décision entrepreneuriale.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Statuts, pacte d&apos;associés, gouvernance : ces documents sont rarement revisités
               après leur rédaction. Pourtant, ce sont eux qui déterminent qui décide, qui contrôle

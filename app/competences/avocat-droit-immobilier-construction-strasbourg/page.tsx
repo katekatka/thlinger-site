@@ -227,6 +227,13 @@ export default function DroitImmobilierPage() {
             <h2 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Construire, c&apos;est aussi construire un cadre juridique.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Le droit immobilier et de la construction régit l&apos;ensemble des opérations
+              portant sur les biens immeubles : acquisition, location, promotion, construction,
+              copropriété et gestion des litiges entre propriétaires, locataires, constructeurs
+              et voisins. C&apos;est un droit de la vie concrète, où les enjeux financiers et
+              personnels se croisent.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Malfaçons, désordres, garanties non mobilisées : en matière de construction, les
               litiges se révèlent souvent après la réception des travaux, quand les délais pour

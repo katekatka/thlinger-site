@@ -223,6 +223,12 @@ export default function EmploymentLawPage() {
             <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               Every HR decision is a legal decision.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Employment law governs the relationship between employer and employee throughout
+              the contract: hiring, performance, variation, termination, and employment tribunal
+              proceedings. For the employer, it frames every HR decision. For the employee,
+              it guarantees enforceable rights.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               A poorly drafted contract, a botched dismissal procedure, an imprecise collective
               agreement: in employment law, mistakes have a price. The firm supports directors

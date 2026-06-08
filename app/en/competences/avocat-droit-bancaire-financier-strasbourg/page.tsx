@@ -186,6 +186,12 @@ export default function BankingFinancialLawPage() {
             <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               Your financing commits you. Find out to what, exactly.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Banking and financial law governs the relationship between credit institutions,
+              their clients and the markets: granting and challenging financing arrangements,
+              securities and guarantees, lender liability, debt restructuring. It is the law
+              of financing and its constraints.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Loan terms, joint and several guarantees, personal security interests: these
               commitments are often signed in the urgency of a financing need, without

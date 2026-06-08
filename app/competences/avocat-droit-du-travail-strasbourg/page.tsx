@@ -247,6 +247,12 @@ export default function DroitDuTravailPage() {
             <h2 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Chaque décision RH est une décision juridique.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Le droit du travail régit la relation entre l&apos;employeur et le salarié tout au
+              long du contrat : embauche, exécution, modification, rupture, et contentieux
+              prud&apos;homal. Pour l&apos;employeur, c&apos;est le cadre de chaque décision RH.
+              Pour le salarié, c&apos;est la garantie de droits exigibles.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Licenciement, rupture conventionnelle, contentieux prud&apos;homal : en droit du
               travail, chaque décision engage les deux parties. Le cabinet accompagne les

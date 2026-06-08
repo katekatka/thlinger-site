@@ -220,6 +220,12 @@ export default function CorporateLawPage() {
             <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               Structuring what determines how your company operates.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Corporate law governs the legal life of a company: choice of legal form, drafting
+              of articles and shareholders&apos; agreements, share transfers, governance,
+              restructurings and business succession. It is the framework on which every
+              entrepreneurial decision rests.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Articles of association, shareholders&apos; agreements, governance: these documents
               are rarely revisited after they are drafted. Yet they are the ones that determine

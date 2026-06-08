@@ -259,6 +259,12 @@ export default function CommercialLawPage() {
             <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               A poorly drafted contract is invisible. Until the dispute.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Commercial law governs relationships between businesses: commercial contracts, debt
+              recovery, wrongful termination of established trading relationships, insolvency
+              proceedings. It is the legal framework that regulates economic activity and steps
+              in when it breaks down.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               GTC, GPC, terms of use, service agreements, commercial leases: these documents
               govern every business relationship you have. As long as things run smoothly,

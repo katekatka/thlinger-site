@@ -207,6 +207,12 @@ export default function RealEstateLawPage() {
             <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               Building also means building a legal framework.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Real estate and construction law covers all operations involving immovable
+              property: acquisition, leasing, development, building, co-ownership and disputes
+              between owners, tenants, contractors and neighbours. It is a practical area of
+              law where financial and personal stakes intersect.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Defects, structural disorders, unactivated warranties: in construction matters,
               disputes often come to light after works are accepted, when the deadlines for

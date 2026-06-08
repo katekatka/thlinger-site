@@ -186,6 +186,12 @@ export default function InsuranceLawPage() {
             <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               Coverage that holds<br className="hidden md:block" /> when it counts.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Insurance law defines the rights and obligations of the policyholder towards their
+              insurer: scope of cover, exclusion clauses, claim notification deadlines, recourse
+              in the event of a refusal to indemnify. It is a technical area of law, often
+              favourable to the insured, provided you know how to use it.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               An insurance policy only shows its true worth at the moment of a claim.
               The firm supports companies and directors in securing their cover, defending their

@@ -283,6 +283,12 @@ export default function DroitCommercialPage() {
             <h2 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Un contrat mal rédigé est invisible. Jusqu&apos;au litige.
             </h2>
+            <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
+              Le droit commercial régit les relations entre professionnels : formation et exécution
+              des contrats commerciaux, recouvrement de créances, rupture brutale de relations
+              établies, procédures collectives. C&apos;est le droit qui encadre l&apos;activité
+              économique et qui intervient quand elle déraille.
+            </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               CGV, CGA, CGU, contrats de prestation, baux commerciaux : ces documents encadrent
               chacune de vos relations d&apos;affaires. Tant que tout va bien, personne ne les relit.
