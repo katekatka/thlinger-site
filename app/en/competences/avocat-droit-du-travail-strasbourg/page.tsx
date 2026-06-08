@@ -2,6 +2,8 @@
 ﻿import { AnimatedSection } from "@/components/AnimatedSection";
 import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid";
 export const metadata: Metadata = {
+  title: "Employment & Social Security Law Solicitor in Strasbourg | THALINGER",
+  description: "Employment and social security law in Strasbourg: dismissal, negotiated termination, employment tribunal proceedings, URSSAF audits, employer's gross negligence. THALINGER law firm.",
   alternates: {
     canonical: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-du-travail-strasbourg",
     languages: {
@@ -194,7 +196,7 @@ const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "LegalService",
   "@id": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-du-travail-strasbourg",
-  name: "Employment Law Solicitor in Strasbourg",
+  name: "Employment and Social Security Law Solicitor in Strasbourg",
   description: "Employment law representation for employers and employees: dismissal, negotiated termination, harassment, employment tribunal proceedings. Thalinger law firm, Strasbourg.",
   url: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-du-travail-strasbourg",
   inLanguage: "en",
@@ -218,24 +220,22 @@ export default function EmploymentLawPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Employment &amp; Social Law — Strasbourg
+              Employment &amp; Social Security Law — Strasbourg
             </h1>
             <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
               Every HR decision is a legal decision.
             </h2>
             <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Employment law governs the relationship between employer and employee throughout
-              the contract: hiring, performance, variation, termination, and employment tribunal
-              proceedings. For the employer, it frames every HR decision. For the employee,
-              it guarantees enforceable rights.
+              Social law covers all rules governing work and social protection. It encompasses
+              employment law, which governs the contractual relationship between employer and
+              employee from hiring to termination, and social security law, which covers
+              contributions, URSSAF audits and liability for occupational risks.
             </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              A poorly drafted contract, a botched dismissal procedure, an imprecise collective
-              agreement: in employment law, mistakes have a price. The firm supports directors
-              and HR managers in securing their day-to-day practices and defending their
-              interests before the employment tribunal. The objective: to anticipate disputes
-              rather than suffer them, and to make employment law a management tool, not a
-              source of risk.
+              Dismissal, negotiated termination, employment tribunal proceedings, URSSAF
+              reassessments: in social law, every decision engages both parties. The firm
+              supports employers in securing their processes and employees in defending their
+              rights, to decide and act with full knowledge of the facts.
             </p>
           </AnimatedSection>
         </div>

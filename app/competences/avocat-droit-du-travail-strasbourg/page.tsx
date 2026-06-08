@@ -4,8 +4,8 @@ import { InterventionCategoryGrid } from "@/components/InterventionCategoryGrid"
 import { ConsultationSignal } from "@/components/ConsultationSignal";
 
 export const metadata: Metadata = {
-  title: "Avocat droit du travail à Strasbourg | Cabinet THALINGER",
-  description: "Avocat en droit social et droit du travail à Strasbourg. Licenciement, rupture conventionnelle, contentieux prud'homal, relations collectives, sécurité sociale. Cabinet THALINGER.",
+  title: "Avocat droit du travail et sécurité sociale à Strasbourg | Cabinet THALINGER",
+  description: "Avocat en droit social à Strasbourg. Licenciement, rupture conventionnelle, contentieux prud'homal, redressement URSSAF, faute inexcusable de l'employeur. Cabinet THALINGER.",
   alternates: {
     canonical: "https://www.thalinger-avocat.fr/competences/avocat-droit-du-travail-strasbourg",
     languages: {
@@ -242,24 +242,25 @@ export default function DroitDuTravailPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
             <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Avocat en droit du travail à Strasbourg
+              Avocat en droit du travail et sécurité sociale à Strasbourg
             </h1>
             <h2 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Chaque décision RH est une décision juridique.
             </h2>
             <p className="mb-4 max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Le droit du travail régit la relation entre l&apos;employeur et le salarié tout au
-              long du contrat : embauche, exécution, modification, rupture, et contentieux
-              prud&apos;homal. Pour l&apos;employeur, c&apos;est le cadre de chaque décision RH.
-              Pour le salarié, c&apos;est la garantie de droits exigibles.
+              Le droit social désigne l&apos;ensemble des règles encadrant le travail et la
+              protection sociale. Il recouvre le droit du travail, qui gouverne la relation
+              contractuelle entre employeur et salarié de l&apos;embauche à la rupture du
+              contrat, et le droit de la sécurité sociale, qui encadre les cotisations, les
+              contrôles URSSAF et la responsabilité de l&apos;employeur liée aux risques
+              professionnels.
             </p>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-              Licenciement, rupture conventionnelle, contentieux prud&apos;homal : en droit du
-              travail, chaque décision engage les deux parties. Le cabinet accompagne les
-              employeurs dans la sécurisation de leurs procédures de licenciement et les
-              salariés dans la défense de leurs droits, avec un objectif constant : transformer
-              la complexité des règles sociales en clarté décisionnelle pour décider et
-              agir en connaissance de cause.
+              Licenciement, rupture conventionnelle, contentieux prud&apos;homal, redressement
+              URSSAF : en droit social, chaque décision engage les deux parties. Le cabinet
+              accompagne les employeurs dans la sécurisation de leurs procédures et les
+              salariés dans la défense de leurs droits, pour décider et agir en connaissance
+              de cause.
             </p>
             <ConsultationSignal />
           </AnimatedSection>
