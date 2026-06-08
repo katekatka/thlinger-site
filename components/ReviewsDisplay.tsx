@@ -3,8 +3,7 @@
 import { useState } from "react";
 import type { GoogleReview } from "./GoogleReviews";
 
-// Carousel activates on desktop once there are this many reviews
-const DESKTOP_CAROUSEL_MIN = 4;
+const DESKTOP_PER_VIEW = 3;
 
 function Stars({ count }: { count: number }) {
   return (
@@ -45,33 +44,77 @@ function ReviewCard({ review }: { review: GoogleReview }) {
   );
 }
 
+function NavButton({
+  direction,
+  onClick,
+  disabled,
+}: {
+  direction: "prev" | "next";
+  onClick: () => void;
+  disabled: boolean;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      aria-label={direction === "prev" ? "Avis précédent" : "Avis suivant"}
+      className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-gold/40 bg-white/10 text-white/60 transition hover:border-gold hover:text-white disabled:opacity-30"
+    >
+      <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+        {direction === "prev" ? (
+          <path
+            d="M15 5H1M1 5L5 1M1 5L5 9"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        ) : (
+          <path
+            d="M1 5H15M15 5L11 1M15 5L11 9"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        )}
+      </svg>
+    </button>
+  );
+}
+
 export default function ReviewsDisplay({ reviews }: { reviews: GoogleReview[] }) {
-  const [idx, setIdx] = useState(0);
+  const [mobileIdx, setMobileIdx] = useState(0);
+  const [deskPage, setDeskPage] = useState(0);
   const [touchStart, setTouchStart] = useState<number | null>(null);
 
-  const prev = () => setIdx((i) => Math.max(0, i - 1));
-  const next = () => setIdx((i) => Math.min(reviews.length - 1, i + 1));
+  // ── Mobile ────────────────────────────────────────────────────────────────
+  const prevMobile = () => setMobileIdx((i) => Math.max(0, i - 1));
+  const nextMobile = () => setMobileIdx((i) => Math.min(reviews.length - 1, i + 1));
 
   const handleTouchStart = (e: React.TouchEvent) =>
     setTouchStart(e.targetTouches[0].clientX);
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (touchStart === null) return;
     const diff = touchStart - e.changedTouches[0].clientX;
-    if (diff > 50) next();
-    else if (diff < -50) prev();
+    if (diff > 50) nextMobile();
+    else if (diff < -50) prevMobile();
     setTouchStart(null);
   };
 
-  const useDesktopCarousel = reviews.length >= DESKTOP_CAROUSEL_MIN;
+  // ── Desktop ───────────────────────────────────────────────────────────────
+  const deskTotalPages = Math.ceil(reviews.length / DESKTOP_PER_VIEW);
+  const hasDesktopNav = reviews.length > DESKTOP_PER_VIEW;
+  const desktopVisible = reviews.slice(
+    deskPage * DESKTOP_PER_VIEW,
+    (deskPage + 1) * DESKTOP_PER_VIEW,
+  );
 
   return (
     <>
-      {/*
-        Carousel: always on mobile; on desktop only when ≥ DESKTOP_CAROUSEL_MIN.
-        className "block" = all sizes, "md:hidden" = mobile only.
-      */}
+      {/* ── Mobile carousel ─────────────────────────────────────────────── */}
       <div
-        className={useDesktopCarousel ? "block" : "md:hidden"}
+        className="md:hidden"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
@@ -79,7 +122,7 @@ export default function ReviewsDisplay({ reviews }: { reviews: GoogleReview[] })
           <div
             className="flex transition-transform duration-500"
             style={{
-              transform: `translateX(-${idx * 100}%)`,
+              transform: `translateX(-${mobileIdx * 100}%)`,
               transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)",
             }}
           >
@@ -91,56 +134,58 @@ export default function ReviewsDisplay({ reviews }: { reviews: GoogleReview[] })
           </div>
         </div>
 
-        {/* Dots */}
+        {/* Mobile dots */}
         <div className="mt-8 flex items-center justify-center gap-2">
           {reviews.map((_, i) => (
             <button
               key={i}
-              onClick={() => setIdx(i)}
+              onClick={() => setMobileIdx(i)}
               aria-label={`Avis ${i + 1}`}
-              aria-current={i === idx ? "true" : undefined}
+              aria-current={i === mobileIdx ? "true" : undefined}
               className={`h-2 rounded-full transition-all duration-300 ${
-                i === idx ? "w-8 bg-gold" : "w-2 bg-gold/30 hover:bg-gold/60"
+                i === mobileIdx ? "w-8 bg-gold" : "w-2 bg-gold/30 hover:bg-gold/60"
               }`}
             />
           ))}
         </div>
+      </div>
 
-        {/* Desktop prev/next arrows — only when carousel is active on desktop */}
-        {useDesktopCarousel && (
-          <div className="mt-6 hidden justify-center gap-4 md:flex">
-            <button
-              onClick={prev}
-              disabled={idx === 0}
-              aria-label="Avis précédent"
-              className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-gold/40 bg-white/10 text-white/60 transition hover:border-gold hover:text-white disabled:opacity-30"
-            >
-              <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
-                <path d="M15 5H1M1 5L5 1M1 5L5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-            <button
-              onClick={next}
-              disabled={idx === reviews.length - 1}
-              aria-label="Avis suivant"
-              className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-gold/40 bg-white/10 text-white/60 transition hover:border-gold hover:text-white disabled:opacity-30"
-            >
-              <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
-                <path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
+      {/* ── Desktop carousel (3 cards per view) ──────────────────────────── */}
+      <div className="hidden md:block">
+        <div className="grid grid-cols-3 gap-6">
+          {desktopVisible.map((review, i) => (
+            <ReviewCard key={deskPage * DESKTOP_PER_VIEW + i} review={review} />
+          ))}
+        </div>
+
+        {hasDesktopNav && (
+          <div className="mt-8 flex items-center justify-center gap-4">
+            <NavButton
+              direction="prev"
+              onClick={() => setDeskPage((p) => Math.max(0, p - 1))}
+              disabled={deskPage === 0}
+            />
+            <div className="flex gap-2">
+              {Array.from({ length: deskTotalPages }).map((_, p) => (
+                <button
+                  key={p}
+                  onClick={() => setDeskPage(p)}
+                  aria-label={`Page ${p + 1}`}
+                  aria-current={p === deskPage ? "true" : undefined}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    p === deskPage ? "w-8 bg-gold" : "w-2 bg-gold/30 hover:bg-gold/60"
+                  }`}
+                />
+              ))}
+            </div>
+            <NavButton
+              direction="next"
+              onClick={() => setDeskPage((p) => Math.min(deskTotalPages - 1, p + 1))}
+              disabled={deskPage === deskTotalPages - 1}
+            />
           </div>
         )}
       </div>
-
-      {/* Desktop grid: shown when not enough reviews to warrant desktop carousel */}
-      {!useDesktopCarousel && (
-        <div className="hidden gap-6 md:grid md:grid-cols-3">
-          {reviews.map((review, i) => (
-            <ReviewCard key={i} review={review} />
-          ))}
-        </div>
-      )}
     </>
   );
 }

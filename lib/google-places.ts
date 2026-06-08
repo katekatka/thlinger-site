@@ -49,7 +49,7 @@ export async function fetchGoogleReviews(): Promise<ReviewsPayload | null> {
       rating: data.result.rating,
       totalReviews: data.result.user_ratings_total,
       placeUrl: `https://www.google.com/maps/place/?q=place_id:${placeId}`,
-      reviews: data.result.reviews.slice(0, 3).map((r) => ({
+      reviews: data.result.reviews.slice(0, 5).map((r) => ({
         author: r.author_name,
         authorUrl: r.author_url,
         rating: r.rating,
