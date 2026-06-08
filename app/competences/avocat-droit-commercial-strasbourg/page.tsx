@@ -248,6 +248,21 @@ const speakableJsonLd = {
   speakable: { "@type": "SpeakableSpecification", cssSelector: ["#faq"] },
 } as const;
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.thalinger-avocat.fr/competences/avocat-droit-commercial-strasbourg",
+  name: "Avocat en droit commercial à Strasbourg",
+  description: "Conseil et contentieux en droit commercial : contrats, litiges entre commerçants, rupture de relations commerciales, procédures collectives. Cabinet Thalinger, Strasbourg.",
+  url: "https://www.thalinger-avocat.fr/competences/avocat-droit-commercial-strasbourg",
+  inLanguage: "fr-FR",
+  provider: { "@type": "Attorney", "@id": "https://www.thalinger-avocat.fr/#firm" },
+  areaServed: [
+    { "@type": "City", name: "Strasbourg" },
+    { "@type": "AdministrativeArea", name: "Alsace" },
+  ],
+} as const;
+
 export default function DroitCommercialPage() {
   return (
     <>
@@ -256,6 +271,7 @@ export default function DroitCommercialPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
             {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
@@ -264,9 +280,9 @@ export default function DroitCommercialPage() {
             <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Avocat en droit commercial à Strasbourg
             </h1>
-            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+            <h2 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Un contrat mal rédigé est invisible. Jusqu&apos;au litige.
-            </p>
+            </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               CGV, CGA, CGU, contrats de prestation, baux commerciaux : ces documents encadrent
               chacune de vos relations d&apos;affaires. Tant que tout va bien, personne ne les relit.

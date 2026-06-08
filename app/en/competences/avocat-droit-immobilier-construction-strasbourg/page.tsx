@@ -174,23 +174,39 @@ const caseListJsonLd = {
   ]
 } as const;
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-immobilier-construction-strasbourg",
+  name: "Real Estate and Construction Law Solicitor in Strasbourg",
+  description: "Real estate and construction law advice and litigation: leases, property transactions, construction defects, neighbourhood disputes, co-ownership. Thalinger law firm, Strasbourg.",
+  url: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-immobilier-construction-strasbourg",
+  inLanguage: "en",
+  provider: { "@type": "Attorney", "@id": "https://www.thalinger-avocat.fr/#firm" },
+  areaServed: [
+    { "@type": "City", name: "Strasbourg" },
+    { "@type": "AdministrativeArea", name: "Alsace" },
+  ],
+} as const;
+
 export default function RealEstateLawPage() {
   return (
     <>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
             {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Real Estate Law
-            </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
-              Building also means building a legal framework.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Real Estate &amp; Construction Law — Strasbourg
             </h1>
+            <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
+              Building also means building a legal framework.
+            </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Defects, structural disorders, unactivated warranties: in construction matters,
               disputes often come to light after works are accepted, when the deadlines for

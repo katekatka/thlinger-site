@@ -153,23 +153,39 @@ const caseListJsonLd = {
   ]
 } as const;
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-assurances-strasbourg",
+  name: "Insurance Law Solicitor in Strasbourg",
+  description: "Insurance law representation for policyholders and insurers: coverage disputes, exclusions, complex claims, life-insurance litigation. Thalinger law firm, Strasbourg.",
+  url: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-assurances-strasbourg",
+  inLanguage: "en",
+  provider: { "@type": "Attorney", "@id": "https://www.thalinger-avocat.fr/#firm" },
+  areaServed: [
+    { "@type": "City", name: "Strasbourg" },
+    { "@type": "AdministrativeArea", name: "Alsace" },
+  ],
+} as const;
+
 export default function InsuranceLawPage() {
   return (
     <>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
             {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Insurance Law
-            </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
-              Coverage that holds<br className="hidden md:block" /> when it counts.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Insurance Law — Strasbourg
             </h1>
+            <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
+              Coverage that holds<br className="hidden md:block" /> when it counts.
+            </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               An insurance policy only shows its true worth at the moment of a claim.
               The firm supports companies and directors in securing their cover, defending their

@@ -48,7 +48,7 @@ const jsonLd = {
       ],
     },
     {
-      "@type": ["LegalService", "LocalBusiness"],
+      "@type": ["Attorney", "LegalService", "LocalBusiness"],
       "@id": "https://www.thalinger-avocat.fr/#organization",
       name: "THALINGER Avocat",
       legalName: "THALINGER CHRISTIAN",

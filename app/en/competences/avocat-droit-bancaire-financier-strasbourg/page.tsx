@@ -153,23 +153,39 @@ const caseListJsonLd = {
   ]
 } as const;
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-bancaire-financier-strasbourg",
+  name: "Banking and Financial Law Solicitor in Strasbourg",
+  description: "Banking and financial law advice and litigation: mortgage loans, business credit, bank liability, securities. Thalinger law firm, Strasbourg.",
+  url: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-bancaire-financier-strasbourg",
+  inLanguage: "en",
+  provider: { "@type": "Attorney", "@id": "https://www.thalinger-avocat.fr/#firm" },
+  areaServed: [
+    { "@type": "City", name: "Strasbourg" },
+    { "@type": "AdministrativeArea", name: "Alsace" },
+  ],
+} as const;
+
 export default function BankingFinancialLawPage() {
   return (
     <>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
             {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Banking &amp; Financial Law
-            </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
-              Your financing commits you. Find out to what, exactly.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Banking &amp; Financial Law — Strasbourg
             </h1>
+            <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
+              Your financing commits you. Find out to what, exactly.
+            </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Loan terms, joint and several guarantees, personal security interests: these
               commitments are often signed in the urgency of a financing need, without

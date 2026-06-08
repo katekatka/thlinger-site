@@ -209,6 +209,21 @@ const speakableJsonLd = {
   speakable: { "@type": "SpeakableSpecification", cssSelector: ["#faq"] },
 } as const;
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg",
+  name: "Avocat en droit des sociétés à Strasbourg",
+  description: "Accompagnement en droit des sociétés : création de société, pactes d'associés, cessions de parts, gouvernance, restructurations. Cabinet Thalinger, Strasbourg.",
+  url: "https://www.thalinger-avocat.fr/competences/avocat-droit-des-societes-strasbourg",
+  inLanguage: "fr-FR",
+  provider: { "@type": "Attorney", "@id": "https://www.thalinger-avocat.fr/#firm" },
+  areaServed: [
+    { "@type": "City", name: "Strasbourg" },
+    { "@type": "AdministrativeArea", name: "Alsace" },
+  ],
+} as const;
+
 export default function DroitDesSocietesPage() {
   return (
     <>
@@ -217,6 +232,7 @@ export default function DroitDesSocietesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
             {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
@@ -225,9 +241,9 @@ export default function DroitDesSocietesPage() {
             <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Avocat en droit des sociétés à Strasbourg
             </h1>
-            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+            <h2 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Structurer ce qui détermine le fonctionnement de votre entreprise.
-            </p>
+            </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Statuts, pacte d&apos;associés, gouvernance : ces documents sont rarement revisités
               après leur rédaction. Pourtant, ce sont eux qui déterminent qui décide, qui contrôle

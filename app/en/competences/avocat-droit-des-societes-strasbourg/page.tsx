@@ -187,23 +187,39 @@ const caseListJsonLd = {
   ]
 } as const;
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-societes-strasbourg",
+  name: "Corporate Law Solicitor in Strasbourg",
+  description: "Corporate law advice: company formation, shareholders' agreements, share transfers, governance, restructurings. Thalinger law firm, Strasbourg.",
+  url: "https://www.thalinger-avocat.fr/en/competences/avocat-droit-des-societes-strasbourg",
+  inLanguage: "en",
+  provider: { "@type": "Attorney", "@id": "https://www.thalinger-avocat.fr/#firm" },
+  areaServed: [
+    { "@type": "City", name: "Strasbourg" },
+    { "@type": "AdministrativeArea", name: "Alsace" },
+  ],
+} as const;
+
 export default function CorporateLawPage() {
   return (
     <>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
             {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1200px] px-6">
           <AnimatedSection>
-            <p className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
-              Corporate Law
-            </p>
-            <h1 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
-              Structuring what determines how your company operates.
+            <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
+              Corporate Law — Strasbourg
             </h1>
+            <h2 className="mb-8 font-serif text-[2.5rem] font-normal leading-tight text-navy md:text-[3.6rem]">
+              Structuring what determines how your company operates.
+            </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Articles of association, shareholders&apos; agreements, governance: these documents
               are rarely revisited after they are drafted. Yet they are the ones that determine

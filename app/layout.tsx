@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": ["LegalService", "LocalBusiness"],
+  "@type": ["Attorney", "LegalService", "LocalBusiness"],
   "@id": "https://www.thalinger-avocat.fr/#firm",
   name: "Cabinet THALINGER",
   legalName: "Cabinet Christian THALINGER",

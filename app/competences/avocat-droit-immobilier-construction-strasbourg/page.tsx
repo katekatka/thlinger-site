@@ -192,6 +192,21 @@ const speakableJsonLd = {
   speakable: { "@type": "SpeakableSpecification", cssSelector: ["#faq"] },
 } as const;
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.thalinger-avocat.fr/competences/avocat-droit-immobilier-construction-strasbourg",
+  name: "Avocat en droit immobilier et de la construction à Strasbourg",
+  description: "Conseil et contentieux en droit immobilier et de la construction : baux, transactions, malfaçons, troubles du voisinage, copropriété. Cabinet Thalinger, Strasbourg.",
+  url: "https://www.thalinger-avocat.fr/competences/avocat-droit-immobilier-construction-strasbourg",
+  inLanguage: "fr-FR",
+  provider: { "@type": "Attorney", "@id": "https://www.thalinger-avocat.fr/#firm" },
+  areaServed: [
+    { "@type": "City", name: "Strasbourg" },
+    { "@type": "AdministrativeArea", name: "Alsace" },
+  ],
+} as const;
+
 export default function DroitImmobilierPage() {
   return (
     <>
@@ -200,6 +215,7 @@ export default function DroitImmobilierPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseListJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
             {/* 1. HERO */}
       <section className="bg-white py-24 md:py-32">
@@ -208,9 +224,9 @@ export default function DroitImmobilierPage() {
             <h1 className="mb-6 font-sans text-[11px] uppercase tracking-[0.2em] text-navy-muted">
               Avocat en droit immobilier et de la construction à Strasbourg
             </h1>
-            <p className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
+            <h2 className="mb-8 font-serif text-[clamp(2.25rem,5vw,3.6rem)] font-normal leading-tight text-navy">
               Construire, c&apos;est aussi construire un cadre juridique.
-            </p>
+            </h2>
             <p className="max-w-2xl font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
               Malfaçons, désordres, garanties non mobilisées : en matière de construction, les
               litiges se révèlent souvent après la réception des travaux, quand les délais pour
