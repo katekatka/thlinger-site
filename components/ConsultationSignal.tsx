@@ -10,11 +10,11 @@ export function ConsultationSignal({ lang = "fr" }: { lang?: "fr" | "en" }) {
         </p>
         <Link
           href="/en/rdv"
-          className="mt-4 inline-flex items-center gap-2 rounded-full border border-navy/25 px-5 py-2.5 font-sans text-[0.875rem] text-navy/55 transition-all duration-200 hover:border-gold hover:text-navy"
+          className="group mt-4 inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
         >
           Book a time slot online
-          <svg width="14" height="9" viewBox="0 0 16 10" fill="none" aria-hidden="true"
-            className="transition-transform duration-200 group-hover:translate-x-1">
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
+            className="transition-transform duration-300 group-hover:translate-x-1">
             <path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </Link>
@@ -30,11 +30,11 @@ export function ConsultationSignal({ lang = "fr" }: { lang?: "fr" | "en" }) {
       </p>
       <Link
         href="/rdv"
-        className="mt-4 inline-flex items-center gap-2 rounded-full border border-navy/25 px-5 py-2.5 font-sans text-[0.875rem] text-navy/55 transition-all duration-200 hover:border-gold hover:text-navy"
+        className="group mt-4 inline-flex items-center gap-3 rounded-full border-2 border-gold bg-navy px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-dark hover:gap-5 active:scale-[0.97]"
       >
         Réserver un créneau en ligne
-        <svg width="14" height="9" viewBox="0 0 16 10" fill="none" aria-hidden="true"
-          className="transition-transform duration-200 group-hover:translate-x-1">
+        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"
+          className="transition-transform duration-300 group-hover:translate-x-1">
           <path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </Link>
