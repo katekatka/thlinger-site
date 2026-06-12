@@ -17,6 +17,7 @@
 
 const SPECIAL_ROUTES: Array<{ fr: string; en: string }> = [
   { fr: "/a-propos", en: "/en/about" },
+  { fr: "/postulation-strasbourg", en: "/en/local-counsel-strasbourg" },
 ];
 
 export function getLangSwitchUrl(pathname: string, section: string): string {

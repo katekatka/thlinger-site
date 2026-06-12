@@ -47,7 +47,7 @@ export function InterventionCategoryGrid({ categories }: { categories: Category[
                   className="flex items-start gap-2 font-sans text-sm leading-[1.7] text-navy/65"
                 >
                   <span
-                    className="mt-[0.45em] h-[4px] w-[4px] shrink-0 rounded-full bg-gold"
+                    className="mt-[0.45em] h-2 w-2 shrink-0 rounded-full bg-gold"
                     aria-hidden="true"
                   />
                   {item}

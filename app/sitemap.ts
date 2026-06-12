@@ -69,6 +69,14 @@ const pages: PageDef[] = [
     changeFrequency: "monthly",
   },
 
+  // Postulation — B2B page for fellow counsel
+  {
+    path: "/postulation-strasbourg",
+    enPath: "/en/local-counsel-strasbourg",
+    priority: 0.85,
+    changeFrequency: "monthly",
+  },
+
   // Fees — high-intent page
   {
     path: "/honoraires",
