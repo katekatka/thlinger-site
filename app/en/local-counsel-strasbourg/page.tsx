@@ -275,7 +275,7 @@ export default function LocalCounselPage() {
             {[
               {
                 title: "Speed.",
-                text: "You send the writ or decision, the parties' identities and your deadline. The conflict check runs the same day; confirmation of the engagement reaches you within one business day.",
+                text: "The conflict check runs the same day; confirmation of the engagement reaches you within one business day.",
               },
               {
                 title: "Certainty.",

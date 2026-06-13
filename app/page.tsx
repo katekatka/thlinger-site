@@ -406,53 +406,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <div className="bg-gold" style={{ height: "2px" }} />
-
-      {/* 6. CONFRÈRES — POSTULATION */}
-      <section id="postulation" className="bg-navy py-24 md:py-32">
-        <div className="mx-auto max-w-[1200px] px-6">
-          <AnimatedSection>
-            <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
-              <div className="max-w-xl">
-                <p className="mb-4 font-sans text-[11px] uppercase tracking-[0.2em] text-white/40">
-                  Confrères
-                </p>
-                <h2 className="mb-4 font-serif text-[clamp(2rem,4vw,2.75rem)] font-normal leading-tight text-white">
-                  Postulation à Strasbourg.
-                </h2>
-                <p className="font-sans text-base leading-[1.85] text-white/65 md:text-[1.0625rem]">
-                  Une procédure devant le tribunal judiciaire de Strasbourg ? J&apos;interviens comme
-                  postulant : constitution rapide, suivi rigoureux de la mise en état, forfait connu
-                  avant toute diligence, et, si besoin, relais à l&apos;audience. Votre client reste
-                  le vôtre.
-                </p>
-              </div>
-              <Link
-                href="/postulation-strasbourg"
-                className="group inline-flex shrink-0 items-center gap-3 rounded-full border-2 border-gold px-8 py-4 font-serif text-sm uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-white hover:text-navy hover:gap-5 active:scale-[0.97]"
-              >
-                Modalités de postulation
-                <svg
-                  width="16"
-                  height="10"
-                  viewBox="0 0 16 10"
-                  fill="none"
-                  aria-hidden="true"
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  <path
-                    d="M1 5H15M15 5L11 1M15 5L11 9"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </Link>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
 
       {liveReviews && (
         <>

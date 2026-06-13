@@ -273,7 +273,7 @@ export default function PostulationPage() {
             {[
               {
                 title: "La vitesse.",
-                text: "Vous m'adressez l'acte, l'identité des parties et votre échéance. La vérification de conflit d'intérêts intervient le jour même ; la confirmation de mission vous parvient sous 24 heures ouvrées.",
+                text: "La vérification de conflit d'intérêts intervient le jour même ; la confirmation de mission vous parvient sous 24 heures ouvrées.",
               },
               {
                 title: "La certitude.",
