@@ -32,14 +32,14 @@ function ReviewCard({ review }: { review: GoogleReview }) {
       rel="noopener noreferrer"
       className="group flex h-full flex-col rounded-[2.5rem] border-2 border-gold/30 bg-white p-8 transition-all duration-200 hover:border-gold md:p-10"
     >
-      <div className="mb-5 flex items-center justify-between">
+      <div className="mb-5 flex shrink-0 items-center justify-between">
         <Stars count={review.rating} />
         <span className="font-sans text-[0.75rem] text-navy/40">{review.date}</span>
       </div>
-      <p className="flex-1 font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
+      <p className="line-clamp-6 font-sans text-[0.9375rem] leading-[1.9] text-navy/65">
         &ldquo;{review.text}&rdquo;
       </p>
-      <p className="mt-6 font-serif text-sm text-navy">{review.author}</p>
+      <p className="mt-6 shrink-0 font-serif text-sm text-navy">{review.author}</p>
     </a>
   );
 }

@@ -74,7 +74,7 @@ export default function Footer() {
 
               {/* Cabinet */}
               <div className="space-y-4">
-                <p className="text-sm uppercase tracking-[0.15em] text-gold">
+                <p className={isEN ? "text-sm uppercase tracking-[0.15em] text-gold" : "text-sm tracking-[0.15em] text-gold"}>
                   {isEN ? "Firm" : "Cabinet"}
                 </p>
                 <div className="space-y-3 text-sm">

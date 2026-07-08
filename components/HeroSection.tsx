@@ -241,7 +241,7 @@ export default function HeroSection() {
                   />
                   <div className="fixed inset-x-0 bottom-0 top-[30%] z-[100] overflow-y-auto rounded-t-[2rem] border-t-2 border-gold bg-white px-8 pb-12 pt-8 md:hidden">
                     <div className="mb-6 flex items-start justify-between">
-                      <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-navy/40">À propos du cabinet</p>
+                      <p className="font-sans text-[11px] tracking-[0.2em] text-navy/40">À propos du cabinet</p>
                       <button
                         onClick={() => setGeoOpen(false)}
                         aria-label="Fermer"
