@@ -80,12 +80,13 @@ export default function PostulationPage() {
             </h1>
             <div className="max-w-2xl space-y-5">
               <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-                Le cabinet assure la postulation dans le cadre de procédure à représentation
-                devant le tribunal judiciaire de Strasbourg.
+                Interlocuteur de proximité pour les confrères plaidants, le cabinet assure la
+                postulation devant le tribunal judiciaire de Strasbourg dans le cadre des
+                procédures à représentation obligatoire.
               </p>
               <p className="font-sans text-base leading-[1.85] text-navy/65 md:text-[1.0625rem]">
-                Le cabinet est aussi en mesure de vous substituer dans le cadre de procédure sans
-                représentation obligatoire devant les tribunaux relevant du ressort de Strasbourg,
+                Il vous substitue également aux audiences pour les procédures sans représentation
+                obligatoire, devant l&apos;ensemble des juridictions du ressort de Strasbourg,
                 Saverne et Colmar.
               </p>
             </div>
@@ -123,9 +124,9 @@ export default function PostulationPage() {
                 Une collaboration efficace qui facilite les démarches des confrères plaidants.
               </h2>
               <p className="max-w-xs font-sans text-sm leading-relaxed text-navy/65 md:text-right">
-                La certitude d&apos;une coordination sans faille,<br />
+                La vitesse de la première réponse,<br />
                 la transparence sur les honoraires,<br />
-                la vitesse de la première réponse.
+                la certitude d&apos;une coordination sans faille.
               </p>
             </div>
           </AnimatedSection>
@@ -133,16 +134,16 @@ export default function PostulationPage() {
           <AnimatedSection stagger className="grid gap-5 md:grid-cols-3">
             {[
               {
-                title: "La certitude.",
-                text: "Le cabinet garantit une parfaite coordination tout au long de la procédure.",
+                title: "La vitesse.",
+                text: "Toute demande de postulation reçoit une réponse sous 24 heures, pour ne jamais retarder la procédure du confrère plaidant.",
               },
               {
                 title: "La transparence.",
                 text: "Les modalités d'intervention et les honoraires sont définis avec transparence dès la prise en charge du dossier.",
               },
               {
-                title: "La vitesse.",
-                text: "Chaque demande fait l'objet d'une réponse rapide.",
+                title: "La certitude.",
+                text: "Le cabinet garantit une coordination sans faille à chaque étape de la procédure, avec un interlocuteur unique et un suivi rigoureux jusqu'à l'audience.",
               },
             ].map((card) => (
               <AnimatedItem key={card.title}>

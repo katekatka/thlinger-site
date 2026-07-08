@@ -275,7 +275,7 @@ export default function LocalCounselPage() {
             {[
               {
                 title: "Speed.",
-                text: "The conflict check runs the same day; confirmation of the engagement reaches you within one business day.",
+                text: "Every postulation request receives a response within 24 hours: the conflict check runs the same day, and confirmation of the engagement follows within one business day.",
               },
               {
                 title: "Certainty.",
